@@ -611,7 +611,7 @@ let offsetX=0, offsetY=0, startX=0, startY=0;
 
 itemCard.addEventListener('pointerdown', (e)=>{
   dragging = true;
-  itemCard.setPointerCapture(e.pointerId);
+  try{ itemCard.setPointerCapture(e.pointerId); }catch(err){}
   itemCard.classList.add('dragging');
   const rect = itemCard.getBoundingClientRect();
   startX = rect.left; startY = rect.top;

@@ -82,7 +82,7 @@
   #speech.show{opacity:1; transform:translate(-50%, 0) scale(1);}
 
   /* diagram */
-  #diagram-zone{ flex:1; display:flex; align-items:center; justify-content:center; position:relative; z-index:3; min-height:0; }
+  #diagram-zone{ height:300px; flex-shrink:0; display:flex; align-items:center; justify-content:center; position:relative; z-index:3; }
   #body-diagram{ position:relative; width:220px; height:280px; }
   .zone{
     position:absolute;
@@ -100,10 +100,38 @@
   .zone.wrong-flash{ animation: zoneNo 0.4s ease; }
   @keyframes zoneNo{ 0%,100%{transform:translateX(0);} 25%{transform:translateX(-6px);} 75%{transform:translateX(6px);} }
 
-  .zone.kepala{ width:74px; height:74px; border-radius:50%; top:0; left:50%; margin-left:-37px; }
-  .zone.badan{ width:86px; height:110px; border-radius:26px; top:82px; left:50%; margin-left:-43px; }
-  .zone.tangan{ width:58px; height:32px; border-radius:16px; top:100px; left:160px; }
-  .zone.kaki{ width:64px; height:96px; border-radius:20px; top:200px; left:50%; margin-left:-32px; }
+  .decor{ position:absolute; background: rgba(255,255,255,0.12); pointer-events:none; }
+
+  /* Bahagian Badan (Tahun 1) */
+  .kepala{ width:74px; height:74px; border-radius:50%; top:0; left:50%; margin-left:-37px; }
+  .badan{ width:86px; height:110px; border-radius:26px; top:82px; left:50%; margin-left:-43px; }
+  .tangan{ width:58px; height:32px; border-radius:16px; top:100px; left:160px; }
+  .kaki{ width:64px; height:96px; border-radius:20px; top:200px; left:50%; margin-left:-32px; }
+
+  /* Deria (Tahun 1) — face */
+  .wajah{ width:180px; height:180px; border-radius:50%; top:0; left:50%; margin-left:-90px; }
+  .mata{ width:100px; height:24px; border-radius:12px; top:55px; left:50%; margin-left:-50px; }
+  .hidung{ width:30px; height:40px; border-radius:14px; top:85px; left:50%; margin-left:-15px; }
+  .mulut{ width:50px; height:20px; border-radius:10px; top:135px; left:50%; margin-left:-25px; }
+  .telinga{ width:24px; height:40px; border-radius:12px; top:80px; left:8px; }
+  .kulit{ width:70px; height:50px; border-radius:16px; top:190px; left:50%; margin-left:-35px; }
+
+  /* Sistem Badan Asas (Tahun 4) */
+  .otak{ width:40px; height:35px; border-radius:14px; top:15px; left:50%; margin-left:-20px; }
+  .jantung{ width:50px; height:28px; border-radius:14px; top:95px; left:50%; margin-left:-25px; }
+  .paruparu{ width:70px; height:32px; border-radius:16px; top:128px; left:50%; margin-left:-35px; }
+  .perut{ width:44px; height:25px; border-radius:12px; top:165px; left:50%; margin-left:-22px; }
+
+  /* Sistem Badan Lanjutan (Tahun 6) */
+  .hati{ width:56px; height:26px; border-radius:13px; top:100px; left:50%; margin-left:-28px; }
+  .buahpinggang{ width:70px; height:24px; border-radius:12px; top:130px; left:50%; margin-left:-35px; }
+  .usus{ width:60px; height:24px; border-radius:12px; top:157px; left:50%; margin-left:-30px; }
+  .pundikencing{ width:40px; height:18px; border-radius:9px; top:184px; left:50%; margin-left:-20px; }
+
+  /* Bumi-Bulan-Matahari (Tahun 5) */
+  .matahari{ width:70px; height:70px; border-radius:50%; top:100px; left:10px; }
+  .bumi{ width:45px; height:45px; border-radius:50%; top:115px; left:100px; }
+  .bulan{ width:25px; height:25px; border-radius:50%; top:125px; left:165px; }
 
   /* chip tray */
   #tray{ display:flex; flex-wrap:wrap; justify-content:center; gap:10px; flex-shrink:0; z-index:2; margin-bottom:env(safe-area-inset-bottom, 8px); min-height:52px; }
@@ -243,6 +271,11 @@ async function loadTopic(){
   filledCount = 0;
 
   bodyDiagram.innerHTML = '';
+  (topicData.decor || []).forEach(shape => {
+    const el = document.createElement('div');
+    el.className = `decor ${shape}`;
+    bodyDiagram.appendChild(el);
+  });
   zones.forEach(z => {
     const el = document.createElement('div');
     el.className = `zone ${z.shape}`;
@@ -401,7 +434,7 @@ function attachDrag(chip){
 
   chip.addEventListener('pointerdown', (e)=>{
     dragging = true;
-    chip.setPointerCapture(e.pointerId);
+    try{ chip.setPointerCapture(e.pointerId); }catch(err){}
     chip.classList.add('dragging');
     const rect = chip.getBoundingClientRect();
     offsetX = e.clientX - rect.left;

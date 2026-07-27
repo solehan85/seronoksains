@@ -2,11 +2,56 @@
   "tahun1-bahagian-badan": {
     "topikLabel": "Label Bahagian Badan",
     "tahun": 1,
+    "decor": [],
     "zones": [
       { "id": "kepala", "label": "KEPALA", "shape": "kepala" },
       { "id": "badan", "label": "BADAN", "shape": "badan" },
       { "id": "tangan", "label": "TANGAN", "shape": "tangan" },
       { "id": "kaki", "label": "KAKI", "shape": "kaki" }
+    ]
+  },
+  "tahun1-deria": {
+    "topikLabel": "Label Deria",
+    "tahun": 1,
+    "decor": ["wajah"],
+    "zones": [
+      { "id": "mata", "label": "MATA (Lihat)", "shape": "mata" },
+      { "id": "telinga", "label": "TELINGA (Dengar)", "shape": "telinga" },
+      { "id": "hidung", "label": "HIDUNG (Hidu)", "shape": "hidung" },
+      { "id": "mulut", "label": "LIDAH (Rasa)", "shape": "mulut" },
+      { "id": "kulit", "label": "KULIT (Sentuh)", "shape": "kulit" }
+    ]
+  },
+  "tahun4-sistem-badan-asas": {
+    "topikLabel": "Label Sistem Badan (Asas)",
+    "tahun": 4,
+    "decor": ["kepala", "badan"],
+    "zones": [
+      { "id": "otak", "label": "OTAK", "shape": "otak" },
+      { "id": "jantung", "label": "JANTUNG", "shape": "jantung" },
+      { "id": "paruparu", "label": "PARU-PARU", "shape": "paruparu" },
+      { "id": "perut", "label": "PERUT", "shape": "perut" }
+    ]
+  },
+  "tahun5-bumi-bulan-matahari": {
+    "topikLabel": "Label Bumi, Bulan & Matahari",
+    "tahun": 5,
+    "decor": [],
+    "zones": [
+      { "id": "matahari", "label": "MATAHARI", "shape": "matahari" },
+      { "id": "bumi", "label": "BUMI", "shape": "bumi" },
+      { "id": "bulan", "label": "BULAN", "shape": "bulan" }
+    ]
+  },
+  "tahun6-sistem-badan-lanjutan": {
+    "topikLabel": "Label Sistem Badan (Lanjutan)",
+    "tahun": 6,
+    "decor": ["kepala", "badan"],
+    "zones": [
+      { "id": "hati", "label": "HATI", "shape": "hati" },
+      { "id": "buahpinggang", "label": "BUAH PINGGANG", "shape": "buahpinggang" },
+      { "id": "usus", "label": "USUS", "shape": "usus" },
+      { "id": "pundikencing", "label": "PUNDI KENCING", "shape": "pundikencing" }
     ]
   }
 }
