@@ -105,11 +105,11 @@
         <span class="label">Label Rajah</span>
         <span class="sub" id="label-rajah-sub">Memuatkan...</span>
       </button>
-      <div class="menu-item locked">
+      <button class="menu-item" id="item-quiz-pantas" type="button" style="border:none; width:100%; font-family:inherit;">
         <span class="emoji">⚡</span>
         <span class="label">Quiz Pantas</span>
-        <span class="sub">Akan Datang</span>
-      </div>
+        <span class="sub" id="quiz-pantas-sub">Memuatkan...</span>
+      </button>
       <div class="menu-item locked">
         <span class="emoji">🧪</span>
         <span class="label">Simulasi Mini</span>
@@ -148,7 +148,8 @@
 
   const mechanics = {
     klasifikasi: { dataUrl: 'data/klasifikasi-questions.json', page: 'klasifikasi.html', title: 'Pilih Topik Klasifikasi', subEl: 'klasifikasi-sub', emojiField: t => t.binA.emoji },
-    'label-rajah': { dataUrl: 'data/label-rajah-questions.json', page: 'label-rajah.html', title: 'Pilih Topik Label Rajah', subEl: 'label-rajah-sub', emojiField: () => '🏷️' }
+    'label-rajah': { dataUrl: 'data/label-rajah-questions.json', page: 'label-rajah.html', title: 'Pilih Topik Label Rajah', subEl: 'label-rajah-sub', emojiField: () => '🏷️' },
+    'quiz-pantas': { dataUrl: 'data/quiz-pantas-questions.json', page: 'quiz-pantas.html', title: 'Pilih Topik Kuiz Pantas', subEl: 'quiz-pantas-sub', emojiField: () => '⚡' }
   };
   const bankCache = {};
   async function loadBank(mech){
@@ -193,6 +194,7 @@
   }
   document.getElementById('item-klasifikasi').addEventListener('click', ()=> openTopikPicker(mechanics.klasifikasi));
   document.getElementById('item-label-rajah').addEventListener('click', ()=> openTopikPicker(mechanics['label-rajah']));
+  document.getElementById('item-quiz-pantas').addEventListener('click', ()=> openTopikPicker(mechanics['quiz-pantas']));
   document.getElementById('topik-cancel').addEventListener('click', ()=>{
     overlayTopik.classList.remove('show');
   });

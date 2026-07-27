@@ -1,0 +1,58 @@
+{
+  "tahun1-kuiz-am": {
+    "topikLabel": "Kuiz Pantas Sains Am",
+    "tahun": 1,
+    "sets": [
+      [
+        { "soalan": "Apakah organ yang kita guna untuk melihat?", "pilihan": ["Mata", "Telinga", "Hidung", "Lidah"], "jawapan": "Mata" },
+        { "soalan": "Kucing tergolong dalam kumpulan?", "pilihan": ["Hidupan", "Bukan Hidupan", "Batu", "Kereta"], "jawapan": "Hidupan" },
+        { "soalan": "Apakah bahagian badan yang kita guna untuk berjalan?", "pilihan": ["Kaki", "Tangan", "Kepala", "Perut"], "jawapan": "Kaki" },
+        { "soalan": "Apakah yang kita perlukan setiap hari untuk hidup?", "pilihan": ["Air", "Mainan", "Wang", "Televisyen"], "jawapan": "Air" },
+        { "soalan": "Organ manakah untuk mendengar bunyi?", "pilihan": ["Telinga", "Mata", "Hidung", "Lidah"], "jawapan": "Telinga" },
+        { "soalan": "Batu tergolong dalam kumpulan?", "pilihan": ["Bukan Hidupan", "Hidupan", "Haiwan", "Tumbuhan"], "jawapan": "Bukan Hidupan" },
+        { "soalan": "Apakah bahagian badan yang menyimpan otak?", "pilihan": ["Kepala", "Kaki", "Tangan", "Perut"], "jawapan": "Kepala" },
+        { "soalan": "Apakah yang tumbuhan perlukan untuk hidup?", "pilihan": ["Cahaya Matahari", "Wang", "Mainan", "Buku"], "jawapan": "Cahaya Matahari" }
+      ],
+      [
+        { "soalan": "Apakah organ yang kita guna untuk menghidu bau?", "pilihan": ["Hidung", "Mata", "Telinga", "Lidah"], "jawapan": "Hidung" },
+        { "soalan": "Pokok tergolong dalam kumpulan?", "pilihan": ["Hidupan", "Bukan Hidupan", "Kereta", "Kerusi"], "jawapan": "Hidupan" },
+        { "soalan": "Apakah bahagian badan yang kita guna untuk memegang sesuatu?", "pilihan": ["Tangan", "Kaki", "Kepala", "Perut"], "jawapan": "Tangan" },
+        { "soalan": "Apakah yang kita perlukan untuk minum?", "pilihan": ["Air", "Gula-gula", "Mainan", "Wang"], "jawapan": "Air" },
+        { "soalan": "Organ manakah untuk merasa makanan?", "pilihan": ["Lidah", "Mata", "Telinga", "Hidung"], "jawapan": "Lidah" },
+        { "soalan": "Kerusi tergolong dalam kumpulan?", "pilihan": ["Bukan Hidupan", "Hidupan", "Haiwan", "Tumbuhan"], "jawapan": "Bukan Hidupan" },
+        { "soalan": "Apakah bahagian badan yang menempatkan jantung?", "pilihan": ["Badan", "Kepala", "Kaki", "Tangan"], "jawapan": "Badan" },
+        { "soalan": "Rama-rama tergolong dalam kumpulan?", "pilihan": ["Hidupan", "Bukan Hidupan", "Batu", "Kereta"], "jawapan": "Hidupan" }
+      ],
+      [
+        { "soalan": "Apakah organ yang kita guna untuk menyentuh?", "pilihan": ["Kulit", "Mata", "Telinga", "Lidah"], "jawapan": "Kulit" },
+        { "soalan": "Kereta tergolong dalam kumpulan?", "pilihan": ["Bukan Hidupan", "Hidupan", "Haiwan", "Tumbuhan"], "jawapan": "Bukan Hidupan" },
+        { "soalan": "Berapa banyak deria yang manusia ada?", "pilihan": ["5", "3", "7", "2"], "jawapan": "5" },
+        { "soalan": "Apakah tempat tinggal termasuk dalam keperluan asas manusia?", "pilihan": ["Rumah", "Mainan", "Wang", "Televisyen"], "jawapan": "Rumah" },
+        { "soalan": "Ikan biasanya hidup di?", "pilihan": ["Air", "Udara", "Tanah Kering", "Angkasa"], "jawapan": "Air" },
+        { "soalan": "Telefon tergolong dalam kumpulan?", "pilihan": ["Bukan Hidupan", "Hidupan", "Haiwan", "Tumbuhan"], "jawapan": "Bukan Hidupan" },
+        { "soalan": "Apakah bahagian badan yang mempunyai 10 jari?", "pilihan": ["Tangan", "Kaki", "Kepala", "Perut"], "jawapan": "Tangan" },
+        { "soalan": "Katak tergolong dalam kumpulan?", "pilihan": ["Hidupan", "Bukan Hidupan", "Batu", "Kerusi"], "jawapan": "Hidupan" }
+      ],
+      [
+        { "soalan": "Mata kita guna untuk?", "pilihan": ["Melihat", "Mendengar", "Menghidu", "Merasa"], "jawapan": "Melihat" },
+        { "soalan": "Bunga tergolong dalam kumpulan?", "pilihan": ["Hidupan", "Bukan Hidupan", "Kereta", "Kerusi"], "jawapan": "Hidupan" },
+        { "soalan": "Apakah bahagian badan yang kita guna untuk mencium bau?", "pilihan": ["Hidung", "Mata", "Telinga", "Lidah"], "jawapan": "Hidung" },
+        { "soalan": "Makanan adalah salah satu?", "pilihan": ["Keperluan Asas", "Mainan", "Hiasan", "Perhiasan"], "jawapan": "Keperluan Asas" },
+        { "soalan": "Buku tergolong dalam kumpulan?", "pilihan": ["Bukan Hidupan", "Hidupan", "Haiwan", "Tumbuhan"], "jawapan": "Bukan Hidupan" },
+        { "soalan": "Apakah bahagian badan yang paling atas?", "pilihan": ["Kepala", "Kaki", "Tangan", "Perut"], "jawapan": "Kepala" },
+        { "soalan": "Burung tergolong dalam kumpulan?", "pilihan": ["Hidupan", "Bukan Hidupan", "Batu", "Kereta"], "jawapan": "Hidupan" },
+        { "soalan": "Apakah yang manusia perlukan untuk bernafas?", "pilihan": ["Udara", "Wang", "Mainan", "Televisyen"], "jawapan": "Udara" }
+      ],
+      [
+        { "soalan": "Lidah kita guna untuk?", "pilihan": ["Merasa", "Melihat", "Mendengar", "Menghidu"], "jawapan": "Merasa" },
+        { "soalan": "Meja tergolong dalam kumpulan?", "pilihan": ["Bukan Hidupan", "Hidupan", "Haiwan", "Tumbuhan"], "jawapan": "Bukan Hidupan" },
+        { "soalan": "Apakah bahagian badan yang menyambung kepala dan badan?", "pilihan": ["Leher", "Kaki", "Tangan", "Perut"], "jawapan": "Leher" },
+        { "soalan": "Apakah yang kita perlukan untuk berteduh?", "pilihan": ["Rumah", "Mainan", "Wang", "Gula-gula"], "jawapan": "Rumah" },
+        { "soalan": "Ayam tergolong dalam kumpulan?", "pilihan": ["Hidupan", "Bukan Hidupan", "Batu", "Kerusi"], "jawapan": "Hidupan" },
+        { "soalan": "Telinga kita guna untuk?", "pilihan": ["Mendengar", "Melihat", "Merasa", "Menghidu"], "jawapan": "Mendengar" },
+        { "soalan": "Kunci tergolong dalam kumpulan?", "pilihan": ["Bukan Hidupan", "Hidupan", "Haiwan", "Tumbuhan"], "jawapan": "Bukan Hidupan" },
+        { "soalan": "Apakah organ deria untuk menghidu bau?", "pilihan": ["Hidung", "Mata", "Telinga", "Lidah"], "jawapan": "Hidung" }
+      ]
+    ]
+  }
+}
