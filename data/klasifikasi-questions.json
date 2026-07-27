@@ -114,5 +114,179 @@
         { "emoji": "🧩", "label": "Teka-teki", "type": "bukan" }
       ]
     ]
+  },
+  "tahun2-bahan-keras-lembut": {
+    "topikLabel": "Keras atau Lembut?",
+    "tahun": 2,
+    "binA": { "type": "keras", "label": "KERAS", "emoji": "🪨" },
+    "binB": { "type": "lembut", "label": "LEMBUT", "emoji": "🧸" },
+    "sets": [
+      [
+        { "emoji": "🪨", "label": "Batu", "type": "keras" },
+        { "emoji": "🧸", "label": "Beruang Boneka", "type": "lembut" },
+        { "emoji": "🧊", "label": "Ais Batu", "type": "keras" },
+        { "emoji": "🪶", "label": "Bulu Ayam", "type": "lembut" },
+        { "emoji": "🔑", "label": "Kunci", "type": "keras" },
+        { "emoji": "🧶", "label": "Bebola Wul", "type": "lembut" },
+        { "emoji": "🧱", "label": "Bata", "type": "keras" },
+        { "emoji": "🧻", "label": "Tisu", "type": "lembut" }
+      ],
+      [
+        { "emoji": "🪙", "label": "Syiling", "type": "keras" },
+        { "emoji": "🍞", "label": "Roti", "type": "lembut" },
+        { "emoji": "🐚", "label": "Kulit Siput", "type": "keras" },
+        { "emoji": "🧦", "label": "Stoking", "type": "lembut" },
+        { "emoji": "🥄", "label": "Sudu Besi", "type": "keras" },
+        { "emoji": "🫧", "label": "Buih Sabun", "type": "lembut" },
+        { "emoji": "🔩", "label": "Skru", "type": "keras" },
+        { "emoji": "🧵", "label": "Benang", "type": "lembut" }
+      ],
+      [
+        { "emoji": "🚪", "label": "Pintu Kayu", "type": "keras" },
+        { "emoji": "🛋️", "label": "Kusyen Sofa", "type": "lembut" },
+        { "emoji": "🏺", "label": "Balang Tanah Liat", "type": "keras" },
+        { "emoji": "🧣", "label": "Selendang", "type": "lembut" },
+        { "emoji": "🔨", "label": "Tukul", "type": "keras" },
+        { "emoji": "🧤", "label": "Sarung Tangan Bulu", "type": "lembut" },
+        { "emoji": "🪵", "label": "Batang Kayu", "type": "keras" },
+        { "emoji": "🛏️", "label": "Tilam", "type": "lembut" }
+      ],
+      [
+        { "emoji": "🌰", "label": "Buah Berangan", "type": "keras" },
+        { "emoji": "🧁", "label": "Span Kek", "type": "lembut" },
+        { "emoji": "🥥", "label": "Tempurung Kelapa", "type": "keras" },
+        { "emoji": "🧸", "label": "Patung Beruang", "type": "lembut" },
+        { "emoji": "🫘", "label": "Biji Kacang", "type": "keras" },
+        { "emoji": "🍞", "label": "Roti Lembut", "type": "lembut" },
+        { "emoji": "🪆", "label": "Patung Kayu", "type": "keras" },
+        { "emoji": "🧦", "label": "Stoking Baharu", "type": "lembut" }
+      ],
+      [
+        { "emoji": "⚙️", "label": "Gear Besi", "type": "keras" },
+        { "emoji": "🪶", "label": "Kapas", "type": "lembut" },
+        { "emoji": "🔧", "label": "Sepana", "type": "keras" },
+        { "emoji": "🧶", "label": "Selimut Bulu", "type": "lembut" },
+        { "emoji": "🪨", "label": "Batu Kerikil", "type": "keras" },
+        { "emoji": "🧻", "label": "Tuala", "type": "lembut" },
+        { "emoji": "🧱", "label": "Blok Simen", "type": "keras" },
+        { "emoji": "🧸", "label": "Bantal", "type": "lembut" }
+      ]
+    ]
+  },
+  "tahun2-cahaya-sumber": {
+    "topikLabel": "Sumber Cahaya atau Bukan?",
+    "tahun": 2,
+    "binA": { "type": "sumber", "label": "SUMBER CAHAYA", "emoji": "☀️" },
+    "binB": { "type": "bukan", "label": "BUKAN SUMBER CAHAYA", "emoji": "📕" },
+    "sets": [
+      [
+        { "emoji": "☀️", "label": "Matahari", "type": "sumber" },
+        { "emoji": "📕", "label": "Buku", "type": "bukan" },
+        { "emoji": "💡", "label": "Mentol Lampu", "type": "sumber" },
+        { "emoji": "🪑", "label": "Kerusi", "type": "bukan" },
+        { "emoji": "🕯️", "label": "Lilin", "type": "sumber" },
+        { "emoji": "🧸", "label": "Patung", "type": "bukan" },
+        { "emoji": "🔦", "label": "Lampu Suluh", "type": "sumber" },
+        { "emoji": "🥄", "label": "Sudu", "type": "bukan" }
+      ],
+      [
+        { "emoji": "🔥", "label": "Api", "type": "sumber" },
+        { "emoji": "🚪", "label": "Pintu", "type": "bukan" },
+        { "emoji": "⭐", "label": "Bintang", "type": "sumber" },
+        { "emoji": "🌳", "label": "Pokok", "type": "bukan" },
+        { "emoji": "🏮", "label": "Tanglung", "type": "sumber" },
+        { "emoji": "🪨", "label": "Batu", "type": "bukan" },
+        { "emoji": "🚨", "label": "Lampu Isyarat", "type": "sumber" },
+        { "emoji": "👟", "label": "Kasut", "type": "bukan" }
+      ],
+      [
+        { "emoji": "☀️", "label": "Matahari Terik", "type": "sumber" },
+        { "emoji": "🎈", "label": "Belon", "type": "bukan" },
+        { "emoji": "💡", "label": "Lampu Meja", "type": "sumber" },
+        { "emoji": "🧦", "label": "Stoking", "type": "bukan" },
+        { "emoji": "🕯️", "label": "Lilin Hari Jadi", "type": "sumber" },
+        { "emoji": "🖼️", "label": "Gambar Bingkai", "type": "bukan" },
+        { "emoji": "🔦", "label": "Lampu Suluh Kecil", "type": "sumber" },
+        { "emoji": "🎒", "label": "Beg Sekolah", "type": "bukan" }
+      ],
+      [
+        { "emoji": "🔥", "label": "Unggun Api", "type": "sumber" },
+        { "emoji": "🚗", "label": "Kereta Mainan", "type": "bukan" },
+        { "emoji": "⚡", "label": "Kilat", "type": "sumber" },
+        { "emoji": "🪞", "label": "Cermin", "type": "bukan" },
+        { "emoji": "🌟", "label": "Bintang Berkelip", "type": "sumber" },
+        { "emoji": "📚", "label": "Buku", "type": "bukan" },
+        { "emoji": "🏮", "label": "Lampu Tanglung", "type": "sumber" },
+        { "emoji": "🧺", "label": "Bakul", "type": "bukan" }
+      ],
+      [
+        { "emoji": "☀️", "label": "Matahari Pagi", "type": "sumber" },
+        { "emoji": "🪑", "label": "Kerusi Kayu", "type": "bukan" },
+        { "emoji": "💡", "label": "Mentol", "type": "sumber" },
+        { "emoji": "🖊️", "label": "Pen", "type": "bukan" },
+        { "emoji": "🕯️", "label": "Lilin", "type": "sumber" },
+        { "emoji": "👛", "label": "Beg Tangan", "type": "bukan" },
+        { "emoji": "🔦", "label": "Lampu Suluh", "type": "sumber" },
+        { "emoji": "🧸", "label": "Patung Beruang", "type": "bukan" }
+      ]
+    ]
+  },
+  "tahun2-kesihatan-diri": {
+    "topikLabel": "Amalan Sihat atau Tidak Sihat?",
+    "tahun": 2,
+    "binA": { "type": "sihat", "label": "AMALAN SIHAT", "emoji": "🥗" },
+    "binB": { "type": "tidaksihat", "label": "TIDAK SIHAT", "emoji": "🍭" },
+    "sets": [
+      [
+        { "emoji": "🥗", "label": "Makan Sayur", "type": "sihat" },
+        { "emoji": "🍭", "label": "Gula-gula Berlebihan", "type": "tidaksihat" },
+        { "emoji": "💧", "label": "Minum Air Kosong", "type": "sihat" },
+        { "emoji": "🍟", "label": "Makanan Berminyak", "type": "tidaksihat" },
+        { "emoji": "🪥", "label": "Gosok Gigi", "type": "sihat" },
+        { "emoji": "📱", "label": "Main Telefon Lewat Malam", "type": "tidaksihat" },
+        { "emoji": "🏃", "label": "Bersenam", "type": "sihat" },
+        { "emoji": "🥤", "label": "Minuman Bergas Berlebihan", "type": "tidaksihat" }
+      ],
+      [
+        { "emoji": "🍎", "label": "Makan Buah", "type": "sihat" },
+        { "emoji": "🍬", "label": "Gula-gula", "type": "tidaksihat" },
+        { "emoji": "🚿", "label": "Mandi Bersih", "type": "sihat" },
+        { "emoji": "🛋️", "label": "Duduk Lama Tanpa Bergerak", "type": "tidaksihat" },
+        { "emoji": "😴", "label": "Tidur Awal", "type": "sihat" },
+        { "emoji": "🍩", "label": "Donut Berlebihan", "type": "tidaksihat" },
+        { "emoji": "🧼", "label": "Cuci Tangan", "type": "sihat" },
+        { "emoji": "🎮", "label": "Main Game Berjam-jam", "type": "tidaksihat" }
+      ],
+      [
+        { "emoji": "🥦", "label": "Makan Brokoli", "type": "sihat" },
+        { "emoji": "🍫", "label": "Coklat Berlebihan", "type": "tidaksihat" },
+        { "emoji": "🚴", "label": "Beriadah", "type": "sihat" },
+        { "emoji": "📺", "label": "Tonton TV Berjam-jam", "type": "tidaksihat" },
+        { "emoji": "💧", "label": "Minum Air Kosong", "type": "sihat" },
+        { "emoji": "🍦", "label": "Ais Krim Berlebihan", "type": "tidaksihat" },
+        { "emoji": "🪥", "label": "Gosok Gigi Pagi & Malam", "type": "sihat" },
+        { "emoji": "🛌", "label": "Tidur Lewat Malam", "type": "tidaksihat" }
+      ],
+      [
+        { "emoji": "🍇", "label": "Makan Buah Anggur", "type": "sihat" },
+        { "emoji": "🍰", "label": "Kek Berlebihan", "type": "tidaksihat" },
+        { "emoji": "🏊", "label": "Berenang", "type": "sihat" },
+        { "emoji": "🪑", "label": "Duduk Sepanjang Hari", "type": "tidaksihat" },
+        { "emoji": "🧴", "label": "Guna Sabun Mandi", "type": "sihat" },
+        { "emoji": "🍿", "label": "Snek Berlebihan", "type": "tidaksihat" },
+        { "emoji": "😴", "label": "Tidur 8 Jam", "type": "sihat" },
+        { "emoji": "📱", "label": "Skrin Lewat Malam", "type": "tidaksihat" }
+      ],
+      [
+        { "emoji": "🥕", "label": "Makan Lobak Merah", "type": "sihat" },
+        { "emoji": "🍭", "label": "Gula-gula Lolipop", "type": "tidaksihat" },
+        { "emoji": "🤸", "label": "Bersenam Regangan", "type": "sihat" },
+        { "emoji": "🛋️", "label": "Rebah di Sofa Sepanjang Hari", "type": "tidaksihat" },
+        { "emoji": "💧", "label": "Minum Air Cukup", "type": "sihat" },
+        { "emoji": "🍔", "label": "Makanan Segera Berlebihan", "type": "tidaksihat" },
+        { "emoji": "🪥", "label": "Jaga Kebersihan Mulut", "type": "sihat" },
+        { "emoji": "🎮", "label": "Ketagihan Permainan", "type": "tidaksihat" }
+      ]
+    ]
   }
 }

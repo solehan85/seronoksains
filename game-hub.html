@@ -98,7 +98,7 @@
       <button class="menu-item" id="item-klasifikasi" type="button" style="border:none; width:100%; font-family:inherit;">
         <span class="emoji">🗂️</span>
         <span class="label">Klasifikasi</span>
-        <span class="sub">2 topik tersedia</span>
+        <span class="sub" id="klasifikasi-sub">Memuatkan...</span>
       </button>
       <div class="menu-item locked">
         <span class="emoji">🏷️</span>
@@ -128,30 +128,58 @@
 <div class="overlay" id="overlay-topik">
   <div class="modal">
     <h3>Pilih Topik Klasifikasi</h3>
-    <a class="topik-choice" href="klasifikasi.html?topik=tahun1-hidupan-bukan-hidupan">🌱 Hidupan atau Bukan Hidupan?</a>
-    <a class="topik-choice" href="klasifikasi.html?topik=tahun1-keperluan-asas-hidupan">💧 Keperluan Asas atau Bukan?</a>
+    <div id="topik-list"></div>
     <button class="modal-close" id="topik-cancel">Batal</button>
   </div>
 </div>
 
 <script>
   const raw = sessionStorage.getItem('ss_activeStudent');
+  let activeStudent = null;
   if(raw){
-    const s = JSON.parse(raw);
-    document.getElementById('greeting').textContent = `Hai, ${s.namaAnak}! 👋`;
-    document.getElementById('meta').textContent = `Tahun ${s.tahun} · ${s.kelas}`;
+    activeStudent = JSON.parse(raw);
+    document.getElementById('greeting').textContent = `Hai, ${activeStudent.namaAnak}! 👋`;
+    document.getElementById('meta').textContent = `Tahun ${activeStudent.tahun} · ${activeStudent.kelas}`;
     document.getElementById('menu-card').style.display = '';
   } else {
     document.getElementById('greeting').textContent = 'Tiada sesi aktif';
     document.getElementById('no-session').style.display = '';
   }
+
+  let klasifikasiBank = null;
+  async function loadKlasifikasiBank(){
+    if(klasifikasiBank) return klasifikasiBank;
+    const res = await fetch('data/klasifikasi-questions.json');
+    klasifikasiBank = await res.json();
+    return klasifikasiBank;
+  }
+  function topicsForTahun(bank, tahun){
+    return Object.entries(bank).filter(([key, topic]) => topic.tahun === tahun);
+  }
+
+  if(activeStudent){
+    loadKlasifikasiBank().then(bank => {
+      const matching = topicsForTahun(bank, activeStudent.tahun);
+      document.getElementById('klasifikasi-sub').textContent =
+        matching.length ? `${matching.length} topik tersedia` : 'Belum ada topik';
+    });
+  }
+
   document.getElementById('btn-switch').addEventListener('click', ()=>{
     sessionStorage.removeItem('ss_activeStudent');
     window.location.href = 'parent-login.html';
   });
 
   const overlayTopik = document.getElementById('overlay-topik');
-  document.getElementById('item-klasifikasi').addEventListener('click', ()=>{
+  const topikList = document.getElementById('topik-list');
+  document.getElementById('item-klasifikasi').addEventListener('click', async ()=>{
+    const bank = await loadKlasifikasiBank();
+    const matching = topicsForTahun(bank, activeStudent.tahun);
+    topikList.innerHTML = matching.length
+      ? matching.map(([key, topic]) =>
+          `<a class="topik-choice" href="klasifikasi.html?topik=${key}">${topic.binA.emoji} ${topic.topikLabel}</a>`
+        ).join('')
+      : `<p style="color:#5C7690; font-weight:700; font-size:13px;">Belum ada topik untuk Tahun ${activeStudent.tahun} lagi.</p>`;
     overlayTopik.classList.add('show');
   });
   document.getElementById('topik-cancel').addEventListener('click', ()=>{
