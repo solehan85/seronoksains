@@ -100,11 +100,11 @@
         <span class="label">Klasifikasi</span>
         <span class="sub" id="klasifikasi-sub">Memuatkan...</span>
       </button>
-      <div class="menu-item locked">
+      <button class="menu-item" id="item-label-rajah" type="button" style="border:none; width:100%; font-family:inherit;">
         <span class="emoji">🏷️</span>
         <span class="label">Label Rajah</span>
-        <span class="sub">Akan Datang</span>
-      </div>
+        <span class="sub" id="label-rajah-sub">Memuatkan...</span>
+      </button>
       <div class="menu-item locked">
         <span class="emoji">⚡</span>
         <span class="label">Quiz Pantas</span>
@@ -127,7 +127,7 @@
 
 <div class="overlay" id="overlay-topik">
   <div class="modal">
-    <h3>Pilih Topik Klasifikasi</h3>
+    <h3 id="topik-modal-title">Pilih Topik</h3>
     <div id="topik-list"></div>
     <button class="modal-close" id="topik-cancel">Batal</button>
   </div>
@@ -146,22 +146,28 @@
     document.getElementById('no-session').style.display = '';
   }
 
-  let klasifikasiBank = null;
-  async function loadKlasifikasiBank(){
-    if(klasifikasiBank) return klasifikasiBank;
-    const res = await fetch('data/klasifikasi-questions.json');
-    klasifikasiBank = await res.json();
-    return klasifikasiBank;
+  const mechanics = {
+    klasifikasi: { dataUrl: 'data/klasifikasi-questions.json', page: 'klasifikasi.html', title: 'Pilih Topik Klasifikasi', subEl: 'klasifikasi-sub', emojiField: t => t.binA.emoji },
+    'label-rajah': { dataUrl: 'data/label-rajah-questions.json', page: 'label-rajah.html', title: 'Pilih Topik Label Rajah', subEl: 'label-rajah-sub', emojiField: () => '🏷️' }
+  };
+  const bankCache = {};
+  async function loadBank(mech){
+    if(bankCache[mech.dataUrl]) return bankCache[mech.dataUrl];
+    const res = await fetch(mech.dataUrl);
+    bankCache[mech.dataUrl] = await res.json();
+    return bankCache[mech.dataUrl];
   }
   function topicsForTahun(bank, tahun){
     return Object.entries(bank).filter(([key, topic]) => topic.tahun === tahun);
   }
 
   if(activeStudent){
-    loadKlasifikasiBank().then(bank => {
-      const matching = topicsForTahun(bank, activeStudent.tahun);
-      document.getElementById('klasifikasi-sub').textContent =
-        matching.length ? `${matching.length} topik tersedia` : 'Belum ada topik';
+    Object.values(mechanics).forEach(mech => {
+      loadBank(mech).then(bank => {
+        const matching = topicsForTahun(bank, activeStudent.tahun);
+        document.getElementById(mech.subEl).textContent =
+          matching.length ? `${matching.length} topik tersedia` : 'Belum ada topik';
+      });
     });
   }
 
@@ -172,16 +178,21 @@
 
   const overlayTopik = document.getElementById('overlay-topik');
   const topikList = document.getElementById('topik-list');
-  document.getElementById('item-klasifikasi').addEventListener('click', async ()=>{
-    const bank = await loadKlasifikasiBank();
+  const topikModalTitle = document.getElementById('topik-modal-title');
+
+  async function openTopikPicker(mech){
+    const bank = await loadBank(mech);
     const matching = topicsForTahun(bank, activeStudent.tahun);
+    topikModalTitle.textContent = mech.title;
     topikList.innerHTML = matching.length
       ? matching.map(([key, topic]) =>
-          `<a class="topik-choice" href="klasifikasi.html?topik=${key}">${topic.binA.emoji} ${topic.topikLabel}</a>`
+          `<a class="topik-choice" href="${mech.page}?topik=${key}">${mech.emojiField(topic)} ${topic.topikLabel}</a>`
         ).join('')
       : `<p style="color:#5C7690; font-weight:700; font-size:13px;">Belum ada topik untuk Tahun ${activeStudent.tahun} lagi.</p>`;
     overlayTopik.classList.add('show');
-  });
+  }
+  document.getElementById('item-klasifikasi').addEventListener('click', ()=> openTopikPicker(mechanics.klasifikasi));
+  document.getElementById('item-label-rajah').addEventListener('click', ()=> openTopikPicker(mechanics['label-rajah']));
   document.getElementById('topik-cancel').addEventListener('click', ()=>{
     overlayTopik.classList.remove('show');
   });

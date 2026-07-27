@@ -1,0 +1,12 @@
+{
+  "tahun1-bahagian-badan": {
+    "topikLabel": "Label Bahagian Badan",
+    "tahun": 1,
+    "zones": [
+      { "id": "kepala", "label": "KEPALA", "shape": "kepala" },
+      { "id": "badan", "label": "BADAN", "shape": "badan" },
+      { "id": "tangan", "label": "TANGAN", "shape": "tangan" },
+      { "id": "kaki", "label": "KAKI", "shape": "kaki" }
+    ]
+  }
+}
