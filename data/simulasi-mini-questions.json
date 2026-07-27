@@ -1,0 +1,28 @@
+{
+  "tahun4-litar-lengkap-terbuka": {
+    "topikLabel": "Litar Lengkap atau Terbuka?",
+    "tahun": 4,
+    "sets": [
+      [
+        { "switchState": "closed" }, { "switchState": "open" }, { "switchState": "closed" }, { "switchState": "open" },
+        { "switchState": "closed" }, { "switchState": "open" }, { "switchState": "closed" }, { "switchState": "open" }
+      ],
+      [
+        { "switchState": "open" }, { "switchState": "closed" }, { "switchState": "open" }, { "switchState": "closed" },
+        { "switchState": "open" }, { "switchState": "closed" }, { "switchState": "open" }, { "switchState": "closed" }
+      ],
+      [
+        { "switchState": "closed" }, { "switchState": "closed" }, { "switchState": "open" }, { "switchState": "open" },
+        { "switchState": "closed" }, { "switchState": "open" }, { "switchState": "closed" }, { "switchState": "open" }
+      ],
+      [
+        { "switchState": "open" }, { "switchState": "open" }, { "switchState": "closed" }, { "switchState": "closed" },
+        { "switchState": "open" }, { "switchState": "closed" }, { "switchState": "open" }, { "switchState": "closed" }
+      ],
+      [
+        { "switchState": "closed" }, { "switchState": "open" }, { "switchState": "closed" }, { "switchState": "closed" },
+        { "switchState": "open" }, { "switchState": "open" }, { "switchState": "closed" }, { "switchState": "open" }
+      ]
+    ]
+  }
+}

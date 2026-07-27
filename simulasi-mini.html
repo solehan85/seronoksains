@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Seronok Sains — Simulasi Mini</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@600;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --sky:#29ABE2;
+    --sky-deep:#1E8FC4;
+    --sun:#FFD23F;
+    --grass:#4ECB71;
+    --grass-deep:#33A857;
+    --coral:#FF6B6B;
+    --navy:#1B3358;
+    --cream:#FFFFFF;
+  }
+  *{box-sizing:border-box; -webkit-tap-highlight-color: transparent; user-select:none;}
+  html,body{height:100%;}
+  body{
+    margin:0;
+    font-family:'Nunito', sans-serif;
+    background: radial-gradient(ellipse at top, #6FC6F0 0%, var(--sky) 55%, var(--sky-deep) 100%);
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  #stage{
+    width:100%;
+    max-width:520px;
+    height:100vh;
+    max-height:900px;
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    padding:18px 16px 10px;
+  }
+
+  header{ text-align:center; color:#fff; flex-shrink:0; z-index:2; }
+  header h1{ font-family:'Baloo 2', sans-serif; font-weight:800; font-size:22px; margin:0; text-shadow:0 3px 0 rgba(27,51,88,0.35); }
+  header p{ margin:2px 0 0; font-weight:600; font-size:13px; opacity:0.9; }
+
+  #progress-wrap{ display:flex; justify-content:center; gap:6px; margin:10px 0 4px; z-index:2; flex-wrap:wrap; }
+  .star{ width:20px; height:20px; position:relative; filter: drop-shadow(0 2px 2px rgba(0,0,0,0.2)); transition: transform 0.4s cubic-bezier(.34,1.56,.64,1); }
+  .star svg{width:100%;height:100%;}
+  .star.filled{ animation: starPop 0.5s cubic-bezier(.34,1.56,.64,1); }
+  @keyframes starPop{ 0%{transform:scale(0.3) rotate(-20deg);} 60%{transform:scale(1.3) rotate(8deg);} 100%{transform:scale(1) rotate(0deg);} }
+
+  #mascot-zone{ flex-shrink:0; display:flex; flex-direction:column; align-items:center; justify-content:flex-end; height:70px; z-index:2; position:relative; }
+  #mascot{ width:60px; height:60px; transition: transform 0.35s cubic-bezier(.34,1.56,.64,1); filter: drop-shadow(0 6px 6px rgba(0,0,0,0.2)); transform-box: fill-box; transform-origin: center; }
+  #mascot.idle{ animation: bob 2.6s ease-in-out infinite; }
+  @keyframes bob{ 0%,100%{transform:translateY(0) rotate(-2deg);} 50%{transform:translateY(-8px) rotate(2deg);} }
+  #mascot.happy{ animation: cheer 0.6s cubic-bezier(.34,1.56,.64,1); }
+  @keyframes cheer{ 0%{transform:scale(1) rotate(0);} 30%{transform:scale(1.25) rotate(-8deg) translateY(-14px);} 55%{transform:scale(1.1) rotate(8deg) translateY(-6px);} 100%{transform:scale(1) rotate(0);} }
+  #mascot.oops{ animation: sad 0.55s ease-in-out; }
+  @keyframes sad{ 0%,100%{transform:translateY(0) rotate(0);} 30%{transform:translateY(4px) rotate(-6deg);} 60%{transform:translateY(4px) rotate(6deg);} }
+  .wing{ transform-box: fill-box; transform-origin: top center; transition: transform 0.3s cubic-bezier(.34,1.56,.64,1); }
+  #mascot.happy .wing-l{ transform: rotate(-55deg) translateY(-6px); }
+  #mascot.happy .wing-r{ transform: rotate(55deg) translateY(-6px); }
+  #mascot.idle .wing-l, #mascot.idle .wing-r{ animation: flap 2.6s ease-in-out infinite; }
+  #mascot.idle .wing-r{ animation-delay: -1.3s; }
+  @keyframes flap{ 0%,100%{transform:rotate(0deg);} 50%{transform:rotate(-6deg);} }
+  #mascot.oops .wing-l{ transform: rotate(10deg); }
+  #mascot.oops .wing-r{ transform: rotate(-10deg); }
+  .brow{ transform-box: fill-box; transform-origin: center; transition: transform 0.3s cubic-bezier(.34,1.56,.64,1); }
+  #mascot.happy .brow-l{ transform: translateY(-3px) rotate(-8deg); }
+  #mascot.happy .brow-r{ transform: translateY(-3px) rotate(8deg); }
+  #mascot.oops .brow-l{ transform: translateY(2px) rotate(14deg); }
+  #mascot.oops .brow-r{ transform: translateY(2px) rotate(-14deg); }
+
+  #speech{
+    position:absolute; top:-4px; left:50%;
+    background:#fff; color:var(--navy); font-family:'Baloo 2', sans-serif; font-weight:700; font-size:13px;
+    padding:6px 14px; border-radius:20px; box-shadow:0 4px 0 rgba(0,0,0,0.1);
+    opacity:0; transform:translate(-50%, 6px) scale(0.9);
+    transition: all 0.3s cubic-bezier(.34,1.56,.64,1); white-space:nowrap; z-index:5;
+  }
+  #speech::after{ content:''; position:absolute; bottom:-7px; left:50%; transform:translateX(-50%); border:7px solid transparent; border-top-color:#fff; }
+  #speech.show{opacity:1; transform:translate(-50%, 0) scale(1);}
+
+  #sim-zone{ flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; position:relative; z-index:3; min-height:0; gap:10px; padding:2px 0; }
+
+  #circuit-card{
+    background:var(--cream); border-radius:22px; padding:12px;
+    box-shadow:0 8px 0 rgba(27,51,88,0.25), 0 12px 20px rgba(0,0,0,0.2);
+  }
+  #circuit-svg{ width:220px; height:150px; display:block; }
+  .switch-lever{ transform-origin: 150px 130px; transition: transform 0.4s cubic-bezier(.34,1.56,.64,1); }
+  .circuit.state-open .switch-lever{ transform: rotate(-26deg); }
+  .circuit.state-closed .switch-lever{ transform: rotate(0deg); }
+  .bulb-fill{ transition: fill 0.3s; fill:#B9C4CF; }
+  .bulb-glow{ transition: opacity 0.3s; opacity:0; }
+  .circuit.revealed.state-closed .bulb-fill{ fill:var(--sun); }
+  .circuit.revealed.state-closed .bulb-glow{ opacity:0.85; }
+
+  #question-card{
+    font-family:'Baloo 2', sans-serif; font-weight:700; color:#fff; text-shadow:0 2px 0 rgba(27,51,88,0.35);
+    font-size:15px; text-align:center; max-width:400px; padding:0 8px;
+  }
+
+  #options-row{ display:flex; gap:14px; }
+  .option-btn{
+    background:#EAF6FC; color:var(--navy); border:none;
+    font-family:'Baloo 2', sans-serif; font-weight:700; font-size:16px;
+    padding:14px 34px; border-radius:18px; cursor:pointer;
+    box-shadow:0 5px 0 #CFE7F2;
+    transition: all 0.15s cubic-bezier(.34,1.56,.64,1);
+  }
+  .option-btn:active{ transform:translateY(3px); box-shadow:0 2px 0 #CFE7F2; }
+  .option-btn.correct{ background:linear-gradient(160deg, var(--grass), var(--grass-deep)); color:#fff; box-shadow:0 5px 0 var(--grass-deep); }
+  .option-btn.wrong{ background:linear-gradient(160deg, var(--coral), #E24C4C); color:#fff; box-shadow:0 5px 0 #C23A3A; animation: shakeX 0.4s ease; }
+  .option-btn.disabled{ pointer-events:none; opacity:0.85; }
+  @keyframes shakeX{ 0%,100%{transform:translateX(0);} 25%{transform:translateX(-6px);} 75%{transform:translateX(6px);} }
+
+  #toast{
+    position:absolute; top:14px; left:50%; transform:translateX(-50%) translateY(-40px);
+    background:var(--navy); color:#fff; font-family:'Baloo 2',sans-serif; font-weight:700; font-size:14px;
+    padding:8px 18px; border-radius:30px; z-index:60; opacity:0;
+    transition: all 0.4s cubic-bezier(.34,1.56,.64,1); white-space:nowrap;
+  }
+  #toast.show{ transform:translateX(-50%) translateY(0); opacity:1; }
+
+  .confetti{ position:fixed; top:-10px; width:10px;height:10px; border-radius:2px; z-index:50; pointer-events:none; }
+
+  #win-screen{
+    position:absolute; inset:0;
+    background: radial-gradient(ellipse at top, #6FC6F0 0%, var(--sky) 55%, var(--sky-deep) 100%);
+    display:none; align-items:center; justify-content:center; flex-direction:column;
+    z-index:100; text-align:center; color:#fff; font-family:'Baloo 2', sans-serif;
+  }
+  #win-screen.show{ display:flex; }
+  #win-screen .big-emoji{ font-size:70px; animation: cheer 0.8s cubic-bezier(.34,1.56,.64,1); }
+  #win-screen h2{ font-size:26px; margin:10px 0 4px; text-shadow:0 3px 0 rgba(27,51,88,0.35); }
+  #win-screen p{ font-family:'Nunito',sans-serif; font-weight:700; opacity:0.9; margin:0 0 20px;}
+  #replay-btn, #back-btn{
+    background:var(--sun); color:var(--navy); border:none;
+    font-family:'Baloo 2',sans-serif; font-weight:700; font-size:16px;
+    padding:12px 28px; border-radius:30px; box-shadow:0 6px 0 #E0AC1F; cursor:pointer; margin:4px;
+  }
+  #replay-btn:active, #back-btn:active{ transform:translateY(4px); box-shadow:0 2px 0 #E0AC1F; }
+  #back-btn{ background:#EAF6FC; color:var(--sky-deep); box-shadow:0 6px 0 #CFE7F2; }
+  #back-btn:active{ box-shadow:0 2px 0 #CFE7F2; }
+</style>
+</head>
+<body>
+<div id="stage">
+  <header>
+    <h1>🔬 Seronok Sains</h1>
+    <p id="topik-title">Memuatkan...</p>
+  </header>
+
+  <div id="progress-wrap"></div>
+
+  <div id="mascot-zone">
+    <svg id="mascot" class="idle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <ellipse cx="50" cy="93" rx="24" ry="5" fill="rgba(27,51,88,0.2)"/>
+      <path d="M 76 58 L 94 48 L 90 64 Z" fill="#3B9FC4"/>
+      <path d="M 76 64 L 93 62 L 88 74 Z" fill="#3B9FC4"/>
+      <path d="M 40 86 L 36 92 M 40 86 L 44 91" stroke="#FF9F43" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+      <path d="M 60 86 L 56 91 M 60 86 L 64 92" stroke="#FF9F43" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+      <path class="wing wing-l" d="M 22 50 Q 4 56 10 76 Q 24 74 28 58 Z" fill="#3B9FC4"/>
+      <path class="wing wing-r" d="M 78 50 Q 96 56 90 76 Q 76 74 72 58 Z" fill="#3B9FC4"/>
+      <ellipse cx="50" cy="56" rx="28" ry="30" fill="#4FC3E0"/>
+      <ellipse cx="50" cy="64" rx="17" ry="19" fill="#FFF6EC"/>
+      <path d="M 47 22 Q 50 6 54 21" stroke="#3B9FC4" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+      <path class="brow brow-l" d="M 28 33 Q 38 28 45 33" stroke="#3B9FC4" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path class="brow brow-r" d="M 55 33 Q 62 28 72 33" stroke="#3B9FC4" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <circle cx="38" cy="48" r="13" fill="#fff"/>
+      <circle cx="62" cy="48" r="13" fill="#fff"/>
+      <circle id="pupilL" cx="40" cy="49" r="7" fill="#1B3358"/>
+      <circle id="pupilR" cx="64" cy="49" r="7" fill="#1B3358"/>
+      <circle cx="43" cy="45" r="2.2" fill="#fff"/>
+      <circle cx="67" cy="45" r="2.2" fill="#fff"/>
+      <path d="M 45 60 Q 50 55 55 60 Q 50 68 45 60 Z" fill="#FF9F43"/>
+    </svg>
+    <div id="speech"></div>
+  </div>
+
+  <div id="sim-zone">
+    <div id="circuit-card">
+      <svg id="circuit-svg" class="circuit" viewBox="0 0 240 160" xmlns="http://www.w3.org/2000/svg">
+        <!-- wire loop (with gap for switch) -->
+        <line x1="30" y1="30" x2="210" y2="30" stroke="#7A8CA3" stroke-width="6" stroke-linecap="round"/>
+        <line x1="210" y1="30" x2="210" y2="130" stroke="#7A8CA3" stroke-width="6" stroke-linecap="round"/>
+        <line x1="210" y1="130" x2="150" y2="130" stroke="#7A8CA3" stroke-width="6" stroke-linecap="round"/>
+        <line x1="90" y1="130" x2="30" y2="130" stroke="#7A8CA3" stroke-width="6" stroke-linecap="round"/>
+        <line x1="30" y1="130" x2="30" y2="30" stroke="#7A8CA3" stroke-width="6" stroke-linecap="round"/>
+
+        <!-- battery symbol (on left wire) -->
+        <line x1="16" y1="74" x2="44" y2="74" stroke="#1B3358" stroke-width="5" stroke-linecap="round"/>
+        <line x1="22" y1="86" x2="38" y2="86" stroke="#1B3358" stroke-width="9" stroke-linecap="round"/>
+
+        <!-- switch: pivot + fixed contact + lever -->
+        <circle cx="150" cy="130" r="6" fill="#5C7690"/>
+        <circle cx="90" cy="130" r="6" fill="#5C7690"/>
+        <line class="switch-lever" x1="150" y1="130" x2="90" y2="130" stroke="#1B3358" stroke-width="5" stroke-linecap="round"/>
+
+        <!-- bulb -->
+        <circle class="bulb-glow" cx="210" cy="80" r="34" fill="var(--sun)"/>
+        <circle class="bulb-fill" cx="210" cy="80" r="20" stroke="#7A8CA3" stroke-width="3"/>
+        <line x1="200" y1="70" x2="220" y2="90" stroke="#5C7690" stroke-width="2"/>
+        <line x1="220" y1="70" x2="200" y2="90" stroke="#5C7690" stroke-width="2"/>
+      </svg>
+    </div>
+    <div id="question-card">Memuatkan...</div>
+    <div id="options-row">
+      <button class="option-btn" id="btn-ya">Ya</button>
+      <button class="option-btn" id="btn-tidak">Tidak</button>
+    </div>
+  </div>
+
+  <div id="toast"></div>
+
+  <div id="win-screen">
+    <div class="big-emoji">🏆</div>
+    <h2>Hebat! Simulasi Selesai!</h2>
+    <p id="win-score">Skor: 8/8</p>
+    <div>
+      <button id="replay-btn">Main Lagi</button>
+      <button id="back-btn">Menu</button>
+    </div>
+  </div>
+</div>
+
+<script>
+const params = new URLSearchParams(location.search);
+const topikKey = params.get('topik');
+
+let rounds = [];
+let idx = 0;
+let score = 0;
+let topicData = null;
+let answered = false;
+
+const progressWrap = document.getElementById('progress-wrap');
+const mascot = document.getElementById('mascot');
+const pupilL = document.getElementById('pupilL');
+const pupilR = document.getElementById('pupilR');
+const speech = document.getElementById('speech');
+const toast = document.getElementById('toast');
+const winScreen = document.getElementById('win-screen');
+const winScore = document.getElementById('win-score');
+const topikTitle = document.getElementById('topik-title');
+const questionCard = document.getElementById('question-card');
+const circuitSvg = document.getElementById('circuit-svg');
+const btnYa = document.getElementById('btn-ya');
+const btnTidak = document.getElementById('btn-tidak');
+
+function shuffle(arr){
+  for(let i=arr.length-1;i>0;i--){
+    const j = Math.floor(Math.random()*(i+1));
+    [arr[i],arr[j]] = [arr[j],arr[i]];
+  }
+  return arr;
+}
+
+async function loadTopic(){
+  const res = await fetch('data/simulasi-mini-questions.json');
+  const bank = await res.json();
+  const keys = Object.keys(bank);
+  const key = (topikKey && bank[topikKey]) ? topikKey : keys[0];
+  topicData = bank[key];
+
+  document.title = `Seronok Sains — ${topicData.topikLabel}`;
+  topikTitle.textContent = `${topicData.topikLabel} — Tahun ${topicData.tahun}`;
+
+  const setIdx = Math.floor(Math.random() * topicData.sets.length);
+  rounds = shuffle([...topicData.sets[setIdx]]);
+  idx = 0; score = 0;
+
+  progressWrap.innerHTML = '';
+  rounds.forEach(() => {
+    const s = document.createElement('div');
+    s.className='star';
+    s.innerHTML = starSVG(false);
+    progressWrap.appendChild(s);
+  });
+
+  loadRound();
+}
+
+function starSVG(filled){
+  return `<svg viewBox="0 0 24 24"><path d="M12 1l3.2 6.9L22 9l-5 5.1L18.4 22 12 18.3 5.6 22 7 14.1 2 9l6.8-1.1z" fill="${filled? '#FFD23F':'rgba(255,255,255,0.35)'}" stroke="#fff" stroke-width="1"/></svg>`;
+}
+
+function say(text, ms=1400){
+  speech.textContent = text;
+  speech.classList.add('show');
+  clearTimeout(say._t);
+  say._t = setTimeout(()=> speech.classList.remove('show'), ms);
+}
+
+function playTone(freqs, dur=0.12, type='sine'){
+  try{
+    const ctx = playTone._ctx || (playTone._ctx = new (window.AudioContext||window.webkitAudioContext)());
+    let t = ctx.currentTime;
+    freqs.forEach((f)=>{
+      const o = ctx.createOscillator();
+      const g = ctx.createGain();
+      o.type = type;
+      o.frequency.value = f;
+      g.gain.setValueAtTime(0.0001, t);
+      g.gain.exponentialRampToValueAtTime(0.18, t+0.02);
+      g.gain.exponentialRampToValueAtTime(0.0001, t+dur);
+      o.connect(g); g.connect(ctx.destination);
+      o.start(t); o.stop(t+dur+0.02);
+      t += dur*0.55;
+    });
+  }catch(e){}
+}
+
+function confettiBurst(x,y){
+  const colors = ['#FFD23F','#4ECB71','#29ABE2','#FF6B6B','#fff'];
+  for(let i=0;i<24;i++){
+    const c = document.createElement('div');
+    c.className='confetti';
+    c.style.background = colors[Math.floor(Math.random()*colors.length)];
+    c.style.left = x+'px';
+    c.style.top = y+'px';
+    const angle = Math.random()*Math.PI*2;
+    const dist = 60 + Math.random()*120;
+    const dx = Math.cos(angle)*dist;
+    const dy = Math.sin(angle)*dist - 80;
+    const rot = Math.random()*720-360;
+    document.body.appendChild(c);
+    c.animate([
+      {transform:'translate(0,0) rotate(0deg)', opacity:1},
+      {transform:`translate(${dx}px, ${dy+220}px) rotate(${rot}deg)`, opacity:0}
+    ], {duration: 900+Math.random()*400, easing:'cubic-bezier(.2,.8,.3,1)'}).onfinish = ()=> c.remove();
+  }
+}
+
+function showToast(text){
+  toast.textContent = text;
+  toast.classList.add('show');
+  setTimeout(()=> toast.classList.remove('show'), 900);
+}
+
+function loadRound(){
+  answered = false;
+  const r = rounds[idx];
+  circuitSvg.classList.remove('state-open', 'state-closed', 'revealed');
+  circuitSvg.classList.add(`state-${r.switchState}`);
+  const stateWord = r.switchState === 'closed' ? 'TERTUTUP' : 'TERBUKA';
+  questionCard.textContent = `Suis litar ini ${stateWord}. Adakah mentol akan menyala?`;
+  btnYa.className = 'option-btn';
+  btnTidak.className = 'option-btn';
+}
+
+function handleAnswer(chosen){
+  if(answered) return;
+  answered = true;
+  const r = rounds[idx];
+  const correctAnswer = r.switchState === 'closed' ? 'Ya' : 'Tidak';
+  const isCorrect = chosen === correctAnswer;
+
+  btnYa.classList.add('disabled');
+  btnTidak.classList.add('disabled');
+  const chosenBtn = chosen === 'Ya' ? btnYa : btnTidak;
+  const correctBtn = correctAnswer === 'Ya' ? btnYa : btnTidak;
+
+  circuitSvg.classList.add('revealed');
+
+  if(isCorrect){
+    score++;
+    chosenBtn.classList.add('correct');
+    const rect = document.getElementById('circuit-card').getBoundingClientRect();
+    confettiBurst(rect.left+rect.width/2, rect.top+rect.height/2);
+    playTone([523.25, 659.25, 783.99], 0.14);
+    mascot.classList.remove('idle'); mascot.classList.add('happy');
+    pupilL.setAttribute('r','9'); pupilR.setAttribute('r','9');
+    const praises = ['Bagus!','Betul tu!','Hebat!','Pandai!','Yes!'];
+    say(praises[Math.floor(Math.random()*praises.length)]);
+    showToast('✅ Betul!');
+    const starEls = progressWrap.children;
+    starEls[score-1].innerHTML = starSVG(true);
+    starEls[score-1].classList.add('filled');
+    setTimeout(()=>{
+      mascot.classList.remove('happy'); mascot.classList.add('idle');
+      pupilL.setAttribute('r','7'); pupilR.setAttribute('r','7');
+    }, 600);
+  } else {
+    chosenBtn.classList.add('wrong');
+    correctBtn.classList.add('correct');
+    playTone([220, 196], 0.16, 'triangle');
+    mascot.classList.remove('idle'); mascot.classList.add('oops');
+    pupilL.setAttribute('r','5'); pupilR.setAttribute('r','5');
+    const hints = ['Cuba lagi!','Hampir!','Fikir sekali lagi'];
+    say(hints[Math.floor(Math.random()*hints.length)]);
+    showToast('Cuba lagi ya 💪');
+    setTimeout(()=>{
+      mascot.classList.remove('oops'); mascot.classList.add('idle');
+      pupilL.setAttribute('r','7'); pupilR.setAttribute('r','7');
+    }, 550);
+  }
+
+  idx++;
+  if(idx >= rounds.length){
+    setTimeout(showWin, 1300);
+  } else {
+    setTimeout(loadRound, 1300);
+  }
+}
+
+btnYa.addEventListener('click', ()=> handleAnswer('Ya'));
+btnTidak.addEventListener('click', ()=> handleAnswer('Tidak'));
+
+function showWin(){
+  winScore.textContent = `Skor: ${score}/${rounds.length}`;
+  winScreen.classList.add('show');
+  confettiBurst(window.innerWidth/2, window.innerHeight*0.35);
+  setTimeout(()=>confettiBurst(window.innerWidth*0.3, window.innerHeight*0.3), 200);
+  setTimeout(()=>confettiBurst(window.innerWidth*0.7, window.innerHeight*0.3), 400);
+  playTone([523.25,659.25,783.99,1046.5], 0.16);
+}
+
+document.getElementById('replay-btn').addEventListener('click', ()=>{
+  winScreen.classList.remove('show');
+  const setIdx = Math.floor(Math.random() * topicData.sets.length);
+  rounds = shuffle([...topicData.sets[setIdx]]);
+  idx = 0; score = 0;
+  [...progressWrap.children].forEach(s=> s.innerHTML = starSVG(false));
+  loadRound();
+});
+document.getElementById('back-btn').addEventListener('click', ()=>{
+  window.location.href = 'game-hub.html';
+});
+
+loadTopic();
+</script>
+</body>
+</html>
