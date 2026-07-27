@@ -44,6 +44,28 @@
   .menu-item.locked{ opacity:0.55; cursor:default; background:#F0F3F6; }
   .menu-item.locked .label{ color:#8296AC; }
 
+  .overlay{
+    display:none; position:fixed; inset:0; background:rgba(27,51,88,0.55);
+    align-items:center; justify-content:center; z-index:200; padding:16px;
+  }
+  .overlay.show{ display:flex; }
+  .modal{
+    width:100%; max-width:360px; background:var(--cream); border-radius:24px;
+    padding:22px 20px; box-shadow:0 14px 28px rgba(0,0,0,0.3); text-align:center;
+  }
+  .modal h3{ font-family:'Baloo 2', sans-serif; color:var(--navy); margin:0 0 14px; font-size:17px; }
+  .topik-choice{
+    display:block; width:100%; text-align:left; text-decoration:none;
+    background:#EAF6FC; color:var(--navy); font-family:'Baloo 2', sans-serif;
+    font-weight:700; font-size:14px; padding:14px 16px; border-radius:14px;
+    margin-bottom:10px;
+  }
+  .topik-choice:active{ background:#DCEEF7; }
+  .modal-close{
+    display:block; margin:10px auto 0; background:none; border:none;
+    color:#5C7690; font-weight:700; font-size:13px; cursor:pointer; text-decoration:underline;
+  }
+
   #btn-switch{
     display:block; margin:16px auto 0; background:none; border:none;
     color:#fff; font-weight:700; font-size:13px; text-decoration:underline; cursor:pointer;
@@ -73,11 +95,11 @@
 
   <div class="card" id="menu-card" style="display:none;">
     <div class="menu-grid">
-      <a class="menu-item" id="item-klasifikasi" href="prototypes/klasifikasi-demo-burung.html">
+      <button class="menu-item" id="item-klasifikasi" type="button" style="border:none; width:100%; font-family:inherit;">
         <span class="emoji">🗂️</span>
         <span class="label">Klasifikasi</span>
-        <span class="sub">Demo: Hidupan vs Bukan Hidupan</span>
-      </a>
+        <span class="sub">2 topik tersedia</span>
+      </button>
       <div class="menu-item locked">
         <span class="emoji">🏷️</span>
         <span class="label">Label Rajah</span>
@@ -102,6 +124,16 @@
 
   <button id="btn-switch">Tukar Profil</button>
 </div>
+
+<div class="overlay" id="overlay-topik">
+  <div class="modal">
+    <h3>Pilih Topik Klasifikasi</h3>
+    <a class="topik-choice" href="klasifikasi.html?topik=tahun1-hidupan-bukan-hidupan">🌱 Hidupan atau Bukan Hidupan?</a>
+    <a class="topik-choice" href="klasifikasi.html?topik=tahun1-keperluan-asas-hidupan">💧 Keperluan Asas atau Bukan?</a>
+    <button class="modal-close" id="topik-cancel">Batal</button>
+  </div>
+</div>
+
 <script>
   const raw = sessionStorage.getItem('ss_activeStudent');
   if(raw){
@@ -116,6 +148,14 @@
   document.getElementById('btn-switch').addEventListener('click', ()=>{
     sessionStorage.removeItem('ss_activeStudent');
     window.location.href = 'parent-login.html';
+  });
+
+  const overlayTopik = document.getElementById('overlay-topik');
+  document.getElementById('item-klasifikasi').addEventListener('click', ()=>{
+    overlayTopik.classList.add('show');
+  });
+  document.getElementById('topik-cancel').addEventListener('click', ()=>{
+    overlayTopik.classList.remove('show');
   });
 </script>
 </body>

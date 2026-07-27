@@ -1,0 +1,118 @@
+{
+  "tahun1-hidupan-bukan-hidupan": {
+    "topikLabel": "Hidupan atau Bukan Hidupan?",
+    "tahun": 1,
+    "binA": { "type": "hidupan", "label": "HIDUPAN", "emoji": "🌱" },
+    "binB": { "type": "bukan", "label": "BUKAN HIDUPAN", "emoji": "🪨" },
+    "sets": [
+      [
+        { "emoji": "🐱", "label": "Kucing", "type": "hidupan" },
+        { "emoji": "🪨", "label": "Batu", "type": "bukan" },
+        { "emoji": "🌳", "label": "Pokok", "type": "hidupan" },
+        { "emoji": "🚗", "label": "Kereta", "type": "bukan" },
+        { "emoji": "🦋", "label": "Rama-rama", "type": "hidupan" },
+        { "emoji": "🪑", "label": "Kerusi", "type": "bukan" },
+        { "emoji": "🐟", "label": "Ikan", "type": "hidupan" },
+        { "emoji": "📱", "label": "Telefon", "type": "bukan" }
+      ],
+      [
+        { "emoji": "🐔", "label": "Ayam", "type": "hidupan" },
+        { "emoji": "🧱", "label": "Bata", "type": "bukan" },
+        { "emoji": "🌻", "label": "Bunga Matahari", "type": "hidupan" },
+        { "emoji": "⚽", "label": "Bola", "type": "bukan" },
+        { "emoji": "🐝", "label": "Lebah", "type": "hidupan" },
+        { "emoji": "📚", "label": "Buku", "type": "bukan" },
+        { "emoji": "🐸", "label": "Katak", "type": "hidupan" },
+        { "emoji": "🔑", "label": "Kunci", "type": "bukan" }
+      ],
+      [
+        { "emoji": "🐦", "label": "Burung", "type": "hidupan" },
+        { "emoji": "⏰", "label": "Jam", "type": "bukan" },
+        { "emoji": "🌾", "label": "Padi", "type": "hidupan" },
+        { "emoji": "🚲", "label": "Basikal", "type": "bukan" },
+        { "emoji": "🐛", "label": "Ulat", "type": "hidupan" },
+        { "emoji": "🖊️", "label": "Pen", "type": "bukan" },
+        { "emoji": "🐢", "label": "Kura-kura", "type": "hidupan" },
+        { "emoji": "🎈", "label": "Belon", "type": "bukan" }
+      ],
+      [
+        { "emoji": "🐘", "label": "Gajah", "type": "hidupan" },
+        { "emoji": "🪞", "label": "Cermin", "type": "bukan" },
+        { "emoji": "🌴", "label": "Pokok Kelapa", "type": "hidupan" },
+        { "emoji": "📺", "label": "Televisyen", "type": "bukan" },
+        { "emoji": "🐞", "label": "Kumbang", "type": "hidupan" },
+        { "emoji": "🥄", "label": "Sudu", "type": "bukan" },
+        { "emoji": "🐄", "label": "Lembu", "type": "hidupan" },
+        { "emoji": "🧸", "label": "Patung Boneka", "type": "bukan" }
+      ],
+      [
+        { "emoji": "🐐", "label": "Kambing", "type": "hidupan" },
+        { "emoji": "🕰️", "label": "Jam Dinding", "type": "bukan" },
+        { "emoji": "🌱", "label": "Anak Pokok", "type": "hidupan" },
+        { "emoji": "🚪", "label": "Pintu", "type": "bukan" },
+        { "emoji": "🦗", "label": "Cengkerik", "type": "hidupan" },
+        { "emoji": "🎒", "label": "Beg Sekolah", "type": "bukan" },
+        { "emoji": "🐑", "label": "Biri-biri", "type": "hidupan" },
+        { "emoji": "🖼️", "label": "Gambar Bingkai", "type": "bukan" }
+      ]
+    ]
+  },
+  "tahun1-keperluan-asas-hidupan": {
+    "topikLabel": "Keperluan Asas atau Bukan?",
+    "tahun": 1,
+    "binA": { "type": "keperluan", "label": "KEPERLUAN ASAS", "emoji": "💧" },
+    "binB": { "type": "bukan", "label": "BUKAN KEPERLUAN", "emoji": "🎮" },
+    "sets": [
+      [
+        { "emoji": "💧", "label": "Air", "type": "keperluan" },
+        { "emoji": "🎮", "label": "Permainan Video", "type": "bukan" },
+        { "emoji": "🍚", "label": "Nasi", "type": "keperluan" },
+        { "emoji": "💰", "label": "Wang", "type": "bukan" },
+        { "emoji": "☀️", "label": "Cahaya Matahari", "type": "keperluan" },
+        { "emoji": "📺", "label": "Televisyen", "type": "bukan" },
+        { "emoji": "🏠", "label": "Tempat Tinggal", "type": "keperluan" },
+        { "emoji": "🍬", "label": "Gula-gula", "type": "bukan" }
+      ],
+      [
+        { "emoji": "🌬️", "label": "Udara", "type": "keperluan" },
+        { "emoji": "🎁", "label": "Hadiah", "type": "bukan" },
+        { "emoji": "🍎", "label": "Buah-buahan", "type": "keperluan" },
+        { "emoji": "💎", "label": "Berlian", "type": "bukan" },
+        { "emoji": "🛌", "label": "Tempat Berteduh", "type": "keperluan" },
+        { "emoji": "📱", "label": "Telefon", "type": "bukan" },
+        { "emoji": "🥛", "label": "Susu", "type": "keperluan" },
+        { "emoji": "🎈", "label": "Belon", "type": "bukan" }
+      ],
+      [
+        { "emoji": "🥕", "label": "Sayur", "type": "keperluan" },
+        { "emoji": "🚲", "label": "Basikal", "type": "bukan" },
+        { "emoji": "🌤️", "label": "Cahaya", "type": "keperluan" },
+        { "emoji": "🕹️", "label": "Joystick", "type": "bukan" },
+        { "emoji": "🏡", "label": "Rumah", "type": "keperluan" },
+        { "emoji": "🍭", "label": "Gula-gula Lolipop", "type": "bukan" },
+        { "emoji": "🍇", "label": "Anggur", "type": "keperluan" },
+        { "emoji": "👛", "label": "Beg Tangan", "type": "bukan" }
+      ],
+      [
+        { "emoji": "🐟", "label": "Ikan", "type": "keperluan" },
+        { "emoji": "📷", "label": "Kamera", "type": "bukan" },
+        { "emoji": "🧃", "label": "Air Kotak", "type": "keperluan" },
+        { "emoji": "💻", "label": "Komputer Riba", "type": "bukan" },
+        { "emoji": "🛖", "label": "Pondok", "type": "keperluan" },
+        { "emoji": "🎧", "label": "Fon Kepala", "type": "bukan" },
+        { "emoji": "☀️", "label": "Matahari", "type": "keperluan" },
+        { "emoji": "🧦", "label": "Stoking Comel", "type": "bukan" }
+      ],
+      [
+        { "emoji": "🥦", "label": "Brokoli", "type": "keperluan" },
+        { "emoji": "🚙", "label": "Kereta Mainan", "type": "bukan" },
+        { "emoji": "🚰", "label": "Air Paip", "type": "keperluan" },
+        { "emoji": "🎨", "label": "Set Melukis", "type": "bukan" },
+        { "emoji": "⛺", "label": "Khemah", "type": "keperluan" },
+        { "emoji": "💿", "label": "Cakera Muzik", "type": "bukan" },
+        { "emoji": "🌅", "label": "Sinar Matahari", "type": "keperluan" },
+        { "emoji": "🧩", "label": "Teka-teki", "type": "bukan" }
+      ]
+    ]
+  }
+}
