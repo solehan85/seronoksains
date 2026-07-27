@@ -1,0 +1,36 @@
+rules_version = '2';
+
+// Seronok Sains — draft security rules for the shared `seronoknyabahasa` project.
+//
+// KNOWN LIMITATION: this codebase's login (students AND parents) does not use
+// Firebase Authentication — it's a plain Firestore read + client-side SHA-256
+// PIN-hash comparison, matching the existing Fun Math / Seronoknya Bahasa /
+// student-login pattern. Firestore rules have no `request.auth` to check
+// against, so they cannot enforce "only this parent can read this student".
+// The PIN hash is a soft gate enforced by the app UI, not the database.
+// Anyone with the client SDK config can read/write these collections.
+// This mirrors the existing sibling products' security model — it is not a
+// new gap introduced here. If this ever needs to be hardened, the fix is
+// Firebase Auth (anonymous or custom token) issuing a real request.auth.uid,
+// not a rules-only patch.
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    match /parents/{parentId} {
+      allow read, write: if true;
+    }
+
+    match /students/{studentId} {
+      allow read, write: if true;
+    }
+
+    // Question bank is app content, not user data — clients only ever read it.
+    // Writes should come from a trusted admin/import script (Firebase CLI,
+    // Admin SDK), never from the game client.
+    match /science_questions/{tahun}/{topik}/{set}/{soalan} {
+      allow read: if true;
+      allow write: if false;
+    }
+  }
+}

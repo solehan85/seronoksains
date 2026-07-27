@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Seronok Sains — Log Masuk Ibu Bapa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --sky:#29ABE2;
+    --sky-deep:#1E8FC4;
+    --sun:#FFD23F;
+    --grass:#4ECB71;
+    --grass-deep:#33A857;
+    --coral:#FF6B6B;
+    --navy:#1B3358;
+    --cream:#FFFFFF;
+    --shadow: rgba(27,51,88,0.25);
+  }
+  *{box-sizing:border-box; -webkit-tap-highlight-color: transparent;}
+  html,body{height:100%;}
+  body{
+    margin:0;
+    font-family:'Nunito', sans-serif;
+    background: radial-gradient(ellipse at top, #6FC6F0 0%, var(--sky) 55%, var(--sky-deep) 100%);
+    min-height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:16px;
+  }
+  #app-shell{
+    width:100%;
+    max-width:440px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+  }
+  header{ text-align:center; color:#fff; margin-bottom:4px; }
+  header h1{
+    font-family:'Baloo 2', sans-serif;
+    font-weight:800;
+    font-size:24px;
+    margin:0;
+    text-shadow:0 3px 0 rgba(27,51,88,0.35);
+  }
+  header p{ margin:2px 0 0; font-weight:700; font-size:13px; opacity:0.9; }
+
+  #offline-banner{
+    display:none;
+    background:rgba(27,51,88,0.85);
+    color:#fff;
+    font-weight:700;
+    font-size:12px;
+    padding:6px 14px;
+    border-radius:20px;
+    margin:8px 0;
+  }
+  #offline-banner.show{ display:block; }
+
+  #mascot-zone{
+    position:relative;
+    height:110px;
+    display:flex;
+    align-items:flex-end;
+    justify-content:center;
+    margin:4px 0 2px;
+  }
+  #mascot{
+    width:92px; height:92px;
+    filter: drop-shadow(0 6px 6px rgba(0,0,0,0.2));
+    transform-box: fill-box; transform-origin:center;
+    transition: transform 0.35s cubic-bezier(.34,1.56,.64,1);
+  }
+  #mascot.idle{ animation: bob 2.6s ease-in-out infinite; }
+  @keyframes bob{ 0%,100%{transform:translateY(0) rotate(-2deg);} 50%{transform:translateY(-8px) rotate(2deg);} }
+  #mascot.happy{ animation: cheer 0.6s cubic-bezier(.34,1.56,.64,1); }
+  @keyframes cheer{
+    0%{transform:scale(1) rotate(0);}
+    30%{transform:scale(1.25) rotate(-8deg) translateY(-14px);}
+    55%{transform:scale(1.1) rotate(8deg) translateY(-6px);}
+    100%{transform:scale(1) rotate(0);}
+  }
+  #mascot.oops{ animation: sad 0.55s ease-in-out; }
+  @keyframes sad{
+    0%,100%{transform:translateY(0) rotate(0);}
+    30%{transform:translateY(4px) rotate(-6deg);}
+    60%{transform:translateY(4px) rotate(6deg);}
+  }
+  .wing{ transform-box: fill-box; transform-origin: top center; transition: transform 0.3s cubic-bezier(.34,1.56,.64,1); }
+  #mascot.happy .wing-l{ transform: rotate(-55deg) translateY(-6px); }
+  #mascot.happy .wing-r{ transform: rotate(55deg) translateY(-6px); }
+  #mascot.idle .wing-l, #mascot.idle .wing-r{ animation: flap 2.6s ease-in-out infinite; }
+  #mascot.idle .wing-r{ animation-delay: -1.3s; }
+  @keyframes flap{ 0%,100%{transform:rotate(0deg);} 50%{transform:rotate(-6deg);} }
+  #mascot.oops .wing-l{ transform: rotate(10deg); }
+  #mascot.oops .wing-r{ transform: rotate(-10deg); }
+  .brow{ transform-box: fill-box; transform-origin: center; transition: transform 0.3s cubic-bezier(.34,1.56,.64,1); }
+  #mascot.happy .brow-l{ transform: translateY(-3px) rotate(-8deg); }
+  #mascot.happy .brow-r{ transform: translateY(-3px) rotate(8deg); }
+  #mascot.oops .brow-l{ transform: translateY(2px) rotate(14deg); }
+  #mascot.oops .brow-r{ transform: translateY(2px) rotate(-14deg); }
+
+  #speech{
+    position:absolute;
+    top:-4px; left:50%;
+    background:#fff; color:var(--navy);
+    font-family:'Baloo 2', sans-serif; font-weight:700; font-size:13px;
+    padding:6px 14px; border-radius:20px;
+    box-shadow:0 4px 0 rgba(0,0,0,0.1);
+    opacity:0;
+    transform:translate(-50%, 6px) scale(0.9);
+    transition: all 0.3s cubic-bezier(.34,1.56,.64,1);
+    white-space:nowrap;
+    z-index:5;
+  }
+  #speech::after{
+    content:''; position:absolute; bottom:-7px; left:50%;
+    transform:translateX(-50%);
+    border:7px solid transparent; border-top-color:#fff;
+  }
+  #speech.show{opacity:1; transform:translate(-50%, 0) scale(1);}
+
+  .card{
+    width:100%;
+    background:var(--cream);
+    border-radius:26px;
+    padding:22px 20px 20px;
+    box-shadow:0 10px 0 rgba(27,51,88,0.25), 0 14px 28px rgba(0,0,0,0.2);
+  }
+
+  .tabs{ display:flex; gap:8px; margin-bottom:16px; }
+  .tab-btn{
+    flex:1; border:none; background:#EAF6FC; color:var(--sky-deep);
+    font-family:'Baloo 2', sans-serif; font-weight:700; font-size:14px;
+    padding:10px 0; border-radius:14px; cursor:pointer;
+    transition: all 0.2s;
+  }
+  .tab-btn.active{ background:var(--sky); color:#fff; }
+
+  .view{ display:none; }
+  .view.show{ display:block; }
+
+  label{ display:block; font-weight:700; font-size:13px; color:var(--navy); margin:12px 0 4px; }
+  label:first-of-type{ margin-top:0; }
+  input[type=text], input[type=tel], input[type=password], input[type=number], select{
+    width:100%; font-family:'Nunito', sans-serif; font-weight:700; font-size:15px;
+    color:var(--navy);
+    border:2.5px solid #DCEAF2; background:#F7FBFD;
+    border-radius:14px; padding:11px 14px;
+    outline:none;
+    transition: border-color 0.2s;
+  }
+  input:focus, select:focus{ border-color:var(--sky); }
+
+  .pin-toggle{ display:flex; align-items:center; gap:8px; margin:14px 0 4px; }
+  .pin-toggle input{ width:20px; height:20px; accent-color:var(--sky); }
+  .pin-toggle span{ font-weight:700; font-size:13px; color:var(--navy); }
+
+  .btn{
+    width:100%;
+    font-family:'Baloo 2', sans-serif; font-weight:700; font-size:16px;
+    color:#fff; background:var(--sky); border:none;
+    padding:13px 0; border-radius:16px; margin-top:16px;
+    box-shadow:0 5px 0 var(--sky-deep);
+    cursor:pointer;
+    transition: transform 0.05s;
+  }
+  .btn:active{ transform:translateY(4px); box-shadow:0 1px 0 var(--sky-deep); }
+  .btn.secondary{ background:#EAF6FC; color:var(--sky-deep); box-shadow:0 5px 0 #CFE7F2; }
+  .btn.ghost{ background:transparent; color:var(--navy); box-shadow:none; text-decoration:underline; font-family:'Nunito',sans-serif; font-weight:700; font-size:13px; margin-top:8px; }
+
+  .error-msg{
+    color:var(--coral); font-weight:700; font-size:13px; margin-top:10px;
+    display:none;
+  }
+  .error-msg.show{ display:block; }
+
+  .divider{ border:none; border-top:2px dashed #E4EEF3; margin:18px 0; }
+
+  /* dashboard */
+  #dash-greeting{
+    font-family:'Baloo 2', sans-serif; font-weight:800; font-size:19px; color:var(--navy);
+    margin:0 0 14px;
+  }
+  #child-grid{
+    display:grid; grid-template-columns:1fr 1fr; gap:12px;
+  }
+  .child-card{
+    position:relative;
+    background:linear-gradient(160deg, #EAF6FC, #DCEEF7);
+    border-radius:20px; padding:16px 10px 12px;
+    text-align:center; cursor:pointer;
+    border:3px solid transparent;
+    transition: all 0.2s cubic-bezier(.34,1.56,.64,1);
+  }
+  .child-card:active{ transform:scale(0.96); }
+  .child-avatar{
+    width:56px; height:56px; border-radius:50%;
+    background:var(--sun);
+    display:flex; align-items:center; justify-content:center;
+    font-family:'Baloo 2', sans-serif; font-weight:800; font-size:20px; color:var(--navy);
+    margin:0 auto 8px;
+    box-shadow:0 4px 0 rgba(0,0,0,0.12);
+  }
+  .child-name{ font-family:'Baloo 2', sans-serif; font-weight:700; font-size:14px; color:var(--navy); }
+  .child-meta{ font-size:11px; font-weight:700; color:#5C7690; margin-top:2px; }
+  .child-lock{ position:absolute; top:8px; right:10px; font-size:14px; }
+  .child-gear{
+    position:absolute; top:6px; left:8px; font-size:14px;
+    background:none; border:none; cursor:pointer; opacity:0.55;
+    padding:2px;
+  }
+  .child-card.add{
+    background:transparent; border:3px dashed #B9D9E8;
+    display:flex; align-items:center; justify-content:center;
+    min-height:96px;
+  }
+  .child-card.add span{ font-family:'Baloo 2', sans-serif; font-weight:700; color:var(--sky-deep); font-size:13px; }
+
+  /* modal overlay */
+  .overlay{
+    display:none;
+    position:fixed; inset:0; background:rgba(27,51,88,0.55);
+    align-items:center; justify-content:center; z-index:200; padding:16px;
+  }
+  .overlay.show{ display:flex; }
+  .modal{
+    width:100%; max-width:360px; background:var(--cream); border-radius:24px;
+    padding:22px 20px; box-shadow:0 14px 28px rgba(0,0,0,0.3);
+  }
+  .modal h3{ font-family:'Baloo 2', sans-serif; color:var(--navy); margin:0 0 6px; font-size:17px; text-align:center; }
+  .modal p.sub{ text-align:center; font-size:12px; color:#5C7690; font-weight:700; margin:0 0 14px; }
+
+  .pin-dots{ display:flex; justify-content:center; gap:14px; margin:14px 0 18px; }
+  .pin-dot{
+    width:16px; height:16px; border-radius:50%; border:2.5px solid var(--sky);
+    background:transparent; transition: all 0.15s cubic-bezier(.34,1.56,.64,1);
+  }
+  .pin-dot.filled{ background:var(--sky); transform:scale(1.15); }
+  .pin-dots.shake{ animation: shakeX 0.4s ease; }
+  @keyframes shakeX{
+    0%,100%{transform:translateX(0);}
+    25%{transform:translateX(-8px);}
+    75%{transform:translateX(8px);}
+  }
+  .keypad{ display:grid; grid-template-columns:repeat(3,1fr); gap:10px; }
+  .key-btn{
+    font-family:'Baloo 2', sans-serif; font-weight:700; font-size:19px; color:var(--navy);
+    background:#F0F8FC; border:none; border-radius:14px; padding:14px 0; cursor:pointer;
+  }
+  .key-btn:active{ background:#DCEEF7; }
+  .key-btn.wide{ font-size:13px; color:var(--sky-deep); }
+
+  .modal-close{
+    display:block; margin:12px auto 0; background:none; border:none;
+    color:#5C7690; font-weight:700; font-size:13px; cursor:pointer; text-decoration:underline;
+  }
+</style>
+</head>
+<body>
+<div id="app-shell">
+  <header>
+    <h1>🔬 Seronok Sains</h1>
+    <p>Ruang Ibu Bapa</p>
+  </header>
+  <div id="offline-banner">📴 Mod Demo (Offline) — data disimpan pada peranti ini sahaja</div>
+
+  <div id="mascot-zone">
+    <svg id="mascot" class="idle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <ellipse cx="50" cy="93" rx="24" ry="5" fill="rgba(27,51,88,0.2)"/>
+      <path d="M 76 58 L 94 48 L 90 64 Z" fill="#3B9FC4"/>
+      <path d="M 76 64 L 93 62 L 88 74 Z" fill="#3B9FC4"/>
+      <path d="M 40 86 L 36 92 M 40 86 L 44 91" stroke="#FF9F43" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+      <path d="M 60 86 L 56 91 M 60 86 L 64 92" stroke="#FF9F43" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+      <path class="wing wing-l" d="M 22 50 Q 4 56 10 76 Q 24 74 28 58 Z" fill="#3B9FC4"/>
+      <path class="wing wing-r" d="M 78 50 Q 96 56 90 76 Q 76 74 72 58 Z" fill="#3B9FC4"/>
+      <ellipse cx="50" cy="56" rx="28" ry="30" fill="#4FC3E0"/>
+      <ellipse cx="50" cy="64" rx="17" ry="19" fill="#FFF6EC"/>
+      <path d="M 47 22 Q 50 6 54 21" stroke="#3B9FC4" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+      <path class="brow brow-l" d="M 28 33 Q 38 28 45 33" stroke="#3B9FC4" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path class="brow brow-r" d="M 55 33 Q 62 28 72 33" stroke="#3B9FC4" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <circle cx="38" cy="48" r="13" fill="#fff"/>
+      <circle cx="62" cy="48" r="13" fill="#fff"/>
+      <circle id="pupilL" cx="40" cy="49" r="7" fill="#1B3358"/>
+      <circle id="pupilR" cx="64" cy="49" r="7" fill="#1B3358"/>
+      <circle cx="43" cy="45" r="2.2" fill="#fff"/>
+      <circle cx="67" cy="45" r="2.2" fill="#fff"/>
+      <path d="M 45 60 Q 50 55 55 60 Q 50 68 45 60 Z" fill="#FF9F43"/>
+    </svg>
+    <div id="speech"></div>
+  </div>
+
+  <div class="card">
+
+    <!-- AUTH VIEW -->
+    <div id="view-auth" class="view show">
+      <div class="tabs">
+        <button class="tab-btn active" id="tab-login">Log Masuk</button>
+        <button class="tab-btn" id="tab-register">Daftar Akaun</button>
+      </div>
+
+      <form id="form-login">
+        <label for="login-key">Emel atau No. Telefon</label>
+        <input type="text" id="login-key" autocomplete="username" placeholder="cth: mama@email.com">
+        <label for="login-pin">PIN (4 digit)</label>
+        <input type="password" id="login-pin" inputmode="numeric" maxlength="4" placeholder="••••">
+        <div class="error-msg" id="login-error"></div>
+        <button type="submit" class="btn">Log Masuk</button>
+      </form>
+
+      <form id="form-register" style="display:none;">
+        <label for="reg-nama">Nama Ibu Bapa</label>
+        <input type="text" id="reg-nama" placeholder="cth: Puan Aisyah">
+        <label for="reg-key">Emel atau No. Telefon</label>
+        <input type="text" id="reg-key" autocomplete="username" placeholder="cth: mama@email.com">
+        <label for="reg-pin">Cipta PIN (4 digit)</label>
+        <input type="password" id="reg-pin" inputmode="numeric" maxlength="4" placeholder="••••">
+        <label for="reg-pin2">Sahkan PIN</label>
+        <input type="password" id="reg-pin2" inputmode="numeric" maxlength="4" placeholder="••••">
+
+        <hr class="divider">
+        <p class="sub" style="margin:-8px 0 10px;">Tambah anak pertama</p>
+
+        <label for="reg-child-nama">Nama Anak</label>
+        <input type="text" id="reg-child-nama" placeholder="cth: Ali">
+        <label for="reg-child-tahun">Tahun</label>
+        <select id="reg-child-tahun">
+          <option value="1">Tahun 1</option>
+          <option value="2">Tahun 2</option>
+          <option value="3">Tahun 3</option>
+          <option value="4">Tahun 4</option>
+          <option value="5">Tahun 5</option>
+          <option value="6">Tahun 6</option>
+        </select>
+        <label for="reg-child-kelas">Kelas</label>
+        <input type="text" id="reg-child-kelas" placeholder="cth: 3 Cerdik">
+
+        <div class="pin-toggle">
+          <input type="checkbox" id="reg-child-pinreq" checked>
+          <span>Perlukan PIN setiap kali anak pilih profil</span>
+        </div>
+        <div id="reg-child-pin-wrap">
+          <label for="reg-child-pin">PIN Anak (4 digit)</label>
+          <input type="password" id="reg-child-pin" inputmode="numeric" maxlength="4" placeholder="••••">
+        </div>
+
+        <div class="error-msg" id="register-error"></div>
+        <button type="submit" class="btn">Daftar & Log Masuk</button>
+      </form>
+    </div>
+
+    <!-- DASHBOARD VIEW -->
+    <div id="view-dashboard" class="view">
+      <p id="dash-greeting">Hai!</p>
+      <div id="child-grid"></div>
+      <button class="btn ghost" id="btn-logout">Log Keluar</button>
+    </div>
+
+  </div>
+</div>
+
+<!-- PIN PAD MODAL (child login) -->
+<div class="overlay" id="overlay-pinpad">
+  <div class="modal">
+    <h3 id="pinpad-name">Masukkan PIN</h3>
+    <p class="sub">Tanya ibu bapa jika terlupa</p>
+    <div class="pin-dots" id="pinpad-dots">
+      <div class="pin-dot"></div><div class="pin-dot"></div><div class="pin-dot"></div><div class="pin-dot"></div>
+    </div>
+    <div class="keypad" id="pinpad-keys">
+      <button class="key-btn" data-k="1">1</button><button class="key-btn" data-k="2">2</button><button class="key-btn" data-k="3">3</button>
+      <button class="key-btn" data-k="4">4</button><button class="key-btn" data-k="5">5</button><button class="key-btn" data-k="6">6</button>
+      <button class="key-btn" data-k="7">7</button><button class="key-btn" data-k="8">8</button><button class="key-btn" data-k="9">9</button>
+      <button class="key-btn wide" data-k="clear">Padam</button><button class="key-btn" data-k="0">0</button><button class="key-btn wide" data-k="back">⌫</button>
+    </div>
+    <button class="modal-close" id="pinpad-cancel">Batal</button>
+  </div>
+</div>
+
+<!-- PIN TOGGLE MODAL (from dashboard gear) -->
+<div class="overlay" id="overlay-pintoggle">
+  <div class="modal">
+    <h3 id="pintoggle-title"></h3>
+    <p class="sub" id="pintoggle-sub"></p>
+    <div id="pintoggle-body"></div>
+    <div class="error-msg" id="pintoggle-error"></div>
+    <button class="btn" id="pintoggle-confirm">Sahkan</button>
+    <button class="modal-close" id="pintoggle-cancel">Batal</button>
+  </div>
+</div>
+
+<!-- ADD CHILD MODAL (from dashboard) -->
+<div class="overlay" id="overlay-addchild">
+  <div class="modal">
+    <h3>Tambah Anak</h3>
+    <form id="form-addchild">
+      <label for="add-child-nama">Nama Anak</label>
+      <input type="text" id="add-child-nama" placeholder="cth: Ali">
+      <label for="add-child-tahun">Tahun</label>
+      <select id="add-child-tahun">
+        <option value="1">Tahun 1</option><option value="2">Tahun 2</option><option value="3">Tahun 3</option>
+        <option value="4">Tahun 4</option><option value="5">Tahun 5</option><option value="6">Tahun 6</option>
+      </select>
+      <label for="add-child-kelas">Kelas</label>
+      <input type="text" id="add-child-kelas" placeholder="cth: 3 Cerdik">
+      <div class="pin-toggle">
+        <input type="checkbox" id="add-child-pinreq" checked>
+        <span>Perlukan PIN setiap kali pilih profil</span>
+      </div>
+      <div id="add-child-pin-wrap">
+        <label for="add-child-pin">PIN Anak (4 digit)</label>
+        <input type="password" id="add-child-pin" inputmode="numeric" maxlength="4" placeholder="••••">
+      </div>
+      <div class="error-msg" id="addchild-error"></div>
+      <button type="submit" class="btn">Simpan</button>
+    </form>
+    <button class="modal-close" id="addchild-cancel">Batal</button>
+  </div>
+</div>
+
+<script type="module">
+/* =====================================================================
+   FIREBASE CONFIG — GANTI dengan config projek "seronoknyabahasa" sebenar
+   (Firebase Console > Project settings > General > Your apps > SDK config)
+   Selagi apiKey masih "REPLACE_ME", app akan jalan dalam Mod Demo (Offline)
+   guna localStorage — berguna untuk dev/test tanpa credential sebenar.
+   ===================================================================== */
+const FIREBASE_CONFIG = {
+  apiKey: "REPLACE_ME",
+  authDomain: "seronoknyabahasa.firebaseapp.com",
+  projectId: "seronoknyabahasa",
+  storageBucket: "seronoknyabahasa.appspot.com",
+  messagingSenderId: "REPLACE_ME",
+  appId: "REPLACE_ME"
+};
+
+/* ---------- DB layer: Firestore online, localStorage offline fallback ---------- */
+const DB = { offline: true, _fs: null, _mod: null };
+
+function loadOfflineStore(){
+  try{ return JSON.parse(localStorage.getItem('ss_offline_db')) || {parents:{}, students:{}}; }
+  catch(e){ return {parents:{}, students:{}}; }
+}
+function saveOfflineStore(store){
+  localStorage.setItem('ss_offline_db', JSON.stringify(store));
+}
+
+async function initDB(){
+  if(FIREBASE_CONFIG.apiKey === "REPLACE_ME"){
+    DB.offline = true;
+    return;
+  }
+  try{
+    const appMod = await import('https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js');
+    const fsMod = await import('https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js');
+    const app = appMod.initializeApp(FIREBASE_CONFIG);
+    DB._fs = fsMod.getFirestore(app);
+    DB._mod = fsMod;
+    DB.offline = false;
+  }catch(e){
+    console.warn('Firebase tidak dapat disambung, guna Mod Demo (Offline):', e);
+    DB.offline = true;
+  }
+}
+
+async function dbGetParent(id){
+  if(DB.offline){
+    const store = loadOfflineStore();
+    return store.parents[id] || null;
+  }
+  const { doc, getDoc } = DB._mod;
+  const snap = await getDoc(doc(DB._fs, 'parents', id));
+  return snap.exists() ? snap.data() : null;
+}
+async function dbSetParent(id, data){
+  if(DB.offline){
+    const store = loadOfflineStore();
+    store.parents[id] = { ...(store.parents[id]||{}), ...data };
+    saveOfflineStore(store);
+    return;
+  }
+  const { doc, setDoc } = DB._mod;
+  await setDoc(doc(DB._fs, 'parents', id), data, { merge:true });
+}
+async function dbGetStudent(id){
+  if(DB.offline){
+    const store = loadOfflineStore();
+    return store.students[id] || null;
+  }
+  const { doc, getDoc } = DB._mod;
+  const snap = await getDoc(doc(DB._fs, 'students', id));
+  return snap.exists() ? snap.data() : null;
+}
+async function dbSetStudent(id, data){
+  if(DB.offline){
+    const store = loadOfflineStore();
+    store.students[id] = { ...(store.students[id]||{}), ...data };
+    saveOfflineStore(store);
+    return;
+  }
+  const { doc, setDoc } = DB._mod;
+  await setDoc(doc(DB._fs, 'students', id), data, { merge:true });
+}
+
+/* ---------- helpers ---------- */
+async function sha256Hex(str){
+  const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(str));
+  return [...new Uint8Array(buf)].map(b => b.toString(16).padStart(2,'0')).join('');
+}
+function normalizeKey(v){
+  v = (v||'').trim();
+  if(v.includes('@')) return v.toLowerCase();
+  return v.replace(/\D/g,'');
+}
+function newStudentId(){
+  return 'stu_' + (crypto.randomUUID ? crypto.randomUUID() : Date.now()+'_'+Math.random().toString(36).slice(2));
+}
+
+/* ---------- mascot + speech ---------- */
+const mascot = document.getElementById('mascot');
+const speech = document.getElementById('speech');
+function say(text, ms=1600){
+  speech.textContent = text;
+  speech.classList.add('show');
+  clearTimeout(say._t);
+  say._t = setTimeout(()=> speech.classList.remove('show'), ms);
+}
+function mascotHappy(){
+  mascot.classList.remove('idle','oops'); mascot.classList.add('happy');
+  setTimeout(()=>{ mascot.classList.remove('happy'); mascot.classList.add('idle'); }, 650);
+}
+function mascotOops(){
+  mascot.classList.remove('idle','happy'); mascot.classList.add('oops');
+  setTimeout(()=>{ mascot.classList.remove('oops'); mascot.classList.add('idle'); }, 600);
+}
+
+/* ---------- view switching ---------- */
+const viewAuth = document.getElementById('view-auth');
+const viewDash = document.getElementById('view-dashboard');
+function showView(view){
+  [viewAuth, viewDash].forEach(v => v.classList.remove('show'));
+  view.classList.add('show');
+}
+
+/* ---------- tabs ---------- */
+const tabLogin = document.getElementById('tab-login');
+const tabRegister = document.getElementById('tab-register');
+const formLogin = document.getElementById('form-login');
+const formRegister = document.getElementById('form-register');
+tabLogin.addEventListener('click', ()=>{
+  tabLogin.classList.add('active'); tabRegister.classList.remove('active');
+  formLogin.style.display=''; formRegister.style.display='none';
+});
+tabRegister.addEventListener('click', ()=>{
+  tabRegister.classList.add('active'); tabLogin.classList.remove('active');
+  formRegister.style.display=''; formLogin.style.display='none';
+});
+
+const regChildPinReq = document.getElementById('reg-child-pinreq');
+const regChildPinWrap = document.getElementById('reg-child-pin-wrap');
+regChildPinReq.addEventListener('change', ()=>{
+  regChildPinWrap.style.display = regChildPinReq.checked ? '' : 'none';
+});
+const addChildPinReq = document.getElementById('add-child-pinreq');
+const addChildPinWrap = document.getElementById('add-child-pin-wrap');
+addChildPinReq.addEventListener('change', ()=>{
+  addChildPinWrap.style.display = addChildPinReq.checked ? '' : 'none';
+});
+
+/* ---------- session ---------- */
+let currentParent = null; // { id, namaParent, emailOrPhone, pinHash, children: [] }
+
+/* ---------- login ---------- */
+const loginError = document.getElementById('login-error');
+formLogin.addEventListener('submit', async (e)=>{
+  e.preventDefault();
+  loginError.classList.remove('show');
+  const key = normalizeKey(document.getElementById('login-key').value);
+  const pin = document.getElementById('login-pin').value;
+  if(!key || !/^\d{4}$/.test(pin)){
+    loginError.textContent = 'Sila isi emel/telefon dan PIN 4 digit.';
+    loginError.classList.add('show');
+    return;
+  }
+  const parent = await dbGetParent(key);
+  if(!parent){
+    mascotOops(); say('Akaun tak jumpa');
+    loginError.textContent = 'Akaun tidak dijumpai. Sila daftar dahulu.';
+    loginError.classList.add('show');
+    return;
+  }
+  const hash = await sha256Hex(pin);
+  if(hash !== parent.pinHash){
+    mascotOops(); say('PIN salah!');
+    loginError.textContent = 'PIN salah. Cuba lagi.';
+    loginError.classList.add('show');
+    return;
+  }
+  mascotHappy(); say('Selamat kembali!');
+  currentParent = { id:key, ...parent };
+  await renderDashboard();
+});
+
+/* ---------- register ---------- */
+const registerError = document.getElementById('register-error');
+formRegister.addEventListener('submit', async (e)=>{
+  e.preventDefault();
+  registerError.classList.remove('show');
+
+  const namaParent = document.getElementById('reg-nama').value.trim();
+  const rawKey = document.getElementById('reg-key').value;
+  const key = normalizeKey(rawKey);
+  const pin = document.getElementById('reg-pin').value;
+  const pin2 = document.getElementById('reg-pin2').value;
+  const childNama = document.getElementById('reg-child-nama').value.trim();
+  const childTahun = Number(document.getElementById('reg-child-tahun').value);
+  const childKelas = document.getElementById('reg-child-kelas').value.trim();
+  const childPinReq = regChildPinReq.checked;
+  const childPin = document.getElementById('reg-child-pin').value;
+
+  if(!namaParent || !key || !childNama || !childKelas){
+    registerError.textContent = 'Sila lengkapkan semua ruangan.';
+    registerError.classList.add('show'); return;
+  }
+  if(!/^\d{4}$/.test(pin) || pin !== pin2){
+    registerError.textContent = 'PIN mesti 4 digit dan sepadan.';
+    registerError.classList.add('show'); return;
+  }
+  if(childPinReq && !/^\d{4}$/.test(childPin)){
+    registerError.textContent = 'PIN anak mesti 4 digit.';
+    registerError.classList.add('show'); return;
+  }
+  const existing = await dbGetParent(key);
+  if(existing){
+    registerError.textContent = 'Akaun ini sudah wujud. Sila log masuk.';
+    registerError.classList.add('show'); return;
+  }
+
+  const pinHash = await sha256Hex(pin);
+  const studentId = newStudentId();
+  const childPinHash = childPinReq ? await sha256Hex(childPin) : '';
+
+  await dbSetStudent(studentId, {
+    namaAnak: childNama, tahun: childTahun, kelas: childKelas,
+    pinHash: childPinHash, pinRequired: childPinReq, parentId: key
+  });
+  await dbSetParent(key, {
+    namaParent, emailOrPhone: rawKey.trim(), pinHash, children: [studentId]
+  });
+
+  mascotHappy(); say('Akaun dicipta!');
+  currentParent = { id:key, namaParent, emailOrPhone: rawKey.trim(), pinHash, children:[studentId] };
+  await renderDashboard();
+});
+
+/* ---------- dashboard ---------- */
+const dashGreeting = document.getElementById('dash-greeting');
+const childGrid = document.getElementById('child-grid');
+
+async function renderDashboard(){
+  showView(viewDash);
+  dashGreeting.textContent = `Hai, ${currentParent.namaParent}! 👋`;
+  childGrid.innerHTML = '';
+  const childIds = currentParent.children || [];
+  for(const sid of childIds){
+    const student = await dbGetStudent(sid);
+    if(!student) continue;
+    const card = document.createElement('div');
+    card.className = 'child-card';
+    const initial = (student.namaAnak||'?').trim().charAt(0).toUpperCase();
+    card.innerHTML = `
+      <button class="child-gear" data-sid="${sid}" title="Tetapan PIN">⚙️</button>
+      ${student.pinRequired ? '<span class="child-lock">🔒</span>' : ''}
+      <div class="child-avatar">${initial}</div>
+      <div class="child-name">${student.namaAnak}</div>
+      <div class="child-meta">Tahun ${student.tahun} · ${student.kelas}</div>
+    `;
+    card.addEventListener('click', (ev)=>{
+      if(ev.target.closest('.child-gear')) return;
+      selectChild(sid, student);
+    });
+    card.querySelector('.child-gear').addEventListener('click', ()=> openPinToggle(sid, student));
+    childGrid.appendChild(card);
+  }
+  const addCard = document.createElement('div');
+  addCard.className = 'child-card add';
+  addCard.innerHTML = '<span>+ Tambah Anak</span>';
+  addCard.addEventListener('click', ()=> openAddChild());
+  childGrid.appendChild(addCard);
+}
+
+const overlayPinToggle = document.getElementById('overlay-pintoggle');
+const pinToggleTitle = document.getElementById('pintoggle-title');
+const pinToggleSub = document.getElementById('pintoggle-sub');
+const pinToggleBody = document.getElementById('pintoggle-body');
+const pinToggleError = document.getElementById('pintoggle-error');
+let pinToggleTarget = null;
+
+function openPinToggle(sid, student){
+  pinToggleTarget = { sid, student };
+  pinToggleError.classList.remove('show');
+  if(student.pinRequired){
+    pinToggleTitle.textContent = `Matikan PIN ${student.namaAnak}?`;
+    pinToggleSub.textContent = 'Anak boleh pilih profil ini tanpa PIN selepas ini.';
+    pinToggleBody.innerHTML = '';
+  } else {
+    pinToggleTitle.textContent = `Cipta PIN untuk ${student.namaAnak}`;
+    pinToggleSub.textContent = 'PIN diperlukan setiap kali pilih profil ini.';
+    pinToggleBody.innerHTML = `
+      <label for="pintoggle-pin1">PIN Baharu (4 digit)</label>
+      <input type="password" id="pintoggle-pin1" inputmode="numeric" maxlength="4" placeholder="••••">
+      <label for="pintoggle-pin2">Sahkan PIN</label>
+      <input type="password" id="pintoggle-pin2" inputmode="numeric" maxlength="4" placeholder="••••">
+    `;
+  }
+  overlayPinToggle.classList.add('show');
+}
+
+document.getElementById('pintoggle-cancel').addEventListener('click', ()=>{
+  overlayPinToggle.classList.remove('show');
+  pinToggleTarget = null;
+});
+
+document.getElementById('pintoggle-confirm').addEventListener('click', async ()=>{
+  if(!pinToggleTarget) return;
+  const { sid, student } = pinToggleTarget;
+  if(student.pinRequired){
+    await dbSetStudent(sid, { pinRequired:false });
+  } else {
+    const p1 = document.getElementById('pintoggle-pin1').value;
+    const p2 = document.getElementById('pintoggle-pin2').value;
+    if(!/^\d{4}$/.test(p1) || p1 !== p2){
+      pinToggleError.textContent = 'PIN mesti 4 digit dan sepadan.';
+      pinToggleError.classList.add('show');
+      return;
+    }
+    const hash = await sha256Hex(p1);
+    await dbSetStudent(sid, { pinRequired:true, pinHash:hash });
+  }
+  overlayPinToggle.classList.remove('show');
+  pinToggleTarget = null;
+  await renderDashboard();
+});
+
+document.getElementById('btn-logout').addEventListener('click', ()=>{
+  currentParent = null;
+  formLogin.reset(); formRegister.reset();
+  showView(viewAuth);
+});
+
+/* ---------- select child / pin pad ---------- */
+const overlayPinpad = document.getElementById('overlay-pinpad');
+const pinpadName = document.getElementById('pinpad-name');
+const pinpadDots = document.getElementById('pinpad-dots');
+const pinpadKeys = document.getElementById('pinpad-keys');
+let pinpadBuffer = '';
+let pinpadTargetStudent = null;
+
+function renderPinDots(){
+  [...pinpadDots.children].forEach((dot,i)=> dot.classList.toggle('filled', i < pinpadBuffer.length));
+}
+
+function selectChild(sid, student){
+  if(!student.pinRequired){
+    goToGameHub(sid, student);
+    return;
+  }
+  pinpadTargetStudent = { sid, student };
+  pinpadBuffer = '';
+  pinpadName.textContent = `PIN ${student.namaAnak}`;
+  renderPinDots();
+  overlayPinpad.classList.add('show');
+}
+
+pinpadKeys.addEventListener('click', async (e)=>{
+  const btn = e.target.closest('.key-btn');
+  if(!btn) return;
+  const k = btn.dataset.k;
+  if(k === 'clear'){ pinpadBuffer=''; renderPinDots(); return; }
+  if(k === 'back'){ pinpadBuffer = pinpadBuffer.slice(0,-1); renderPinDots(); return; }
+  if(pinpadBuffer.length >= 4) return;
+  pinpadBuffer += k;
+  renderPinDots();
+  if(pinpadBuffer.length === 4){
+    const hash = await sha256Hex(pinpadBuffer);
+    const { sid, student } = pinpadTargetStudent;
+    if(hash === student.pinHash){
+      overlayPinpad.classList.remove('show');
+      goToGameHub(sid, student);
+    } else {
+      pinpadDots.classList.add('shake');
+      setTimeout(()=> pinpadDots.classList.remove('shake'), 400);
+      setTimeout(()=>{ pinpadBuffer=''; renderPinDots(); }, 350);
+    }
+  }
+});
+document.getElementById('pinpad-cancel').addEventListener('click', ()=>{
+  overlayPinpad.classList.remove('show');
+  pinpadTargetStudent = null; pinpadBuffer='';
+});
+
+function goToGameHub(sid, student){
+  sessionStorage.setItem('ss_activeStudent', JSON.stringify({
+    id: sid, namaAnak: student.namaAnak, tahun: student.tahun, kelas: student.kelas
+  }));
+  window.location.href = 'game-hub.html';
+}
+
+/* ---------- add child modal ---------- */
+const overlayAddChild = document.getElementById('overlay-addchild');
+const formAddChild = document.getElementById('form-addchild');
+const addChildError = document.getElementById('addchild-error');
+
+function openAddChild(){
+  formAddChild.reset();
+  addChildPinWrap.style.display = '';
+  addChildError.classList.remove('show');
+  overlayAddChild.classList.add('show');
+}
+document.getElementById('addchild-cancel').addEventListener('click', ()=>{
+  overlayAddChild.classList.remove('show');
+});
+
+formAddChild.addEventListener('submit', async (e)=>{
+  e.preventDefault();
+  addChildError.classList.remove('show');
+  const nama = document.getElementById('add-child-nama').value.trim();
+  const tahun = Number(document.getElementById('add-child-tahun').value);
+  const kelas = document.getElementById('add-child-kelas').value.trim();
+  const pinReq = addChildPinReq.checked;
+  const pin = document.getElementById('add-child-pin').value;
+
+  if(!nama || !kelas){
+    addChildError.textContent = 'Sila lengkapkan semua ruangan.';
+    addChildError.classList.add('show'); return;
+  }
+  if(pinReq && !/^\d{4}$/.test(pin)){
+    addChildError.textContent = 'PIN mesti 4 digit.';
+    addChildError.classList.add('show'); return;
+  }
+
+  const sid = newStudentId();
+  const pinHash = pinReq ? await sha256Hex(pin) : '';
+  await dbSetStudent(sid, {
+    namaAnak: nama, tahun, kelas, pinHash, pinRequired: pinReq, parentId: currentParent.id
+  });
+  currentParent.children = [...(currentParent.children||[]), sid];
+  await dbSetParent(currentParent.id, { children: currentParent.children });
+
+  overlayAddChild.classList.remove('show');
+  mascotHappy(); say(`${nama} ditambah!`);
+  await renderDashboard();
+});
+
+/* ---------- boot ---------- */
+(async function boot(){
+  await initDB();
+  document.getElementById('offline-banner').classList.toggle('show', DB.offline);
+})();
+</script>
+</body>
+</html>
