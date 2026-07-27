@@ -2,6 +2,7 @@
   "tahun4-litar-lengkap-terbuka": {
     "topikLabel": "Litar Lengkap atau Terbuka?",
     "tahun": 4,
+    "diagramType": "litar",
     "sets": [
       [
         { "switchState": "closed" }, { "switchState": "open" }, { "switchState": "closed" }, { "switchState": "open" },
@@ -22,6 +23,33 @@
       [
         { "switchState": "closed" }, { "switchState": "open" }, { "switchState": "closed" }, { "switchState": "closed" },
         { "switchState": "open" }, { "switchState": "open" }, { "switchState": "closed" }, { "switchState": "open" }
+      ]
+    ]
+  },
+  "tahun5-kitaran-air": {
+    "topikLabel": "Kitaran Air: Adakah Ia Akan Menyejat?",
+    "tahun": 5,
+    "diagramType": "kitaran-air",
+    "sets": [
+      [
+        { "sunActive": true }, { "sunActive": false }, { "sunActive": true }, { "sunActive": false },
+        { "sunActive": true }, { "sunActive": false }, { "sunActive": true }, { "sunActive": false }
+      ],
+      [
+        { "sunActive": false }, { "sunActive": true }, { "sunActive": false }, { "sunActive": true },
+        { "sunActive": false }, { "sunActive": true }, { "sunActive": false }, { "sunActive": true }
+      ],
+      [
+        { "sunActive": true }, { "sunActive": true }, { "sunActive": false }, { "sunActive": false },
+        { "sunActive": true }, { "sunActive": false }, { "sunActive": true }, { "sunActive": false }
+      ],
+      [
+        { "sunActive": false }, { "sunActive": false }, { "sunActive": true }, { "sunActive": true },
+        { "sunActive": false }, { "sunActive": true }, { "sunActive": false }, { "sunActive": true }
+      ],
+      [
+        { "sunActive": true }, { "sunActive": false }, { "sunActive": true }, { "sunActive": true },
+        { "sunActive": false }, { "sunActive": false }, { "sunActive": true }, { "sunActive": false }
       ]
     ]
   }

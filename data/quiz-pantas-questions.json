@@ -54,5 +54,285 @@
         { "soalan": "Apakah organ deria untuk menghidu bau?", "pilihan": ["Hidung", "Mata", "Telinga", "Lidah"], "jawapan": "Hidung" }
       ]
     ]
+  },
+  "tahun2-kuiz-am": {
+    "topikLabel": "Kuiz Pantas Sains Am",
+    "tahun": 2,
+    "sets": [
+      [
+        { "soalan": "Batu adalah bahan yang?", "pilihan": ["Keras", "Lembut", "Cair", "Gas"], "jawapan": "Keras" },
+        { "soalan": "Matahari adalah?", "pilihan": ["Sumber Cahaya", "Bukan Sumber Cahaya", "Bukan Hidupan", "Cecair"], "jawapan": "Sumber Cahaya" },
+        { "soalan": "Apakah amalan sihat?", "pilihan": ["Makan Sayur", "Makan Gula-gula Berlebihan", "Tidur Lewat Malam", "Malas Bersenam"], "jawapan": "Makan Sayur" },
+        { "soalan": "Kapas adalah bahan yang?", "pilihan": ["Lembut", "Keras", "Cair", "Gas"], "jawapan": "Lembut" },
+        { "soalan": "Lilin yang menyala adalah?", "pilihan": ["Sumber Cahaya", "Bukan Sumber Cahaya", "Bukan Hidupan", "Pepejal"], "jawapan": "Sumber Cahaya" },
+        { "soalan": "Apakah amalan tidak sihat?", "pilihan": ["Makan Makanan Berminyak Berlebihan", "Minum Air", "Bersenam", "Gosok Gigi"], "jawapan": "Makan Makanan Berminyak Berlebihan" },
+        { "soalan": "Span adalah bahan yang?", "pilihan": ["Lembut", "Keras", "Panas", "Sejuk"], "jawapan": "Lembut" },
+        { "soalan": "Buku adalah?", "pilihan": ["Bukan Sumber Cahaya", "Sumber Cahaya", "Hidupan", "Cecair"], "jawapan": "Bukan Sumber Cahaya" }
+      ],
+      [
+        { "soalan": "Besi adalah bahan yang?", "pilihan": ["Keras", "Lembut", "Cair", "Gas"], "jawapan": "Keras" },
+        { "soalan": "Lampu suluh yang dipasang adalah?", "pilihan": ["Sumber Cahaya", "Bukan Sumber Cahaya", "Bukan Hidupan", "Cecair"], "jawapan": "Sumber Cahaya" },
+        { "soalan": "Apakah amalan sihat?", "pilihan": ["Gosok Gigi", "Makan Gula-gula Berlebihan", "Duduk Lama", "Tidur Lewat Malam"], "jawapan": "Gosok Gigi" },
+        { "soalan": "Bantal adalah bahan yang?", "pilihan": ["Lembut", "Keras", "Cair", "Gas"], "jawapan": "Lembut" },
+        { "soalan": "Bulan tidak menghasilkan cahaya sendiri, ia adalah?", "pilihan": ["Bukan Sumber Cahaya", "Sumber Cahaya", "Hidupan", "Gas"], "jawapan": "Bukan Sumber Cahaya" },
+        { "soalan": "Apakah amalan tidak sihat?", "pilihan": ["Main Telefon Lewat Malam", "Minum Air", "Bersenam", "Gosok Gigi"], "jawapan": "Main Telefon Lewat Malam" },
+        { "soalan": "Kayu balak adalah bahan yang?", "pilihan": ["Keras", "Lembut", "Cair", "Gas"], "jawapan": "Keras" },
+        { "soalan": "Apakah yang membantu kita nampak dalam gelap?", "pilihan": ["Lampu Suluh", "Buku", "Kerusi", "Meja"], "jawapan": "Lampu Suluh" }
+      ],
+      [
+        { "soalan": "Bulu ayam adalah bahan yang?", "pilihan": ["Lembut", "Keras", "Cair", "Gas"], "jawapan": "Lembut" },
+        { "soalan": "Api unggun adalah?", "pilihan": ["Sumber Cahaya", "Bukan Sumber Cahaya", "Bukan Hidupan", "Cecair"], "jawapan": "Sumber Cahaya" },
+        { "soalan": "Apakah amalan sihat?", "pilihan": ["Minum Air Kosong", "Makan Gula-gula Berlebihan", "Duduk Lama", "Tidur Lewat Malam"], "jawapan": "Minum Air Kosong" },
+        { "soalan": "Simen adalah bahan yang?", "pilihan": ["Keras", "Lembut", "Cair", "Gas"], "jawapan": "Keras" },
+        { "soalan": "Cermin memantulkan cahaya, ia adalah?", "pilihan": ["Bukan Sumber Cahaya", "Sumber Cahaya", "Hidupan", "Gas"], "jawapan": "Bukan Sumber Cahaya" },
+        { "soalan": "Apakah amalan tidak sihat?", "pilihan": ["Tonton TV Berjam-jam", "Minum Air", "Bersenam", "Gosok Gigi"], "jawapan": "Tonton TV Berjam-jam" },
+        { "soalan": "Selimut adalah bahan yang?", "pilihan": ["Lembut", "Keras", "Cair", "Gas"], "jawapan": "Lembut" },
+        { "soalan": "Apakah yang menghasilkan cahaya sendiri?", "pilihan": ["Matahari", "Bulan", "Cermin", "Buku"], "jawapan": "Matahari" }
+      ],
+      [
+        { "soalan": "Bata adalah bahan yang?", "pilihan": ["Keras", "Lembut", "Cair", "Gas"], "jawapan": "Keras" },
+        { "soalan": "Bintang di langit malam adalah?", "pilihan": ["Sumber Cahaya", "Bukan Sumber Cahaya", "Bukan Hidupan", "Cecair"], "jawapan": "Sumber Cahaya" },
+        { "soalan": "Apakah amalan sihat?", "pilihan": ["Bersenam", "Makan Gula-gula Berlebihan", "Duduk Lama", "Tidur Lewat Malam"], "jawapan": "Bersenam" },
+        { "soalan": "Tuala adalah bahan yang?", "pilihan": ["Lembut", "Keras", "Cair", "Gas"], "jawapan": "Lembut" },
+        { "soalan": "Apakah amalan tidak sihat?", "pilihan": ["Ketagihan Permainan Video", "Minum Air", "Bersenam", "Gosok Gigi"], "jawapan": "Ketagihan Permainan Video" },
+        { "soalan": "Batu kerikil adalah bahan yang?", "pilihan": ["Keras", "Lembut", "Cair", "Gas"], "jawapan": "Keras" },
+        { "soalan": "Boneka kain adalah bahan yang?", "pilihan": ["Lembut", "Keras", "Cair", "Gas"], "jawapan": "Lembut" },
+        { "soalan": "Lampu meja yang menyala adalah?", "pilihan": ["Sumber Cahaya", "Bukan Sumber Cahaya", "Bukan Hidupan", "Cecair"], "jawapan": "Sumber Cahaya" }
+      ],
+      [
+        { "soalan": "Tin logam adalah bahan yang?", "pilihan": ["Keras", "Lembut", "Cair", "Gas"], "jawapan": "Keras" },
+        { "soalan": "Apakah amalan sihat?", "pilihan": ["Tidur Awal", "Makan Gula-gula Berlebihan", "Duduk Lama", "Ketagihan Permainan"], "jawapan": "Tidur Awal" },
+        { "soalan": "Kusyen sofa adalah bahan yang?", "pilihan": ["Lembut", "Keras", "Cair", "Gas"], "jawapan": "Lembut" },
+        { "soalan": "Tanglung yang menyala adalah?", "pilihan": ["Sumber Cahaya", "Bukan Sumber Cahaya", "Bukan Hidupan", "Cecair"], "jawapan": "Sumber Cahaya" },
+        { "soalan": "Apakah amalan tidak sihat?", "pilihan": ["Snek Berlebihan", "Minum Air", "Bersenam", "Gosok Gigi"], "jawapan": "Snek Berlebihan" },
+        { "soalan": "Batang kayu adalah bahan yang?", "pilihan": ["Keras", "Lembut", "Cair", "Gas"], "jawapan": "Keras" },
+        { "soalan": "Stoking adalah bahan yang?", "pilihan": ["Lembut", "Keras", "Cair", "Gas"], "jawapan": "Lembut" },
+        { "soalan": "Meja kayu adalah?", "pilihan": ["Bukan Sumber Cahaya", "Sumber Cahaya", "Hidupan", "Cecair"], "jawapan": "Bukan Sumber Cahaya" }
+      ]
+    ]
+  },
+  "tahun3-kuiz-am": {
+    "topikLabel": "Kuiz Pantas Sains Am",
+    "tahun": 3,
+    "sets": [
+      [
+        { "soalan": "Ikan mempunyai tulang belakang, ia adalah?", "pilihan": ["Vertebrat", "Invertebrat", "Pepejal", "Cecair"], "jawapan": "Vertebrat" },
+        { "soalan": "Batu adalah?", "pilihan": ["Pepejal", "Cecair", "Vertebrat", "Invertebrat"], "jawapan": "Pepejal" },
+        { "soalan": "Matahari kelihatan pada waktu?", "pilihan": ["Siang", "Malam", "Petang Gelap", "Subuh Gelap"], "jawapan": "Siang" },
+        { "soalan": "Loceng yang berbunyi adalah?", "pilihan": ["Sumber Bunyi", "Bukan Sumber Bunyi", "Pepejal", "Cecair"], "jawapan": "Sumber Bunyi" },
+        { "soalan": "Siput tiada tulang belakang, ia adalah?", "pilihan": ["Invertebrat", "Vertebrat", "Pepejal", "Cecair"], "jawapan": "Invertebrat" },
+        { "soalan": "Air adalah?", "pilihan": ["Cecair", "Pepejal", "Vertebrat", "Invertebrat"], "jawapan": "Cecair" },
+        { "soalan": "Bintang kelihatan pada waktu?", "pilihan": ["Malam", "Siang", "Tengahari", "Petang Terik"], "jawapan": "Malam" },
+        { "soalan": "Buku adalah?", "pilihan": ["Bukan Sumber Bunyi", "Sumber Bunyi", "Pepejal Bercahaya", "Cecair"], "jawapan": "Bukan Sumber Bunyi" }
+      ],
+      [
+        { "soalan": "Labah-labah tiada tulang belakang, ia adalah?", "pilihan": ["Invertebrat", "Vertebrat", "Pepejal", "Cecair"], "jawapan": "Invertebrat" },
+        { "soalan": "Susu adalah?", "pilihan": ["Cecair", "Pepejal", "Vertebrat", "Invertebrat"], "jawapan": "Cecair" },
+        { "soalan": "Kita bersekolah pada waktu?", "pilihan": ["Siang", "Malam", "Tengah Malam", "Subuh Gelap"], "jawapan": "Siang" },
+        { "soalan": "Gendang yang dipalu adalah?", "pilihan": ["Sumber Bunyi", "Bukan Sumber Bunyi", "Pepejal", "Cecair"], "jawapan": "Sumber Bunyi" },
+        { "soalan": "Burung mempunyai tulang belakang, ia adalah?", "pilihan": ["Vertebrat", "Invertebrat", "Pepejal", "Cecair"], "jawapan": "Vertebrat" },
+        { "soalan": "Kayu adalah?", "pilihan": ["Pepejal", "Cecair", "Vertebrat", "Invertebrat"], "jawapan": "Pepejal" },
+        { "soalan": "Kita tidur pada waktu?", "pilihan": ["Malam", "Siang", "Tengahari", "Petang Terik"], "jawapan": "Malam" },
+        { "soalan": "Kerusi adalah?", "pilihan": ["Bukan Sumber Bunyi", "Sumber Bunyi", "Cecair", "Vertebrat"], "jawapan": "Bukan Sumber Bunyi" }
+      ],
+      [
+        { "soalan": "Kucing mempunyai tulang belakang, ia adalah?", "pilihan": ["Vertebrat", "Invertebrat", "Pepejal", "Cecair"], "jawapan": "Vertebrat" },
+        { "soalan": "Minyak masak adalah?", "pilihan": ["Cecair", "Pepejal", "Vertebrat", "Invertebrat"], "jawapan": "Cecair" },
+        { "soalan": "Ayam berkokok pada waktu?", "pilihan": ["Siang", "Malam", "Tengah Malam", "Subuh Gelap"], "jawapan": "Siang" },
+        { "soalan": "Anjing yang menyalak adalah?", "pilihan": ["Sumber Bunyi", "Bukan Sumber Bunyi", "Pepejal", "Cecair"], "jawapan": "Sumber Bunyi" },
+        { "soalan": "Ulat tiada tulang belakang, ia adalah?", "pilihan": ["Invertebrat", "Vertebrat", "Pepejal", "Cecair"], "jawapan": "Invertebrat" },
+        { "soalan": "Bata adalah?", "pilihan": ["Pepejal", "Cecair", "Vertebrat", "Invertebrat"], "jawapan": "Pepejal" },
+        { "soalan": "Burung hantu aktif pada waktu?", "pilihan": ["Malam", "Siang", "Tengahari", "Petang Terik"], "jawapan": "Malam" },
+        { "soalan": "Patung adalah?", "pilihan": ["Bukan Sumber Bunyi", "Sumber Bunyi", "Cecair", "Vertebrat"], "jawapan": "Bukan Sumber Bunyi" }
+      ],
+      [
+        { "soalan": "Katak mempunyai tulang belakang, ia adalah?", "pilihan": ["Vertebrat", "Invertebrat", "Pepejal", "Cecair"], "jawapan": "Vertebrat" },
+        { "soalan": "Jus buah adalah?", "pilihan": ["Cecair", "Pepejal", "Vertebrat", "Invertebrat"], "jawapan": "Cecair" },
+        { "soalan": "Kita bermain di padang pada waktu?", "pilihan": ["Siang", "Malam", "Tengah Malam", "Subuh Gelap"], "jawapan": "Siang" },
+        { "soalan": "Trompet yang ditiup adalah?", "pilihan": ["Sumber Bunyi", "Bukan Sumber Bunyi", "Pepejal", "Cecair"], "jawapan": "Sumber Bunyi" },
+        { "soalan": "Ketam tiada tulang belakang, ia adalah?", "pilihan": ["Invertebrat", "Vertebrat", "Pepejal", "Cecair"], "jawapan": "Invertebrat" },
+        { "soalan": "Besi adalah?", "pilihan": ["Pepejal", "Cecair", "Vertebrat", "Invertebrat"], "jawapan": "Pepejal" },
+        { "soalan": "Bulan kelihatan pada waktu?", "pilihan": ["Malam", "Siang", "Tengahari", "Petang Terik"], "jawapan": "Malam" },
+        { "soalan": "Sudu adalah?", "pilihan": ["Bukan Sumber Bunyi", "Sumber Bunyi", "Cecair", "Vertebrat"], "jawapan": "Bukan Sumber Bunyi" }
+      ],
+      [
+        { "soalan": "Kura-kura mempunyai tulang belakang, ia adalah?", "pilihan": ["Vertebrat", "Invertebrat", "Pepejal", "Cecair"], "jawapan": "Vertebrat" },
+        { "soalan": "Madu adalah?", "pilihan": ["Cecair", "Pepejal", "Vertebrat", "Invertebrat"], "jawapan": "Cecair" },
+        { "soalan": "Sarapan pagi dimakan pada waktu?", "pilihan": ["Siang", "Malam", "Tengah Malam", "Subuh Gelap"], "jawapan": "Siang" },
+        { "soalan": "Hon kereta yang dibunyikan adalah?", "pilihan": ["Sumber Bunyi", "Bukan Sumber Bunyi", "Pepejal", "Cecair"], "jawapan": "Sumber Bunyi" },
+        { "soalan": "Rama-rama tiada tulang belakang, ia adalah?", "pilihan": ["Invertebrat", "Vertebrat", "Pepejal", "Cecair"], "jawapan": "Invertebrat" },
+        { "soalan": "Ais adalah?", "pilihan": ["Pepejal", "Cecair", "Vertebrat", "Invertebrat"], "jawapan": "Pepejal" },
+        { "soalan": "Kita menyalakan lampu pada waktu?", "pilihan": ["Malam", "Siang", "Tengahari", "Petang Terik"], "jawapan": "Malam" },
+        { "soalan": "Tingkap adalah?", "pilihan": ["Bukan Sumber Bunyi", "Sumber Bunyi", "Cecair", "Vertebrat"], "jawapan": "Bukan Sumber Bunyi" }
+      ]
+    ]
+  },
+  "tahun4-kuiz-am": {
+    "topikLabel": "Kuiz Pantas Sains Am",
+    "tahun": 4,
+    "sets": [
+      [
+        { "soalan": "Tumbuhan menghasilkan makanan sendiri, ia adalah?", "pilihan": ["Pengeluar", "Pengguna", "Konduktor", "Penebat"], "jawapan": "Pengeluar" },
+        { "soalan": "Sudu besi cepat panas, ia adalah?", "pilihan": ["Konduktor Haba", "Penebat Haba", "Pengeluar", "Pengguna"], "jawapan": "Konduktor Haba" },
+        { "soalan": "Kunci logam boleh mengalirkan elektrik, ia adalah?", "pilihan": ["Konduktor Elektrik", "Penebat Elektrik", "Pengeluar", "Pengguna"], "jawapan": "Konduktor Elektrik" },
+        { "soalan": "Menolak troli adalah contoh daya?", "pilihan": ["Tolak", "Tarik", "Geseran", "Graviti"], "jawapan": "Tolak" },
+        { "soalan": "Organ yang mengawal badan adalah?", "pilihan": ["Otak", "Jantung", "Perut", "Paru-Paru"], "jawapan": "Otak" },
+        { "soalan": "Jika suis litar tertutup, lampu akan?", "pilihan": ["Menyala", "Tidak Menyala", "Meletup", "Terbakar"], "jawapan": "Menyala" },
+        { "soalan": "Singa memakan haiwan lain, ia adalah?", "pilihan": ["Pengguna", "Pengeluar", "Konduktor", "Penebat"], "jawapan": "Pengguna" },
+        { "soalan": "Kayu tidak cepat panas, ia adalah?", "pilihan": ["Penebat Haba", "Konduktor Haba", "Pengeluar", "Pengguna"], "jawapan": "Penebat Haba" }
+      ],
+      [
+        { "soalan": "Rumput menghasilkan makanan sendiri, ia adalah?", "pilihan": ["Pengeluar", "Pengguna", "Konduktor", "Penebat"], "jawapan": "Pengeluar" },
+        { "soalan": "Sarung tangan getah tidak mengalirkan elektrik, ia adalah?", "pilihan": ["Penebat Elektrik", "Konduktor Elektrik", "Pengeluar", "Pengguna"], "jawapan": "Penebat Elektrik" },
+        { "soalan": "Menarik tali loceng adalah contoh daya?", "pilihan": ["Tarik", "Tolak", "Geseran", "Graviti"], "jawapan": "Tarik" },
+        { "soalan": "Organ yang mengepam darah adalah?", "pilihan": ["Jantung", "Otak", "Perut", "Paru-Paru"], "jawapan": "Jantung" },
+        { "soalan": "Jika suis litar terbuka, lampu akan?", "pilihan": ["Tidak Menyala", "Menyala", "Meletup", "Terbakar"], "jawapan": "Tidak Menyala" },
+        { "soalan": "Arnab memakan tumbuhan, ia adalah?", "pilihan": ["Pengguna", "Pengeluar", "Konduktor", "Penebat"], "jawapan": "Pengguna" },
+        { "soalan": "Kaca tidak mengalirkan elektrik, ia adalah?", "pilihan": ["Penebat Elektrik", "Konduktor Elektrik", "Pengeluar", "Pengguna"], "jawapan": "Penebat Elektrik" },
+        { "soalan": "Sudu aluminium cepat panas, ia adalah?", "pilihan": ["Konduktor Haba", "Penebat Haba", "Pengeluar", "Pengguna"], "jawapan": "Konduktor Haba" }
+      ],
+      [
+        { "soalan": "Pokok besar menghasilkan makanan sendiri, ia adalah?", "pilihan": ["Pengeluar", "Pengguna", "Konduktor", "Penebat"], "jawapan": "Pengeluar" },
+        { "soalan": "Organ yang membantu kita bernafas adalah?", "pilihan": ["Paru-Paru", "Otak", "Jantung", "Perut"], "jawapan": "Paru-Paru" },
+        { "soalan": "Membuka pintu dengan menariknya adalah contoh daya?", "pilihan": ["Tarik", "Tolak", "Geseran", "Graviti"], "jawapan": "Tarik" },
+        { "soalan": "Kain tidak cepat panas, ia adalah?", "pilihan": ["Penebat Haba", "Konduktor Haba", "Pengeluar", "Pengguna"], "jawapan": "Penebat Haba" },
+        { "soalan": "Lembu memakan rumput, ia adalah?", "pilihan": ["Pengguna", "Pengeluar", "Konduktor", "Penebat"], "jawapan": "Pengguna" },
+        { "soalan": "Organ yang mencerna makanan adalah?", "pilihan": ["Perut", "Otak", "Jantung", "Paru-Paru"], "jawapan": "Perut" },
+        { "soalan": "Skru besi mengalirkan elektrik, ia adalah?", "pilihan": ["Konduktor Elektrik", "Penebat Elektrik", "Pengeluar", "Pengguna"], "jawapan": "Konduktor Elektrik" },
+        { "soalan": "Menolak kerusi masuk ke meja adalah contoh daya?", "pilihan": ["Tolak", "Tarik", "Geseran", "Graviti"], "jawapan": "Tolak" }
+      ],
+      [
+        { "soalan": "Bunga menghasilkan makanan sendiri, ia adalah?", "pilihan": ["Pengeluar", "Pengguna", "Konduktor", "Penebat"], "jawapan": "Pengeluar" },
+        { "soalan": "Belon getah tidak mengalirkan elektrik, ia adalah?", "pilihan": ["Penebat Elektrik", "Konduktor Elektrik", "Pengeluar", "Pengguna"], "jawapan": "Penebat Elektrik" },
+        { "soalan": "Menarik anjing dengan tali adalah contoh daya?", "pilihan": ["Tarik", "Tolak", "Geseran", "Graviti"], "jawapan": "Tarik" },
+        { "soalan": "Otak terletak di bahagian badan?", "pilihan": ["Kepala", "Badan", "Tangan", "Kaki"], "jawapan": "Kepala" },
+        { "soalan": "Helang memburu haiwan lain, ia adalah?", "pilihan": ["Pengguna", "Pengeluar", "Konduktor", "Penebat"], "jawapan": "Pengguna" },
+        { "soalan": "Selendang bulu tidak cepat panas, ia adalah?", "pilihan": ["Penebat Haba", "Konduktor Haba", "Pengeluar", "Pengguna"], "jawapan": "Penebat Haba" },
+        { "soalan": "Litar yang lengkap membenarkan?", "pilihan": ["Arus Elektrik Mengalir", "Air Mengalir", "Udara Masuk", "Cahaya Terhenti"], "jawapan": "Arus Elektrik Mengalir" },
+        { "soalan": "Kuali besi cepat panas, ia adalah?", "pilihan": ["Konduktor Haba", "Penebat Haba", "Pengeluar", "Pengguna"], "jawapan": "Konduktor Haba" }
+      ],
+      [
+        { "soalan": "Padi menghasilkan makanan sendiri, ia adalah?", "pilihan": ["Pengeluar", "Pengguna", "Konduktor", "Penebat"], "jawapan": "Pengeluar" },
+        { "soalan": "Beruang memakan haiwan lain, ia adalah?", "pilihan": ["Pengguna", "Pengeluar", "Konduktor", "Penebat"], "jawapan": "Pengguna" },
+        { "soalan": "Menolak bola adalah contoh daya?", "pilihan": ["Tolak", "Tarik", "Geseran", "Graviti"], "jawapan": "Tolak" },
+        { "soalan": "Jantung terletak di bahagian badan?", "pilihan": ["Badan", "Kepala", "Kaki", "Tangan"], "jawapan": "Badan" },
+        { "soalan": "Kertas tidak mengalirkan elektrik, ia adalah?", "pilihan": ["Penebat Elektrik", "Konduktor Elektrik", "Pengeluar", "Pengguna"], "jawapan": "Penebat Elektrik" },
+        { "soalan": "Tin logam mengalirkan elektrik, ia adalah?", "pilihan": ["Konduktor Elektrik", "Penebat Elektrik", "Pengeluar", "Pengguna"], "jawapan": "Konduktor Elektrik" },
+        { "soalan": "Suis litar berfungsi untuk?", "pilihan": ["Membuka atau Menutup Litar", "Mengecas Bateri", "Menukar Warna Lampu", "Membesarkan Litar"], "jawapan": "Membuka atau Menutup Litar" },
+        { "soalan": "Sarung tangan bulu tidak cepat panas, ia adalah?", "pilihan": ["Penebat Haba", "Konduktor Haba", "Pengeluar", "Pengguna"], "jawapan": "Penebat Haba" }
+      ]
+    ]
+  },
+  "tahun5-kuiz-am": {
+    "topikLabel": "Kuiz Pantas Sains Am",
+    "tahun": 5,
+    "sets": [
+      [
+        { "soalan": "Singa tinggal di habitat?", "pilihan": ["Darat", "Air", "Udara", "Angkasa"], "jawapan": "Darat" },
+        { "soalan": "Api memasak adalah proses?", "pilihan": ["Pemanasan", "Penyejukan", "Pengeluar", "Pengguna"], "jawapan": "Pemanasan" },
+        { "soalan": "Tenaga suria boleh diperbaharui kerana?", "pilihan": ["Tidak Akan Habis", "Akan Habis", "Berbahaya", "Mahal"], "jawapan": "Tidak Akan Habis" },
+        { "soalan": "Apakah yang mengeluarkan cahaya sendiri dalam sistem suria?", "pilihan": ["Matahari", "Bumi", "Bulan", "Bintang Jatuh"], "jawapan": "Matahari" },
+        { "soalan": "Paus tinggal di habitat?", "pilihan": ["Air", "Darat", "Udara", "Angkasa"], "jawapan": "Air" },
+        { "soalan": "Ais yang cair adalah proses?", "pilihan": ["Pemanasan", "Penyejukan", "Pengeluar", "Pengguna"], "jawapan": "Pemanasan" },
+        { "soalan": "Petrol adalah tenaga yang?", "pilihan": ["Tidak Boleh Diperbaharui", "Boleh Diperbaharui", "Selamat", "Percuma"], "jawapan": "Tidak Boleh Diperbaharui" },
+        { "soalan": "Bumi mengelilingi?", "pilihan": ["Matahari", "Bulan", "Bintang", "Awan"], "jawapan": "Matahari" }
+      ],
+      [
+        { "soalan": "Gajah tinggal di habitat?", "pilihan": ["Darat", "Air", "Udara", "Angkasa"], "jawapan": "Darat" },
+        { "soalan": "Air membeku adalah proses?", "pilihan": ["Penyejukan", "Pemanasan", "Pengeluar", "Pengguna"], "jawapan": "Penyejukan" },
+        { "soalan": "Arang batu adalah tenaga yang?", "pilihan": ["Tidak Boleh Diperbaharui", "Boleh Diperbaharui", "Selamat", "Percuma"], "jawapan": "Tidak Boleh Diperbaharui" },
+        { "soalan": "Bulan mengelilingi?", "pilihan": ["Bumi", "Matahari", "Bintang", "Marikh"], "jawapan": "Bumi" },
+        { "soalan": "Ikan yu tinggal di habitat?", "pilihan": ["Air", "Darat", "Udara", "Angkasa"], "jawapan": "Air" },
+        { "soalan": "Air disejukkan dalam peti sejuk adalah proses?", "pilihan": ["Penyejukan", "Pemanasan", "Pengeluar", "Pengguna"], "jawapan": "Penyejukan" },
+        { "soalan": "Tenaga angin boleh diperbaharui kerana?", "pilihan": ["Tidak Akan Habis", "Akan Habis", "Berbahaya", "Mahal"], "jawapan": "Tidak Akan Habis" },
+        { "soalan": "Apakah yang menyebabkan siang dan malam?", "pilihan": ["Putaran Bumi", "Putaran Bulan", "Putaran Bintang", "Angin"], "jawapan": "Putaran Bumi" }
+      ],
+      [
+        { "soalan": "Unta tinggal di habitat?", "pilihan": ["Darat", "Air", "Udara", "Angkasa"], "jawapan": "Darat" },
+        { "soalan": "Wap air terbentuk melalui proses?", "pilihan": ["Pemanasan", "Penyejukan", "Pengeluar", "Pengguna"], "jawapan": "Pemanasan" },
+        { "soalan": "Minyak mentah adalah tenaga yang?", "pilihan": ["Tidak Boleh Diperbaharui", "Boleh Diperbaharui", "Selamat", "Percuma"], "jawapan": "Tidak Boleh Diperbaharui" },
+        { "soalan": "Zirafah tinggal di habitat?", "pilihan": ["Darat", "Air", "Udara", "Angkasa"], "jawapan": "Darat" },
+        { "soalan": "Sotong kurita tinggal di habitat?", "pilihan": ["Air", "Darat", "Udara", "Angkasa"], "jawapan": "Air" },
+        { "soalan": "Salji turun adalah proses?", "pilihan": ["Penyejukan", "Pemanasan", "Pengeluar", "Pengguna"], "jawapan": "Penyejukan" },
+        { "soalan": "Tenaga air terjun (hidro) boleh diperbaharui kerana?", "pilihan": ["Tidak Akan Habis", "Akan Habis", "Berbahaya", "Mahal"], "jawapan": "Tidak Akan Habis" },
+        { "soalan": "Bulan kelihatan bercahaya kerana ia?", "pilihan": ["Memantul Cahaya Matahari", "Menghasilkan Cahaya Sendiri", "Panas Seperti Matahari", "Berputar Laju"], "jawapan": "Memantul Cahaya Matahari" }
+      ],
+      [
+        { "soalan": "Buaya tinggal di habitat?", "pilihan": ["Air", "Darat", "Udara", "Angkasa"], "jawapan": "Air" },
+        { "soalan": "Ais krim cair adalah proses?", "pilihan": ["Pemanasan", "Penyejukan", "Pengeluar", "Pengguna"], "jawapan": "Pemanasan" },
+        { "soalan": "Gas asli adalah tenaga yang?", "pilihan": ["Tidak Boleh Diperbaharui", "Boleh Diperbaharui", "Selamat", "Percuma"], "jawapan": "Tidak Boleh Diperbaharui" },
+        { "soalan": "Zebra tinggal di habitat?", "pilihan": ["Darat", "Air", "Udara", "Angkasa"], "jawapan": "Darat" },
+        { "soalan": "Ketam tinggal di habitat?", "pilihan": ["Air", "Darat", "Udara", "Angkasa"], "jawapan": "Air" },
+        { "soalan": "Air membeku menjadi ais adalah proses?", "pilihan": ["Penyejukan", "Pemanasan", "Pengeluar", "Pengguna"], "jawapan": "Penyejukan" },
+        { "soalan": "Tenaga biojisim boleh diperbaharui kerana?", "pilihan": ["Tidak Akan Habis", "Akan Habis", "Berbahaya", "Mahal"], "jawapan": "Tidak Akan Habis" },
+        { "soalan": "Planet yang kita duduki bernama?", "pilihan": ["Bumi", "Marikh", "Musytari", "Zuhal"], "jawapan": "Bumi" }
+      ],
+      [
+        { "soalan": "Tupai tinggal di habitat?", "pilihan": ["Darat", "Air", "Udara", "Angkasa"], "jawapan": "Darat" },
+        { "soalan": "Lava gunung berapi adalah proses?", "pilihan": ["Pemanasan", "Penyejukan", "Pengeluar", "Pengguna"], "jawapan": "Pemanasan" },
+        { "soalan": "Diesel adalah tenaga yang?", "pilihan": ["Tidak Boleh Diperbaharui", "Boleh Diperbaharui", "Selamat", "Percuma"], "jawapan": "Tidak Boleh Diperbaharui" },
+        { "soalan": "Lumba-lumba tinggal di habitat?", "pilihan": ["Air", "Darat", "Udara", "Angkasa"], "jawapan": "Air" },
+        { "soalan": "Landak tinggal di habitat?", "pilihan": ["Darat", "Air", "Udara", "Angkasa"], "jawapan": "Darat" },
+        { "soalan": "Ribut salji adalah proses?", "pilihan": ["Penyejukan", "Pemanasan", "Pengeluar", "Pengguna"], "jawapan": "Penyejukan" },
+        { "soalan": "Tenaga geoterma boleh diperbaharui kerana?", "pilihan": ["Tidak Akan Habis", "Akan Habis", "Berbahaya", "Mahal"], "jawapan": "Tidak Akan Habis" },
+        { "soalan": "Bumi, Bulan dan Matahari adalah sebahagian daripada?", "pilihan": ["Sistem Suria", "Sistem Badan", "Sistem Ekosistem", "Sistem Elektrik"], "jawapan": "Sistem Suria" }
+      ]
+    ]
+  },
+  "tahun6-kuiz-am": {
+    "topikLabel": "Kuiz Pantas Sains Am",
+    "tahun": 6,
+    "sets": [
+      [
+        { "soalan": "Mengitar semula adalah amalan?", "pilihan": ["Mesra Alam", "Tidak Mesra Alam", "Berbahaya", "Mahal"], "jawapan": "Mesra Alam" },
+        { "soalan": "Ais yang cair adalah perubahan?", "pilihan": ["Fizikal", "Kimia", "Elektrik", "Magnet"], "jawapan": "Fizikal" },
+        { "soalan": "Komputer riba adalah teknologi?", "pilihan": ["Moden", "Tradisional", "Purba", "Kuno"], "jawapan": "Moden" },
+        { "soalan": "Organ yang menyaring darah adalah?", "pilihan": ["Buah Pinggang", "Hati", "Usus", "Pundi Kencing"], "jawapan": "Buah Pinggang" },
+        { "soalan": "Membuang sampah merata adalah amalan?", "pilihan": ["Tidak Mesra Alam", "Mesra Alam", "Selamat", "Baik"], "jawapan": "Tidak Mesra Alam" },
+        { "soalan": "Kayu terbakar adalah perubahan?", "pilihan": ["Kimia", "Fizikal", "Elektrik", "Magnet"], "jawapan": "Kimia" },
+        { "soalan": "Sampan kayu adalah teknologi?", "pilihan": ["Tradisional", "Moden", "Angkasa", "Digital"], "jawapan": "Tradisional" },
+        { "soalan": "Organ yang menyimpan air kencing adalah?", "pilihan": ["Pundi Kencing", "Hati", "Usus", "Buah Pinggang"], "jawapan": "Pundi Kencing" }
+      ],
+      [
+        { "soalan": "Menanam pokok adalah amalan?", "pilihan": ["Mesra Alam", "Tidak Mesra Alam", "Berbahaya", "Mahal"], "jawapan": "Mesra Alam" },
+        { "soalan": "Besi berkarat adalah perubahan?", "pilihan": ["Kimia", "Fizikal", "Elektrik", "Magnet"], "jawapan": "Kimia" },
+        { "soalan": "Robot pintar adalah teknologi?", "pilihan": ["Moden", "Tradisional", "Purba", "Kuno"], "jawapan": "Moden" },
+        { "soalan": "Organ yang menyerap nutrien makanan adalah?", "pilihan": ["Usus", "Hati", "Buah Pinggang", "Jantung"], "jawapan": "Usus" },
+        { "soalan": "Membazir air adalah amalan?", "pilihan": ["Tidak Mesra Alam", "Mesra Alam", "Selamat", "Baik"], "jawapan": "Tidak Mesra Alam" },
+        { "soalan": "Kertas dikoyak adalah perubahan?", "pilihan": ["Fizikal", "Kimia", "Elektrik", "Magnet"], "jawapan": "Fizikal" },
+        { "soalan": "Pelita minyak adalah teknologi?", "pilihan": ["Tradisional", "Moden", "Angkasa", "Digital"], "jawapan": "Tradisional" },
+        { "soalan": "Organ yang menapis toksin dalam badan adalah?", "pilihan": ["Hati", "Usus", "Paru-Paru", "Otak"], "jawapan": "Hati" }
+      ],
+      [
+        { "soalan": "Menggunakan beg kitar semula adalah amalan?", "pilihan": ["Mesra Alam", "Tidak Mesra Alam", "Berbahaya", "Mahal"], "jawapan": "Mesra Alam" },
+        { "soalan": "Roti berkulat adalah perubahan?", "pilihan": ["Kimia", "Fizikal", "Elektrik", "Magnet"], "jawapan": "Kimia" },
+        { "soalan": "Telefon pintar adalah teknologi?", "pilihan": ["Moden", "Tradisional", "Purba", "Kuno"], "jawapan": "Moden" },
+        { "soalan": "Kereta kuda adalah teknologi?", "pilihan": ["Tradisional", "Moden", "Angkasa", "Digital"], "jawapan": "Tradisional" },
+        { "soalan": "Membakar sampah adalah amalan?", "pilihan": ["Tidak Mesra Alam", "Mesra Alam", "Selamat", "Baik"], "jawapan": "Tidak Mesra Alam" },
+        { "soalan": "Air membeku adalah perubahan?", "pilihan": ["Fizikal", "Kimia", "Elektrik", "Magnet"], "jawapan": "Fizikal" },
+        { "soalan": "Buah pinggang berfungsi untuk?", "pilihan": ["Menyaring Darah", "Memompa Darah", "Mencerna Makanan", "Bernafas"], "jawapan": "Menyaring Darah" },
+        { "soalan": "Hati berfungsi untuk?", "pilihan": ["Menapis Toksin", "Memompa Darah", "Bernafas", "Berfikir"], "jawapan": "Menapis Toksin" }
+      ],
+      [
+        { "soalan": "Berbasikal ke sekolah adalah amalan?", "pilihan": ["Mesra Alam", "Tidak Mesra Alam", "Berbahaya", "Mahal"], "jawapan": "Mesra Alam" },
+        { "soalan": "Susu basi adalah perubahan?", "pilihan": ["Kimia", "Fizikal", "Elektrik", "Magnet"], "jawapan": "Kimia" },
+        { "soalan": "Kapal terbang adalah teknologi?", "pilihan": ["Moden", "Tradisional", "Purba", "Kuno"], "jawapan": "Moden" },
+        { "soalan": "Tanduk kerbau (alat muzik tradisional) adalah teknologi?", "pilihan": ["Tradisional", "Moden", "Angkasa", "Digital"], "jawapan": "Tradisional" },
+        { "soalan": "Menebang pokok sesuka hati adalah amalan?", "pilihan": ["Tidak Mesra Alam", "Mesra Alam", "Selamat", "Baik"], "jawapan": "Tidak Mesra Alam" },
+        { "soalan": "Kayu diukir adalah perubahan?", "pilihan": ["Fizikal", "Kimia", "Elektrik", "Magnet"], "jawapan": "Fizikal" },
+        { "soalan": "Usus berfungsi untuk?", "pilihan": ["Menyerap Nutrien", "Memompa Darah", "Bernafas", "Berfikir"], "jawapan": "Menyerap Nutrien" },
+        { "soalan": "Pundi kencing berfungsi untuk?", "pilihan": ["Menyimpan Air Kencing", "Menapis Toksin", "Mencerna Makanan", "Bernafas"], "jawapan": "Menyimpan Air Kencing" }
+      ],
+      [
+        { "soalan": "Menjimatkan air adalah amalan?", "pilihan": ["Mesra Alam", "Tidak Mesra Alam", "Berbahaya", "Mahal"], "jawapan": "Mesra Alam" },
+        { "soalan": "Epal bertukar warna coklat adalah perubahan?", "pilihan": ["Kimia", "Fizikal", "Elektrik", "Magnet"], "jawapan": "Kimia" },
+        { "soalan": "Televisyen pintar adalah teknologi?", "pilihan": ["Moden", "Tradisional", "Purba", "Kuno"], "jawapan": "Moden" },
+        { "soalan": "Alat tenun tangan adalah teknologi?", "pilihan": ["Tradisional", "Moden", "Angkasa", "Digital"], "jawapan": "Tradisional" },
+        { "soalan": "Pencemaran udara adalah kesan amalan?", "pilihan": ["Tidak Mesra Alam", "Mesra Alam", "Selamat", "Baik"], "jawapan": "Tidak Mesra Alam" },
+        { "soalan": "Kertas dilipat adalah perubahan?", "pilihan": ["Fizikal", "Kimia", "Elektrik", "Magnet"], "jawapan": "Fizikal" },
+        { "soalan": "Organ yang menyaring darah dan menghasilkan air kencing adalah?", "pilihan": ["Buah Pinggang", "Hati", "Usus", "Jantung"], "jawapan": "Buah Pinggang" },
+        { "soalan": "Organ yang menyimpan hasil sisa sebelum dikeluarkan adalah?", "pilihan": ["Pundi Kencing", "Hati", "Usus", "Otak"], "jawapan": "Pundi Kencing" }
+      ]
+    ]
   }
 }

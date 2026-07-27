@@ -87,7 +87,7 @@
     background:var(--cream); border-radius:22px; padding:12px;
     box-shadow:0 8px 0 rgba(27,51,88,0.25), 0 12px 20px rgba(0,0,0,0.2);
   }
-  #circuit-svg{ width:220px; height:150px; display:block; }
+  .circuit{ width:220px; height:150px; display:block; }
   .switch-lever{ transform-origin: 150px 130px; transition: transform 0.4s cubic-bezier(.34,1.56,.64,1); }
   .circuit.state-open .switch-lever{ transform: rotate(-26deg); }
   .circuit.state-closed .switch-lever{ transform: rotate(0deg); }
@@ -95,6 +95,14 @@
   .bulb-glow{ transition: opacity 0.3s; opacity:0; }
   .circuit.revealed.state-closed .bulb-fill{ fill:var(--sun); }
   .circuit.revealed.state-closed .bulb-glow{ opacity:0.85; }
+
+  /* Kitaran Air diagram */
+  .sun-fill{ transition: fill 0.3s; fill:#B9C4CF; }
+  .sun-rays{ transition: opacity 0.3s; opacity:0; }
+  .circuit.state-sun-active .sun-fill{ fill:var(--sun); }
+  .circuit.state-sun-active .sun-rays{ opacity:1; }
+  .vapor-arrow{ opacity:0; transform:translateY(8px); transform-box:fill-box; transform-origin:center; transition: all 0.4s cubic-bezier(.34,1.56,.64,1); }
+  .circuit.revealed.state-sun-active .vapor-arrow{ opacity:0.9; transform:translateY(0); }
 
   #question-card{
     font-family:'Baloo 2', sans-serif; font-weight:700; color:#fff; text-shadow:0 2px 0 rgba(27,51,88,0.35);
@@ -204,6 +212,29 @@
         <line x1="200" y1="70" x2="220" y2="90" stroke="#5C7690" stroke-width="2"/>
         <line x1="220" y1="70" x2="200" y2="90" stroke="#5C7690" stroke-width="2"/>
       </svg>
+
+      <svg id="circuit-svg-kitaran-air" class="circuit" viewBox="0 0 240 160" xmlns="http://www.w3.org/2000/svg" style="display:none;">
+        <!-- water body -->
+        <rect x="20" y="120" width="200" height="30" rx="10" fill="#29ABE2"/>
+
+        <!-- cloud (decorative, always visible) -->
+        <circle cx="165" cy="42" r="16" fill="#E4EEF3"/>
+        <circle cx="180" cy="36" r="20" fill="#E4EEF3"/>
+        <circle cx="198" cy="44" r="15" fill="#E4EEF3"/>
+        <rect x="160" y="42" width="46" height="16" rx="8" fill="#E4EEF3"/>
+
+        <!-- sun -->
+        <line class="sun-rays" x1="50" y1="10" x2="50" y2="18" stroke="var(--sun)" stroke-width="4" stroke-linecap="round"/>
+        <line class="sun-rays" x1="24" y1="22" x2="30" y2="28" stroke="var(--sun)" stroke-width="4" stroke-linecap="round"/>
+        <line class="sun-rays" x1="76" y1="22" x2="70" y2="28" stroke="var(--sun)" stroke-width="4" stroke-linecap="round"/>
+        <line class="sun-rays" x1="18" y1="45" x2="26" y2="45" stroke="var(--sun)" stroke-width="4" stroke-linecap="round"/>
+        <circle class="sun-fill" cx="50" cy="45" r="22"/>
+
+        <!-- rising vapor arrows -->
+        <path class="vapor-arrow" d="M 85 118 L 90 100 L 95 118" stroke="#7A8CA3" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <path class="vapor-arrow" d="M 115 118 L 120 96 L 125 118" stroke="#7A8CA3" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <path class="vapor-arrow" d="M 145 118 L 150 100 L 155 118" stroke="#7A8CA3" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
     </div>
     <div id="question-card">Memuatkan...</div>
     <div id="options-row">
@@ -245,9 +276,27 @@ const winScreen = document.getElementById('win-screen');
 const winScore = document.getElementById('win-score');
 const topikTitle = document.getElementById('topik-title');
 const questionCard = document.getElementById('question-card');
-const circuitSvg = document.getElementById('circuit-svg');
 const btnYa = document.getElementById('btn-ya');
 const btnTidak = document.getElementById('btn-tidak');
+
+const DIAGRAM_CONFIGS = {
+  litar: {
+    svgId: 'circuit-svg',
+    stateClass: r => `state-${r.switchState}`,
+    correctAnswer: r => r.switchState === 'closed' ? 'Ya' : 'Tidak',
+    question: r => `Suis litar ini ${r.switchState === 'closed' ? 'TERTUTUP' : 'TERBUKA'}. Adakah mentol akan menyala?`
+  },
+  'kitaran-air': {
+    svgId: 'circuit-svg-kitaran-air',
+    stateClass: r => `state-sun-${r.sunActive ? 'active' : 'inactive'}`,
+    correctAnswer: r => r.sunActive ? 'Ya' : 'Tidak',
+    question: r => r.sunActive
+      ? 'Matahari sedang memanaskan air. Adakah air akan menyejat (menjadi wap)?'
+      : 'Matahari tidak memanaskan air sekarang. Adakah air akan menyejat (menjadi wap)?'
+  }
+};
+let activeConfig = DIAGRAM_CONFIGS.litar;
+let circuitSvg = document.getElementById('circuit-svg');
 
 function shuffle(arr){
   for(let i=arr.length-1;i>0;i--){
@@ -266,6 +315,12 @@ async function loadTopic(){
 
   document.title = `Seronok Sains — ${topicData.topikLabel}`;
   topikTitle.textContent = `${topicData.topikLabel} — Tahun ${topicData.tahun}`;
+
+  activeConfig = DIAGRAM_CONFIGS[topicData.diagramType || 'litar'];
+  Object.values(DIAGRAM_CONFIGS).forEach(cfg => {
+    document.getElementById(cfg.svgId).style.display = (cfg === activeConfig) ? '' : 'none';
+  });
+  circuitSvg = document.getElementById(activeConfig.svgId);
 
   const setIdx = Math.floor(Math.random() * topicData.sets.length);
   rounds = shuffle([...topicData.sets[setIdx]]);
@@ -342,10 +397,8 @@ function showToast(text){
 function loadRound(){
   answered = false;
   const r = rounds[idx];
-  circuitSvg.classList.remove('state-open', 'state-closed', 'revealed');
-  circuitSvg.classList.add(`state-${r.switchState}`);
-  const stateWord = r.switchState === 'closed' ? 'TERTUTUP' : 'TERBUKA';
-  questionCard.textContent = `Suis litar ini ${stateWord}. Adakah mentol akan menyala?`;
+  circuitSvg.setAttribute('class', `circuit ${activeConfig.stateClass(r)}`);
+  questionCard.textContent = activeConfig.question(r);
   btnYa.className = 'option-btn';
   btnTidak.className = 'option-btn';
 }
@@ -354,7 +407,7 @@ function handleAnswer(chosen){
   if(answered) return;
   answered = true;
   const r = rounds[idx];
-  const correctAnswer = r.switchState === 'closed' ? 'Ya' : 'Tidak';
+  const correctAnswer = activeConfig.correctAnswer(r);
   const isCorrect = chosen === correctAnswer;
 
   btnYa.classList.add('disabled');
