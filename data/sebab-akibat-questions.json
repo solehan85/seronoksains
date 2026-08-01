@@ -9,5 +9,16 @@
       { "sebabEmoji": "🛍️", "sebab": "Guna Plastik Berlebihan", "akibatEmoji": "🗑️", "akibat": "Sampah Bertimbun" },
       { "sebabEmoji": "🚗", "sebab": "Kenderaan Berlebihan", "akibatEmoji": "😷", "akibat": "Pencemaran Udara" }
     ]
+  },
+  "tahun4-rantai-makanan": {
+    "topikLabel": "Sebab-Akibat: Rantai Makanan",
+    "tahun": 4,
+    "pairs": [
+      { "sebabEmoji": "🌱", "sebab": "Rumput Tumbuh Subur", "akibatEmoji": "🐇", "akibat": "Arnab Membiak dengan Banyak" },
+      { "sebabEmoji": "🐇", "sebab": "Bilangan Arnab Berkurangan", "akibatEmoji": "🦊", "akibat": "Musang Kesukaran Cari Makanan" },
+      { "sebabEmoji": "🦗", "sebab": "Serangga Bertambah Banyak", "akibatEmoji": "🐦", "akibat": "Burung Mempunyai Banyak Makanan" },
+      { "sebabEmoji": "🐍", "sebab": "Ular Memakan Banyak Katak", "akibatEmoji": "🐸", "akibat": "Populasi Katak Berkurangan" },
+      { "sebabEmoji": "🍂", "sebab": "Daun Reput di Tanah", "akibatEmoji": "🪱", "akibat": "Cacing Tanah Mendapat Makanan" }
+    ]
   }
 }
