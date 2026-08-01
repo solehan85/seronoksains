@@ -1,0 +1,24 @@
+{
+  "tahun5-ekosistem": {
+    "topikLabel": "Peta Minda Ekosistem",
+    "tahun": 5,
+    "centralLabel": "EKOSISTEM",
+    "centralEmoji": "🧠",
+    "branches": [
+      { "id": "pengeluar", "label": "PENGELUAR", "emoji": "🌾" },
+      { "id": "pengguna", "label": "PENGGUNA", "emoji": "🦁" },
+      { "id": "pengurai", "label": "PENGURAI", "emoji": "🍄" }
+    ],
+    "items": [
+      { "label": "Pokok", "emoji": "🌳", "branchId": "pengeluar" },
+      { "label": "Rumput", "emoji": "🌿", "branchId": "pengeluar" },
+      { "label": "Bunga", "emoji": "🌻", "branchId": "pengeluar" },
+      { "label": "Singa", "emoji": "🦁", "branchId": "pengguna" },
+      { "label": "Arnab", "emoji": "🐇", "branchId": "pengguna" },
+      { "label": "Rusa", "emoji": "🦌", "branchId": "pengguna" },
+      { "label": "Cendawan", "emoji": "🍄", "branchId": "pengurai" },
+      { "label": "Cacing", "emoji": "🪱", "branchId": "pengurai" },
+      { "label": "Bakteria", "emoji": "🦠", "branchId": "pengurai" }
+    ]
+  }
+}
