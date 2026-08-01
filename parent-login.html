@@ -440,8 +440,8 @@ const FIREBASE_CONFIG = {
 const DB = { offline: true, _fs: null, _mod: null };
 
 function loadOfflineStore(){
-  try{ return JSON.parse(localStorage.getItem('ss_offline_db')) || {parents:{}, students:{}}; }
-  catch(e){ return {parents:{}, students:{}}; }
+  try{ return JSON.parse(localStorage.getItem('ss_offline_db')) || {parents:{}, students:{}, sains_student_settings:{}}; }
+  catch(e){ return {parents:{}, students:{}, sains_student_settings:{}}; }
 }
 function saveOfflineStore(store){
   localStorage.setItem('ss_offline_db', JSON.stringify(store));
@@ -465,13 +465,17 @@ async function initDB(){
   }
 }
 
+/* NOTE: our own parent accounts live in "sains_parents", NOT the shared
+   "parents" collection — the real deployed rules gate /parents/{uid} behind
+   Firebase Auth (request.auth.uid == uid) for a different product's feature,
+   and we don't use Firebase Auth here, so we use our own collection instead. */
 async function dbGetParent(id){
   if(DB.offline){
     const store = loadOfflineStore();
     return store.parents[id] || null;
   }
   const { doc, getDoc } = DB._mod;
-  const snap = await getDoc(doc(DB._fs, 'parents', id));
+  const snap = await getDoc(doc(DB._fs, 'sains_parents', id));
   return snap.exists() ? snap.data() : null;
 }
 async function dbSetParent(id, data){
@@ -482,8 +486,13 @@ async function dbSetParent(id, data){
     return;
   }
   const { doc, setDoc } = DB._mod;
-  await setDoc(doc(DB._fs, 'parents', id), data, { merge:true });
+  await setDoc(doc(DB._fs, 'sains_parents', id), data, { merge:true });
 }
+
+/* The shared "students" collection's real rules only allow `create` — never
+   `update` or `delete` — so this MUST only ever be called once per student,
+   at creation time. Anything that needs to change later (PIN toggle, etc.)
+   lives in dbGetSettings/dbSetSettings instead. */
 async function dbGetStudent(id){
   if(DB.offline){
     const store = loadOfflineStore();
@@ -493,7 +502,7 @@ async function dbGetStudent(id){
   const snap = await getDoc(doc(DB._fs, 'students', id));
   return snap.exists() ? snap.data() : null;
 }
-async function dbSetStudent(id, data){
+async function dbCreateStudent(id, data){
   if(DB.offline){
     const store = loadOfflineStore();
     store.students[id] = { ...(store.students[id]||{}), ...data };
@@ -501,7 +510,30 @@ async function dbSetStudent(id, data){
     return;
   }
   const { doc, setDoc } = DB._mod;
-  await setDoc(doc(DB._fs, 'students', id), data, { merge:true });
+  await setDoc(doc(DB._fs, 'students', id), data);
+}
+
+/* Our own mutable per-student settings (Sains-specific dropdown PIN gate),
+   fully separate from the shared, create-only /students doc. */
+async function dbGetSettings(id){
+  if(DB.offline){
+    const store = loadOfflineStore();
+    return (store.sains_student_settings && store.sains_student_settings[id]) || null;
+  }
+  const { doc, getDoc } = DB._mod;
+  const snap = await getDoc(doc(DB._fs, 'sains_student_settings', id));
+  return snap.exists() ? snap.data() : null;
+}
+async function dbSetSettings(id, data){
+  if(DB.offline){
+    const store = loadOfflineStore();
+    store.sains_student_settings = store.sains_student_settings || {};
+    store.sains_student_settings[id] = { ...(store.sains_student_settings[id]||{}), ...data };
+    saveOfflineStore(store);
+    return;
+  }
+  const { doc, setDoc } = DB._mod;
+  await setDoc(doc(DB._fs, 'sains_student_settings', id), data, { merge:true });
 }
 
 /* ---------- helpers ---------- */
@@ -642,10 +674,11 @@ formRegister.addEventListener('submit', async (e)=>{
   const studentId = newStudentId();
   const childPinHash = childPinReq ? await sha256Hex(childPin) : '';
 
-  await dbSetStudent(studentId, {
-    namaAnak: childNama, tahun: childTahun, kelas: childKelas,
-    pinHash: childPinHash, pinRequired: childPinReq, parentId: key
+  await dbCreateStudent(studentId, {
+    name: childNama, tahun: childTahun, kelas: childKelas,
+    pinHash: childPinHash, parentId: key
   });
+  await dbSetSettings(studentId, { pinRequired: childPinReq, pinHash: childPinHash });
   await dbSetParent(key, {
     namaParent, emailOrPhone: rawKey.trim(), pinHash, children: [studentId]
   });
@@ -665,16 +698,18 @@ async function renderDashboard(){
   childGrid.innerHTML = '';
   const childIds = currentParent.children || [];
   for(const sid of childIds){
-    const student = await dbGetStudent(sid);
-    if(!student) continue;
+    const studentDoc = await dbGetStudent(sid);
+    if(!studentDoc) continue;
+    const settings = (await dbGetSettings(sid)) || { pinRequired:false, pinHash:'' };
+    const student = { ...studentDoc, pinRequired: settings.pinRequired, pinHash: settings.pinHash };
     const card = document.createElement('div');
     card.className = 'child-card';
-    const initial = (student.namaAnak||'?').trim().charAt(0).toUpperCase();
+    const initial = (student.name||'?').trim().charAt(0).toUpperCase();
     card.innerHTML = `
       <button class="child-gear" data-sid="${sid}" title="Tetapan PIN">⚙️</button>
       ${student.pinRequired ? '<span class="child-lock">🔒</span>' : ''}
       <div class="child-avatar">${initial}</div>
-      <div class="child-name">${student.namaAnak}</div>
+      <div class="child-name">${student.name}</div>
       <div class="child-meta">Tahun ${student.tahun} · ${student.kelas}</div>
     `;
     card.addEventListener('click', (ev)=>{
@@ -702,11 +737,11 @@ function openPinToggle(sid, student){
   pinToggleTarget = { sid, student };
   pinToggleError.classList.remove('show');
   if(student.pinRequired){
-    pinToggleTitle.textContent = `Matikan PIN ${student.namaAnak}?`;
+    pinToggleTitle.textContent = `Matikan PIN ${student.name}?`;
     pinToggleSub.textContent = 'Anak boleh pilih profil ini tanpa PIN selepas ini.';
     pinToggleBody.innerHTML = '';
   } else {
-    pinToggleTitle.textContent = `Cipta PIN untuk ${student.namaAnak}`;
+    pinToggleTitle.textContent = `Cipta PIN untuk ${student.name}`;
     pinToggleSub.textContent = 'PIN diperlukan setiap kali pilih profil ini.';
     pinToggleBody.innerHTML = `
       <label for="pintoggle-pin1">PIN Baharu (4 digit)</label>
@@ -727,7 +762,7 @@ document.getElementById('pintoggle-confirm').addEventListener('click', async ()=
   if(!pinToggleTarget) return;
   const { sid, student } = pinToggleTarget;
   if(student.pinRequired){
-    await dbSetStudent(sid, { pinRequired:false });
+    await dbSetSettings(sid, { pinRequired:false });
   } else {
     const p1 = document.getElementById('pintoggle-pin1').value;
     const p2 = document.getElementById('pintoggle-pin2').value;
@@ -737,7 +772,7 @@ document.getElementById('pintoggle-confirm').addEventListener('click', async ()=
       return;
     }
     const hash = await sha256Hex(p1);
-    await dbSetStudent(sid, { pinRequired:true, pinHash:hash });
+    await dbSetSettings(sid, { pinRequired:true, pinHash:hash });
   }
   overlayPinToggle.classList.remove('show');
   pinToggleTarget = null;
@@ -769,7 +804,7 @@ function selectChild(sid, student){
   }
   pinpadTargetStudent = { sid, student };
   pinpadBuffer = '';
-  pinpadName.textContent = `PIN ${student.namaAnak}`;
+  pinpadName.textContent = `PIN ${student.name}`;
   renderPinDots();
   overlayPinpad.classList.add('show');
 }
@@ -803,7 +838,7 @@ document.getElementById('pinpad-cancel').addEventListener('click', ()=>{
 
 function goToGameHub(sid, student){
   sessionStorage.setItem('ss_activeStudent', JSON.stringify({
-    id: sid, namaAnak: student.namaAnak, tahun: student.tahun, kelas: student.kelas
+    id: sid, namaAnak: student.name, tahun: student.tahun, kelas: student.kelas
   }));
   window.location.href = 'game-hub.html';
 }
@@ -843,9 +878,10 @@ formAddChild.addEventListener('submit', async (e)=>{
 
   const sid = newStudentId();
   const pinHash = pinReq ? await sha256Hex(pin) : '';
-  await dbSetStudent(sid, {
-    namaAnak: nama, tahun, kelas, pinHash, pinRequired: pinReq, parentId: currentParent.id
+  await dbCreateStudent(sid, {
+    name: nama, tahun, kelas, pinHash, parentId: currentParent.id
   });
+  await dbSetSettings(sid, { pinRequired: pinReq, pinHash });
   currentParent.children = [...(currentParent.children||[]), sid];
   await dbSetParent(currentParent.id, { children: currentParent.children });
 

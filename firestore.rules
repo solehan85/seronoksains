@@ -1,33 +1,68 @@
 rules_version = '2';
 
-// Seronok Sains — draft security rules for the shared `seronoknyabahasa` project.
+// Seronok Sains — merged security rules for the shared `seronoknyabahasa`
+// project.
 //
-// KNOWN LIMITATION: this codebase's login (students AND parents) does not use
-// Firebase Authentication — it's a plain Firestore read + client-side SHA-256
-// PIN-hash comparison, matching the existing Fun Math / Seronoknya Bahasa /
-// student-login pattern. Firestore rules have no `request.auth` to check
-// against, so they cannot enforce "only this parent can read this student".
-// The PIN hash is a soft gate enforced by the app UI, not the database.
-// Anyone with the client SDK config can read/write these collections.
-// This mirrors the existing sibling products' security model — it is not a
-// new gap introduced here. If this ever needs to be hardened, the fix is
-// Firebase Auth (anonymous or custom token) issuing a real request.auth.uid,
-// not a rules-only patch.
+// The `students`, `games/{gameId}/kampung/{levelId}/scores`, and `parents`
+// blocks below are copied VERBATIM from the rules already live in production
+// (retrieved from the Firebase Console 2026-08-01) — they are NOT ours to
+// change, since sibling products (Fun Math / Seronoknya Bahasa) depend on
+// them exactly as they are. Only the blocks marked "Seronok Sains" below are
+// new, added by this project.
+//
+// Two real constraints this discovery revealed, both already reflected in
+// our client code (see project memory for details):
+//   1. /students only allows `create`, never `update`/`delete` — so our
+//      code writes name/kelas/pinHash/tahun/parentId ONCE at creation and
+//      never touches that document again.
+//   2. /parents/{uid} requires real Firebase Auth (request.auth.uid == uid)
+//      for whatever sibling-product feature already uses it — since our
+//      Parent Account layer intentionally does not use Firebase Auth (see
+//      project memory), we use our own `sains_parents` collection instead,
+//      never touching the existing `parents` collection at all.
 
 service cloud.firestore {
   match /databases/{database}/documents {
 
-    match /parents/{parentId} {
-      allow read, write: if true;
-    }
+    // ---------- Existing rules (unchanged, not ours) ----------
 
     match /students/{studentId} {
+      allow read: if true;
+      allow create: if request.resource.data.keys().hasAll(['name','kelas','pinHash'])
+                    && request.resource.data.pinHash is string;
+      allow update, delete: if false;
+    }
+
+    match /games/{gameId}/kampung/{levelId}/scores/{studentId} {
+      allow read: if true;
+      allow write: if request.resource.data.keys().hasAll(['name','kelas','score','total','stars'])
+                   && request.resource.data.stars is int
+                   && request.resource.data.stars >= 0 && request.resource.data.stars <= 3;
+    }
+
+    match /parents/{uid} {
+      allow read, write: if request.auth != null && request.auth.uid == uid;
+    }
+
+    // ---------- Seronok Sains additions ----------
+
+    // Our own parent accounts (email/PIN-hash, no Firebase Auth — see
+    // project memory for why). Deliberately open, matching the same
+    // no-auth tradeoff already accepted for /students above.
+    match /sains_parents/{parentId} {
       allow read, write: if true;
     }
 
-    // Question bank is app content, not user data — clients only ever read it.
-    // Writes should come from a trusted admin/import script (Firebase CLI,
-    // Admin SDK), never from the game client.
+    // Mutable per-student settings we own (currently: the optional PIN
+    // gate on the parent dashboard's child-picker). Kept separate from
+    // /students specifically because that collection can never be updated.
+    match /sains_student_settings/{studentId} {
+      allow read, write: if true;
+    }
+
+    // Question bank is app content, not user data — clients only ever read
+    // it. Writes should come from a trusted admin/import script (Firebase
+    // CLI, Admin SDK), never from the game client.
     match /science_questions/{tahun}/{topik}/{set}/{soalan} {
       allow read: if true;
       allow write: if false;
