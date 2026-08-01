@@ -1,0 +1,51 @@
+{
+  "tahun4-tenggelam-terapung": {
+    "topikLabel": "Ramalan: Tenggelam atau Terapung?",
+    "tahun": 4,
+    "question": "Yang manakah akan TENGGELAM dalam air?",
+    "rounds": [
+      {
+        "options": [
+          { "emoji": "🪨", "label": "Batu", "correct": true },
+          { "emoji": "🧽", "label": "Span", "correct": false },
+          { "emoji": "🍃", "label": "Daun", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "🔑", "label": "Kunci", "correct": true },
+          { "emoji": "🎈", "label": "Belon", "correct": false },
+          { "emoji": "🪶", "label": "Bulu Ayam", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "🥄", "label": "Sudu Besi", "correct": true },
+          { "emoji": "🧊", "label": "Ais", "correct": false },
+          { "emoji": "📄", "label": "Kertas", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "🪙", "label": "Syiling", "correct": true },
+          { "emoji": "🪵", "label": "Kayu", "correct": false },
+          { "emoji": "🏐", "label": "Bola Plastik", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "✂️", "label": "Gunting", "correct": true },
+          { "emoji": "🍂", "label": "Daun Kering", "correct": false },
+          { "emoji": "🎈", "label": "Belon Angin", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "🔩", "label": "Paku", "correct": true },
+          { "emoji": "🧽", "label": "Span Mandi", "correct": false },
+          { "emoji": "🪶", "label": "Bulu Burung", "correct": false }
+        ]
+      }
+    ]
+  }
+}
