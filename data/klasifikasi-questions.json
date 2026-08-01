@@ -289,6 +289,64 @@
       ]
     ]
   },
+  "tahun2-kasar-licin": {
+    "topikLabel": "Kasar atau Licin?",
+    "tahun": 2,
+    "binA": { "type": "kasar", "label": "KASAR", "emoji": "🪨" },
+    "binB": { "type": "licin", "label": "LICIN", "emoji": "🪞" },
+    "sets": [
+      [
+        { "emoji": "🪨", "label": "Batu", "type": "kasar" },
+        { "emoji": "🪞", "label": "Cermin", "type": "licin" },
+        { "emoji": "🌵", "label": "Pokok Kaktus", "type": "kasar" },
+        { "emoji": "🧊", "label": "Ketulan Ais", "type": "licin" },
+        { "emoji": "🧱", "label": "Bata", "type": "kasar" },
+        { "emoji": "🎱", "label": "Bola Biliard", "type": "licin" },
+        { "emoji": "🦔", "label": "Landak", "type": "kasar" },
+        { "emoji": "🥚", "label": "Telur", "type": "licin" }
+      ],
+      [
+        { "emoji": "🍍", "label": "Kulit Nanas", "type": "kasar" },
+        { "emoji": "🧴", "label": "Botol Plastik", "type": "licin" },
+        { "emoji": "🪵", "label": "Kulit Kayu", "type": "kasar" },
+        { "emoji": "🍽️", "label": "Pinggan Kaca", "type": "licin" },
+        { "emoji": "🧽", "label": "Span Pencuci", "type": "kasar" },
+        { "emoji": "🧼", "label": "Sabun Mandi", "type": "licin" },
+        { "emoji": "🌰", "label": "Kulit Berangan", "type": "kasar" },
+        { "emoji": "🥛", "label": "Gelas Susu", "type": "licin" }
+      ],
+      [
+        { "emoji": "🧱", "label": "Dinding Bata", "type": "kasar" },
+        { "emoji": "🪟", "label": "Cermin Tingkap", "type": "licin" },
+        { "emoji": "🐊", "label": "Kulit Buaya", "type": "kasar" },
+        { "emoji": "🧊", "label": "Ais Batu", "type": "licin" },
+        { "emoji": "🪨", "label": "Batu Kerikil", "type": "kasar" },
+        { "emoji": "🥄", "label": "Sudu Logam", "type": "licin" },
+        { "emoji": "🌲", "label": "Batang Pokok", "type": "kasar" },
+        { "emoji": "🍬", "label": "Gula-gula Licin", "type": "licin" }
+      ],
+      [
+        { "emoji": "🐢", "label": "Cengkerang Kura-kura", "type": "kasar" },
+        { "emoji": "🛁", "label": "Jubin Bilik Air", "type": "licin" },
+        { "emoji": "🧵", "label": "Guni Kasar", "type": "kasar" },
+        { "emoji": "🧴", "label": "Botol Losyen", "type": "licin" },
+        { "emoji": "🪨", "label": "Batu Besar", "type": "kasar" },
+        { "emoji": "🎳", "label": "Bola Boling", "type": "licin" },
+        { "emoji": "🌳", "label": "Kulit Pokok", "type": "kasar" },
+        { "emoji": "🥚", "label": "Telur Ayam", "type": "licin" }
+      ],
+      [
+        { "emoji": "🍍", "label": "Buah Nanas", "type": "kasar" },
+        { "emoji": "🪞", "label": "Cermin Solek", "type": "licin" },
+        { "emoji": "🦔", "label": "Duri Landak", "type": "kasar" },
+        { "emoji": "🧊", "label": "Ais Blok", "type": "licin" },
+        { "emoji": "🧱", "label": "Batu Bata", "type": "kasar" },
+        { "emoji": "🍽️", "label": "Pinggan Putih", "type": "licin" },
+        { "emoji": "🌵", "label": "Kaktus Berduri", "type": "kasar" },
+        { "emoji": "🧼", "label": "Bar Sabun", "type": "licin" }
+      ]
+    ]
+  },
   "tahun3-vertebrat-invertebrat": {
     "topikLabel": "Vertebrat atau Invertebrat?",
     "tahun": 3,
@@ -518,6 +576,64 @@
         { "emoji": "🖼️", "label": "Lukisan", "type": "bukan" },
         { "emoji": "🎺", "label": "Alat Muzik Tiup", "type": "sumber" },
         { "emoji": "🧸", "label": "Patung Kain", "type": "bukan" }
+      ]
+    ]
+  },
+  "tahun3-cecair-gas": {
+    "topikLabel": "Cecair atau Gas?",
+    "tahun": 3,
+    "binA": { "type": "cecair", "label": "CECAIR", "emoji": "💧" },
+    "binB": { "type": "gas", "label": "GAS", "emoji": "💨" },
+    "sets": [
+      [
+        { "emoji": "💧", "label": "Air", "type": "cecair" },
+        { "emoji": "💨", "label": "Angin", "type": "gas" },
+        { "emoji": "🥛", "label": "Susu", "type": "cecair" },
+        { "emoji": "🌬️", "label": "Udara", "type": "gas" },
+        { "emoji": "🧃", "label": "Jus Buah", "type": "cecair" },
+        { "emoji": "🎈", "label": "Gas Dalam Belon", "type": "gas" },
+        { "emoji": "🍯", "label": "Madu", "type": "cecair" },
+        { "emoji": "🌫️", "label": "Wap Air", "type": "gas" }
+      ],
+      [
+        { "emoji": "☕", "label": "Air Kopi", "type": "cecair" },
+        { "emoji": "🔥", "label": "Asap", "type": "gas" },
+        { "emoji": "🛢️", "label": "Minyak Masak", "type": "cecair" },
+        { "emoji": "🧯", "label": "Gas Pemadam Api", "type": "gas" },
+        { "emoji": "🍵", "label": "Air Teh", "type": "cecair" },
+        { "emoji": "🎏", "label": "Udara Panas Belon", "type": "gas" },
+        { "emoji": "🥤", "label": "Air Sirap", "type": "cecair" },
+        { "emoji": "💭", "label": "Buih Gas", "type": "gas" }
+      ],
+      [
+        { "emoji": "💧", "label": "Air Hujan", "type": "cecair" },
+        { "emoji": "💨", "label": "Bayu", "type": "gas" },
+        { "emoji": "🥛", "label": "Susu Segar", "type": "cecair" },
+        { "emoji": "🌬️", "label": "Angin Sepoi", "type": "gas" },
+        { "emoji": "🧃", "label": "Air Oren", "type": "cecair" },
+        { "emoji": "🎈", "label": "Belon Gas", "type": "gas" },
+        { "emoji": "🍯", "label": "Madu Lebah", "type": "cecair" },
+        { "emoji": "🌫️", "label": "Kabus Pagi", "type": "gas" }
+      ],
+      [
+        { "emoji": "☕", "label": "Kopi Panas", "type": "cecair" },
+        { "emoji": "🔥", "label": "Asap Kenderaan", "type": "gas" },
+        { "emoji": "🛢️", "label": "Minyak Zaitun", "type": "cecair" },
+        { "emoji": "🧯", "label": "Gas Karbon Dioksida", "type": "gas" },
+        { "emoji": "🍵", "label": "Teh Panas", "type": "cecair" },
+        { "emoji": "🎏", "label": "Belon Udara Panas", "type": "gas" },
+        { "emoji": "🥤", "label": "Air Bergas", "type": "cecair" },
+        { "emoji": "💭", "label": "Wap Masakan", "type": "gas" }
+      ],
+      [
+        { "emoji": "💧", "label": "Air Kolam", "type": "cecair" },
+        { "emoji": "💨", "label": "Ribut Angin", "type": "gas" },
+        { "emoji": "🥛", "label": "Susu Coklat", "type": "cecair" },
+        { "emoji": "🌬️", "label": "Udara Segar", "type": "gas" },
+        { "emoji": "🧃", "label": "Jus Epal", "type": "cecair" },
+        { "emoji": "🎈", "label": "Gas Helium", "type": "gas" },
+        { "emoji": "🍯", "label": "Sirap Madu", "type": "cecair" },
+        { "emoji": "🌫️", "label": "Wap Cerek", "type": "gas" }
       ]
     ]
   },
