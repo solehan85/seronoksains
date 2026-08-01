@@ -140,6 +140,11 @@
         <span class="label">Eksperimen Ramalan</span>
         <span class="sub" id="eksperimen-ramalan-sub">Memuatkan...</span>
       </button>
+      <button class="menu-item" id="item-teka-pemerhatian" type="button" style="border:none; width:100%; font-family:inherit;">
+        <span class="emoji">🔍</span>
+        <span class="label">Teka & Pemerhatian</span>
+        <span class="sub" id="teka-pemerhatian-sub">Memuatkan...</span>
+      </button>
     </div>
   </div>
 
@@ -180,7 +185,8 @@
     'memory-match': { dataUrl: 'data/memory-match-questions.json', page: 'memory-match.html', title: 'Pilih Topik Memory Match', subEl: 'memory-match-sub', emojiField: () => '🧠' },
     'sebab-akibat': { dataUrl: 'data/sebab-akibat-questions.json', page: 'sebab-akibat.html', title: 'Pilih Topik Sebab-Akibat', subEl: 'sebab-akibat-sub', emojiField: () => '🔗' },
     'peta-minda': { dataUrl: 'data/peta-minda-questions.json', page: 'peta-minda.html', title: 'Pilih Topik Peta Minda', subEl: 'peta-minda-sub', emojiField: () => '🕸️' },
-    'eksperimen-ramalan': { dataUrl: 'data/eksperimen-ramalan-questions.json', page: 'eksperimen-ramalan.html', title: 'Pilih Topik Eksperimen Ramalan', subEl: 'eksperimen-ramalan-sub', emojiField: () => '🔮' }
+    'eksperimen-ramalan': { dataUrl: 'data/eksperimen-ramalan-questions.json', page: 'eksperimen-ramalan.html', title: 'Pilih Topik Eksperimen Ramalan', subEl: 'eksperimen-ramalan-sub', emojiField: () => '🔮' },
+    'teka-pemerhatian': { dataUrl: 'data/teka-pemerhatian-questions.json', page: 'teka-pemerhatian.html', title: 'Pilih Topik Teka & Pemerhatian', subEl: 'teka-pemerhatian-sub', emojiField: () => '🔍' }
   };
   const bankCache = {};
   async function loadBank(mech){
@@ -232,6 +238,7 @@
   document.getElementById('item-sebab-akibat').addEventListener('click', ()=> openTopikPicker(mechanics['sebab-akibat']));
   document.getElementById('item-peta-minda').addEventListener('click', ()=> openTopikPicker(mechanics['peta-minda']));
   document.getElementById('item-eksperimen-ramalan').addEventListener('click', ()=> openTopikPicker(mechanics['eksperimen-ramalan']));
+  document.getElementById('item-teka-pemerhatian').addEventListener('click', ()=> openTopikPicker(mechanics['teka-pemerhatian']));
   document.getElementById('topik-cancel').addEventListener('click', ()=>{
     overlayTopik.classList.remove('show');
   });

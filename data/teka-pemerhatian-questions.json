@@ -1,0 +1,73 @@
+{
+  "tahun4-teka-bahan-sifat": {
+    "topikLabel": "Teka Bahan Ini",
+    "tahun": 4,
+    "rounds": [
+      {
+        "clues": [
+          "Bahan ini keras tetapi boleh digergaji atau dipahat.",
+          "Ia datang daripada batang pokok.",
+          "Selalu digunakan untuk membuat kerusi dan meja."
+        ],
+        "options": [
+          { "emoji": "🪵", "label": "Kayu", "correct": true },
+          { "emoji": "🧴", "label": "Plastik", "correct": false },
+          { "emoji": "🔩", "label": "Logam", "correct": false },
+          { "emoji": "🥛", "label": "Kaca", "correct": false }
+        ]
+      },
+      {
+        "clues": [
+          "Bahan ini keras dan berkilat.",
+          "Ia boleh menghantar panas dan elektrik dengan baik.",
+          "Selalu digunakan untuk membuat sudu dan paku."
+        ],
+        "options": [
+          { "emoji": "🔩", "label": "Logam", "correct": true },
+          { "emoji": "🪵", "label": "Kayu", "correct": false },
+          { "emoji": "🧤", "label": "Getah", "correct": false },
+          { "emoji": "🥛", "label": "Kaca", "correct": false }
+        ]
+      },
+      {
+        "clues": [
+          "Bahan ini keras tetapi mudah pecah jika jatuh.",
+          "Ia jernih dan kita boleh melihat menembusinya.",
+          "Selalu digunakan untuk membuat cermin dan gelas minuman."
+        ],
+        "options": [
+          { "emoji": "🥛", "label": "Kaca", "correct": true },
+          { "emoji": "🧴", "label": "Plastik", "correct": false },
+          { "emoji": "🔩", "label": "Logam", "correct": false },
+          { "emoji": "🧤", "label": "Getah", "correct": false }
+        ]
+      },
+      {
+        "clues": [
+          "Bahan ini boleh diregang dan kembali ke bentuk asal.",
+          "Ia kalis air dan tidak menghantar elektrik.",
+          "Selalu digunakan untuk membuat tayar kereta dan sarung tangan."
+        ],
+        "options": [
+          { "emoji": "🧤", "label": "Getah", "correct": true },
+          { "emoji": "🪵", "label": "Kayu", "correct": false },
+          { "emoji": "🥛", "label": "Kaca", "correct": false },
+          { "emoji": "🧴", "label": "Plastik", "correct": false }
+        ]
+      },
+      {
+        "clues": [
+          "Bahan ini ringan dan boleh dibentuk pelbagai warna.",
+          "Ia tidak berkarat dan kalis air.",
+          "Selalu digunakan untuk membuat botol air dan bekas makanan."
+        ],
+        "options": [
+          { "emoji": "🧴", "label": "Plastik", "correct": true },
+          { "emoji": "🔩", "label": "Logam", "correct": false },
+          { "emoji": "🪵", "label": "Kayu", "correct": false },
+          { "emoji": "🥛", "label": "Kaca", "correct": false }
+        ]
+      }
+    ]
+  }
+}
