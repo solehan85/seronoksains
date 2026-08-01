@@ -52,5 +52,113 @@
         { "sunActive": false }, { "sunActive": false }, { "sunActive": true }, { "sunActive": false }
       ]
     ]
+  },
+  "tahun1-tumbuhan-perlukan-air": {
+    "topikLabel": "Tumbuhan Perlukan Air?",
+    "tahun": 1,
+    "diagramType": "tumbuhan-air",
+    "sets": [
+      [
+        { "watered": true }, { "watered": false }, { "watered": true }, { "watered": false },
+        { "watered": true }, { "watered": false }, { "watered": true }, { "watered": false }
+      ],
+      [
+        { "watered": false }, { "watered": true }, { "watered": false }, { "watered": true },
+        { "watered": false }, { "watered": true }, { "watered": false }, { "watered": true }
+      ],
+      [
+        { "watered": true }, { "watered": true }, { "watered": false }, { "watered": false },
+        { "watered": true }, { "watered": false }, { "watered": true }, { "watered": false }
+      ],
+      [
+        { "watered": false }, { "watered": false }, { "watered": true }, { "watered": true },
+        { "watered": false }, { "watered": true }, { "watered": false }, { "watered": true }
+      ],
+      [
+        { "watered": true }, { "watered": false }, { "watered": true }, { "watered": true },
+        { "watered": false }, { "watered": false }, { "watered": true }, { "watered": false }
+      ]
+    ]
+  },
+  "tahun2-cahaya-bayang": {
+    "topikLabel": "Adakah Bayang Terbentuk?",
+    "tahun": 2,
+    "diagramType": "cahaya-bayang",
+    "sets": [
+      [
+        { "blocked": true }, { "blocked": false }, { "blocked": true }, { "blocked": false },
+        { "blocked": true }, { "blocked": false }, { "blocked": true }, { "blocked": false }
+      ],
+      [
+        { "blocked": false }, { "blocked": true }, { "blocked": false }, { "blocked": true },
+        { "blocked": false }, { "blocked": true }, { "blocked": false }, { "blocked": true }
+      ],
+      [
+        { "blocked": true }, { "blocked": true }, { "blocked": false }, { "blocked": false },
+        { "blocked": true }, { "blocked": false }, { "blocked": true }, { "blocked": false }
+      ],
+      [
+        { "blocked": false }, { "blocked": false }, { "blocked": true }, { "blocked": true },
+        { "blocked": false }, { "blocked": true }, { "blocked": false }, { "blocked": true }
+      ],
+      [
+        { "blocked": true }, { "blocked": false }, { "blocked": true }, { "blocked": true },
+        { "blocked": false }, { "blocked": false }, { "blocked": true }, { "blocked": false }
+      ]
+    ]
+  },
+  "tahun3-ais-dipanaskan": {
+    "topikLabel": "Ais Dipanaskan: Adakah Ia Cair?",
+    "tahun": 3,
+    "diagramType": "ais-cair",
+    "sets": [
+      [
+        { "heated": true }, { "heated": false }, { "heated": true }, { "heated": false },
+        { "heated": true }, { "heated": false }, { "heated": true }, { "heated": false }
+      ],
+      [
+        { "heated": false }, { "heated": true }, { "heated": false }, { "heated": true },
+        { "heated": false }, { "heated": true }, { "heated": false }, { "heated": true }
+      ],
+      [
+        { "heated": true }, { "heated": true }, { "heated": false }, { "heated": false },
+        { "heated": true }, { "heated": false }, { "heated": true }, { "heated": false }
+      ],
+      [
+        { "heated": false }, { "heated": false }, { "heated": true }, { "heated": true },
+        { "heated": false }, { "heated": true }, { "heated": false }, { "heated": true }
+      ],
+      [
+        { "heated": true }, { "heated": false }, { "heated": true }, { "heated": true },
+        { "heated": false }, { "heated": false }, { "heated": true }, { "heated": false }
+      ]
+    ]
+  },
+  "tahun6-besi-berkarat": {
+    "topikLabel": "Besi Berkarat: Adakah Ia Akan Berkarat?",
+    "tahun": 6,
+    "diagramType": "besi-karat",
+    "sets": [
+      [
+        { "exposed": true }, { "exposed": false }, { "exposed": true }, { "exposed": false },
+        { "exposed": true }, { "exposed": false }, { "exposed": true }, { "exposed": false }
+      ],
+      [
+        { "exposed": false }, { "exposed": true }, { "exposed": false }, { "exposed": true },
+        { "exposed": false }, { "exposed": true }, { "exposed": false }, { "exposed": true }
+      ],
+      [
+        { "exposed": true }, { "exposed": true }, { "exposed": false }, { "exposed": false },
+        { "exposed": true }, { "exposed": false }, { "exposed": true }, { "exposed": false }
+      ],
+      [
+        { "exposed": false }, { "exposed": false }, { "exposed": true }, { "exposed": true },
+        { "exposed": false }, { "exposed": true }, { "exposed": false }, { "exposed": true }
+      ],
+      [
+        { "exposed": true }, { "exposed": false }, { "exposed": true }, { "exposed": true },
+        { "exposed": false }, { "exposed": false }, { "exposed": true }, { "exposed": false }
+      ]
+    ]
   }
 }

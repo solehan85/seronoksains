@@ -104,6 +104,32 @@
   .vapor-arrow{ opacity:0; transform:translateY(8px); transform-box:fill-box; transform-origin:center; transition: all 0.4s cubic-bezier(.34,1.56,.64,1); }
   .circuit.revealed.state-sun-active .vapor-arrow{ opacity:0.9; transform:translateY(0); }
 
+  /* Tumbuhan Perlukan Air diagram */
+  .water-drop{ transition: opacity 0.3s; opacity:0; }
+  .circuit.state-watered .water-drop{ opacity:1; }
+  .plant-part{ fill:#B9C4CF; transition: fill 0.4s, transform 0.4s; transform-box:fill-box; transform-origin:bottom center; }
+  .circuit.revealed.state-watered .plant-part{ fill:var(--grass); transform:rotate(0deg); }
+  .circuit.revealed.state-unwatered .plant-part{ fill:#B08968; transform:rotate(16deg); }
+
+  /* Cahaya & Bayang diagram */
+  .light-object{ transition: transform 0.4s cubic-bezier(.34,1.56,.64,1); transform-box:fill-box; }
+  .circuit.state-blocked .light-object{ transform: translateY(0); }
+  .circuit.state-notblocked .light-object{ transform: translateY(55px); }
+  .shadow-shape{ opacity:0; transition: opacity 0.4s; }
+  .circuit.revealed.state-blocked .shadow-shape{ opacity:0.55; }
+
+  /* Ais Dipanaskan diagram */
+  .flame-fill{ transition: fill 0.3s; fill:#B9C4CF; }
+  .circuit.state-heated .flame-fill{ fill:var(--coral); }
+  .ice-shape{ fill:#AEE6F5; transition: all 0.4s cubic-bezier(.34,1.56,.64,1); transform-box:fill-box; transform-origin:bottom center; }
+  .circuit.revealed.state-heated .ice-shape{ transform:scaleY(0.3); fill:#1E8FC4; }
+
+  /* Besi Berkarat diagram */
+  .iron-fill{ transition: fill 0.5s; fill:#B9C4CF; }
+  .circuit.revealed.state-exposed .iron-fill{ fill:#C97C3D; }
+  .moisture-drop{ transition: opacity 0.3s; opacity:0; }
+  .circuit.state-exposed .moisture-drop{ opacity:1; }
+
   #question-card{
     font-family:'Baloo 2', sans-serif; font-weight:700; color:#fff; text-shadow:0 2px 0 rgba(27,51,88,0.35);
     font-size:15px; text-align:center; max-width:400px; padding:0 8px;
@@ -235,6 +261,55 @@
         <path class="vapor-arrow" d="M 115 118 L 120 96 L 125 118" stroke="#7A8CA3" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
         <path class="vapor-arrow" d="M 145 118 L 150 100 L 155 118" stroke="#7A8CA3" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
+
+      <svg id="circuit-svg-tumbuhan-air" class="circuit" viewBox="0 0 240 160" xmlns="http://www.w3.org/2000/svg" style="display:none;">
+        <!-- pot -->
+        <path d="M 95 150 L 105 115 L 135 115 L 145 150 Z" fill="#C97C3D"/>
+        <!-- stem -->
+        <line x1="120" y1="115" x2="120" y2="70" stroke="#33A857" stroke-width="6" stroke-linecap="round"/>
+        <!-- leaves -->
+        <ellipse class="plant-part" cx="100" cy="85" rx="20" ry="11" transform="rotate(-20 100 85)"/>
+        <ellipse class="plant-part" cx="140" cy="85" rx="20" ry="11" transform="rotate(20 140 85)"/>
+        <!-- bud/flower -->
+        <circle class="plant-part" cx="120" cy="62" r="14"/>
+        <!-- water drops (shown when watered, always accurate) -->
+        <path class="water-drop" d="M 70 30 C 70 38 62 38 62 30 C 62 24 70 16 70 16 C 70 16 78 24 78 30 C 78 38 70 38 70 30 Z" fill="#29ABE2"/>
+        <path class="water-drop" d="M 175 20 C 175 26 169 26 169 20 C 169 16 175 10 175 10 C 175 10 181 16 181 20 C 181 26 175 26 175 20 Z" fill="#29ABE2"/>
+      </svg>
+
+      <svg id="circuit-svg-cahaya-bayang" class="circuit" viewBox="0 0 240 160" xmlns="http://www.w3.org/2000/svg" style="display:none;">
+        <!-- ground -->
+        <line x1="10" y1="140" x2="230" y2="140" stroke="#B9C4CF" stroke-width="4" stroke-linecap="round"/>
+        <!-- lamp -->
+        <circle cx="30" cy="80" r="14" fill="var(--sun)"/>
+        <line x1="46" y1="65" x2="200" y2="30" stroke="var(--sun)" stroke-width="2" opacity="0.6"/>
+        <line x1="46" y1="80" x2="200" y2="80" stroke="var(--sun)" stroke-width="2" opacity="0.6"/>
+        <line x1="46" y1="95" x2="200" y2="130" stroke="var(--sun)" stroke-width="2" opacity="0.6"/>
+        <!-- object (position toggles in/out of light path) -->
+        <rect class="light-object" x="110" y="60" width="18" height="80" rx="4" fill="#5C7690"/>
+        <!-- shadow on ground -->
+        <ellipse class="shadow-shape" cx="165" cy="140" rx="40" ry="8" fill="#1B3358"/>
+      </svg>
+
+      <svg id="circuit-svg-ais-cair" class="circuit" viewBox="0 0 240 160" xmlns="http://www.w3.org/2000/svg" style="display:none;">
+        <!-- tray -->
+        <rect x="70" y="128" width="100" height="14" rx="6" fill="#B9C4CF"/>
+        <!-- ice cube -->
+        <rect class="ice-shape" x="90" y="88" width="60" height="42" rx="8"/>
+        <!-- flame -->
+        <path class="flame-fill" d="M 190 130 C 180 115 195 105 190 90 C 205 100 210 118 200 130 C 197 133 193 133 190 130 Z"/>
+      </svg>
+
+      <svg id="circuit-svg-besi-karat" class="circuit" viewBox="0 0 240 160" xmlns="http://www.w3.org/2000/svg" style="display:none;">
+        <!-- iron bar -->
+        <rect class="iron-fill" x="55" y="70" width="130" height="26" rx="8"/>
+        <circle class="iron-fill" cx="55" cy="83" r="13"/>
+        <circle class="iron-fill" cx="185" cy="83" r="13"/>
+        <!-- moisture drops (shown when exposed, always accurate) -->
+        <path class="moisture-drop" d="M 70 40 C 70 46 64 46 64 40 C 64 35 70 28 70 28 C 70 28 76 35 76 40 C 76 46 70 46 70 40 Z" fill="#29ABE2"/>
+        <path class="moisture-drop" d="M 120 30 C 120 36 114 36 114 30 C 114 25 120 18 120 18 C 120 18 126 25 126 30 C 126 36 120 36 120 30 Z" fill="#29ABE2"/>
+        <path class="moisture-drop" d="M 170 40 C 170 46 164 46 164 40 C 164 35 170 28 170 28 C 170 28 176 35 176 40 C 176 46 170 46 170 40 Z" fill="#29ABE2"/>
+      </svg>
     </div>
     <div id="question-card">Memuatkan...</div>
     <div id="options-row">
@@ -293,6 +368,38 @@ const DIAGRAM_CONFIGS = {
     question: r => r.sunActive
       ? 'Matahari sedang memanaskan air. Adakah air akan menyejat (menjadi wap)?'
       : 'Matahari tidak memanaskan air sekarang. Adakah air akan menyejat (menjadi wap)?'
+  },
+  'tumbuhan-air': {
+    svgId: 'circuit-svg-tumbuhan-air',
+    stateClass: r => `state-${r.watered ? 'watered' : 'unwatered'}`,
+    correctAnswer: r => r.watered ? 'Ya' : 'Tidak',
+    question: r => r.watered
+      ? 'Pokok ini disiram air setiap hari. Adakah ia akan membesar dengan segar?'
+      : 'Pokok ini TIDAK disiram air. Adakah ia akan membesar dengan segar?'
+  },
+  'cahaya-bayang': {
+    svgId: 'circuit-svg-cahaya-bayang',
+    stateClass: r => `state-${r.blocked ? 'blocked' : 'notblocked'}`,
+    correctAnswer: r => r.blocked ? 'Ya' : 'Tidak',
+    question: r => r.blocked
+      ? 'Objek ini menghalang laluan cahaya lampu. Adakah bayang akan terbentuk?'
+      : 'Objek ini TIDAK menghalang laluan cahaya lampu. Adakah bayang akan terbentuk?'
+  },
+  'ais-cair': {
+    svgId: 'circuit-svg-ais-cair',
+    stateClass: r => `state-${r.heated ? 'heated' : 'notheated'}`,
+    correctAnswer: r => r.heated ? 'Ya' : 'Tidak',
+    question: r => r.heated
+      ? 'Ais ini dipanaskan. Adakah ia akan cair menjadi air?'
+      : 'Ais ini TIDAK dipanaskan (kekal sejuk). Adakah ia akan cair menjadi air?'
+  },
+  'besi-karat': {
+    svgId: 'circuit-svg-besi-karat',
+    stateClass: r => `state-${r.exposed ? 'exposed' : 'notexposed'}`,
+    correctAnswer: r => r.exposed ? 'Ya' : 'Tidak',
+    question: r => r.exposed
+      ? 'Besi ini terdedah kepada air dan udara dalam tempoh lama. Adakah ia akan berkarat?'
+      : 'Besi ini disimpan kering dan tidak terdedah kepada air. Adakah ia akan berkarat?'
   }
 };
 let activeConfig = DIAGRAM_CONFIGS.litar;
