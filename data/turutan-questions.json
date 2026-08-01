@@ -1,0 +1,22 @@
+{
+  "tahun5-kitaran-hidup-rama-rama": {
+    "topikLabel": "Kitaran Hidup Rama-rama",
+    "tahun": 5,
+    "stages": [
+      { "emoji": "🥚", "label": "Telur" },
+      { "emoji": "🐛", "label": "Ulat" },
+      { "emoji": "🥔", "label": "Kepompong" },
+      { "emoji": "🦋", "label": "Rama-rama" }
+    ]
+  },
+  "tahun2-pertumbuhan-pokok": {
+    "topikLabel": "Pertumbuhan Pokok",
+    "tahun": 2,
+    "stages": [
+      { "emoji": "🌰", "label": "Biji Benih" },
+      { "emoji": "🌱", "label": "Benih Bercambah" },
+      { "emoji": "🌿", "label": "Pokok Muda" },
+      { "emoji": "🌳", "label": "Pokok Matang" }
+    ]
+  }
+}

@@ -115,6 +115,11 @@
         <span class="label">Simulasi Mini</span>
         <span class="sub" id="simulasi-mini-sub">Memuatkan...</span>
       </button>
+      <button class="menu-item" id="item-turutan" type="button" style="border:none; width:100%; font-family:inherit;">
+        <span class="emoji">📋</span>
+        <span class="label">Turutan</span>
+        <span class="sub" id="turutan-sub">Memuatkan...</span>
+      </button>
     </div>
   </div>
 
@@ -150,7 +155,8 @@
     klasifikasi: { dataUrl: 'data/klasifikasi-questions.json', page: 'klasifikasi.html', title: 'Pilih Topik Klasifikasi', subEl: 'klasifikasi-sub', emojiField: t => t.binA.emoji },
     'label-rajah': { dataUrl: 'data/label-rajah-questions.json', page: 'label-rajah.html', title: 'Pilih Topik Label Rajah', subEl: 'label-rajah-sub', emojiField: () => '🏷️' },
     'quiz-pantas': { dataUrl: 'data/quiz-pantas-questions.json', page: 'quiz-pantas.html', title: 'Pilih Topik Kuiz Pantas', subEl: 'quiz-pantas-sub', emojiField: () => '⚡' },
-    'simulasi-mini': { dataUrl: 'data/simulasi-mini-questions.json', page: 'simulasi-mini.html', title: 'Pilih Topik Simulasi Mini', subEl: 'simulasi-mini-sub', emojiField: () => '🧪' }
+    'simulasi-mini': { dataUrl: 'data/simulasi-mini-questions.json', page: 'simulasi-mini.html', title: 'Pilih Topik Simulasi Mini', subEl: 'simulasi-mini-sub', emojiField: () => '🧪' },
+    'turutan': { dataUrl: 'data/turutan-questions.json', page: 'turutan.html', title: 'Pilih Topik Turutan', subEl: 'turutan-sub', emojiField: () => '📋' }
   };
   const bankCache = {};
   async function loadBank(mech){
@@ -197,6 +203,7 @@
   document.getElementById('item-label-rajah').addEventListener('click', ()=> openTopikPicker(mechanics['label-rajah']));
   document.getElementById('item-quiz-pantas').addEventListener('click', ()=> openTopikPicker(mechanics['quiz-pantas']));
   document.getElementById('item-simulasi-mini').addEventListener('click', ()=> openTopikPicker(mechanics['simulasi-mini']));
+  document.getElementById('item-turutan').addEventListener('click', ()=> openTopikPicker(mechanics['turutan']));
   document.getElementById('topik-cancel').addEventListener('click', ()=>{
     overlayTopik.classList.remove('show');
   });
