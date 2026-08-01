@@ -125,6 +125,11 @@
         <span class="label">Memory Match</span>
         <span class="sub" id="memory-match-sub">Memuatkan...</span>
       </button>
+      <button class="menu-item" id="item-sebab-akibat" type="button" style="border:none; width:100%; font-family:inherit;">
+        <span class="emoji">🔗</span>
+        <span class="label">Sebab-Akibat</span>
+        <span class="sub" id="sebab-akibat-sub">Memuatkan...</span>
+      </button>
     </div>
   </div>
 
@@ -162,7 +167,8 @@
     'quiz-pantas': { dataUrl: 'data/quiz-pantas-questions.json', page: 'quiz-pantas.html', title: 'Pilih Topik Kuiz Pantas', subEl: 'quiz-pantas-sub', emojiField: () => '⚡' },
     'simulasi-mini': { dataUrl: 'data/simulasi-mini-questions.json', page: 'simulasi-mini.html', title: 'Pilih Topik Simulasi Mini', subEl: 'simulasi-mini-sub', emojiField: () => '🧪' },
     'turutan': { dataUrl: 'data/turutan-questions.json', page: 'turutan.html', title: 'Pilih Topik Turutan', subEl: 'turutan-sub', emojiField: () => '📋' },
-    'memory-match': { dataUrl: 'data/memory-match-questions.json', page: 'memory-match.html', title: 'Pilih Topik Memory Match', subEl: 'memory-match-sub', emojiField: () => '🧠' }
+    'memory-match': { dataUrl: 'data/memory-match-questions.json', page: 'memory-match.html', title: 'Pilih Topik Memory Match', subEl: 'memory-match-sub', emojiField: () => '🧠' },
+    'sebab-akibat': { dataUrl: 'data/sebab-akibat-questions.json', page: 'sebab-akibat.html', title: 'Pilih Topik Sebab-Akibat', subEl: 'sebab-akibat-sub', emojiField: () => '🔗' }
   };
   const bankCache = {};
   async function loadBank(mech){
@@ -211,6 +217,7 @@
   document.getElementById('item-simulasi-mini').addEventListener('click', ()=> openTopikPicker(mechanics['simulasi-mini']));
   document.getElementById('item-turutan').addEventListener('click', ()=> openTopikPicker(mechanics['turutan']));
   document.getElementById('item-memory-match').addEventListener('click', ()=> openTopikPicker(mechanics['memory-match']));
+  document.getElementById('item-sebab-akibat').addEventListener('click', ()=> openTopikPicker(mechanics['sebab-akibat']));
   document.getElementById('topik-cancel').addEventListener('click', ()=>{
     overlayTopik.classList.remove('show');
   });

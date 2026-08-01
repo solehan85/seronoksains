@@ -1,0 +1,13 @@
+{
+  "tahun6-sebab-akibat-alam-sekitar": {
+    "topikLabel": "Sebab-Akibat: Alam Sekitar",
+    "tahun": 6,
+    "pairs": [
+      { "sebabEmoji": "🪓", "sebab": "Menebang Hutan", "akibatEmoji": "⛰️", "akibat": "Tanah Runtuh" },
+      { "sebabEmoji": "🚯", "sebab": "Buang Sampah ke Sungai", "akibatEmoji": "🐟", "akibat": "Ikan Mati" },
+      { "sebabEmoji": "🔥", "sebab": "Membakar Sampah Terbuka", "akibatEmoji": "🌫️", "akibat": "Jerebu" },
+      { "sebabEmoji": "🛍️", "sebab": "Guna Plastik Berlebihan", "akibatEmoji": "🗑️", "akibat": "Sampah Bertimbun" },
+      { "sebabEmoji": "🚗", "sebab": "Kenderaan Berlebihan", "akibatEmoji": "😷", "akibat": "Pencemaran Udara" }
+    ]
+  }
+}
