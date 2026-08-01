@@ -1,0 +1,14 @@
+{
+  "tahun1-nama-haiwan": {
+    "topikLabel": "Padanan Nama Haiwan",
+    "tahun": 1,
+    "pairs": [
+      { "term": "Kucing", "emoji": "🐱" },
+      { "term": "Anjing", "emoji": "🐕" },
+      { "term": "Ayam", "emoji": "🐔" },
+      { "term": "Ikan", "emoji": "🐟" },
+      { "term": "Burung", "emoji": "🐦" },
+      { "term": "Katak", "emoji": "🐸" }
+    ]
+  }
+}
