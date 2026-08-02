@@ -42,5 +42,49 @@
       { "sebabEmoji": "🥗", "sebab": "Makan Makanan Seimbang", "akibatEmoji": "💪", "akibat": "Badan Membesar dengan Sihat" },
       { "sebabEmoji": "🦴", "sebab": "Menggigit Benda Keras", "akibatEmoji": "😬", "akibat": "Gigi Patah atau Retak" }
     ]
+  },
+  "tahun4-rangsangan-gerak-balas": {
+    "topikLabel": "Sebab-Akibat: Rangsangan dan Gerak Balas",
+    "tahun": 4,
+    "pairs": [
+      { "sebabEmoji": "🔥", "sebab": "Tersentuh Benda Panas", "akibatEmoji": "✋", "akibat": "Tangan Ditarik" },
+      { "sebabEmoji": "💡", "sebab": "Terkena Cahaya Terang", "akibatEmoji": "👁️", "akibat": "Mata Dikecilkan" },
+      { "sebabEmoji": "📢", "sebab": "Mendengar Bunyi Kuat", "akibatEmoji": "😲", "akibat": "Telinga Terkejut" },
+      { "sebabEmoji": "🌶️", "sebab": "Makan Makanan Pedas", "akibatEmoji": "👅", "akibat": "Lidah Rasa Pedas" },
+      { "sebabEmoji": "🧊", "sebab": "Sentuh Ais Sejuk", "akibatEmoji": "🥶", "akibat": "Badan Menggigil" }
+    ]
+  },
+  "tahun4-gerak-balas-tumbuhan": {
+    "topikLabel": "Sebab-Akibat: Gerak Balas Tumbuhan",
+    "tahun": 4,
+    "pairs": [
+      { "sebabEmoji": "☀️", "sebab": "Pucuk Terkena Cahaya Matahari", "akibatEmoji": "🌱", "akibat": "Tumbuh ke Arah Cahaya" },
+      { "sebabEmoji": "💧", "sebab": "Akar Terkena Air", "akibatEmoji": "🌿", "akibat": "Tumbuh ke Arah Air" },
+      { "sebabEmoji": "👆", "sebab": "Daun Semalu Disentuh", "akibatEmoji": "🍃", "akibat": "Daun Menguncup" },
+      { "sebabEmoji": "🪵", "sebab": "Sulur Paut Menyentuh Kayu", "akibatEmoji": "🧵", "akibat": "Melilit pada Kayu" },
+      { "sebabEmoji": "⬇️", "sebab": "Akar Terkena Graviti", "akibatEmoji": "🌰", "akibat": "Tumbuh ke Bawah Tanah" }
+    ]
+  },
+  "tahun4-perubahan-bentuk-tenaga": {
+    "topikLabel": "Sebab-Akibat: Perubahan Bentuk Tenaga",
+    "tahun": 4,
+    "pairs": [
+      { "sebabEmoji": "💡", "sebab": "Lampu Dipasang", "akibatEmoji": "🔥", "akibat": "Tenaga Cahaya dan Haba Dihasilkan" },
+      { "sebabEmoji": "🌀", "sebab": "Kipas Dipasang", "akibatEmoji": "🏃", "akibat": "Tenaga Kinetik Dihasilkan" },
+      { "sebabEmoji": "📻", "sebab": "Radio Dipasang", "akibatEmoji": "🔊", "akibat": "Tenaga Bunyi Dihasilkan" },
+      { "sebabEmoji": "☀️", "sebab": "Panel Solar Terkena Cahaya Matahari", "akibatEmoji": "⚡", "akibat": "Tenaga Elektrik Dihasilkan" },
+      { "sebabEmoji": "🎸", "sebab": "Tali Gitar Dipetik", "akibatEmoji": "🎶", "akibat": "Dawai Bergetar Hasilkan Bunyi" }
+    ]
+  },
+  "tahun4-kesan-graviti": {
+    "topikLabel": "Sebab-Akibat: Kesan Graviti",
+    "tahun": 4,
+    "pairs": [
+      { "sebabEmoji": "⚽", "sebab": "Bola Dilepaskan dari Atas", "akibatEmoji": "⬇️", "akibat": "Jatuh ke Tanah" },
+      { "sebabEmoji": "🫗", "sebab": "Air Dituang dari Tin", "akibatEmoji": "💧", "akibat": "Mengalir ke Bawah" },
+      { "sebabEmoji": "🍎", "sebab": "Buah Masak di Pokok", "akibatEmoji": "🍂", "akibat": "Gugur dan Jatuh ke Tanah" },
+      { "sebabEmoji": "🚗", "sebab": "Kereta Diletak di Cerun", "akibatEmoji": "🛣️", "akibat": "Bergerak ke Bawah Cerun" },
+      { "sebabEmoji": "🪁", "sebab": "Layang-layang Talinya Putus", "akibatEmoji": "🌍", "akibat": "Jatuh Semula ke Bumi" }
+    ]
   }
 }

@@ -1265,6 +1265,180 @@
       ]
     ]
   },
+  "tahun4-memantul-tidak-memantul-cahaya": {
+    "topikLabel": "Memantulkan Cahaya atau Tidak?",
+    "tahun": 4,
+    "binA": { "type": "memantul", "label": "MEMANTULKAN CAHAYA", "emoji": "🪞" },
+    "binB": { "type": "tidakmemantul", "label": "TIDAK MEMANTULKAN CAHAYA", "emoji": "🧦" },
+    "sets": [
+      [
+        { "emoji": "🪞", "label": "Cermin", "type": "memantul" },
+        { "emoji": "🥄", "label": "Sudu Logam", "type": "memantul" },
+        { "emoji": "🌊", "label": "Air Tenang", "type": "memantul" },
+        { "emoji": "🪙", "label": "Duit Syiling Berkilat", "type": "memantul" },
+        { "emoji": "🧦", "label": "Stoking", "type": "tidakmemantul" },
+        { "emoji": "🧽", "label": "Span", "type": "tidakmemantul" },
+        { "emoji": "🪵", "label": "Kayu", "type": "tidakmemantul" },
+        { "emoji": "📄", "label": "Kertas", "type": "tidakmemantul" }
+      ],
+      [
+        { "emoji": "🥄", "label": "Sudu Logam", "type": "memantul" },
+        { "emoji": "🌊", "label": "Air Tenang", "type": "memantul" },
+        { "emoji": "🪙", "label": "Duit Syiling Berkilat", "type": "memantul" },
+        { "emoji": "🪟", "label": "Cermin Tingkap", "type": "memantul" },
+        { "emoji": "🧽", "label": "Span", "type": "tidakmemantul" },
+        { "emoji": "🪵", "label": "Kayu", "type": "tidakmemantul" },
+        { "emoji": "📄", "label": "Kertas", "type": "tidakmemantul" },
+        { "emoji": "🧵", "label": "Kain", "type": "tidakmemantul" }
+      ],
+      [
+        { "emoji": "🌊", "label": "Air Tenang", "type": "memantul" },
+        { "emoji": "🪙", "label": "Duit Syiling Berkilat", "type": "memantul" },
+        { "emoji": "🪟", "label": "Cermin Tingkap", "type": "memantul" },
+        { "emoji": "🪞", "label": "Cermin", "type": "memantul" },
+        { "emoji": "🪵", "label": "Kayu", "type": "tidakmemantul" },
+        { "emoji": "📄", "label": "Kertas", "type": "tidakmemantul" },
+        { "emoji": "🧵", "label": "Kain", "type": "tidakmemantul" },
+        { "emoji": "🧦", "label": "Stoking", "type": "tidakmemantul" }
+      ],
+      [
+        { "emoji": "🪙", "label": "Duit Syiling Berkilat", "type": "memantul" },
+        { "emoji": "🪟", "label": "Cermin Tingkap", "type": "memantul" },
+        { "emoji": "🪞", "label": "Cermin", "type": "memantul" },
+        { "emoji": "🥄", "label": "Sudu Logam", "type": "memantul" },
+        { "emoji": "📄", "label": "Kertas", "type": "tidakmemantul" },
+        { "emoji": "🧵", "label": "Kain", "type": "tidakmemantul" },
+        { "emoji": "🧦", "label": "Stoking", "type": "tidakmemantul" },
+        { "emoji": "🧽", "label": "Span", "type": "tidakmemantul" }
+      ],
+      [
+        { "emoji": "🪟", "label": "Cermin Tingkap", "type": "memantul" },
+        { "emoji": "🪞", "label": "Cermin", "type": "memantul" },
+        { "emoji": "🥄", "label": "Sudu Logam", "type": "memantul" },
+        { "emoji": "🌊", "label": "Air Tenang", "type": "memantul" },
+        { "emoji": "🧵", "label": "Kain", "type": "tidakmemantul" },
+        { "emoji": "🧦", "label": "Stoking", "type": "tidakmemantul" },
+        { "emoji": "🧽", "label": "Span", "type": "tidakmemantul" },
+        { "emoji": "🪵", "label": "Kayu", "type": "tidakmemantul" }
+      ]
+    ]
+  },
+  "tahun4-bunyi-berfaedah-memudaratkan": {
+    "topikLabel": "Bunyi Berfaedah atau Memudaratkan?",
+    "tahun": 4,
+    "binA": { "type": "berfaedah", "label": "BUNYI BERFAEDAH", "emoji": "🔔" },
+    "binB": { "type": "memudaratkan", "label": "BUNYI MEMUDARATKAN", "emoji": "😣" },
+    "sets": [
+      [
+        { "emoji": "🔔", "label": "Loceng Sekolah", "type": "berfaedah" },
+        { "emoji": "🚑", "label": "Siren Ambulans", "type": "berfaedah" },
+        { "emoji": "🗣️", "label": "Suara Manusia", "type": "berfaedah" },
+        { "emoji": "🐦", "label": "Bunyi Burung Berkicau", "type": "berfaedah" },
+        { "emoji": "🏭", "label": "Bunyi Bising Kilang", "type": "memudaratkan" },
+        { "emoji": "🚗", "label": "Bunyi Trafik", "type": "memudaratkan" },
+        { "emoji": "🏗️", "label": "Bunyi Pembinaan", "type": "memudaratkan" },
+        { "emoji": "⛈️", "label": "Bunyi Guruh Kuat", "type": "memudaratkan" }
+      ],
+      [
+        { "emoji": "🚑", "label": "Siren Ambulans", "type": "berfaedah" },
+        { "emoji": "🗣️", "label": "Suara Manusia", "type": "berfaedah" },
+        { "emoji": "🐦", "label": "Bunyi Burung Berkicau", "type": "berfaedah" },
+        { "emoji": "🎵", "label": "Muzik Lembut", "type": "berfaedah" },
+        { "emoji": "🚗", "label": "Bunyi Trafik", "type": "memudaratkan" },
+        { "emoji": "🏗️", "label": "Bunyi Pembinaan", "type": "memudaratkan" },
+        { "emoji": "⛈️", "label": "Bunyi Guruh Kuat", "type": "memudaratkan" },
+        { "emoji": "📢", "label": "Bunyi Enjin Kuat", "type": "memudaratkan" }
+      ],
+      [
+        { "emoji": "🗣️", "label": "Suara Manusia", "type": "berfaedah" },
+        { "emoji": "🐦", "label": "Bunyi Burung Berkicau", "type": "berfaedah" },
+        { "emoji": "🎵", "label": "Muzik Lembut", "type": "berfaedah" },
+        { "emoji": "🔔", "label": "Loceng Sekolah", "type": "berfaedah" },
+        { "emoji": "🏗️", "label": "Bunyi Pembinaan", "type": "memudaratkan" },
+        { "emoji": "⛈️", "label": "Bunyi Guruh Kuat", "type": "memudaratkan" },
+        { "emoji": "📢", "label": "Bunyi Enjin Kuat", "type": "memudaratkan" },
+        { "emoji": "🏭", "label": "Bunyi Bising Kilang", "type": "memudaratkan" }
+      ],
+      [
+        { "emoji": "🐦", "label": "Bunyi Burung Berkicau", "type": "berfaedah" },
+        { "emoji": "🎵", "label": "Muzik Lembut", "type": "berfaedah" },
+        { "emoji": "🔔", "label": "Loceng Sekolah", "type": "berfaedah" },
+        { "emoji": "🚑", "label": "Siren Ambulans", "type": "berfaedah" },
+        { "emoji": "⛈️", "label": "Bunyi Guruh Kuat", "type": "memudaratkan" },
+        { "emoji": "📢", "label": "Bunyi Enjin Kuat", "type": "memudaratkan" },
+        { "emoji": "🏭", "label": "Bunyi Bising Kilang", "type": "memudaratkan" },
+        { "emoji": "🚗", "label": "Bunyi Trafik", "type": "memudaratkan" }
+      ],
+      [
+        { "emoji": "🎵", "label": "Muzik Lembut", "type": "berfaedah" },
+        { "emoji": "🔔", "label": "Loceng Sekolah", "type": "berfaedah" },
+        { "emoji": "🚑", "label": "Siren Ambulans", "type": "berfaedah" },
+        { "emoji": "🗣️", "label": "Suara Manusia", "type": "berfaedah" },
+        { "emoji": "📢", "label": "Bunyi Enjin Kuat", "type": "memudaratkan" },
+        { "emoji": "🏭", "label": "Bunyi Bising Kilang", "type": "memudaratkan" },
+        { "emoji": "🚗", "label": "Bunyi Trafik", "type": "memudaratkan" },
+        { "emoji": "🏗️", "label": "Bunyi Pembinaan", "type": "memudaratkan" }
+      ]
+    ]
+  },
+  "tahun4-kuat-mudah-pecah": {
+    "topikLabel": "Bahan Kuat atau Mudah Pecah?",
+    "tahun": 4,
+    "binA": { "type": "kuat", "label": "KUAT", "emoji": "💪" },
+    "binB": { "type": "mudahpecah", "label": "MUDAH PECAH", "emoji": "💥" },
+    "sets": [
+      [
+        { "emoji": "🔩", "label": "Besi", "type": "kuat" },
+        { "emoji": "⚙️", "label": "Keluli", "type": "kuat" },
+        { "emoji": "🪵", "label": "Kayu", "type": "kuat" },
+        { "emoji": "🪨", "label": "Batu", "type": "kuat" },
+        { "emoji": "🥛", "label": "Kaca", "type": "mudahpecah" },
+        { "emoji": "🍽️", "label": "Piring", "type": "mudahpecah" },
+        { "emoji": "🥚", "label": "Telur", "type": "mudahpecah" },
+        { "emoji": "🫙", "label": "Balang Kaca", "type": "mudahpecah" }
+      ],
+      [
+        { "emoji": "⚙️", "label": "Keluli", "type": "kuat" },
+        { "emoji": "🪵", "label": "Kayu", "type": "kuat" },
+        { "emoji": "🪨", "label": "Batu", "type": "kuat" },
+        { "emoji": "🧴", "label": "Plastik Tebal", "type": "kuat" },
+        { "emoji": "🍽️", "label": "Piring", "type": "mudahpecah" },
+        { "emoji": "🥚", "label": "Telur", "type": "mudahpecah" },
+        { "emoji": "🫙", "label": "Balang Kaca", "type": "mudahpecah" },
+        { "emoji": "☕", "label": "Cawan Porselin", "type": "mudahpecah" }
+      ],
+      [
+        { "emoji": "🪵", "label": "Kayu", "type": "kuat" },
+        { "emoji": "🪨", "label": "Batu", "type": "kuat" },
+        { "emoji": "🧴", "label": "Plastik Tebal", "type": "kuat" },
+        { "emoji": "🔩", "label": "Besi", "type": "kuat" },
+        { "emoji": "🥚", "label": "Telur", "type": "mudahpecah" },
+        { "emoji": "🫙", "label": "Balang Kaca", "type": "mudahpecah" },
+        { "emoji": "☕", "label": "Cawan Porselin", "type": "mudahpecah" },
+        { "emoji": "🥛", "label": "Kaca", "type": "mudahpecah" }
+      ],
+      [
+        { "emoji": "🪨", "label": "Batu", "type": "kuat" },
+        { "emoji": "🧴", "label": "Plastik Tebal", "type": "kuat" },
+        { "emoji": "🔩", "label": "Besi", "type": "kuat" },
+        { "emoji": "⚙️", "label": "Keluli", "type": "kuat" },
+        { "emoji": "🫙", "label": "Balang Kaca", "type": "mudahpecah" },
+        { "emoji": "☕", "label": "Cawan Porselin", "type": "mudahpecah" },
+        { "emoji": "🥛", "label": "Kaca", "type": "mudahpecah" },
+        { "emoji": "🍽️", "label": "Piring", "type": "mudahpecah" }
+      ],
+      [
+        { "emoji": "🧴", "label": "Plastik Tebal", "type": "kuat" },
+        { "emoji": "🔩", "label": "Besi", "type": "kuat" },
+        { "emoji": "⚙️", "label": "Keluli", "type": "kuat" },
+        { "emoji": "🪵", "label": "Kayu", "type": "kuat" },
+        { "emoji": "☕", "label": "Cawan Porselin", "type": "mudahpecah" },
+        { "emoji": "🥛", "label": "Kaca", "type": "mudahpecah" },
+        { "emoji": "🍽️", "label": "Piring", "type": "mudahpecah" },
+        { "emoji": "🥚", "label": "Telur", "type": "mudahpecah" }
+      ]
+    ]
+  },
   "tahun5-habitat-darat-air": {
     "topikLabel": "Habitat Darat atau Habitat Air?",
     "tahun": 5,

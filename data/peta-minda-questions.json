@@ -366,5 +366,138 @@
       { "label": "Kren Pembinaan", "emoji": "🏗️", "branchId": "bergerak" },
       { "label": "Mesin Mengangkat Kontena", "emoji": "📦", "branchId": "gabungan" }
     ]
+  },
+  "tahun4-pemboleh-ubah": {
+    "topikLabel": "Peta Minda Jenis Pemboleh Ubah",
+    "tahun": 4,
+    "centralLabel": "PEMBOLEH UBAH",
+    "centralEmoji": "🔬",
+    "branches": [
+      { "id": "dimanipulasi", "label": "DIMANIPULASI", "emoji": "🔧" },
+      { "id": "bergerakbalas", "label": "BERGERAK BALAS", "emoji": "📈" },
+      { "id": "dimalarkan", "label": "DIMALARKAN", "emoji": "🔒" }
+    ],
+    "items": [
+      { "label": "Jumlah Air Diberikan", "emoji": "💧", "branchId": "dimanipulasi" },
+      { "label": "Suhu Air", "emoji": "🌡️", "branchId": "dimanipulasi" },
+      { "label": "Ketinggian Tumbuhan", "emoji": "🌱", "branchId": "bergerakbalas" },
+      { "label": "Kelajuan Gula Larut", "emoji": "🍬", "branchId": "bergerakbalas" },
+      { "label": "Jenis Baja Digunakan", "emoji": "🌾", "branchId": "dimalarkan" },
+      { "label": "Jenis Bekas Digunakan", "emoji": "🥤", "branchId": "dimalarkan" }
+    ]
+  },
+  "tahun4-organ-perkumuhan": {
+    "topikLabel": "Peta Minda Organ Perkumuhan",
+    "tahun": 4,
+    "centralLabel": "ORGAN PERKUMUHAN",
+    "centralEmoji": "🫁",
+    "branches": [
+      { "id": "peparu", "label": "PEPARU", "emoji": "🫁" },
+      { "id": "ginjal", "label": "GINJAL", "emoji": "🫘" },
+      { "id": "kulit", "label": "KULIT", "emoji": "🤚" },
+      { "id": "ususbesar", "label": "USUS BESAR", "emoji": "🌀" }
+    ],
+    "items": [
+      { "label": "Karbon Dioksida", "emoji": "💨", "branchId": "peparu" },
+      { "label": "Wap Air", "emoji": "💧", "branchId": "peparu" },
+      { "label": "Air Kencing", "emoji": "🚽", "branchId": "ginjal" },
+      { "label": "Peluh", "emoji": "💦", "branchId": "kulit" },
+      { "label": "Tinja", "emoji": "💩", "branchId": "ususbesar" }
+    ]
+  },
+  "tahun4-kumpulan-vertebrata": {
+    "topikLabel": "Peta Minda 5 Kumpulan Vertebrata",
+    "tahun": 4,
+    "centralLabel": "VERTEBRATA",
+    "centralEmoji": "🦴",
+    "branches": [
+      { "id": "ikan", "label": "IKAN", "emoji": "🐟" },
+      { "id": "amfibia", "label": "AMFIBIA", "emoji": "🐸" },
+      { "id": "reptilia", "label": "REPTILIA", "emoji": "🦎" },
+      { "id": "burung", "label": "BURUNG", "emoji": "🐦" },
+      { "id": "mamalia", "label": "MAMALIA", "emoji": "🐄" }
+    ],
+    "items": [
+      { "label": "Ikan Emas", "emoji": "🐠", "branchId": "ikan" },
+      { "label": "Ikan Yu", "emoji": "🦈", "branchId": "ikan" },
+      { "label": "Katak", "emoji": "🐸", "branchId": "amfibia" },
+      { "label": "Ular", "emoji": "🐍", "branchId": "reptilia" },
+      { "label": "Buaya", "emoji": "🐊", "branchId": "reptilia" },
+      { "label": "Burung Helang", "emoji": "🦅", "branchId": "burung" },
+      { "label": "Ayam", "emoji": "🐔", "branchId": "burung" },
+      { "label": "Kucing", "emoji": "🐱", "branchId": "mamalia" },
+      { "label": "Gajah", "emoji": "🐘", "branchId": "mamalia" }
+    ]
+  },
+  "tahun4-fotosintesis": {
+    "topikLabel": "Peta Minda Fotosintesis",
+    "tahun": 4,
+    "centralLabel": "FOTOSINTESIS",
+    "centralEmoji": "🌿",
+    "branches": [
+      { "id": "keperluan", "label": "KEPERLUAN", "emoji": "📋" },
+      { "id": "hasil", "label": "HASIL", "emoji": "📦" }
+    ],
+    "items": [
+      { "label": "Cahaya Matahari", "emoji": "☀️", "branchId": "keperluan" },
+      { "label": "Air", "emoji": "💧", "branchId": "keperluan" },
+      { "label": "Karbon Dioksida", "emoji": "💨", "branchId": "keperluan" },
+      { "label": "Klorofil", "emoji": "🍃", "branchId": "keperluan" },
+      { "label": "Glukosa", "emoji": "🍯", "branchId": "hasil" },
+      { "label": "Oksigen", "emoji": "🫧", "branchId": "hasil" }
+    ]
+  },
+  "tahun4-bentuk-tenaga": {
+    "topikLabel": "Peta Minda Bentuk Tenaga",
+    "tahun": 4,
+    "centralLabel": "BENTUK TENAGA",
+    "centralEmoji": "⚡",
+    "branches": [
+      { "id": "haba", "label": "TENAGA HABA", "emoji": "🔥" },
+      { "id": "cahaya", "label": "TENAGA CAHAYA", "emoji": "💡" },
+      { "id": "bunyi", "label": "TENAGA BUNYI", "emoji": "🔊" },
+      { "id": "elektrik", "label": "TENAGA ELEKTRIK", "emoji": "⚡" },
+      { "id": "kinetik", "label": "TENAGA KINETIK", "emoji": "🏃" }
+    ],
+    "items": [
+      { "label": "Matahari Panas", "emoji": "☀️", "branchId": "haba" },
+      { "label": "Dawai Elektrik Panas", "emoji": "🔌", "branchId": "haba" },
+      { "label": "Mentol Lampu", "emoji": "💡", "branchId": "cahaya" },
+      { "label": "Lilin Menyala", "emoji": "🕯️", "branchId": "cahaya" },
+      { "label": "Loceng Berbunyi", "emoji": "🔔", "branchId": "bunyi" },
+      { "label": "Radio Berbunyi", "emoji": "📻", "branchId": "bunyi" },
+      { "label": "Kilat", "emoji": "⚡", "branchId": "elektrik" },
+      { "label": "Bateri", "emoji": "🔋", "branchId": "elektrik" },
+      { "label": "Kipas Berputar", "emoji": "🌀", "branchId": "kinetik" },
+      { "label": "Kereta Bergerak", "emoji": "🚗", "branchId": "kinetik" }
+    ]
+  },
+  "tahun4-jenis-mesin-ringkas": {
+    "topikLabel": "Peta Minda 6 Jenis Mesin Ringkas",
+    "tahun": 4,
+    "centralLabel": "MESIN RINGKAS",
+    "centralEmoji": "⚙️",
+    "branches": [
+      { "id": "tuas", "label": "TUAS", "emoji": "🎚️" },
+      { "id": "rodagandar", "label": "RODA DAN GANDAR", "emoji": "🛞" },
+      { "id": "satahcondong", "label": "SATAH CONDONG", "emoji": "🛝" },
+      { "id": "baji", "label": "BAJI", "emoji": "🔪" },
+      { "id": "skru", "label": "SKRU", "emoji": "🔩" },
+      { "id": "takal", "label": "TAKAL", "emoji": "⛲" }
+    ],
+    "items": [
+      { "label": "Gunting", "emoji": "✂️", "branchId": "tuas" },
+      { "label": "Pembuka Botol", "emoji": "🍾", "branchId": "tuas" },
+      { "label": "Roda Kereta", "emoji": "🚗", "branchId": "rodagandar" },
+      { "label": "Roda Basikal", "emoji": "🚲", "branchId": "rodagandar" },
+      { "label": "Papan Gelongsor", "emoji": "🛝", "branchId": "satahcondong" },
+      { "label": "Lorong Masuk Trak", "emoji": "🚚", "branchId": "satahcondong" },
+      { "label": "Kapak", "emoji": "🪓", "branchId": "baji" },
+      { "label": "Pisau", "emoji": "🔪", "branchId": "baji" },
+      { "label": "Skru Kayu", "emoji": "🔩", "branchId": "skru" },
+      { "label": "Pembuka Tin", "emoji": "🥫", "branchId": "skru" },
+      { "label": "Kren Pembinaan", "emoji": "🏗️", "branchId": "takal" },
+      { "label": "Perigi", "emoji": "⛲", "branchId": "takal" }
+    ]
   }
 }

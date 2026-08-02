@@ -95,5 +95,18 @@
       { "emoji": "🔷", "label": "Uranus" },
       { "emoji": "🔵", "label": "Neptun" }
     ]
+  },
+  "tahun4-warna-pelangi": {
+    "topikLabel": "Susunan Warna Pelangi",
+    "tahun": 4,
+    "stages": [
+      { "emoji": "🔴", "label": "Merah" },
+      { "emoji": "🟠", "label": "Jingga" },
+      { "emoji": "🟡", "label": "Kuning" },
+      { "emoji": "🟢", "label": "Hijau" },
+      { "emoji": "🔵", "label": "Biru" },
+      { "emoji": "🟣", "label": "Indigo" },
+      { "emoji": "🟪", "label": "Ungu" }
+    ]
   }
 }
