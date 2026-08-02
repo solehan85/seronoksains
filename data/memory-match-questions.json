@@ -10,5 +10,17 @@
       { "term": "Burung", "emoji": "🐦" },
       { "term": "Katak", "emoji": "🐸" }
     ]
+  },
+  "tahun3-sumber-bunyi": {
+    "topikLabel": "Padanan Sumber Bunyi",
+    "tahun": 3,
+    "pairs": [
+      { "term": "Gitar", "emoji": "🎸" },
+      { "term": "Dram", "emoji": "🥁" },
+      { "term": "Loceng", "emoji": "🔔" },
+      { "term": "Terompet", "emoji": "🎺" },
+      { "term": "Radio", "emoji": "📻" },
+      { "term": "Piano", "emoji": "🎹" }
+    ]
   }
 }
