@@ -1332,5 +1332,63 @@
         { "emoji": "🔩", "label": "Logam", "type": "tidak-menyerap" }
       ]
     ]
+  },
+  "tahun1-bentuk-asas-bongkah": {
+    "topikLabel": "Bentuk Asas atau Bongkah?",
+    "tahun": 1,
+    "binA": { "type": "2d", "label": "BENTUK ASAS (2D)", "emoji": "🔴" },
+    "binB": { "type": "3d", "label": "BONGKAH (3D)", "emoji": "📦" },
+    "sets": [
+      [
+        { "emoji": "🔴", "label": "Bulat", "type": "2d" },
+        { "emoji": "🟦", "label": "Segi Empat Sama", "type": "2d" },
+        { "emoji": "🟧", "label": "Segi Empat Tepat", "type": "2d" },
+        { "emoji": "🔺", "label": "Segi Tiga", "type": "2d" },
+        { "emoji": "⚽", "label": "Sfera", "type": "3d" },
+        { "emoji": "🎲", "label": "Kubus", "type": "3d" },
+        { "emoji": "📦", "label": "Kuboid", "type": "3d" },
+        { "emoji": "🥫", "label": "Silinder", "type": "3d" }
+      ],
+      [
+        { "emoji": "🔴", "label": "Bulat", "type": "2d" },
+        { "emoji": "🟦", "label": "Segi Empat Sama", "type": "2d" },
+        { "emoji": "🟧", "label": "Segi Empat Tepat", "type": "2d" },
+        { "emoji": "🔺", "label": "Segi Tiga", "type": "2d" },
+        { "emoji": "🎲", "label": "Kubus", "type": "3d" },
+        { "emoji": "📦", "label": "Kuboid", "type": "3d" },
+        { "emoji": "🥫", "label": "Silinder", "type": "3d" },
+        { "emoji": "🍦", "label": "Kon", "type": "3d" }
+      ],
+      [
+        { "emoji": "🔴", "label": "Bulat", "type": "2d" },
+        { "emoji": "🟦", "label": "Segi Empat Sama", "type": "2d" },
+        { "emoji": "🟧", "label": "Segi Empat Tepat", "type": "2d" },
+        { "emoji": "🔺", "label": "Segi Tiga", "type": "2d" },
+        { "emoji": "📦", "label": "Kuboid", "type": "3d" },
+        { "emoji": "🥫", "label": "Silinder", "type": "3d" },
+        { "emoji": "🍦", "label": "Kon", "type": "3d" },
+        { "emoji": "⚽", "label": "Sfera", "type": "3d" }
+      ],
+      [
+        { "emoji": "🔴", "label": "Bulat", "type": "2d" },
+        { "emoji": "🟦", "label": "Segi Empat Sama", "type": "2d" },
+        { "emoji": "🟧", "label": "Segi Empat Tepat", "type": "2d" },
+        { "emoji": "🔺", "label": "Segi Tiga", "type": "2d" },
+        { "emoji": "🥫", "label": "Silinder", "type": "3d" },
+        { "emoji": "🍦", "label": "Kon", "type": "3d" },
+        { "emoji": "⚽", "label": "Sfera", "type": "3d" },
+        { "emoji": "🎲", "label": "Kubus", "type": "3d" }
+      ],
+      [
+        { "emoji": "🔴", "label": "Bulat", "type": "2d" },
+        { "emoji": "🟦", "label": "Segi Empat Sama", "type": "2d" },
+        { "emoji": "🟧", "label": "Segi Empat Tepat", "type": "2d" },
+        { "emoji": "🔺", "label": "Segi Tiga", "type": "2d" },
+        { "emoji": "🍦", "label": "Kon", "type": "3d" },
+        { "emoji": "⚽", "label": "Sfera", "type": "3d" },
+        { "emoji": "🎲", "label": "Kubus", "type": "3d" },
+        { "emoji": "📦", "label": "Kuboid", "type": "3d" }
+      ]
+    ]
   }
 }
