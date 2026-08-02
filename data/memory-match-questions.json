@@ -34,5 +34,17 @@
       { "term": "Rumput", "emoji": "🌿" },
       { "term": "Kaktus", "emoji": "🌵" }
     ]
+  },
+  "tahun4-padanan-bahan": {
+    "topikLabel": "Padanan Bahan",
+    "tahun": 4,
+    "pairs": [
+      { "term": "Kayu", "emoji": "🪵" },
+      { "term": "Logam", "emoji": "🔩" },
+      { "term": "Kaca", "emoji": "🥛" },
+      { "term": "Getah", "emoji": "🧤" },
+      { "term": "Plastik", "emoji": "🧴" },
+      { "term": "Kain", "emoji": "🧵" }
+    ]
   }
 }
