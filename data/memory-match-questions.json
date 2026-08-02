@@ -22,5 +22,17 @@
       { "term": "Radio", "emoji": "📻" },
       { "term": "Piano", "emoji": "🎹" }
     ]
+  },
+  "tahun2-nama-tumbuhan": {
+    "topikLabel": "Padanan Nama Tumbuhan",
+    "tahun": 2,
+    "pairs": [
+      { "term": "Pokok Kelapa", "emoji": "🌴" },
+      { "term": "Pokok Pain", "emoji": "🌲" },
+      { "term": "Bunga Matahari", "emoji": "🌻" },
+      { "term": "Bunga Ros", "emoji": "🌹" },
+      { "term": "Rumput", "emoji": "🌿" },
+      { "term": "Kaktus", "emoji": "🌵" }
+    ]
   }
 }
