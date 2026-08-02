@@ -69,5 +69,31 @@
       { "emoji": "🧑", "label": "Remaja" },
       { "emoji": "🧑‍💼", "label": "Dewasa" }
     ]
+  },
+  "tahun3-proses-pencernaan": {
+    "topikLabel": "Proses Pencernaan Makanan",
+    "tahun": 3,
+    "stages": [
+      { "emoji": "👄", "label": "Mulut" },
+      { "emoji": "⬇️", "label": "Esofagus" },
+      { "emoji": "🫃", "label": "Perut" },
+      { "emoji": "🌀", "label": "Usus Kecil" },
+      { "emoji": "🟤", "label": "Usus Besar" },
+      { "emoji": "🚽", "label": "Dubur" }
+    ]
+  },
+  "tahun3-susunan-planet": {
+    "topikLabel": "Susunan Planet dari Matahari",
+    "tahun": 3,
+    "stages": [
+      { "emoji": "🌑", "label": "Utarid" },
+      { "emoji": "🟠", "label": "Zuhrah" },
+      { "emoji": "🌍", "label": "Bumi" },
+      { "emoji": "🔴", "label": "Marikh" },
+      { "emoji": "🟤", "label": "Musytari" },
+      { "emoji": "🪐", "label": "Zuhal" },
+      { "emoji": "🔷", "label": "Uranus" },
+      { "emoji": "🔵", "label": "Neptun" }
+    ]
   }
 }

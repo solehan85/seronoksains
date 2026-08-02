@@ -1091,6 +1091,122 @@
       ]
     ]
   },
+  "tahun3-alat-ukur-luas-isipadu": {
+    "topikLabel": "Alat untuk Ukur Luas atau Isi Padu?",
+    "tahun": 3,
+    "binA": { "type": "luas", "label": "UNTUK LUAS", "emoji": "📏" },
+    "binB": { "type": "isipadu", "label": "UNTUK ISI PADU", "emoji": "🧪" },
+    "sets": [
+      [
+        { "emoji": "📏", "label": "Pembaris", "type": "luas" },
+        { "emoji": "📖", "label": "Buku", "type": "luas" },
+        { "emoji": "📄", "label": "Kertas Grid", "type": "luas" },
+        { "emoji": "🪑", "label": "Meja", "type": "luas" },
+        { "emoji": "🧪", "label": "Silinder Penyukat", "type": "isipadu" },
+        { "emoji": "🥤", "label": "Cawan Penyukat", "type": "isipadu" },
+        { "emoji": "⚗️", "label": "Bikar", "type": "isipadu" },
+        { "emoji": "📦", "label": "Kotak Lompong", "type": "isipadu" }
+      ],
+      [
+        { "emoji": "📏", "label": "Pembaris", "type": "luas" },
+        { "emoji": "📖", "label": "Buku", "type": "luas" },
+        { "emoji": "📄", "label": "Kertas Grid", "type": "luas" },
+        { "emoji": "🪑", "label": "Meja", "type": "luas" },
+        { "emoji": "🧪", "label": "Silinder Penyukat", "type": "isipadu" },
+        { "emoji": "🥤", "label": "Cawan Penyukat", "type": "isipadu" },
+        { "emoji": "⚗️", "label": "Bikar", "type": "isipadu" },
+        { "emoji": "📦", "label": "Kotak Lompong", "type": "isipadu" }
+      ],
+      [
+        { "emoji": "📏", "label": "Pembaris", "type": "luas" },
+        { "emoji": "📖", "label": "Buku", "type": "luas" },
+        { "emoji": "📄", "label": "Kertas Grid", "type": "luas" },
+        { "emoji": "🪑", "label": "Meja", "type": "luas" },
+        { "emoji": "🧪", "label": "Silinder Penyukat", "type": "isipadu" },
+        { "emoji": "🥤", "label": "Cawan Penyukat", "type": "isipadu" },
+        { "emoji": "⚗️", "label": "Bikar", "type": "isipadu" },
+        { "emoji": "📦", "label": "Kotak Lompong", "type": "isipadu" }
+      ],
+      [
+        { "emoji": "📏", "label": "Pembaris", "type": "luas" },
+        { "emoji": "📖", "label": "Buku", "type": "luas" },
+        { "emoji": "📄", "label": "Kertas Grid", "type": "luas" },
+        { "emoji": "🪑", "label": "Meja", "type": "luas" },
+        { "emoji": "🧪", "label": "Silinder Penyukat", "type": "isipadu" },
+        { "emoji": "🥤", "label": "Cawan Penyukat", "type": "isipadu" },
+        { "emoji": "⚗️", "label": "Bikar", "type": "isipadu" },
+        { "emoji": "📦", "label": "Kotak Lompong", "type": "isipadu" }
+      ],
+      [
+        { "emoji": "📏", "label": "Pembaris", "type": "luas" },
+        { "emoji": "📖", "label": "Buku", "type": "luas" },
+        { "emoji": "📄", "label": "Kertas Grid", "type": "luas" },
+        { "emoji": "🪑", "label": "Meja", "type": "luas" },
+        { "emoji": "🧪", "label": "Silinder Penyukat", "type": "isipadu" },
+        { "emoji": "🥤", "label": "Cawan Penyukat", "type": "isipadu" },
+        { "emoji": "⚗️", "label": "Bikar", "type": "isipadu" },
+        { "emoji": "📦", "label": "Kotak Lompong", "type": "isipadu" }
+      ]
+    ]
+  },
+  "tahun3-objek-timbul-tenggelam": {
+    "topikLabel": "Objek Timbul atau Tenggelam?",
+    "tahun": 3,
+    "binA": { "type": "timbul", "label": "OBJEK TIMBUL", "emoji": "🪵" },
+    "binB": { "type": "tenggelam", "label": "OBJEK TENGGELAM", "emoji": "🪨" },
+    "sets": [
+      [
+        { "emoji": "🪵", "label": "Kayu", "type": "timbul" },
+        { "emoji": "⚽", "label": "Bola Plastik", "type": "timbul" },
+        { "emoji": "🧽", "label": "Span", "type": "timbul" },
+        { "emoji": "🍃", "label": "Daun", "type": "timbul" },
+        { "emoji": "🪨", "label": "Batu", "type": "tenggelam" },
+        { "emoji": "🪙", "label": "Duit Syiling", "type": "tenggelam" },
+        { "emoji": "🔩", "label": "Paku", "type": "tenggelam" },
+        { "emoji": "🔑", "label": "Kunci", "type": "tenggelam" }
+      ],
+      [
+        { "emoji": "⚽", "label": "Bola Plastik", "type": "timbul" },
+        { "emoji": "🧽", "label": "Span", "type": "timbul" },
+        { "emoji": "🍃", "label": "Daun", "type": "timbul" },
+        { "emoji": "🪵", "label": "Kayu", "type": "timbul" },
+        { "emoji": "🪙", "label": "Duit Syiling", "type": "tenggelam" },
+        { "emoji": "🔩", "label": "Paku", "type": "tenggelam" },
+        { "emoji": "🔑", "label": "Kunci", "type": "tenggelam" },
+        { "emoji": "⚙️", "label": "Besi", "type": "tenggelam" }
+      ],
+      [
+        { "emoji": "🧽", "label": "Span", "type": "timbul" },
+        { "emoji": "🍃", "label": "Daun", "type": "timbul" },
+        { "emoji": "🪵", "label": "Kayu", "type": "timbul" },
+        { "emoji": "⚽", "label": "Bola Plastik", "type": "timbul" },
+        { "emoji": "🔩", "label": "Paku", "type": "tenggelam" },
+        { "emoji": "🔑", "label": "Kunci", "type": "tenggelam" },
+        { "emoji": "⚙️", "label": "Besi", "type": "tenggelam" },
+        { "emoji": "🪨", "label": "Batu", "type": "tenggelam" }
+      ],
+      [
+        { "emoji": "🍃", "label": "Daun", "type": "timbul" },
+        { "emoji": "🪵", "label": "Kayu", "type": "timbul" },
+        { "emoji": "⚽", "label": "Bola Plastik", "type": "timbul" },
+        { "emoji": "🧽", "label": "Span", "type": "timbul" },
+        { "emoji": "🔑", "label": "Kunci", "type": "tenggelam" },
+        { "emoji": "⚙️", "label": "Besi", "type": "tenggelam" },
+        { "emoji": "🪨", "label": "Batu", "type": "tenggelam" },
+        { "emoji": "🪙", "label": "Duit Syiling", "type": "tenggelam" }
+      ],
+      [
+        { "emoji": "🪵", "label": "Kayu", "type": "timbul" },
+        { "emoji": "🧽", "label": "Span", "type": "timbul" },
+        { "emoji": "⚽", "label": "Bola Plastik", "type": "timbul" },
+        { "emoji": "🍃", "label": "Daun", "type": "timbul" },
+        { "emoji": "⚙️", "label": "Besi", "type": "tenggelam" },
+        { "emoji": "🪨", "label": "Batu", "type": "tenggelam" },
+        { "emoji": "🪙", "label": "Duit Syiling", "type": "tenggelam" },
+        { "emoji": "🔩", "label": "Paku", "type": "tenggelam" }
+      ]
+    ]
+  },
   "tahun4-tolak-tarik": {
     "topikLabel": "Tolak atau Tarik?",
     "tahun": 4,

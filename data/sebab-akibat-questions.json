@@ -31,5 +31,16 @@
       { "sebabEmoji": "🏋️", "sebab": "Bersenam Setiap Hari", "akibatEmoji": "💪", "akibat": "Otot Kuat dan Sihat" },
       { "sebabEmoji": "😴", "sebab": "Kurang Tidur pada Waktu Malam", "akibatEmoji": "😵‍💫", "akibat": "Sukar Fokus Semasa Belajar" }
     ]
+  },
+  "tahun3-penjagaan-gigi-pencernaan": {
+    "topikLabel": "Sebab-Akibat: Penjagaan Gigi dan Pencernaan",
+    "tahun": 3,
+    "pairs": [
+      { "sebabEmoji": "🪥", "sebab": "Berus Gigi Dua Kali Sehari", "akibatEmoji": "😁", "akibat": "Gigi Sihat dan Kuat" },
+      { "sebabEmoji": "🍬", "sebab": "Makan Terlalu Banyak Gula", "akibatEmoji": "🦷", "akibat": "Gigi Rosak" },
+      { "sebabEmoji": "🚱", "sebab": "Kurang Minum Air", "akibatEmoji": "😣", "akibat": "Sembelit" },
+      { "sebabEmoji": "🥗", "sebab": "Makan Makanan Seimbang", "akibatEmoji": "💪", "akibat": "Badan Membesar dengan Sihat" },
+      { "sebabEmoji": "🦴", "sebab": "Menggigit Benda Keras", "akibatEmoji": "😬", "akibat": "Gigi Patah atau Retak" }
+    ]
   }
 }

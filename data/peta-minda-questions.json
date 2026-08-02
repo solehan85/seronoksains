@@ -233,5 +233,138 @@
       { "label": "Tin Makanan", "emoji": "🥫", "branchId": "silinder" },
       { "label": "Botol Air", "emoji": "🍾", "branchId": "silinder" }
     ]
+  },
+  "tahun3-kemahiran-saintifik": {
+    "topikLabel": "Peta Minda Kemahiran Saintifik",
+    "tahun": 3,
+    "centralLabel": "KEMAHIRAN SAINTIFIK",
+    "centralEmoji": "🔬",
+    "branches": [
+      { "id": "memerhati", "label": "MEMERHATI", "emoji": "👁️" },
+      { "id": "mengelas", "label": "MENGELAS", "emoji": "🗂️" },
+      { "id": "mengukur", "label": "MENGUKUR & GUNA NOMBOR", "emoji": "📏" },
+      { "id": "inferens", "label": "MEMBUAT INFERENS", "emoji": "💡" },
+      { "id": "meramal", "label": "MERAMAL", "emoji": "💭" },
+      { "id": "berkomunikasi", "label": "BERKOMUNIKASI", "emoji": "🗣️" }
+    ],
+    "items": [
+      { "label": "Memerhati Warna Bunga", "emoji": "🌸", "branchId": "memerhati" },
+      { "label": "Mendengar Bunyi Loceng", "emoji": "🔔", "branchId": "memerhati" },
+      { "label": "Kumpul Buah Merah", "emoji": "🍎", "branchId": "mengelas" },
+      { "label": "Asingkan Ikut Bentuk", "emoji": "🔺", "branchId": "mengelas" },
+      { "label": "Guna Silinder Penyukat", "emoji": "🧪", "branchId": "mengukur" },
+      { "label": "Menimbang Buah", "emoji": "⚖️", "branchId": "mengukur" },
+      { "label": "Baju di Luar Basah Bermakna Hari Hujan", "emoji": "👕", "branchId": "inferens" },
+      { "label": "Buat Kesimpulan Daripada Bukti", "emoji": "🧩", "branchId": "inferens" },
+      { "label": "Ramal Hujan Akan Turun", "emoji": "🌧️", "branchId": "meramal" },
+      { "label": "Jangka Apa Akan Berlaku", "emoji": "💭", "branchId": "meramal" },
+      { "label": "Bina Jadual atau Carta", "emoji": "📊", "branchId": "berkomunikasi" },
+      { "label": "Sampaikan Maklumat Kepada Rakan", "emoji": "🗣️", "branchId": "berkomunikasi" }
+    ]
+  },
+  "tahun3-peraturan-bilik-sains": {
+    "topikLabel": "Peta Minda Peraturan Bilik Sains",
+    "tahun": 3,
+    "centralLabel": "PERATURAN BILIK SAINS",
+    "centralEmoji": "🧪",
+    "branches": [
+      { "id": "sikapbaik", "label": "SIKAP YANG BAIK", "emoji": "🙂" },
+      { "id": "sikaptidakbaik", "label": "SIKAP TIDAK BAIK", "emoji": "😟" },
+      { "id": "keselamatan", "label": "LANGKAH KESELAMATAN", "emoji": "🛡️" }
+    ],
+    "items": [
+      { "label": "Dengar Arahan Guru", "emoji": "👂", "branchId": "sikapbaik" },
+      { "label": "Bersihkan Meja Selepas Aktiviti", "emoji": "🧹", "branchId": "sikapbaik" },
+      { "label": "Simpan Alat di Tempat Asal", "emoji": "📦", "branchId": "sikapbaik" },
+      { "label": "Berlari di Dalam Bilik Sains", "emoji": "🏃", "branchId": "sikaptidakbaik" },
+      { "label": "Merasa Bahan Eksperimen", "emoji": "👅", "branchId": "sikaptidakbaik" },
+      { "label": "Bermain dengan Alat Sains", "emoji": "🧪", "branchId": "sikaptidakbaik" },
+      { "label": "Pakai Kasut yang Sesuai", "emoji": "👟", "branchId": "keselamatan" },
+      { "label": "Basuh Tangan Selepas Eksperimen", "emoji": "🧼", "branchId": "keselamatan" },
+      { "label": "Laporkan Kemalangan kepada Guru", "emoji": "🙋", "branchId": "keselamatan" }
+    ]
+  },
+  "tahun3-tabiat-pemakanan-haiwan": {
+    "topikLabel": "Peta Minda Tabiat Pemakanan Haiwan",
+    "tahun": 3,
+    "centralLabel": "TABIAT PEMAKANAN",
+    "centralEmoji": "🍽️",
+    "branches": [
+      { "id": "herbivor", "label": "HERBIVOR", "emoji": "🌿" },
+      { "id": "karnivor", "label": "KARNIVOR", "emoji": "🥩" },
+      { "id": "omnivor", "label": "OMNIVOR", "emoji": "🍽️" }
+    ],
+    "items": [
+      { "label": "Lembu", "emoji": "🐄", "branchId": "herbivor" },
+      { "label": "Arnab", "emoji": "🐇", "branchId": "herbivor" },
+      { "label": "Kambing", "emoji": "🐐", "branchId": "herbivor" },
+      { "label": "Harimau", "emoji": "🐯", "branchId": "karnivor" },
+      { "label": "Singa", "emoji": "🦁", "branchId": "karnivor" },
+      { "label": "Buaya", "emoji": "🐊", "branchId": "karnivor" },
+      { "label": "Ayam", "emoji": "🐔", "branchId": "omnivor" },
+      { "label": "Beruang", "emoji": "🐻", "branchId": "omnivor" },
+      { "label": "Manusia", "emoji": "🧑", "branchId": "omnivor" }
+    ]
+  },
+  "tahun3-cara-pembiakan-tumbuhan": {
+    "topikLabel": "Peta Minda Cara Pembiakan Tumbuhan",
+    "tahun": 3,
+    "centralLabel": "CARA PEMBIAKAN",
+    "centralEmoji": "🌱",
+    "branches": [
+      { "id": "bijibenih", "label": "BIJI BENIH", "emoji": "🌰" },
+      { "id": "batang", "label": "BATANG", "emoji": "🪵" },
+      { "id": "daun", "label": "DAUN", "emoji": "🍃" },
+      { "id": "spora", "label": "SPORA", "emoji": "🍄" }
+    ],
+    "items": [
+      { "label": "Pokok Mangga", "emoji": "🥭", "branchId": "bijibenih" },
+      { "label": "Pokok Rambutan", "emoji": "🌳", "branchId": "bijibenih" },
+      { "label": "Pokok Jagung", "emoji": "🌽", "branchId": "bijibenih" },
+      { "label": "Ubi Kayu", "emoji": "🥔", "branchId": "batang" },
+      { "label": "Pokok Tebu", "emoji": "🎋", "branchId": "batang" },
+      { "label": "Pokok Bunga Raya", "emoji": "🌺", "branchId": "batang" },
+      { "label": "Pokok Setawar", "emoji": "🌿", "branchId": "daun" },
+      { "label": "Paku Pakis", "emoji": "🌿", "branchId": "spora" },
+      { "label": "Cendawan", "emoji": "🍄", "branchId": "spora" }
+    ]
+  },
+  "tahun3-asid-alkali-neutral": {
+    "topikLabel": "Peta Minda Asid, Alkali dan Neutral",
+    "tahun": 3,
+    "centralLabel": "ASID, ALKALI, NEUTRAL",
+    "centralEmoji": "🧪",
+    "branches": [
+      { "id": "asid", "label": "ASID", "emoji": "🍋" },
+      { "id": "alkali", "label": "ALKALI", "emoji": "🧼" },
+      { "id": "neutral", "label": "NEUTRAL", "emoji": "💧" }
+    ],
+    "items": [
+      { "label": "Jus Limau", "emoji": "🍋", "branchId": "asid" },
+      { "label": "Cuka", "emoji": "🍾", "branchId": "asid" },
+      { "label": "Asam Jawa", "emoji": "🫘", "branchId": "asid" },
+      { "label": "Sabun", "emoji": "🧼", "branchId": "alkali" },
+      { "label": "Ubat Gigi", "emoji": "🪥", "branchId": "alkali" },
+      { "label": "Air Kapur", "emoji": "🥛", "branchId": "alkali" },
+      { "label": "Air Suling", "emoji": "💧", "branchId": "neutral" },
+      { "label": "Air Kosong", "emoji": "🥤", "branchId": "neutral" }
+    ]
+  },
+  "tahun3-jenis-takal": {
+    "topikLabel": "Peta Minda Jenis Takal",
+    "tahun": 3,
+    "centralLabel": "TAKAL",
+    "centralEmoji": "⚙️",
+    "branches": [
+      { "id": "tetap", "label": "TAKAL TETAP", "emoji": "🚩" },
+      { "id": "bergerak", "label": "TAKAL BERGERAK", "emoji": "🏗️" },
+      { "id": "gabungan", "label": "TAKAL GABUNGAN", "emoji": "📦" }
+    ],
+    "items": [
+      { "label": "Tiang Bendera", "emoji": "🚩", "branchId": "tetap" },
+      { "label": "Perigi", "emoji": "⛲", "branchId": "tetap" },
+      { "label": "Kren Pembinaan", "emoji": "🏗️", "branchId": "bergerak" },
+      { "label": "Mesin Mengangkat Kontena", "emoji": "📦", "branchId": "gabungan" }
+    ]
   }
 }
