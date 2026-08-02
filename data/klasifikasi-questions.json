@@ -1439,6 +1439,180 @@
       ]
     ]
   },
+  "tahun5-litar-bersiri-selari": {
+    "topikLabel": "Litar Bersiri atau Litar Selari?",
+    "tahun": 5,
+    "binA": { "type": "bersiri", "label": "LITAR BERSIRI", "emoji": "🔗" },
+    "binB": { "type": "selari", "label": "LITAR SELARI", "emoji": "🔀" },
+    "sets": [
+      [
+        { "emoji": "🔗", "label": "Satu Laluan Sahaja", "type": "bersiri" },
+        { "emoji": "⚫", "label": "Semua Padam Jika Satu Rosak", "type": "bersiri" },
+        { "emoji": "🎄", "label": "Lampu Krismas Lama", "type": "bersiri" },
+        { "emoji": "🔹", "label": "Litar Ringkas", "type": "bersiri" },
+        { "emoji": "🔀", "label": "Beberapa Laluan", "type": "selari" },
+        { "emoji": "💡", "label": "Lain Masih Menyala Jika Satu Rosak", "type": "selari" },
+        { "emoji": "🏠", "label": "Litar di Rumah", "type": "selari" },
+        { "emoji": "⚙️", "label": "Litar Kompleks", "type": "selari" }
+      ],
+      [
+        { "emoji": "⚫", "label": "Semua Padam Jika Satu Rosak", "type": "bersiri" },
+        { "emoji": "🎄", "label": "Lampu Krismas Lama", "type": "bersiri" },
+        { "emoji": "🔹", "label": "Litar Ringkas", "type": "bersiri" },
+        { "emoji": "➡️", "label": "Arus Satu Arah", "type": "bersiri" },
+        { "emoji": "💡", "label": "Lain Masih Menyala Jika Satu Rosak", "type": "selari" },
+        { "emoji": "🏠", "label": "Litar di Rumah", "type": "selari" },
+        { "emoji": "⚙️", "label": "Litar Kompleks", "type": "selari" },
+        { "emoji": "🔁", "label": "Setiap Laluan Berasingan", "type": "selari" }
+      ],
+      [
+        { "emoji": "🎄", "label": "Lampu Krismas Lama", "type": "bersiri" },
+        { "emoji": "🔹", "label": "Litar Ringkas", "type": "bersiri" },
+        { "emoji": "➡️", "label": "Arus Satu Arah", "type": "bersiri" },
+        { "emoji": "🔗", "label": "Satu Laluan Sahaja", "type": "bersiri" },
+        { "emoji": "🏠", "label": "Litar di Rumah", "type": "selari" },
+        { "emoji": "⚙️", "label": "Litar Kompleks", "type": "selari" },
+        { "emoji": "🔁", "label": "Setiap Laluan Berasingan", "type": "selari" },
+        { "emoji": "🔀", "label": "Beberapa Laluan", "type": "selari" }
+      ],
+      [
+        { "emoji": "🔹", "label": "Litar Ringkas", "type": "bersiri" },
+        { "emoji": "➡️", "label": "Arus Satu Arah", "type": "bersiri" },
+        { "emoji": "🔗", "label": "Satu Laluan Sahaja", "type": "bersiri" },
+        { "emoji": "⚫", "label": "Semua Padam Jika Satu Rosak", "type": "bersiri" },
+        { "emoji": "⚙️", "label": "Litar Kompleks", "type": "selari" },
+        { "emoji": "🔁", "label": "Setiap Laluan Berasingan", "type": "selari" },
+        { "emoji": "🔀", "label": "Beberapa Laluan", "type": "selari" },
+        { "emoji": "💡", "label": "Lain Masih Menyala Jika Satu Rosak", "type": "selari" }
+      ],
+      [
+        { "emoji": "➡️", "label": "Arus Satu Arah", "type": "bersiri" },
+        { "emoji": "🔗", "label": "Satu Laluan Sahaja", "type": "bersiri" },
+        { "emoji": "⚫", "label": "Semua Padam Jika Satu Rosak", "type": "bersiri" },
+        { "emoji": "🎄", "label": "Lampu Krismas Lama", "type": "bersiri" },
+        { "emoji": "🔁", "label": "Setiap Laluan Berasingan", "type": "selari" },
+        { "emoji": "🔀", "label": "Beberapa Laluan", "type": "selari" },
+        { "emoji": "💡", "label": "Lain Masih Menyala Jika Satu Rosak", "type": "selari" },
+        { "emoji": "🏠", "label": "Litar di Rumah", "type": "selari" }
+      ]
+    ]
+  },
+  "tahun5-mengembang-mengecut": {
+    "topikLabel": "Bahan Mengembang atau Mengecut?",
+    "tahun": 5,
+    "binA": { "type": "mengembang", "label": "MENGEMBANG", "emoji": "📈" },
+    "binB": { "type": "mengecut", "label": "MENGECUT", "emoji": "📉" },
+    "sets": [
+      [
+        { "emoji": "🔥", "label": "Bahan Menerima Haba", "type": "mengembang" },
+        { "emoji": "📈", "label": "Cecair Termometer Naik", "type": "mengembang" },
+        { "emoji": "🛤️", "label": "Landasan Kereta Api Mengembang", "type": "mengembang" },
+        { "emoji": "🔩", "label": "Logam Dipanaskan Membesar", "type": "mengembang" },
+        { "emoji": "❄️", "label": "Bahan Kehilangan Haba", "type": "mengecut" },
+        { "emoji": "📉", "label": "Cecair Termometer Turun", "type": "mengecut" },
+        { "emoji": "🔌", "label": "Kabel Elektrik Mengecut Waktu Sejuk", "type": "mengecut" },
+        { "emoji": "🔧", "label": "Logam Disejukkan Mengecil", "type": "mengecut" }
+      ],
+      [
+        { "emoji": "📈", "label": "Cecair Termometer Naik", "type": "mengembang" },
+        { "emoji": "🛤️", "label": "Landasan Kereta Api Mengembang", "type": "mengembang" },
+        { "emoji": "🔩", "label": "Logam Dipanaskan Membesar", "type": "mengembang" },
+        { "emoji": "🌉", "label": "Jambatan Mengembang Waktu Panas", "type": "mengembang" },
+        { "emoji": "📉", "label": "Cecair Termometer Turun", "type": "mengecut" },
+        { "emoji": "🔌", "label": "Kabel Elektrik Mengecut Waktu Sejuk", "type": "mengecut" },
+        { "emoji": "🔧", "label": "Logam Disejukkan Mengecil", "type": "mengecut" },
+        { "emoji": "🌙", "label": "Get Besi Mengecut Waktu Malam", "type": "mengecut" }
+      ],
+      [
+        { "emoji": "🛤️", "label": "Landasan Kereta Api Mengembang", "type": "mengembang" },
+        { "emoji": "🔩", "label": "Logam Dipanaskan Membesar", "type": "mengembang" },
+        { "emoji": "🌉", "label": "Jambatan Mengembang Waktu Panas", "type": "mengembang" },
+        { "emoji": "🔥", "label": "Bahan Menerima Haba", "type": "mengembang" },
+        { "emoji": "🔌", "label": "Kabel Elektrik Mengecut Waktu Sejuk", "type": "mengecut" },
+        { "emoji": "🔧", "label": "Logam Disejukkan Mengecil", "type": "mengecut" },
+        { "emoji": "🌙", "label": "Get Besi Mengecut Waktu Malam", "type": "mengecut" },
+        { "emoji": "❄️", "label": "Bahan Kehilangan Haba", "type": "mengecut" }
+      ],
+      [
+        { "emoji": "🔩", "label": "Logam Dipanaskan Membesar", "type": "mengembang" },
+        { "emoji": "🌉", "label": "Jambatan Mengembang Waktu Panas", "type": "mengembang" },
+        { "emoji": "🔥", "label": "Bahan Menerima Haba", "type": "mengembang" },
+        { "emoji": "📈", "label": "Cecair Termometer Naik", "type": "mengembang" },
+        { "emoji": "🔧", "label": "Logam Disejukkan Mengecil", "type": "mengecut" },
+        { "emoji": "🌙", "label": "Get Besi Mengecut Waktu Malam", "type": "mengecut" },
+        { "emoji": "❄️", "label": "Bahan Kehilangan Haba", "type": "mengecut" },
+        { "emoji": "📉", "label": "Cecair Termometer Turun", "type": "mengecut" }
+      ],
+      [
+        { "emoji": "🌉", "label": "Jambatan Mengembang Waktu Panas", "type": "mengembang" },
+        { "emoji": "🔥", "label": "Bahan Menerima Haba", "type": "mengembang" },
+        { "emoji": "📈", "label": "Cecair Termometer Naik", "type": "mengembang" },
+        { "emoji": "🛤️", "label": "Landasan Kereta Api Mengembang", "type": "mengembang" },
+        { "emoji": "🌙", "label": "Get Besi Mengecut Waktu Malam", "type": "mengecut" },
+        { "emoji": "❄️", "label": "Bahan Kehilangan Haba", "type": "mengecut" },
+        { "emoji": "📉", "label": "Cecair Termometer Turun", "type": "mengecut" },
+        { "emoji": "🔌", "label": "Kabel Elektrik Mengecut Waktu Sejuk", "type": "mengecut" }
+      ]
+    ]
+  },
+  "tahun5-mudah-berkarat-tidak-berkarat": {
+    "topikLabel": "Mudah Berkarat atau Tidak Berkarat?",
+    "tahun": 5,
+    "binA": { "type": "berkarat", "label": "MUDAH BERKARAT", "emoji": "🟤" },
+    "binB": { "type": "tidakberkarat", "label": "TIDAK BERKARAT", "emoji": "✨" },
+    "sets": [
+      [
+        { "emoji": "🔩", "label": "Besi", "type": "berkarat" },
+        { "emoji": "⚙️", "label": "Keluli", "type": "berkarat" },
+        { "emoji": "📌", "label": "Paku", "type": "berkarat" },
+        { "emoji": "🚧", "label": "Pagar Besi", "type": "berkarat" },
+        { "emoji": "🧴", "label": "Plastik", "type": "tidakberkarat" },
+        { "emoji": "🪵", "label": "Kayu", "type": "tidakberkarat" },
+        { "emoji": "🥛", "label": "Kaca", "type": "tidakberkarat" },
+        { "emoji": "🥫", "label": "Aluminium", "type": "tidakberkarat" }
+      ],
+      [
+        { "emoji": "⚙️", "label": "Keluli", "type": "berkarat" },
+        { "emoji": "📌", "label": "Paku", "type": "berkarat" },
+        { "emoji": "🚧", "label": "Pagar Besi", "type": "berkarat" },
+        { "emoji": "🚲", "label": "Basikal Lama", "type": "berkarat" },
+        { "emoji": "🪵", "label": "Kayu", "type": "tidakberkarat" },
+        { "emoji": "🥛", "label": "Kaca", "type": "tidakberkarat" },
+        { "emoji": "🥫", "label": "Aluminium", "type": "tidakberkarat" },
+        { "emoji": "🪑", "label": "Kerusi Plastik", "type": "tidakberkarat" }
+      ],
+      [
+        { "emoji": "📌", "label": "Paku", "type": "berkarat" },
+        { "emoji": "🚧", "label": "Pagar Besi", "type": "berkarat" },
+        { "emoji": "🚲", "label": "Basikal Lama", "type": "berkarat" },
+        { "emoji": "🔩", "label": "Besi", "type": "berkarat" },
+        { "emoji": "🥛", "label": "Kaca", "type": "tidakberkarat" },
+        { "emoji": "🥫", "label": "Aluminium", "type": "tidakberkarat" },
+        { "emoji": "🪑", "label": "Kerusi Plastik", "type": "tidakberkarat" },
+        { "emoji": "🧴", "label": "Plastik", "type": "tidakberkarat" }
+      ],
+      [
+        { "emoji": "🚧", "label": "Pagar Besi", "type": "berkarat" },
+        { "emoji": "🚲", "label": "Basikal Lama", "type": "berkarat" },
+        { "emoji": "🔩", "label": "Besi", "type": "berkarat" },
+        { "emoji": "⚙️", "label": "Keluli", "type": "berkarat" },
+        { "emoji": "🥫", "label": "Aluminium", "type": "tidakberkarat" },
+        { "emoji": "🪑", "label": "Kerusi Plastik", "type": "tidakberkarat" },
+        { "emoji": "🧴", "label": "Plastik", "type": "tidakberkarat" },
+        { "emoji": "🪵", "label": "Kayu", "type": "tidakberkarat" }
+      ],
+      [
+        { "emoji": "🚲", "label": "Basikal Lama", "type": "berkarat" },
+        { "emoji": "🔩", "label": "Besi", "type": "berkarat" },
+        { "emoji": "⚙️", "label": "Keluli", "type": "berkarat" },
+        { "emoji": "📌", "label": "Paku", "type": "berkarat" },
+        { "emoji": "🪑", "label": "Kerusi Plastik", "type": "tidakberkarat" },
+        { "emoji": "🧴", "label": "Plastik", "type": "tidakberkarat" },
+        { "emoji": "🪵", "label": "Kayu", "type": "tidakberkarat" },
+        { "emoji": "🥛", "label": "Kaca", "type": "tidakberkarat" }
+      ]
+    ]
+  },
   "tahun5-habitat-darat-air": {
     "topikLabel": "Habitat Darat atau Habitat Air?",
     "tahun": 5,

@@ -86,5 +86,27 @@
       { "sebabEmoji": "🚗", "sebab": "Kereta Diletak di Cerun", "akibatEmoji": "🛣️", "akibat": "Bergerak ke Bawah Cerun" },
       { "sebabEmoji": "🪁", "sebab": "Layang-layang Talinya Putus", "akibatEmoji": "🌍", "akibat": "Jatuh Semula ke Bumi" }
     ]
+  },
+  "tahun5-kepentingan-sistem-badan": {
+    "topikLabel": "Sebab-Akibat: Kepentingan Sistem Badan",
+    "tahun": 5,
+    "pairs": [
+      { "sebabEmoji": "🦴", "sebab": "Sistem Rangka Rosak", "akibatEmoji": "🚶", "akibat": "Sukar Bergerak dan Berdiri" },
+      { "sebabEmoji": "❤️", "sebab": "Peredaran Darah Terganggu", "akibatEmoji": "😵", "akibat": "Organ Tidak Mendapat Oksigen" },
+      { "sebabEmoji": "🫁", "sebab": "Sistem Pernafasan Bermasalah", "akibatEmoji": "😤", "akibat": "Sukar Bernafas" },
+      { "sebabEmoji": "🦵", "sebab": "Sendi Tidak Berfungsi", "akibatEmoji": "🙅", "akibat": "Anggota Badan Sukar Dibengkokkan" },
+      { "sebabEmoji": "🍔", "sebab": "Tidak Bersenam dan Makan Tidak Seimbang", "akibatEmoji": "😔", "akibat": "Sistem Badan Menjadi Lemah" }
+    ]
+  },
+  "tahun5-kecuaian-elektrik": {
+    "topikLabel": "Sebab-Akibat: Kecuaian Elektrik",
+    "tahun": 5,
+    "pairs": [
+      { "sebabEmoji": "💧", "sebab": "Memegang Suis dengan Tangan Basah", "akibatEmoji": "⚡", "akibat": "Renjatan Elektrik" },
+      { "sebabEmoji": "🔌", "sebab": "Menggunakan Wayar Rosak", "akibatEmoji": "🔥", "akibat": "Risiko Kebakaran" },
+      { "sebabEmoji": "🔟", "sebab": "Memasang Terlalu Banyak Plag", "akibatEmoji": "🧯", "akibat": "Litar Terlebih Beban" },
+      { "sebabEmoji": "🕳️", "sebab": "Bermain dengan Soket Elektrik", "akibatEmoji": "😖", "akibat": "Renjatan Elektrik Berbahaya" },
+      { "sebabEmoji": "💡", "sebab": "Tidak Tutup Suis Selepas Guna", "akibatEmoji": "💸", "akibat": "Pembaziran Tenaga Elektrik" }
+    ]
   }
 }

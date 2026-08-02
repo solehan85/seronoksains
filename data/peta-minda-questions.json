@@ -499,5 +499,113 @@
       { "label": "Kren Pembinaan", "emoji": "🏗️", "branchId": "takal" },
       { "label": "Perigi", "emoji": "⛲", "branchId": "takal" }
     ]
+  },
+  "tahun5-sistem-badan-fungsi": {
+    "topikLabel": "Peta Minda Sistem Badan dan Fungsinya",
+    "tahun": 5,
+    "centralLabel": "SISTEM BADAN",
+    "centralEmoji": "🧍",
+    "branches": [
+      { "id": "rangka", "label": "SISTEM RANGKA", "emoji": "🦴" },
+      { "id": "peredarandarah", "label": "SISTEM PEREDARAN DARAH", "emoji": "❤️" },
+      { "id": "pernafasan", "label": "SISTEM PERNAFASAN", "emoji": "🫁" }
+    ],
+    "items": [
+      { "label": "Menyokong Badan", "emoji": "🦴", "branchId": "rangka" },
+      { "label": "Melindungi Organ Dalaman", "emoji": "🛡️", "branchId": "rangka" },
+      { "label": "Mengangkut Oksigen", "emoji": "🩸", "branchId": "peredarandarah" },
+      { "label": "Mengangkut Nutrien", "emoji": "🍎", "branchId": "peredarandarah" },
+      { "label": "Membekalkan Oksigen ke Badan", "emoji": "💨", "branchId": "pernafasan" },
+      { "label": "Menyingkirkan Karbon Dioksida", "emoji": "😮‍💨", "branchId": "pernafasan" }
+    ]
+  },
+  "tahun5-cara-haiwan-lindung-diri": {
+    "topikLabel": "Peta Minda Cara Haiwan Melindungi Diri",
+    "tahun": 5,
+    "centralLabel": "PERLINDUNGAN HAIWAN",
+    "centralEmoji": "🦔",
+    "branches": [
+      { "id": "menyamar", "label": "MENYAMAR", "emoji": "🦎" },
+      { "id": "baubusuk", "label": "BAU BUSUK", "emoji": "🦨" },
+      { "id": "berduri", "label": "BERDURI", "emoji": "🦔" },
+      { "id": "beracun", "label": "BERACUN", "emoji": "☠️" },
+      { "id": "berlaripantas", "label": "BERLARI PANTAS", "emoji": "🐆" }
+    ],
+    "items": [
+      { "label": "Sesumpah", "emoji": "🦎", "branchId": "menyamar" },
+      { "label": "Belalang Daun", "emoji": "🦗", "branchId": "menyamar" },
+      { "label": "Sigung", "emoji": "🦨", "branchId": "baubusuk" },
+      { "label": "Landak", "emoji": "🦔", "branchId": "berduri" },
+      { "label": "Ikan Buntal", "emoji": "🐡", "branchId": "berduri" },
+      { "label": "Ular Berbisa", "emoji": "🐍", "branchId": "beracun" },
+      { "label": "Kala Jengking", "emoji": "🦂", "branchId": "beracun" },
+      { "label": "Rusa", "emoji": "🦌", "branchId": "berlaripantas" },
+      { "label": "Kuda", "emoji": "🐎", "branchId": "berlaripantas" }
+    ]
+  },
+  "tahun5-pencaran-biji-benih": {
+    "topikLabel": "Peta Minda Pencaran Biji Benih",
+    "tahun": 5,
+    "centralLabel": "PENCARAN BIJI BENIH",
+    "centralEmoji": "🌰",
+    "branches": [
+      { "id": "angin", "label": "ANGIN", "emoji": "💨" },
+      { "id": "air", "label": "AIR", "emoji": "💧" },
+      { "id": "haiwan", "label": "HAIWAN", "emoji": "🐿️" },
+      { "id": "letupan", "label": "MEKANISME LETUPAN", "emoji": "💥" }
+    ],
+    "items": [
+      { "label": "Lalang", "emoji": "🌾", "branchId": "angin" },
+      { "label": "Dandelion", "emoji": "🌼", "branchId": "angin" },
+      { "label": "Kelapa", "emoji": "🥥", "branchId": "air" },
+      { "label": "Buah Bakau", "emoji": "🌊", "branchId": "air" },
+      { "label": "Buah Rambutan", "emoji": "🍒", "branchId": "haiwan" },
+      { "label": "Buah Betik", "emoji": "🍈", "branchId": "haiwan" },
+      { "label": "Pokok Semerak Api", "emoji": "🌸", "branchId": "letupan" }
+    ]
+  },
+  "tahun5-proses-perubahan-keadaan-jirim": {
+    "topikLabel": "Peta Minda Proses Perubahan Keadaan Jirim",
+    "tahun": 5,
+    "centralLabel": "PERUBAHAN KEADAAN JIRIM",
+    "centralEmoji": "💧",
+    "branches": [
+      { "id": "pencairan", "label": "PENCAIRAN", "emoji": "🧊" },
+      { "id": "penyejatan", "label": "PENYEJATAN", "emoji": "💨" },
+      { "id": "kondensasi", "label": "KONDENSASI", "emoji": "🌫️" },
+      { "id": "pembekuan", "label": "PEMBEKUAN", "emoji": "❄️" }
+    ],
+    "items": [
+      { "label": "Ais Cair Menjadi Air", "emoji": "🧊", "branchId": "pencairan" },
+      { "label": "Coklat Cair Dipanaskan", "emoji": "🍫", "branchId": "pencairan" },
+      { "label": "Air Mendidih Jadi Wap", "emoji": "🔥", "branchId": "penyejatan" },
+      { "label": "Baju Basah Kering Dijemur", "emoji": "☀️", "branchId": "penyejatan" },
+      { "label": "Wap Air Jadi Titisan pada Cermin", "emoji": "🪞", "branchId": "kondensasi" },
+      { "label": "Awan Terbentuk di Langit", "emoji": "☁️", "branchId": "kondensasi" },
+      { "label": "Air Jadi Ais dalam Peti Sejuk", "emoji": "🧊", "branchId": "pembekuan" },
+      { "label": "Air Membeku Waktu Sejuk", "emoji": "❄️", "branchId": "pembekuan" }
+    ]
+  },
+  "tahun5-kombinasi-mesin-ringkas": {
+    "topikLabel": "Peta Minda Kombinasi Mesin Ringkas",
+    "tahun": 5,
+    "centralLabel": "MESIN KOMPLEKS",
+    "centralEmoji": "⚙️",
+    "branches": [
+      { "id": "basikal", "label": "BASIKAL", "emoji": "🚲" },
+      { "id": "gunting", "label": "GUNTING", "emoji": "✂️" },
+      { "id": "troli", "label": "TROLI", "emoji": "🛒" },
+      { "id": "pengasahpensel", "label": "PENGASAH PENSEL", "emoji": "✏️" }
+    ],
+    "items": [
+      { "label": "Gear Basikal", "emoji": "⚙️", "branchId": "basikal" },
+      { "label": "Roda Basikal", "emoji": "🛞", "branchId": "basikal" },
+      { "label": "Baji Gunting", "emoji": "🔪", "branchId": "gunting" },
+      { "label": "Tuas Gunting", "emoji": "✂️", "branchId": "gunting" },
+      { "label": "Roda Troli", "emoji": "🛒", "branchId": "troli" },
+      { "label": "Tuas Troli", "emoji": "🎚️", "branchId": "troli" },
+      { "label": "Gear Pengasah Pensel", "emoji": "✏️", "branchId": "pengasahpensel" },
+      { "label": "Baji Pengasah Pensel", "emoji": "🔪", "branchId": "pengasahpensel" }
+    ]
   }
 }

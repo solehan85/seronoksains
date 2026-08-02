@@ -108,5 +108,28 @@
       { "emoji": "🟣", "label": "Indigo" },
       { "emoji": "🟪", "label": "Ungu" }
     ]
+  },
+  "tahun5-langkah-penyelesaian-masalah-saintifik": {
+    "topikLabel": "Langkah Penyelesaian Masalah Secara Saintifik",
+    "tahun": 5,
+    "stages": [
+      { "emoji": "🔍", "label": "Mengenal Pasti Masalah" },
+      { "emoji": "👁️", "label": "Membuat Pemerhatian" },
+      { "emoji": "💭", "label": "Membina Hipotesis" },
+      { "emoji": "🧪", "label": "Menjalankan Eksperimen" },
+      { "emoji": "📊", "label": "Mengumpul Data" },
+      { "emoji": "📈", "label": "Mentafsir Data" },
+      { "emoji": "✅", "label": "Membuat Kesimpulan" }
+    ]
+  },
+  "tahun5-fasa-bulan": {
+    "topikLabel": "Fasa Bulan",
+    "tahun": 5,
+    "stages": [
+      { "emoji": "🌑", "label": "Anak Bulan" },
+      { "emoji": "🌒", "label": "Bulan Sabit" },
+      { "emoji": "🌓", "label": "Bulan Separa" },
+      { "emoji": "🌕", "label": "Bulan Purnama" }
+    ]
   }
 }
