@@ -88,5 +88,16 @@
       { "id": "ekor", "label": "EKOR", "shape": "ekor-haiwan" },
       { "id": "kaki", "label": "KAKI", "shape": "kaki-haiwan" }
     ]
+  },
+  "tahun1-bahagian-tumbuhan": {
+    "topikLabel": "Label Bahagian Tumbuhan",
+    "tahun": 1,
+    "decor": [],
+    "zones": [
+      { "id": "akar", "label": "AKAR", "shape": "akar-tumbuhan" },
+      { "id": "batang", "label": "BATANG", "shape": "batang-tumbuhan" },
+      { "id": "daun", "label": "DAUN", "shape": "daun-tumbuhan" },
+      { "id": "bunga", "label": "BUNGA", "shape": "bunga-tumbuhan" }
+    ]
   }
 }
