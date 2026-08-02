@@ -140,5 +140,76 @@
         ]
       }
     ]
+  },
+  "tahun3-teka-kumpulan-haiwan": {
+    "topikLabel": "Teka Kumpulan Haiwan Ini",
+    "tahun": 3,
+    "rounds": [
+      {
+        "clues": [
+          "Haiwan ini bernafas menggunakan paru-paru.",
+          "Badannya diselubungi bulu atau rambut.",
+          "Ia melahirkan anak dan menyusukannya."
+        ],
+        "options": [
+          { "emoji": "🐘", "label": "Mamalia", "correct": true },
+          { "emoji": "🦅", "label": "Burung", "correct": false },
+          { "emoji": "🐟", "label": "Ikan", "correct": false },
+          { "emoji": "🦎", "label": "Reptilia", "correct": false }
+        ]
+      },
+      {
+        "clues": [
+          "Haiwan ini mempunyai paruh dan tiada gigi.",
+          "Badannya diselubungi bulu (feather).",
+          "Ia bertelur dan kebanyakannya boleh terbang."
+        ],
+        "options": [
+          { "emoji": "🦅", "label": "Burung", "correct": true },
+          { "emoji": "🐘", "label": "Mamalia", "correct": false },
+          { "emoji": "🐟", "label": "Ikan", "correct": false },
+          { "emoji": "🐸", "label": "Amfibia", "correct": false }
+        ]
+      },
+      {
+        "clues": [
+          "Haiwan ini bernafas menggunakan insang.",
+          "Badannya diselubungi sisik dan licin.",
+          "Ia hidup sepenuhnya di dalam air."
+        ],
+        "options": [
+          { "emoji": "🐟", "label": "Ikan", "correct": true },
+          { "emoji": "🦎", "label": "Reptilia", "correct": false },
+          { "emoji": "🐸", "label": "Amfibia", "correct": false },
+          { "emoji": "🦅", "label": "Burung", "correct": false }
+        ]
+      },
+      {
+        "clues": [
+          "Badan haiwan ini diselubungi sisik yang kering.",
+          "Ia binatang berdarah sejuk yang suhu badannya berubah ikut persekitaran.",
+          "Kebanyakannya bertelur di darat."
+        ],
+        "options": [
+          { "emoji": "🦎", "label": "Reptilia", "correct": true },
+          { "emoji": "🐟", "label": "Ikan", "correct": false },
+          { "emoji": "🐘", "label": "Mamalia", "correct": false },
+          { "emoji": "🐸", "label": "Amfibia", "correct": false }
+        ]
+      },
+      {
+        "clues": [
+          "Haiwan ini boleh hidup di darat dan di air.",
+          "Semasa muda ia bernafas dengan insang, apabila dewasa ia bernafas dengan paru-paru.",
+          "Kulitnya lembap dan tiada sisik."
+        ],
+        "options": [
+          { "emoji": "🐸", "label": "Amfibia", "correct": true },
+          { "emoji": "🐟", "label": "Ikan", "correct": false },
+          { "emoji": "🦎", "label": "Reptilia", "correct": false },
+          { "emoji": "🐘", "label": "Mamalia", "correct": false }
+        ]
+      }
+    ]
   }
 }
