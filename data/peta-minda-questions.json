@@ -46,5 +46,31 @@
       { "label": "Mesin X-Ray", "emoji": "🩻", "branchId": "perubatan" },
       { "label": "Kerusi Roda Elektrik", "emoji": "♿", "branchId": "perubatan" }
     ]
+  },
+  "tahun1-keperluan-asas": {
+    "topikLabel": "Peta Minda Keperluan Asas",
+    "tahun": 1,
+    "centralLabel": "KEPERLUAN ASAS",
+    "centralEmoji": "🌱",
+    "branches": [
+      { "id": "udara", "label": "UDARA", "emoji": "🌬️" },
+      { "id": "air", "label": "AIR", "emoji": "💧" },
+      { "id": "makanan", "label": "MAKANAN", "emoji": "🍎" },
+      { "id": "tempattinggal", "label": "TEMPAT TINGGAL", "emoji": "🏠" }
+    ],
+    "items": [
+      { "label": "Angin", "emoji": "🍃", "branchId": "udara" },
+      { "label": "Belon", "emoji": "🎈", "branchId": "udara" },
+      { "label": "Gelembung Udara", "emoji": "🫧", "branchId": "udara" },
+      { "label": "Titisan Air", "emoji": "💧", "branchId": "air" },
+      { "label": "Hujan", "emoji": "🌧️", "branchId": "air" },
+      { "label": "Air Minuman", "emoji": "🥤", "branchId": "air" },
+      { "label": "Buah", "emoji": "🍎", "branchId": "makanan" },
+      { "label": "Sayur", "emoji": "🥕", "branchId": "makanan" },
+      { "label": "Roti", "emoji": "🍞", "branchId": "makanan" },
+      { "label": "Rumah", "emoji": "🏠", "branchId": "tempattinggal" },
+      { "label": "Sarang Burung", "emoji": "🪺", "branchId": "tempattinggal" },
+      { "label": "Gua", "emoji": "🕳️", "branchId": "tempattinggal" }
+    ]
   }
 }
