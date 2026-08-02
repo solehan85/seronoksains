@@ -53,5 +53,17 @@
       { "id": "usus", "label": "USUS", "shape": "usus" },
       { "id": "pundikencing", "label": "PUNDI KENCING", "shape": "pundikencing" }
     ]
+  },
+  "tahun3-bahagian-serangga": {
+    "topikLabel": "Label Bahagian Serangga",
+    "tahun": 3,
+    "decor": [],
+    "zones": [
+      { "id": "antena", "label": "ANTENA", "shape": "antena" },
+      { "id": "kepala", "label": "KEPALA", "shape": "kepala-serangga" },
+      { "id": "dada", "label": "DADA", "shape": "dada" },
+      { "id": "perut", "label": "PERUT", "shape": "perut-serangga" },
+      { "id": "kaki", "label": "KAKI", "shape": "kaki-serangga" }
+    ]
   }
 }
