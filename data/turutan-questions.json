@@ -18,5 +18,15 @@
       { "emoji": "🌿", "label": "Pokok Muda" },
       { "emoji": "🌳", "label": "Pokok Matang" }
     ]
+  },
+  "tahun2-pertumbuhan-ayam": {
+    "topikLabel": "Pertumbuhan Ayam",
+    "tahun": 2,
+    "stages": [
+      { "emoji": "🥚", "label": "Telur" },
+      { "emoji": "🐣", "label": "Anak Ayam Menetas" },
+      { "emoji": "🐤", "label": "Ayam Muda" },
+      { "emoji": "🐔", "label": "Ayam Dewasa" }
+    ]
   }
 }
