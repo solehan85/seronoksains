@@ -65,5 +65,16 @@
       { "id": "perut", "label": "PERUT", "shape": "perut-serangga" },
       { "id": "kaki", "label": "KAKI", "shape": "kaki-serangga" }
     ]
+  },
+  "tahun2-label-bayang": {
+    "topikLabel": "Label Uji Kajian Bayang",
+    "tahun": 2,
+    "decor": [],
+    "zones": [
+      { "id": "cahaya", "label": "SUMBER CAHAYA", "shape": "cahaya" },
+      { "id": "objek", "label": "OBJEK", "shape": "objek" },
+      { "id": "bayang", "label": "BAYANG-BAYANG", "shape": "bayang" },
+      { "id": "skrin", "label": "SKRIN", "shape": "skrin" }
+    ]
   }
 }
