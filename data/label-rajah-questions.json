@@ -76,5 +76,17 @@
       { "id": "bayang", "label": "BAYANG-BAYANG", "shape": "bayang" },
       { "id": "skrin", "label": "SKRIN", "shape": "skrin" }
     ]
+  },
+  "tahun1-bahagian-haiwan": {
+    "topikLabel": "Label Bahagian Haiwan",
+    "tahun": 1,
+    "decor": [],
+    "zones": [
+      { "id": "kepala", "label": "KEPALA", "shape": "kepala-haiwan" },
+      { "id": "badan", "label": "BADAN", "shape": "badan-haiwan" },
+      { "id": "sayap", "label": "SAYAP", "shape": "sayap-haiwan" },
+      { "id": "ekor", "label": "EKOR", "shape": "ekor-haiwan" },
+      { "id": "kaki", "label": "KAKI", "shape": "kaki-haiwan" }
+    ]
   }
 }
