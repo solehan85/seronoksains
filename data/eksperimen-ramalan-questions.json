@@ -131,5 +131,47 @@
         ]
       }
     ]
+  },
+  "tahun1-magnet-tarikan": {
+    "topikLabel": "Ramalan: Magnet Tarik atau Tidak?",
+    "tahun": 1,
+    "question": "Yang manakah akan DITARIK oleh magnet?",
+    "rounds": [
+      {
+        "options": [
+          { "emoji": "🔩", "label": "Paku", "correct": true },
+          { "emoji": "✏️", "label": "Pensel", "correct": false },
+          { "emoji": "🧽", "label": "Span", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "✂️", "label": "Gunting", "correct": true },
+          { "emoji": "📄", "label": "Kertas", "correct": false },
+          { "emoji": "🧴", "label": "Plastik", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "📌", "label": "Paku Payung", "correct": true },
+          { "emoji": "🌸", "label": "Bunga", "correct": false },
+          { "emoji": "🍃", "label": "Daun", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "🥄", "label": "Sudu Besi", "correct": true },
+          { "emoji": "🥛", "label": "Cawan Kaca", "correct": false },
+          { "emoji": "🧤", "label": "Getah", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "🔑", "label": "Kunci", "correct": true },
+          { "emoji": "👕", "label": "Baju", "correct": false },
+          { "emoji": "🏐", "label": "Bola", "correct": false }
+        ]
+      }
+    ]
   }
 }
