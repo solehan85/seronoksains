@@ -869,6 +869,228 @@
       ]
     ]
   },
+  "tahun2-cahaya-semula-jadi-buatan": {
+    "topikLabel": "Cahaya Semula Jadi atau Buatan?",
+    "tahun": 2,
+    "binA": { "type": "semulajadi", "label": "SEMULA JADI", "emoji": "☀️" },
+    "binB": { "type": "buatan", "label": "BUATAN MANUSIA", "emoji": "🔦" },
+    "sets": [
+      [
+        { "emoji": "☀️", "label": "Matahari", "type": "semulajadi" },
+        { "emoji": "⭐", "label": "Bintang", "type": "semulajadi" },
+        { "emoji": "⚡", "label": "Kilat", "type": "semulajadi" },
+        { "emoji": "🔦", "label": "Lampu Suluh", "type": "buatan" },
+        { "emoji": "🕯️", "label": "Lilin", "type": "buatan" },
+        { "emoji": "💡", "label": "Lampu Rumah", "type": "buatan" }
+      ],
+      [
+        { "emoji": "☀️", "label": "Matahari", "type": "semulajadi" },
+        { "emoji": "⭐", "label": "Bintang", "type": "semulajadi" },
+        { "emoji": "⚡", "label": "Kilat", "type": "semulajadi" },
+        { "emoji": "🕯️", "label": "Lilin", "type": "buatan" },
+        { "emoji": "💡", "label": "Lampu Rumah", "type": "buatan" },
+        { "emoji": "🏮", "label": "Tanglung", "type": "buatan" }
+      ],
+      [
+        { "emoji": "☀️", "label": "Matahari", "type": "semulajadi" },
+        { "emoji": "⭐", "label": "Bintang", "type": "semulajadi" },
+        { "emoji": "⚡", "label": "Kilat", "type": "semulajadi" },
+        { "emoji": "💡", "label": "Lampu Rumah", "type": "buatan" },
+        { "emoji": "🏮", "label": "Tanglung", "type": "buatan" },
+        { "emoji": "🔥", "label": "Obor", "type": "buatan" }
+      ],
+      [
+        { "emoji": "☀️", "label": "Matahari", "type": "semulajadi" },
+        { "emoji": "⭐", "label": "Bintang", "type": "semulajadi" },
+        { "emoji": "⚡", "label": "Kilat", "type": "semulajadi" },
+        { "emoji": "🏮", "label": "Tanglung", "type": "buatan" },
+        { "emoji": "🔥", "label": "Obor", "type": "buatan" },
+        { "emoji": "🔦", "label": "Lampu Suluh", "type": "buatan" }
+      ],
+      [
+        { "emoji": "☀️", "label": "Matahari", "type": "semulajadi" },
+        { "emoji": "⭐", "label": "Bintang", "type": "semulajadi" },
+        { "emoji": "⚡", "label": "Kilat", "type": "semulajadi" },
+        { "emoji": "🔥", "label": "Obor", "type": "buatan" },
+        { "emoji": "🔦", "label": "Lampu Suluh", "type": "buatan" },
+        { "emoji": "🕯️", "label": "Lilin", "type": "buatan" }
+      ]
+    ]
+  },
+  "tahun2-bertelur-melahirkan-anak": {
+    "topikLabel": "Bertelur atau Melahirkan Anak?",
+    "tahun": 2,
+    "binA": { "type": "bertelur", "label": "BERTELUR", "emoji": "🥚" },
+    "binB": { "type": "melahirkan", "label": "MELAHIRKAN ANAK", "emoji": "🐘" },
+    "sets": [
+      [
+        { "emoji": "🐟", "label": "Ikan", "type": "bertelur" },
+        { "emoji": "🐸", "label": "Katak", "type": "bertelur" },
+        { "emoji": "🦋", "label": "Kupu-kupu", "type": "bertelur" },
+        { "emoji": "🐢", "label": "Penyu", "type": "bertelur" },
+        { "emoji": "🐱", "label": "Kucing", "type": "melahirkan" },
+        { "emoji": "🐰", "label": "Arnab", "type": "melahirkan" },
+        { "emoji": "🐘", "label": "Gajah", "type": "melahirkan" },
+        { "emoji": "🐼", "label": "Panda", "type": "melahirkan" }
+      ],
+      [
+        { "emoji": "🐸", "label": "Katak", "type": "bertelur" },
+        { "emoji": "🦋", "label": "Kupu-kupu", "type": "bertelur" },
+        { "emoji": "🐢", "label": "Penyu", "type": "bertelur" },
+        { "emoji": "🐔", "label": "Ayam", "type": "bertelur" },
+        { "emoji": "🐰", "label": "Arnab", "type": "melahirkan" },
+        { "emoji": "🐘", "label": "Gajah", "type": "melahirkan" },
+        { "emoji": "🐼", "label": "Panda", "type": "melahirkan" },
+        { "emoji": "🐬", "label": "Lumba-lumba", "type": "melahirkan" }
+      ],
+      [
+        { "emoji": "🐢", "label": "Penyu", "type": "bertelur" },
+        { "emoji": "🐔", "label": "Ayam", "type": "bertelur" },
+        { "emoji": "🐟", "label": "Ikan", "type": "bertelur" },
+        { "emoji": "🐸", "label": "Katak", "type": "bertelur" },
+        { "emoji": "🐘", "label": "Gajah", "type": "melahirkan" },
+        { "emoji": "🐼", "label": "Panda", "type": "melahirkan" },
+        { "emoji": "🐬", "label": "Lumba-lumba", "type": "melahirkan" },
+        { "emoji": "🐱", "label": "Kucing", "type": "melahirkan" }
+      ],
+      [
+        { "emoji": "🐔", "label": "Ayam", "type": "bertelur" },
+        { "emoji": "🐟", "label": "Ikan", "type": "bertelur" },
+        { "emoji": "🐸", "label": "Katak", "type": "bertelur" },
+        { "emoji": "🦋", "label": "Kupu-kupu", "type": "bertelur" },
+        { "emoji": "🐼", "label": "Panda", "type": "melahirkan" },
+        { "emoji": "🐬", "label": "Lumba-lumba", "type": "melahirkan" },
+        { "emoji": "🐱", "label": "Kucing", "type": "melahirkan" },
+        { "emoji": "🐰", "label": "Arnab", "type": "melahirkan" }
+      ],
+      [
+        { "emoji": "🐟", "label": "Ikan", "type": "bertelur" },
+        { "emoji": "🦋", "label": "Kupu-kupu", "type": "bertelur" },
+        { "emoji": "🐢", "label": "Penyu", "type": "bertelur" },
+        { "emoji": "🐔", "label": "Ayam", "type": "bertelur" },
+        { "emoji": "🐬", "label": "Lumba-lumba", "type": "melahirkan" },
+        { "emoji": "🐱", "label": "Kucing", "type": "melahirkan" },
+        { "emoji": "🐰", "label": "Arnab", "type": "melahirkan" },
+        { "emoji": "🐘", "label": "Gajah", "type": "melahirkan" }
+      ]
+    ]
+  },
+  "tahun2-anak-serupa-tidak-serupa": {
+    "topikLabel": "Anak Serupa atau Tidak Serupa dengan Induk?",
+    "tahun": 2,
+    "binA": { "type": "serupa", "label": "ANAK SERUPA INDUK", "emoji": "🐄" },
+    "binB": { "type": "tidakserupa", "label": "ANAK TIDAK SERUPA INDUK", "emoji": "🦋" },
+    "sets": [
+      [
+        { "emoji": "🐄", "label": "Lembu", "type": "serupa" },
+        { "emoji": "🐯", "label": "Harimau", "type": "serupa" },
+        { "emoji": "🐻", "label": "Beruang", "type": "serupa" },
+        { "emoji": "🦗", "label": "Belalang", "type": "serupa" },
+        { "emoji": "🐸", "label": "Katak", "type": "tidakserupa" },
+        { "emoji": "🦋", "label": "Rama-rama", "type": "tidakserupa" },
+        { "emoji": "🦟", "label": "Nyamuk", "type": "tidakserupa" },
+        { "emoji": "🪲", "label": "Kumbang", "type": "tidakserupa" }
+      ],
+      [
+        { "emoji": "🐯", "label": "Harimau", "type": "serupa" },
+        { "emoji": "🐻", "label": "Beruang", "type": "serupa" },
+        { "emoji": "🦗", "label": "Belalang", "type": "serupa" },
+        { "emoji": "🐄", "label": "Lembu", "type": "serupa" },
+        { "emoji": "🦋", "label": "Rama-rama", "type": "tidakserupa" },
+        { "emoji": "🦟", "label": "Nyamuk", "type": "tidakserupa" },
+        { "emoji": "🪲", "label": "Kumbang", "type": "tidakserupa" },
+        { "emoji": "🐸", "label": "Katak", "type": "tidakserupa" }
+      ],
+      [
+        { "emoji": "🐻", "label": "Beruang", "type": "serupa" },
+        { "emoji": "🦗", "label": "Belalang", "type": "serupa" },
+        { "emoji": "🐄", "label": "Lembu", "type": "serupa" },
+        { "emoji": "🐯", "label": "Harimau", "type": "serupa" },
+        { "emoji": "🦟", "label": "Nyamuk", "type": "tidakserupa" },
+        { "emoji": "🪲", "label": "Kumbang", "type": "tidakserupa" },
+        { "emoji": "🐸", "label": "Katak", "type": "tidakserupa" },
+        { "emoji": "🦋", "label": "Rama-rama", "type": "tidakserupa" }
+      ],
+      [
+        { "emoji": "🦗", "label": "Belalang", "type": "serupa" },
+        { "emoji": "🐄", "label": "Lembu", "type": "serupa" },
+        { "emoji": "🐯", "label": "Harimau", "type": "serupa" },
+        { "emoji": "🐻", "label": "Beruang", "type": "serupa" },
+        { "emoji": "🪲", "label": "Kumbang", "type": "tidakserupa" },
+        { "emoji": "🐸", "label": "Katak", "type": "tidakserupa" },
+        { "emoji": "🦋", "label": "Rama-rama", "type": "tidakserupa" },
+        { "emoji": "🦟", "label": "Nyamuk", "type": "tidakserupa" }
+      ],
+      [
+        { "emoji": "🐄", "label": "Lembu", "type": "serupa" },
+        { "emoji": "🐻", "label": "Beruang", "type": "serupa" },
+        { "emoji": "🐯", "label": "Harimau", "type": "serupa" },
+        { "emoji": "🦗", "label": "Belalang", "type": "serupa" },
+        { "emoji": "🐸", "label": "Katak", "type": "tidakserupa" },
+        { "emoji": "🪲", "label": "Kumbang", "type": "tidakserupa" },
+        { "emoji": "🦟", "label": "Nyamuk", "type": "tidakserupa" },
+        { "emoji": "🦋", "label": "Rama-rama", "type": "tidakserupa" }
+      ]
+    ]
+  },
+  "tahun2-kegunaan-bahaya-angin": {
+    "topikLabel": "Kegunaan Angin atau Bahaya Angin Kencang?",
+    "tahun": 2,
+    "binA": { "type": "kegunaan", "label": "KEGUNAAN ANGIN", "emoji": "🪁" },
+    "binB": { "type": "bahaya", "label": "BAHAYA ANGIN KENCANG", "emoji": "🌪️" },
+    "sets": [
+      [
+        { "emoji": "🪁", "label": "Layang-layang", "type": "kegunaan" },
+        { "emoji": "🎐", "label": "Kincir Angin", "type": "kegunaan" },
+        { "emoji": "⛵", "label": "Kapal Layar", "type": "kegunaan" },
+        { "emoji": "🎈", "label": "Belon Udara Panas", "type": "kegunaan" },
+        { "emoji": "🌳", "label": "Pokok Tumbang", "type": "bahaya" },
+        { "emoji": "🏠", "label": "Bumbung Terbang", "type": "bahaya" },
+        { "emoji": "🌪️", "label": "Ribut", "type": "bahaya" },
+        { "emoji": "🌊", "label": "Ombak Besar", "type": "bahaya" }
+      ],
+      [
+        { "emoji": "🎐", "label": "Kincir Angin", "type": "kegunaan" },
+        { "emoji": "⛵", "label": "Kapal Layar", "type": "kegunaan" },
+        { "emoji": "🎈", "label": "Belon Udara Panas", "type": "kegunaan" },
+        { "emoji": "🪁", "label": "Layang-layang", "type": "kegunaan" },
+        { "emoji": "🏠", "label": "Bumbung Terbang", "type": "bahaya" },
+        { "emoji": "🌪️", "label": "Ribut", "type": "bahaya" },
+        { "emoji": "🌊", "label": "Ombak Besar", "type": "bahaya" },
+        { "emoji": "🌳", "label": "Pokok Tumbang", "type": "bahaya" }
+      ],
+      [
+        { "emoji": "⛵", "label": "Kapal Layar", "type": "kegunaan" },
+        { "emoji": "🎈", "label": "Belon Udara Panas", "type": "kegunaan" },
+        { "emoji": "🪁", "label": "Layang-layang", "type": "kegunaan" },
+        { "emoji": "🎐", "label": "Kincir Angin", "type": "kegunaan" },
+        { "emoji": "🌪️", "label": "Ribut", "type": "bahaya" },
+        { "emoji": "🌊", "label": "Ombak Besar", "type": "bahaya" },
+        { "emoji": "🌳", "label": "Pokok Tumbang", "type": "bahaya" },
+        { "emoji": "🏠", "label": "Bumbung Terbang", "type": "bahaya" }
+      ],
+      [
+        { "emoji": "🎈", "label": "Belon Udara Panas", "type": "kegunaan" },
+        { "emoji": "🪁", "label": "Layang-layang", "type": "kegunaan" },
+        { "emoji": "🎐", "label": "Kincir Angin", "type": "kegunaan" },
+        { "emoji": "⛵", "label": "Kapal Layar", "type": "kegunaan" },
+        { "emoji": "🌊", "label": "Ombak Besar", "type": "bahaya" },
+        { "emoji": "🌳", "label": "Pokok Tumbang", "type": "bahaya" },
+        { "emoji": "🏠", "label": "Bumbung Terbang", "type": "bahaya" },
+        { "emoji": "🌪️", "label": "Ribut", "type": "bahaya" }
+      ],
+      [
+        { "emoji": "🪁", "label": "Layang-layang", "type": "kegunaan" },
+        { "emoji": "⛵", "label": "Kapal Layar", "type": "kegunaan" },
+        { "emoji": "🎈", "label": "Belon Udara Panas", "type": "kegunaan" },
+        { "emoji": "🎐", "label": "Kincir Angin", "type": "kegunaan" },
+        { "emoji": "🌳", "label": "Pokok Tumbang", "type": "bahaya" },
+        { "emoji": "🏠", "label": "Bumbung Terbang", "type": "bahaya" },
+        { "emoji": "🌊", "label": "Ombak Besar", "type": "bahaya" },
+        { "emoji": "🌪️", "label": "Ribut", "type": "bahaya" }
+      ]
+    ]
+  },
   "tahun4-tolak-tarik": {
     "topikLabel": "Tolak atau Tarik?",
     "tahun": 4,

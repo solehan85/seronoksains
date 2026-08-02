@@ -38,5 +38,36 @@
       { "emoji": "🌇", "label": "Petang" },
       { "emoji": "🌙", "label": "Malam" }
     ]
+  },
+  "tahun2-kitar-hidup-katak": {
+    "topikLabel": "Kitar Hidup Katak",
+    "tahun": 2,
+    "stages": [
+      { "emoji": "🥚", "label": "Telur" },
+      { "emoji": "🪱", "label": "Berudu" },
+      { "emoji": "🐸", "label": "Anak Katak" },
+      { "emoji": "🐸", "label": "Katak Dewasa" }
+    ]
+  },
+  "tahun2-kitaran-air-semula-jadi": {
+    "topikLabel": "Kitaran Air Semula Jadi",
+    "tahun": 2,
+    "stages": [
+      { "emoji": "☀️", "label": "Matahari Memanaskan Air" },
+      { "emoji": "💨", "label": "Air Bertukar Jadi Wap" },
+      { "emoji": "☁️", "label": "Wap Air Membentuk Awan" },
+      { "emoji": "🌧️", "label": "Hujan Turun" },
+      { "emoji": "🌊", "label": "Air Kembali ke Sungai/Laut" }
+    ]
+  },
+  "tahun2-peringkat-tumbesaran-manusia": {
+    "topikLabel": "Peringkat Tumbesaran Manusia",
+    "tahun": 2,
+    "stages": [
+      { "emoji": "👶", "label": "Bayi" },
+      { "emoji": "🧒", "label": "Kanak-kanak" },
+      { "emoji": "🧑", "label": "Remaja" },
+      { "emoji": "🧑‍💼", "label": "Dewasa" }
+    ]
   }
 }

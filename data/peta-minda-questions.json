@@ -142,5 +142,96 @@
       { "label": "Fikir Sebab Sesuatu Berlaku", "emoji": "💡", "branchId": "inferens" },
       { "label": "Buat Kesimpulan Daripada Bukti", "emoji": "🧩", "branchId": "inferens" }
     ]
+  },
+  "tahun2-kemahiran-saintifik": {
+    "topikLabel": "Peta Minda Kemahiran Saintifik",
+    "tahun": 2,
+    "centralLabel": "KEMAHIRAN SAINTIFIK",
+    "centralEmoji": "🔬",
+    "branches": [
+      { "id": "memerhati", "label": "MEMERHATI", "emoji": "👁️" },
+      { "id": "mengelas", "label": "MENGELAS", "emoji": "🗂️" },
+      { "id": "mengukur", "label": "MENGUKUR & GUNA NOMBOR", "emoji": "📏" },
+      { "id": "berkomunikasi", "label": "BERKOMUNIKASI", "emoji": "🗣️" }
+    ],
+    "items": [
+      { "label": "Lihat Warna Bunga", "emoji": "🌸", "branchId": "memerhati" },
+      { "label": "Guna Kanta Pembesar", "emoji": "🔍", "branchId": "memerhati" },
+      { "label": "Asingkan Ikut Bentuk", "emoji": "🔺", "branchId": "mengelas" },
+      { "label": "Kumpulkan Ikut Saiz", "emoji": "📦", "branchId": "mengelas" },
+      { "label": "Guna Pembaris", "emoji": "📏", "branchId": "mengukur" },
+      { "label": "Kira Bilangan Objek", "emoji": "🔢", "branchId": "mengukur" },
+      { "label": "Ceritakan Dapatan Kajian", "emoji": "🗣️", "branchId": "berkomunikasi" },
+      { "label": "Lukis Carta Ringkas", "emoji": "📊", "branchId": "berkomunikasi" }
+    ]
+  },
+  "tahun2-peraturan-bilik-sains": {
+    "topikLabel": "Peta Minda Peraturan Bilik Sains",
+    "tahun": 2,
+    "centralLabel": "PERATURAN BILIK SAINS",
+    "centralEmoji": "🧪",
+    "branches": [
+      { "id": "alatradas", "label": "ALAT DAN RADAS", "emoji": "🧫" },
+      { "id": "simbolamaran", "label": "SIMBOL AMARAN", "emoji": "⚠️" },
+      { "id": "sikapbaik", "label": "SIKAP YANG BAIK", "emoji": "🙂" },
+      { "id": "pembuangansisa", "label": "PEMBUANGAN SISA", "emoji": "🗑️" }
+    ],
+    "items": [
+      { "label": "Bikar", "emoji": "🧪", "branchId": "alatradas" },
+      { "label": "Tabung Uji", "emoji": "🧫", "branchId": "alatradas" },
+      { "label": "Termometer", "emoji": "🌡️", "branchId": "alatradas" },
+      { "label": "Mudah Terbakar", "emoji": "🔥", "branchId": "simbolamaran" },
+      { "label": "Toksik", "emoji": "☠️", "branchId": "simbolamaran" },
+      { "label": "Mudah Meletup", "emoji": "💥", "branchId": "simbolamaran" },
+      { "label": "Berhati-hati Guna Alat", "emoji": "🤲", "branchId": "sikapbaik" },
+      { "label": "Ikut Arahan Guru", "emoji": "🙋", "branchId": "sikapbaik" },
+      { "label": "Jaga Kebersihan", "emoji": "🧹", "branchId": "sikapbaik" },
+      { "label": "Sisa Pepejal ke Bakul Sampah", "emoji": "🗑️", "branchId": "pembuangansisa" },
+      { "label": "Sisa Cecair ke Sinki", "emoji": "🚰", "branchId": "pembuangansisa" }
+    ]
+  },
+  "tahun2-kaedah-mengasingkan-campuran": {
+    "topikLabel": "Peta Minda Kaedah Mengasingkan Campuran",
+    "tahun": 2,
+    "centralLabel": "KAEDAH MENGASINGKAN",
+    "centralEmoji": "🧪",
+    "branches": [
+      { "id": "menyisih", "label": "MENYISIH", "emoji": "🤲" },
+      { "id": "mengayak", "label": "MENGAYAK", "emoji": "🧺" },
+      { "id": "menuras", "label": "MENURAS", "emoji": "🧻" },
+      { "id": "magnet", "label": "MAGNET", "emoji": "🧲" },
+      { "id": "mengapung", "label": "MENGAPUNG", "emoji": "🛟" }
+    ],
+    "items": [
+      { "label": "Kacang dan Batu Kecil", "emoji": "🥜", "branchId": "menyisih" },
+      { "label": "Sayur dan Sampah", "emoji": "🥬", "branchId": "menyisih" },
+      { "label": "Tepung dan Serangga", "emoji": "🌾", "branchId": "mengayak" },
+      { "label": "Pasir dan Batu Kecil", "emoji": "🏖️", "branchId": "mengayak" },
+      { "label": "Air dan Pasir", "emoji": "💧", "branchId": "menuras" },
+      { "label": "Air Kotor dan Daun", "emoji": "🍃", "branchId": "menuras" },
+      { "label": "Paku dan Serbuk Kayu", "emoji": "🔩", "branchId": "magnet" },
+      { "label": "Besi dan Plastik", "emoji": "⚙️", "branchId": "magnet" },
+      { "label": "Gabus dan Air", "emoji": "🪵", "branchId": "mengapung" },
+      { "label": "Minyak dan Air", "emoji": "🛢️", "branchId": "mengapung" }
+    ]
+  },
+  "tahun2-bentuk-set-binaan": {
+    "topikLabel": "Peta Minda Bentuk Set Binaan",
+    "tahun": 2,
+    "centralLabel": "SET BINAAN",
+    "centralEmoji": "🧱",
+    "branches": [
+      { "id": "kiub", "label": "KIUB", "emoji": "🎲" },
+      { "id": "prisma", "label": "PRISMA", "emoji": "🔺" },
+      { "id": "silinder", "label": "SILINDER", "emoji": "🥫" }
+    ],
+    "items": [
+      { "label": "Dadu", "emoji": "🎲", "branchId": "kiub" },
+      { "label": "Kotak Hadiah", "emoji": "🎁", "branchId": "kiub" },
+      { "label": "Bumbung Khemah", "emoji": "⛺", "branchId": "prisma" },
+      { "label": "Petak Segitiga", "emoji": "🔺", "branchId": "prisma" },
+      { "label": "Tin Makanan", "emoji": "🥫", "branchId": "silinder" },
+      { "label": "Botol Air", "emoji": "🍾", "branchId": "silinder" }
+    ]
   }
 }
