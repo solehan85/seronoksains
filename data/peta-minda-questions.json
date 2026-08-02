@@ -72,5 +72,25 @@
       { "label": "Sarang Burung", "emoji": "🪺", "branchId": "tempattinggal" },
       { "label": "Gua", "emoji": "🕳️", "branchId": "tempattinggal" }
     ]
+  },
+  "tahun1-bumi": {
+    "topikLabel": "Peta Minda Bumi",
+    "tahun": 1,
+    "centralLabel": "BUMI",
+    "centralEmoji": "🌍",
+    "branches": [
+      { "id": "mukabumi", "label": "BENTUK MUKA BUMI", "emoji": "⛰️" },
+      { "id": "tanah", "label": "KANDUNGAN TANAH", "emoji": "🟤" }
+    ],
+    "items": [
+      { "label": "Gunung", "emoji": "⛰️", "branchId": "mukabumi" },
+      { "label": "Bukit", "emoji": "🌄", "branchId": "mukabumi" },
+      { "label": "Sungai", "emoji": "🏞️", "branchId": "mukabumi" },
+      { "label": "Laut", "emoji": "🌊", "branchId": "mukabumi" },
+      { "label": "Pasir", "emoji": "🏖️", "branchId": "tanah" },
+      { "label": "Tanah Liat", "emoji": "🟤", "branchId": "tanah" },
+      { "label": "Batu Kecil", "emoji": "🪨", "branchId": "tanah" },
+      { "label": "Bahan Reput", "emoji": "🍂", "branchId": "tanah" }
+    ]
   }
 }
