@@ -20,5 +20,16 @@
       { "sebabEmoji": "🐍", "sebab": "Ular Memakan Banyak Katak", "akibatEmoji": "🐸", "akibat": "Populasi Katak Berkurangan" },
       { "sebabEmoji": "🍂", "sebab": "Daun Reput di Tanah", "akibatEmoji": "🪱", "akibat": "Cacing Tanah Mendapat Makanan" }
     ]
+  },
+  "tahun2-kesihatan-diri": {
+    "topikLabel": "Sebab-Akibat: Kesihatan Diri",
+    "tahun": 2,
+    "pairs": [
+      { "sebabEmoji": "🪥", "sebab": "Gosok Gigi 2 Kali Sehari", "akibatEmoji": "🦷", "akibat": "Gigi Sihat dan Kuat" },
+      { "sebabEmoji": "🥗", "sebab": "Makan Sayur dan Buah", "akibatEmoji": "🏃", "akibat": "Badan Cergas dan Sihat" },
+      { "sebabEmoji": "🖐️", "sebab": "Tidak Basuh Tangan Sebelum Makan", "akibatEmoji": "🤒", "akibat": "Mudah Dijangkiti Kuman" },
+      { "sebabEmoji": "🏋️", "sebab": "Bersenam Setiap Hari", "akibatEmoji": "💪", "akibat": "Otot Kuat dan Sihat" },
+      { "sebabEmoji": "😴", "sebab": "Kurang Tidur pada Waktu Malam", "akibatEmoji": "😵‍💫", "akibat": "Sukar Fokus Semasa Belajar" }
+    ]
   }
 }
