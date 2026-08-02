@@ -1274,5 +1274,63 @@
         { "emoji": "🧤", "label": "Sentuh Bahan Berbahaya Tanpa Sarung Tangan", "type": "salah" }
       ]
     ]
+  },
+  "tahun1-penyerapan-air": {
+    "topikLabel": "Menyerap Air atau Tidak?",
+    "tahun": 1,
+    "binA": { "type": "menyerap", "label": "MENYERAP AIR", "emoji": "🧽" },
+    "binB": { "type": "tidak-menyerap", "label": "TIDAK MENYERAP AIR", "emoji": "❌" },
+    "sets": [
+      [
+        { "emoji": "🧽", "label": "Span", "type": "menyerap" },
+        { "emoji": "🧻", "label": "Tisu", "type": "menyerap" },
+        { "emoji": "🧵", "label": "Kain", "type": "menyerap" },
+        { "emoji": "☁️", "label": "Kapas", "type": "menyerap" },
+        { "emoji": "🧴", "label": "Plastik", "type": "tidak-menyerap" },
+        { "emoji": "🥛", "label": "Kaca", "type": "tidak-menyerap" },
+        { "emoji": "🔩", "label": "Logam", "type": "tidak-menyerap" },
+        { "emoji": "🧤", "label": "Getah", "type": "tidak-menyerap" }
+      ],
+      [
+        { "emoji": "🧻", "label": "Tisu", "type": "menyerap" },
+        { "emoji": "🧵", "label": "Kain", "type": "menyerap" },
+        { "emoji": "☁️", "label": "Kapas", "type": "menyerap" },
+        { "emoji": "👕", "label": "Baju", "type": "menyerap" },
+        { "emoji": "🥛", "label": "Kaca", "type": "tidak-menyerap" },
+        { "emoji": "🔩", "label": "Logam", "type": "tidak-menyerap" },
+        { "emoji": "🧤", "label": "Getah", "type": "tidak-menyerap" },
+        { "emoji": "🪨", "label": "Batu", "type": "tidak-menyerap" }
+      ],
+      [
+        { "emoji": "🧵", "label": "Kain", "type": "menyerap" },
+        { "emoji": "☁️", "label": "Kapas", "type": "menyerap" },
+        { "emoji": "👕", "label": "Baju", "type": "menyerap" },
+        { "emoji": "🧽", "label": "Span", "type": "menyerap" },
+        { "emoji": "🔩", "label": "Logam", "type": "tidak-menyerap" },
+        { "emoji": "🧤", "label": "Getah", "type": "tidak-menyerap" },
+        { "emoji": "🪨", "label": "Batu", "type": "tidak-menyerap" },
+        { "emoji": "🧴", "label": "Plastik", "type": "tidak-menyerap" }
+      ],
+      [
+        { "emoji": "☁️", "label": "Kapas", "type": "menyerap" },
+        { "emoji": "👕", "label": "Baju", "type": "menyerap" },
+        { "emoji": "🧽", "label": "Span", "type": "menyerap" },
+        { "emoji": "🧻", "label": "Tisu", "type": "menyerap" },
+        { "emoji": "🧤", "label": "Getah", "type": "tidak-menyerap" },
+        { "emoji": "🪨", "label": "Batu", "type": "tidak-menyerap" },
+        { "emoji": "🧴", "label": "Plastik", "type": "tidak-menyerap" },
+        { "emoji": "🥛", "label": "Kaca", "type": "tidak-menyerap" }
+      ],
+      [
+        { "emoji": "👕", "label": "Baju", "type": "menyerap" },
+        { "emoji": "🧽", "label": "Span", "type": "menyerap" },
+        { "emoji": "🧻", "label": "Tisu", "type": "menyerap" },
+        { "emoji": "🧵", "label": "Kain", "type": "menyerap" },
+        { "emoji": "🪨", "label": "Batu", "type": "tidak-menyerap" },
+        { "emoji": "🧴", "label": "Plastik", "type": "tidak-menyerap" },
+        { "emoji": "🥛", "label": "Kaca", "type": "tidak-menyerap" },
+        { "emoji": "🔩", "label": "Logam", "type": "tidak-menyerap" }
+      ]
+    ]
   }
 }
