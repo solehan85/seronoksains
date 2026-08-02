@@ -28,5 +28,15 @@
       { "emoji": "🐤", "label": "Ayam Muda" },
       { "emoji": "🐔", "label": "Ayam Dewasa" }
     ]
+  },
+  "tahun3-waktu-sehari": {
+    "topikLabel": "Urutan Waktu dalam Sehari",
+    "tahun": 3,
+    "stages": [
+      { "emoji": "🌅", "label": "Pagi" },
+      { "emoji": "☀️", "label": "Tengahari" },
+      { "emoji": "🌇", "label": "Petang" },
+      { "emoji": "🌙", "label": "Malam" }
+    ]
   }
 }
