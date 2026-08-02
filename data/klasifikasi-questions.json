@@ -811,6 +811,64 @@
       ]
     ]
   },
+  "tahun2-konduktor-penebat-elektrik": {
+    "topikLabel": "Konduktor atau Penebat Elektrik?",
+    "tahun": 2,
+    "binA": { "type": "konduktor", "label": "KONDUKTOR ELEKTRIK", "emoji": "🔑" },
+    "binB": { "type": "penebat", "label": "PENEBAT ELEKTRIK", "emoji": "🧤" },
+    "sets": [
+      [
+        { "emoji": "🥄", "label": "Sudu Logam", "type": "konduktor" },
+        { "emoji": "🪙", "label": "Duit Syiling", "type": "konduktor" },
+        { "emoji": "🔩", "label": "Paku", "type": "konduktor" },
+        { "emoji": "🔑", "label": "Kunci", "type": "konduktor" },
+        { "emoji": "🧴", "label": "Plastik", "type": "penebat" },
+        { "emoji": "🧤", "label": "Getah", "type": "penebat" },
+        { "emoji": "🧵", "label": "Kain", "type": "penebat" },
+        { "emoji": "🪵", "label": "Kayu", "type": "penebat" }
+      ],
+      [
+        { "emoji": "🪙", "label": "Duit Syiling", "type": "konduktor" },
+        { "emoji": "🔩", "label": "Paku", "type": "konduktor" },
+        { "emoji": "🔑", "label": "Kunci", "type": "konduktor" },
+        { "emoji": "✂️", "label": "Gunting", "type": "konduktor" },
+        { "emoji": "🧤", "label": "Getah", "type": "penebat" },
+        { "emoji": "🧵", "label": "Kain", "type": "penebat" },
+        { "emoji": "🪵", "label": "Kayu", "type": "penebat" },
+        { "emoji": "📄", "label": "Kertas", "type": "penebat" }
+      ],
+      [
+        { "emoji": "🔩", "label": "Paku", "type": "konduktor" },
+        { "emoji": "🔑", "label": "Kunci", "type": "konduktor" },
+        { "emoji": "✂️", "label": "Gunting", "type": "konduktor" },
+        { "emoji": "🥄", "label": "Sudu Logam", "type": "konduktor" },
+        { "emoji": "🧵", "label": "Kain", "type": "penebat" },
+        { "emoji": "🪵", "label": "Kayu", "type": "penebat" },
+        { "emoji": "📄", "label": "Kertas", "type": "penebat" },
+        { "emoji": "🧴", "label": "Plastik", "type": "penebat" }
+      ],
+      [
+        { "emoji": "🔑", "label": "Kunci", "type": "konduktor" },
+        { "emoji": "✂️", "label": "Gunting", "type": "konduktor" },
+        { "emoji": "🥄", "label": "Sudu Logam", "type": "konduktor" },
+        { "emoji": "🪙", "label": "Duit Syiling", "type": "konduktor" },
+        { "emoji": "🪵", "label": "Kayu", "type": "penebat" },
+        { "emoji": "📄", "label": "Kertas", "type": "penebat" },
+        { "emoji": "🧴", "label": "Plastik", "type": "penebat" },
+        { "emoji": "🧤", "label": "Getah", "type": "penebat" }
+      ],
+      [
+        { "emoji": "✂️", "label": "Gunting", "type": "konduktor" },
+        { "emoji": "🥄", "label": "Sudu Logam", "type": "konduktor" },
+        { "emoji": "🪙", "label": "Duit Syiling", "type": "konduktor" },
+        { "emoji": "🔩", "label": "Paku", "type": "konduktor" },
+        { "emoji": "📄", "label": "Kertas", "type": "penebat" },
+        { "emoji": "🧴", "label": "Plastik", "type": "penebat" },
+        { "emoji": "🧤", "label": "Getah", "type": "penebat" },
+        { "emoji": "🧵", "label": "Kain", "type": "penebat" }
+      ]
+    ]
+  },
   "tahun4-tolak-tarik": {
     "topikLabel": "Tolak atau Tarik?",
     "tahun": 4,

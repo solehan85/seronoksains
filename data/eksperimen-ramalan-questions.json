@@ -48,9 +48,9 @@
       }
     ]
   },
-  "tahun3-larut-tidak-larut": {
+  "tahun2-larut-tidak-larut": {
     "topikLabel": "Ramalan: Larut atau Tidak?",
-    "tahun": 3,
+    "tahun": 2,
     "question": "Yang manakah akan LARUT dalam air?",
     "rounds": [
       {

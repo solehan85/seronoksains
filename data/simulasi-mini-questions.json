@@ -134,6 +134,33 @@
       ]
     ]
   },
+  "tahun2-litar-lengkap-terbuka": {
+    "topikLabel": "Litar Lengkap atau Tidak Lengkap?",
+    "tahun": 2,
+    "diagramType": "litar",
+    "sets": [
+      [
+        { "switchState": "closed" }, { "switchState": "open" }, { "switchState": "closed" }, { "switchState": "open" },
+        { "switchState": "closed" }, { "switchState": "open" }, { "switchState": "closed" }, { "switchState": "open" }
+      ],
+      [
+        { "switchState": "open" }, { "switchState": "closed" }, { "switchState": "open" }, { "switchState": "closed" },
+        { "switchState": "open" }, { "switchState": "closed" }, { "switchState": "open" }, { "switchState": "closed" }
+      ],
+      [
+        { "switchState": "closed" }, { "switchState": "closed" }, { "switchState": "open" }, { "switchState": "open" },
+        { "switchState": "closed" }, { "switchState": "open" }, { "switchState": "closed" }, { "switchState": "open" }
+      ],
+      [
+        { "switchState": "open" }, { "switchState": "open" }, { "switchState": "closed" }, { "switchState": "closed" },
+        { "switchState": "open" }, { "switchState": "closed" }, { "switchState": "open" }, { "switchState": "closed" }
+      ],
+      [
+        { "switchState": "closed" }, { "switchState": "open" }, { "switchState": "closed" }, { "switchState": "closed" },
+        { "switchState": "open" }, { "switchState": "open" }, { "switchState": "closed" }, { "switchState": "open" }
+      ]
+    ]
+  },
   "tahun6-besi-berkarat": {
     "topikLabel": "Besi Berkarat: Adakah Ia Akan Berkarat?",
     "tahun": 6,
