@@ -69,5 +69,76 @@
         ]
       }
     ]
+  },
+  "tahun1-teka-deria": {
+    "topikLabel": "Teka Deria Ini",
+    "tahun": 1,
+    "rounds": [
+      {
+        "clues": [
+          "Deria ini membolehkan kita melihat warna-warni pelangi.",
+          "Ia terletak di bahagian kepala, sepasang bulat.",
+          "Kita guna deria ini untuk membaca buku."
+        ],
+        "options": [
+          { "emoji": "👀", "label": "Mata", "correct": true },
+          { "emoji": "👂", "label": "Telinga", "correct": false },
+          { "emoji": "👃", "label": "Hidung", "correct": false },
+          { "emoji": "👅", "label": "Lidah", "correct": false }
+        ]
+      },
+      {
+        "clues": [
+          "Deria ini membolehkan kita mendengar bunyi burung berkicau.",
+          "Ia terletak di kiri dan kanan kepala.",
+          "Kita guna deria ini untuk mendengar muzik."
+        ],
+        "options": [
+          { "emoji": "👂", "label": "Telinga", "correct": true },
+          { "emoji": "👀", "label": "Mata", "correct": false },
+          { "emoji": "👃", "label": "Hidung", "correct": false },
+          { "emoji": "✋", "label": "Kulit", "correct": false }
+        ]
+      },
+      {
+        "clues": [
+          "Deria ini membolehkan kita menghidu bau bunga yang harum.",
+          "Ia terletak di tengah muka.",
+          "Kita guna deria ini untuk menghidu bau masakan ibu."
+        ],
+        "options": [
+          { "emoji": "👃", "label": "Hidung", "correct": true },
+          { "emoji": "👅", "label": "Lidah", "correct": false },
+          { "emoji": "👂", "label": "Telinga", "correct": false },
+          { "emoji": "✋", "label": "Kulit", "correct": false }
+        ]
+      },
+      {
+        "clues": [
+          "Deria ini membolehkan kita merasa manis gula.",
+          "Ia terletak di dalam mulut kita.",
+          "Kita guna deria ini untuk merasa masam limau."
+        ],
+        "options": [
+          { "emoji": "👅", "label": "Lidah", "correct": true },
+          { "emoji": "👃", "label": "Hidung", "correct": false },
+          { "emoji": "👀", "label": "Mata", "correct": false },
+          { "emoji": "✋", "label": "Kulit", "correct": false }
+        ]
+      },
+      {
+        "clues": [
+          "Deria ini membolehkan kita merasa kasar permukaan batu.",
+          "Ia meliputi seluruh badan kita.",
+          "Kita guna deria ini untuk merasa sejuk ais."
+        ],
+        "options": [
+          { "emoji": "✋", "label": "Kulit", "correct": true },
+          { "emoji": "👀", "label": "Mata", "correct": false },
+          { "emoji": "👂", "label": "Telinga", "correct": false },
+          { "emoji": "👅", "label": "Lidah", "correct": false }
+        ]
+      }
+    ]
   }
 }
