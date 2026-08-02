@@ -1216,5 +1216,63 @@
         { "emoji": "🕯️", "label": "Suluh Minyak", "type": "tradisional" }
       ]
     ]
+  },
+  "tahun1-peraturan-bilik-sains": {
+    "topikLabel": "Ikut Peraturan Bilik Sains atau Tidak?",
+    "tahun": 1,
+    "binA": { "type": "betul", "label": "IKUT PERATURAN", "emoji": "✅" },
+    "binB": { "type": "salah", "label": "LANGGAR PERATURAN", "emoji": "❌" },
+    "sets": [
+      [
+        { "emoji": "👂", "label": "Dengar Arahan Guru", "type": "betul" },
+        { "emoji": "🧪", "label": "Guna Alat Dengan Betul", "type": "betul" },
+        { "emoji": "🧼", "label": "Basuh Tangan Selepas Aktiviti", "type": "betul" },
+        { "emoji": "📦", "label": "Simpan Alat Selepas Guna", "type": "betul" },
+        { "emoji": "🏃", "label": "Berlari Dalam Bilik Sains", "type": "salah" },
+        { "emoji": "🤹", "label": "Bermain Alat Makmal", "type": "salah" },
+        { "emoji": "🍔", "label": "Makan Dalam Bilik Sains", "type": "salah" },
+        { "emoji": "🥤", "label": "Minum Dalam Bilik Sains", "type": "salah" }
+      ],
+      [
+        { "emoji": "🥽", "label": "Berhati-hati Dengan Bahan", "type": "betul" },
+        { "emoji": "📞", "label": "Lapor Kemalangan Segera", "type": "betul" },
+        { "emoji": "🧹", "label": "Jaga Kebersihan Bilik Sains", "type": "betul" },
+        { "emoji": "🤝", "label": "Bekerjasama Dengan Rakan", "type": "betul" },
+        { "emoji": "🙉", "label": "Tidak Dengar Arahan Guru", "type": "salah" },
+        { "emoji": "🧴", "label": "Main-main Dengan Bahan Kimia", "type": "salah" },
+        { "emoji": "🗑️", "label": "Buang Sampah Merata", "type": "salah" },
+        { "emoji": "🧤", "label": "Sentuh Bahan Berbahaya Tanpa Sarung Tangan", "type": "salah" }
+      ],
+      [
+        { "emoji": "👂", "label": "Dengar Arahan Guru", "type": "betul" },
+        { "emoji": "🧼", "label": "Basuh Tangan Selepas Aktiviti", "type": "betul" },
+        { "emoji": "🥽", "label": "Berhati-hati Dengan Bahan", "type": "betul" },
+        { "emoji": "🧹", "label": "Jaga Kebersihan Bilik Sains", "type": "betul" },
+        { "emoji": "🤹", "label": "Bermain Alat Makmal", "type": "salah" },
+        { "emoji": "🥤", "label": "Minum Dalam Bilik Sains", "type": "salah" },
+        { "emoji": "🧴", "label": "Main-main Dengan Bahan Kimia", "type": "salah" },
+        { "emoji": "🧤", "label": "Sentuh Bahan Berbahaya Tanpa Sarung Tangan", "type": "salah" }
+      ],
+      [
+        { "emoji": "🧪", "label": "Guna Alat Dengan Betul", "type": "betul" },
+        { "emoji": "📦", "label": "Simpan Alat Selepas Guna", "type": "betul" },
+        { "emoji": "📞", "label": "Lapor Kemalangan Segera", "type": "betul" },
+        { "emoji": "🤝", "label": "Bekerjasama Dengan Rakan", "type": "betul" },
+        { "emoji": "🏃", "label": "Berlari Dalam Bilik Sains", "type": "salah" },
+        { "emoji": "🍔", "label": "Makan Dalam Bilik Sains", "type": "salah" },
+        { "emoji": "🙉", "label": "Tidak Dengar Arahan Guru", "type": "salah" },
+        { "emoji": "🗑️", "label": "Buang Sampah Merata", "type": "salah" }
+      ],
+      [
+        { "emoji": "👂", "label": "Dengar Arahan Guru", "type": "betul" },
+        { "emoji": "📦", "label": "Simpan Alat Selepas Guna", "type": "betul" },
+        { "emoji": "🥽", "label": "Berhati-hati Dengan Bahan", "type": "betul" },
+        { "emoji": "🤝", "label": "Bekerjasama Dengan Rakan", "type": "betul" },
+        { "emoji": "🏃", "label": "Berlari Dalam Bilik Sains", "type": "salah" },
+        { "emoji": "🧴", "label": "Main-main Dengan Bahan Kimia", "type": "salah" },
+        { "emoji": "🥤", "label": "Minum Dalam Bilik Sains", "type": "salah" },
+        { "emoji": "🧤", "label": "Sentuh Bahan Berbahaya Tanpa Sarung Tangan", "type": "salah" }
+      ]
+    ]
   }
 }
