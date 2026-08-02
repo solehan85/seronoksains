@@ -47,5 +47,47 @@
         ]
       }
     ]
+  },
+  "tahun3-larut-tidak-larut": {
+    "topikLabel": "Ramalan: Larut atau Tidak?",
+    "tahun": 3,
+    "question": "Yang manakah akan LARUT dalam air?",
+    "rounds": [
+      {
+        "options": [
+          { "emoji": "🧂", "label": "Garam", "correct": true },
+          { "emoji": "🪨", "label": "Batu Kecil", "correct": false },
+          { "emoji": "🧽", "label": "Span", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "🍬", "label": "Gula", "correct": true },
+          { "emoji": "🛢️", "label": "Minyak Masak", "correct": false },
+          { "emoji": "🪵", "label": "Kayu", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "🍫", "label": "Serbuk Koko", "correct": true },
+          { "emoji": "🏖️", "label": "Pasir", "correct": false },
+          { "emoji": "🧽", "label": "Span Mandi", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "🍊", "label": "Serbuk Jus Oren", "correct": true },
+          { "emoji": "🪨", "label": "Kerikil", "correct": false },
+          { "emoji": "🧴", "label": "Plastik", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "💊", "label": "Ubat Serbuk", "correct": true },
+          { "emoji": "🪵", "label": "Kayu Kecil", "correct": false },
+          { "emoji": "🧽", "label": "Span", "correct": false }
+        ]
+      }
+    ]
   }
 }
