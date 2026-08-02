@@ -89,5 +89,47 @@
         ]
       }
     ]
+  },
+  "tahun6-perubahan-kimia": {
+    "topikLabel": "Ramalan: Perubahan Kimia?",
+    "tahun": 6,
+    "question": "Yang manakah mengalami PERUBAHAN KIMIA?",
+    "rounds": [
+      {
+        "options": [
+          { "emoji": "🔥", "label": "Kayu Terbakar", "correct": true },
+          { "emoji": "🧊", "label": "Ais Cair", "correct": false },
+          { "emoji": "📄", "label": "Kertas Dikoyak", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "⚙️", "label": "Besi Berkarat", "correct": true },
+          { "emoji": "🎈", "label": "Belon Dipam", "correct": false },
+          { "emoji": "💧", "label": "Air Menyejat", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "🥛", "label": "Susu Basi", "correct": true },
+          { "emoji": "🍫", "label": "Coklat Cair", "correct": false },
+          { "emoji": "🧵", "label": "Kain Ditenun", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "🎇", "label": "Bunga Api Meletup", "correct": true },
+          { "emoji": "🍨", "label": "Aiskrim Cair", "correct": false },
+          { "emoji": "🧶", "label": "Benang Dipintal", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "🍞", "label": "Roti Berkulat", "correct": true },
+          { "emoji": "❄️", "label": "Salji Cair", "correct": false },
+          { "emoji": "📝", "label": "Kertas Dilipat", "correct": false }
+        ]
+      }
+    ]
   }
 }
