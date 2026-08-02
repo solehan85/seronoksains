@@ -92,5 +92,55 @@
       { "label": "Batu Kecil", "emoji": "🪨", "branchId": "tanah" },
       { "label": "Bahan Reput", "emoji": "🍂", "branchId": "tanah" }
     ]
+  },
+  "tahun1-ciri-benda-hidup": {
+    "topikLabel": "Peta Minda Ciri Benda Hidup",
+    "tahun": 1,
+    "centralLabel": "CIRI BENDA HIDUP",
+    "centralEmoji": "🌱",
+    "branches": [
+      { "id": "bernafas", "label": "BERNAFAS", "emoji": "👃" },
+      { "id": "bergerak", "label": "BERGERAK", "emoji": "🏃" },
+      { "id": "membesar", "label": "MEMBESAR", "emoji": "🌳" },
+      { "id": "membiak", "label": "MEMBIAK", "emoji": "🥚" },
+      { "id": "perlu", "label": "PERLU MAKANAN & AIR", "emoji": "🍽️" }
+    ],
+    "items": [
+      { "label": "Manusia Bernafas", "emoji": "👃", "branchId": "bernafas" },
+      { "label": "Ikan Bernafas Guna Insang", "emoji": "🐠", "branchId": "bernafas" },
+      { "label": "Kucing Berlari", "emoji": "🐱", "branchId": "bergerak" },
+      { "label": "Burung Terbang", "emoji": "🐦", "branchId": "bergerak" },
+      { "label": "Anak Pokok Jadi Besar", "emoji": "🌱", "branchId": "membesar" },
+      { "label": "Anak Kucing Jadi Besar", "emoji": "🐈", "branchId": "membesar" },
+      { "label": "Ayam Bertelur", "emoji": "🥚", "branchId": "membiak" },
+      { "label": "Pokok Berbunga & Berbuah", "emoji": "🌸", "branchId": "membiak" },
+      { "label": "Haiwan Makan Rumput", "emoji": "🐄", "branchId": "perlu" },
+      { "label": "Tumbuhan Disiram Air", "emoji": "💧", "branchId": "perlu" }
+    ]
+  },
+  "tahun1-kemahiran-saintifik": {
+    "topikLabel": "Peta Minda Kemahiran Saintifik",
+    "tahun": 1,
+    "centralLabel": "KEMAHIRAN SAINTIFIK",
+    "centralEmoji": "🔬",
+    "branches": [
+      { "id": "memerhati", "label": "MEMERHATI", "emoji": "👁️" },
+      { "id": "mengelas", "label": "MENGELAS", "emoji": "🗂️" },
+      { "id": "mengukur", "label": "MENGUKUR", "emoji": "📏" },
+      { "id": "meramal", "label": "MERAMAL", "emoji": "💭" },
+      { "id": "inferens", "label": "MEMBUAT INFERENS", "emoji": "💡" }
+    ],
+    "items": [
+      { "label": "Melihat Warna Daun", "emoji": "🍃", "branchId": "memerhati" },
+      { "label": "Guna Kanta Pembesar", "emoji": "🔍", "branchId": "memerhati" },
+      { "label": "Asingkan Objek Ikut Warna", "emoji": "🎨", "branchId": "mengelas" },
+      { "label": "Kumpulkan Bentuk Sama", "emoji": "🔺", "branchId": "mengelas" },
+      { "label": "Guna Pembaris", "emoji": "📏", "branchId": "mengukur" },
+      { "label": "Guna Cawan Penyukat", "emoji": "🥤", "branchId": "mengukur" },
+      { "label": "Meneka Apa Akan Berlaku", "emoji": "💭", "branchId": "meramal" },
+      { "label": "Jangka Cuaca Esok", "emoji": "🌦️", "branchId": "meramal" },
+      { "label": "Fikir Sebab Sesuatu Berlaku", "emoji": "💡", "branchId": "inferens" },
+      { "label": "Buat Kesimpulan Daripada Bukti", "emoji": "🧩", "branchId": "inferens" }
+    ]
   }
 }

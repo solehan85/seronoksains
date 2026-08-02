@@ -1390,5 +1390,121 @@
         { "emoji": "📦", "label": "Kuboid", "type": "3d" }
       ]
     ]
+  },
+  "tahun1-kecil-besar": {
+    "topikLabel": "Kecil atau Besar?",
+    "tahun": 1,
+    "binA": { "type": "kecil", "label": "KECIL", "emoji": "🐜" },
+    "binB": { "type": "besar", "label": "BESAR", "emoji": "🐘" },
+    "sets": [
+      [
+        { "emoji": "🐜", "label": "Semut", "type": "kecil" },
+        { "emoji": "🌱", "label": "Anak Pokok", "type": "kecil" },
+        { "emoji": "🐛", "label": "Ulat", "type": "kecil" },
+        { "emoji": "🪱", "label": "Cacing", "type": "kecil" },
+        { "emoji": "🐘", "label": "Gajah", "type": "besar" },
+        { "emoji": "🌳", "label": "Pokok Besar", "type": "besar" },
+        { "emoji": "🦒", "label": "Jerapah", "type": "besar" },
+        { "emoji": "🐋", "label": "Paus", "type": "besar" }
+      ],
+      [
+        { "emoji": "🌱", "label": "Anak Pokok", "type": "kecil" },
+        { "emoji": "🐛", "label": "Ulat", "type": "kecil" },
+        { "emoji": "🪱", "label": "Cacing", "type": "kecil" },
+        { "emoji": "🐇", "label": "Arnab", "type": "kecil" },
+        { "emoji": "🌳", "label": "Pokok Besar", "type": "besar" },
+        { "emoji": "🦒", "label": "Jerapah", "type": "besar" },
+        { "emoji": "🐋", "label": "Paus", "type": "besar" },
+        { "emoji": "🦏", "label": "Badak", "type": "besar" }
+      ],
+      [
+        { "emoji": "🐛", "label": "Ulat", "type": "kecil" },
+        { "emoji": "🪱", "label": "Cacing", "type": "kecil" },
+        { "emoji": "🐇", "label": "Arnab", "type": "kecil" },
+        { "emoji": "🐜", "label": "Semut", "type": "kecil" },
+        { "emoji": "🦒", "label": "Jerapah", "type": "besar" },
+        { "emoji": "🐋", "label": "Paus", "type": "besar" },
+        { "emoji": "🦏", "label": "Badak", "type": "besar" },
+        { "emoji": "🐘", "label": "Gajah", "type": "besar" }
+      ],
+      [
+        { "emoji": "🪱", "label": "Cacing", "type": "kecil" },
+        { "emoji": "🐇", "label": "Arnab", "type": "kecil" },
+        { "emoji": "🐜", "label": "Semut", "type": "kecil" },
+        { "emoji": "🌱", "label": "Anak Pokok", "type": "kecil" },
+        { "emoji": "🐋", "label": "Paus", "type": "besar" },
+        { "emoji": "🦏", "label": "Badak", "type": "besar" },
+        { "emoji": "🐘", "label": "Gajah", "type": "besar" },
+        { "emoji": "🌳", "label": "Pokok Besar", "type": "besar" }
+      ],
+      [
+        { "emoji": "🐇", "label": "Arnab", "type": "kecil" },
+        { "emoji": "🐜", "label": "Semut", "type": "kecil" },
+        { "emoji": "🌱", "label": "Anak Pokok", "type": "kecil" },
+        { "emoji": "🐛", "label": "Ulat", "type": "kecil" },
+        { "emoji": "🦏", "label": "Badak", "type": "besar" },
+        { "emoji": "🐘", "label": "Gajah", "type": "besar" },
+        { "emoji": "🌳", "label": "Pokok Besar", "type": "besar" },
+        { "emoji": "🦒", "label": "Jerapah", "type": "besar" }
+      ]
+    ]
+  },
+  "tahun1-warna-merah": {
+    "topikLabel": "Warna Merah atau Bukan Merah?",
+    "tahun": 1,
+    "binA": { "type": "merah", "label": "MERAH", "emoji": "🔴" },
+    "binB": { "type": "bukan-merah", "label": "BUKAN MERAH", "emoji": "🌈" },
+    "sets": [
+      [
+        { "emoji": "🍎", "label": "Epal", "type": "merah" },
+        { "emoji": "🍓", "label": "Strawberi", "type": "merah" },
+        { "emoji": "🍅", "label": "Tomato", "type": "merah" },
+        { "emoji": "🌶️", "label": "Cili", "type": "merah" },
+        { "emoji": "🍌", "label": "Pisang", "type": "bukan-merah" },
+        { "emoji": "🍇", "label": "Anggur", "type": "bukan-merah" },
+        { "emoji": "🍃", "label": "Daun", "type": "bukan-merah" },
+        { "emoji": "🍊", "label": "Oren", "type": "bukan-merah" }
+      ],
+      [
+        { "emoji": "🍓", "label": "Strawberi", "type": "merah" },
+        { "emoji": "🍅", "label": "Tomato", "type": "merah" },
+        { "emoji": "🌶️", "label": "Cili", "type": "merah" },
+        { "emoji": "🚩", "label": "Bendera Merah", "type": "merah" },
+        { "emoji": "🍇", "label": "Anggur", "type": "bukan-merah" },
+        { "emoji": "🍃", "label": "Daun", "type": "bukan-merah" },
+        { "emoji": "🍊", "label": "Oren", "type": "bukan-merah" },
+        { "emoji": "🍋", "label": "Limau", "type": "bukan-merah" }
+      ],
+      [
+        { "emoji": "🍅", "label": "Tomato", "type": "merah" },
+        { "emoji": "🌶️", "label": "Cili", "type": "merah" },
+        { "emoji": "🚩", "label": "Bendera Merah", "type": "merah" },
+        { "emoji": "🍎", "label": "Epal", "type": "merah" },
+        { "emoji": "🍃", "label": "Daun", "type": "bukan-merah" },
+        { "emoji": "🍊", "label": "Oren", "type": "bukan-merah" },
+        { "emoji": "🍋", "label": "Limau", "type": "bukan-merah" },
+        { "emoji": "🍌", "label": "Pisang", "type": "bukan-merah" }
+      ],
+      [
+        { "emoji": "🌶️", "label": "Cili", "type": "merah" },
+        { "emoji": "🚩", "label": "Bendera Merah", "type": "merah" },
+        { "emoji": "🍎", "label": "Epal", "type": "merah" },
+        { "emoji": "🍓", "label": "Strawberi", "type": "merah" },
+        { "emoji": "🍊", "label": "Oren", "type": "bukan-merah" },
+        { "emoji": "🍋", "label": "Limau", "type": "bukan-merah" },
+        { "emoji": "🍌", "label": "Pisang", "type": "bukan-merah" },
+        { "emoji": "🍇", "label": "Anggur", "type": "bukan-merah" }
+      ],
+      [
+        { "emoji": "🚩", "label": "Bendera Merah", "type": "merah" },
+        { "emoji": "🍎", "label": "Epal", "type": "merah" },
+        { "emoji": "🍓", "label": "Strawberi", "type": "merah" },
+        { "emoji": "🍅", "label": "Tomato", "type": "merah" },
+        { "emoji": "🍋", "label": "Limau", "type": "bukan-merah" },
+        { "emoji": "🍌", "label": "Pisang", "type": "bukan-merah" },
+        { "emoji": "🍇", "label": "Anggur", "type": "bukan-merah" },
+        { "emoji": "🍃", "label": "Daun", "type": "bukan-merah" }
+      ]
+    ]
   }
 }
