@@ -20,5 +20,31 @@
       { "label": "Cacing", "emoji": "🪱", "branchId": "pengurai" },
       { "label": "Bakteria", "emoji": "🦠", "branchId": "pengurai" }
     ]
+  },
+  "tahun6-teknologi-kehidupan": {
+    "topikLabel": "Peta Minda Teknologi dalam Kehidupan",
+    "tahun": 6,
+    "centralLabel": "TEKNOLOGI",
+    "centralEmoji": "💡",
+    "branches": [
+      { "id": "rumah", "label": "RUMAH TANGGA", "emoji": "🏠" },
+      { "id": "pengangkutan", "label": "PENGANGKUTAN", "emoji": "🚗" },
+      { "id": "perhubungan", "label": "PERHUBUNGAN", "emoji": "📱" },
+      { "id": "perubatan", "label": "PERUBATAN", "emoji": "🏥" }
+    ],
+    "items": [
+      { "label": "Peti Sejuk", "emoji": "🧊", "branchId": "rumah" },
+      { "label": "Mesin Basuh", "emoji": "🧺", "branchId": "rumah" },
+      { "label": "Penghawa Dingin", "emoji": "🌬️", "branchId": "rumah" },
+      { "label": "Kereta", "emoji": "🚗", "branchId": "pengangkutan" },
+      { "label": "Kapal Terbang", "emoji": "✈️", "branchId": "pengangkutan" },
+      { "label": "Keretapi Laju", "emoji": "🚄", "branchId": "pengangkutan" },
+      { "label": "Telefon Pintar", "emoji": "📱", "branchId": "perhubungan" },
+      { "label": "Komputer", "emoji": "💻", "branchId": "perhubungan" },
+      { "label": "Internet", "emoji": "🌐", "branchId": "perhubungan" },
+      { "label": "Termometer Digital", "emoji": "🌡️", "branchId": "perubatan" },
+      { "label": "Mesin X-Ray", "emoji": "🩻", "branchId": "perubatan" },
+      { "label": "Kerusi Roda Elektrik", "emoji": "♿", "branchId": "perubatan" }
+    ]
   }
 }
