@@ -398,5 +398,392 @@
         ]
       }
     ]
+  },
+  "tahun1-teka-keperluan-asas": {
+    "topikLabel": "Teka Keperluan Asas Ini",
+    "tahun": 1,
+    "rounds": [
+      {
+        "clues": [
+          "Kita perlu ini untuk minum setiap hari.",
+          "Tumbuhan juga memerlukannya untuk hidup.",
+          "Ia cecair jernih tanpa warna."
+        ],
+        "options": [
+          { "emoji": "💧", "label": "Air", "correct": true },
+          { "emoji": "🍚", "label": "Makanan", "correct": false },
+          { "emoji": "💨", "label": "Udara", "correct": false },
+          { "emoji": "🏠", "label": "Rumah", "correct": false }
+        ]
+      },
+      {
+        "clues": [
+          "Kita makan ini untuk mendapat tenaga.",
+          "Tanpanya kita akan berasa lapar.",
+          "Ia termasuk nasi, sayur dan buah."
+        ],
+        "options": [
+          { "emoji": "🍚", "label": "Makanan", "correct": true },
+          { "emoji": "💧", "label": "Air", "correct": false },
+          { "emoji": "💨", "label": "Udara", "correct": false },
+          { "emoji": "👕", "label": "Pakaian", "correct": false }
+        ]
+      },
+      {
+        "clues": [
+          "Kita perlu ini untuk bernafas.",
+          "Ia tidak boleh dilihat tetapi boleh dirasa bila bertiup.",
+          "Tanpanya kita tidak boleh hidup lebih beberapa minit."
+        ],
+        "options": [
+          { "emoji": "💨", "label": "Udara", "correct": true },
+          { "emoji": "💧", "label": "Air", "correct": false },
+          { "emoji": "🍚", "label": "Makanan", "correct": false },
+          { "emoji": "🏠", "label": "Rumah", "correct": false }
+        ]
+      },
+      {
+        "clues": [
+          "Ini melindungi kita daripada hujan dan panas.",
+          "Kita tidur dan berehat di sini.",
+          "Ia tempat tinggal keluarga kita."
+        ],
+        "options": [
+          { "emoji": "🏠", "label": "Rumah", "correct": true },
+          { "emoji": "👕", "label": "Pakaian", "correct": false },
+          { "emoji": "🍚", "label": "Makanan", "correct": false },
+          { "emoji": "💧", "label": "Air", "correct": false }
+        ]
+      },
+      {
+        "clues": [
+          "Ini melindungi badan kita daripada sejuk dan panas.",
+          "Kita pakai ini setiap hari.",
+          "Ia diperbuat daripada kain."
+        ],
+        "options": [
+          { "emoji": "👕", "label": "Pakaian", "correct": true },
+          { "emoji": "🏠", "label": "Rumah", "correct": false },
+          { "emoji": "💨", "label": "Udara", "correct": false },
+          { "emoji": "🍚", "label": "Makanan", "correct": false }
+        ]
+      }
+    ]
+  },
+  "tahun2-teka-peringkat-pertumbuhan": {
+    "topikLabel": "Teka Peringkat Pertumbuhan Ini",
+    "tahun": 2,
+    "rounds": [
+      {
+        "clues": [
+          "Aku kecil dan keras, tersembunyi di dalam buah.",
+          "Jika ditanam dan disiram, aku akan bercambah.",
+          "Aku permulaan bagi semua pokok."
+        ],
+        "options": [
+          { "emoji": "🌰", "label": "Biji Benih", "correct": true },
+          { "emoji": "🌱", "label": "Pokok Muda", "correct": false },
+          { "emoji": "🌳", "label": "Pokok Matang", "correct": false },
+          { "emoji": "🌸", "label": "Bunga", "correct": false }
+        ]
+      },
+      {
+        "clues": [
+          "Aku baru sahaja tumbuh daripada biji benih.",
+          "Batangku masih kecil dan lembut.",
+          "Aku memerlukan lebih banyak masa untuk membesar."
+        ],
+        "options": [
+          { "emoji": "🌱", "label": "Pokok Muda", "correct": true },
+          { "emoji": "🌰", "label": "Biji Benih", "correct": false },
+          { "emoji": "🌳", "label": "Pokok Matang", "correct": false },
+          { "emoji": "🍎", "label": "Buah", "correct": false }
+        ]
+      },
+      {
+        "clues": [
+          "Aku sudah besar dan mempunyai batang yang tebal.",
+          "Aku boleh mengeluarkan bunga dan buah.",
+          "Aku memberi teduhan dengan daun yang lebat."
+        ],
+        "options": [
+          { "emoji": "🌳", "label": "Pokok Matang", "correct": true },
+          { "emoji": "🌱", "label": "Pokok Muda", "correct": false },
+          { "emoji": "🌰", "label": "Biji Benih", "correct": false },
+          { "emoji": "🌸", "label": "Bunga", "correct": false }
+        ]
+      },
+      {
+        "clues": [
+          "Aku muncul pada pokok matang sebelum buah terbentuk.",
+          "Aku selalunya berwarna-warni dan berbau harum.",
+          "Serangga seperti lebah suka hinggap padaku."
+        ],
+        "options": [
+          { "emoji": "🌸", "label": "Bunga", "correct": true },
+          { "emoji": "🍎", "label": "Buah", "correct": false },
+          { "emoji": "🌳", "label": "Pokok Matang", "correct": false },
+          { "emoji": "🍃", "label": "Daun", "correct": false }
+        ]
+      },
+      {
+        "clues": [
+          "Aku terbentuk selepas proses pendebungaan bunga.",
+          "Aku mengandungi biji benih di dalam.",
+          "Manusia dan haiwan suka memakan aku kerana manis."
+        ],
+        "options": [
+          { "emoji": "🍎", "label": "Buah", "correct": true },
+          { "emoji": "🌸", "label": "Bunga", "correct": false },
+          { "emoji": "🍃", "label": "Daun", "correct": false },
+          { "emoji": "🌱", "label": "Pokok Muda", "correct": false }
+        ]
+      }
+    ]
+  },
+  "tahun3-teka-waktu": {
+    "topikLabel": "Teka Waktu Ini",
+    "tahun": 3,
+    "rounds": [
+      {
+        "clues": [
+          "Matahari mula terbit di ufuk timur.",
+          "Ramai orang bersarapan pada waktu ini.",
+          "Burung mula berkicau menyambut hari baru."
+        ],
+        "options": [
+          { "emoji": "🌅", "label": "Pagi", "correct": true },
+          { "emoji": "☀️", "label": "Tengahari", "correct": false },
+          { "emoji": "🌇", "label": "Petang", "correct": false },
+          { "emoji": "🌙", "label": "Malam", "correct": false }
+        ]
+      },
+      {
+        "clues": [
+          "Matahari berada tepat di atas kepala kita.",
+          "Bayang-bayang kita menjadi paling pendek.",
+          "Ramai orang makan tengahari pada waktu ini."
+        ],
+        "options": [
+          { "emoji": "☀️", "label": "Tengahari", "correct": true },
+          { "emoji": "🌅", "label": "Pagi", "correct": false },
+          { "emoji": "🌇", "label": "Petang", "correct": false },
+          { "emoji": "🌙", "label": "Malam", "correct": false }
+        ]
+      },
+      {
+        "clues": [
+          "Matahari mula terbenam di ufuk barat.",
+          "Langit kelihatan jingga dan merah.",
+          "Ramai pelajar balik dari sekolah pada waktu ini."
+        ],
+        "options": [
+          { "emoji": "🌇", "label": "Petang", "correct": true },
+          { "emoji": "🌅", "label": "Pagi", "correct": false },
+          { "emoji": "☀️", "label": "Tengahari", "correct": false },
+          { "emoji": "🌙", "label": "Malam", "correct": false }
+        ]
+      },
+      {
+        "clues": [
+          "Matahari sudah tidak kelihatan lagi.",
+          "Bulan dan bintang mula kelihatan di langit.",
+          "Ramai orang tidur pada waktu ini."
+        ],
+        "options": [
+          { "emoji": "🌙", "label": "Malam", "correct": true },
+          { "emoji": "🌅", "label": "Pagi", "correct": false },
+          { "emoji": "🌇", "label": "Petang", "correct": false },
+          { "emoji": "☀️", "label": "Tengahari", "correct": false }
+        ]
+      }
+    ]
+  },
+  "tahun4-teka-organ-badan": {
+    "topikLabel": "Teka Organ Badan Ini",
+    "tahun": 4,
+    "rounds": [
+      {
+        "clues": [
+          "Organ ini mengepam darah ke seluruh badan.",
+          "Ia terletak di dalam dada, agak ke kiri.",
+          "Ia berdegup tanpa henti sepanjang hayat kita."
+        ],
+        "options": [
+          { "emoji": "❤️", "label": "Jantung", "correct": true },
+          { "emoji": "🫁", "label": "Paru-paru", "correct": false },
+          { "emoji": "🧠", "label": "Otak", "correct": false },
+          { "emoji": "🫃", "label": "Perut", "correct": false }
+        ]
+      },
+      {
+        "clues": [
+          "Organ ini membantu kita bernafas.",
+          "Ia mengambil oksigen dan menyingkirkan karbon dioksida.",
+          "Terletak sepasang di dalam dada."
+        ],
+        "options": [
+          { "emoji": "🫁", "label": "Paru-paru", "correct": true },
+          { "emoji": "❤️", "label": "Jantung", "correct": false },
+          { "emoji": "🧠", "label": "Otak", "correct": false },
+          { "emoji": "🫃", "label": "Perut", "correct": false }
+        ]
+      },
+      {
+        "clues": [
+          "Organ ini mengawal seluruh badan kita.",
+          "Ia terletak di dalam tengkorak kepala.",
+          "Ia membantu kita berfikir dan mengingati sesuatu."
+        ],
+        "options": [
+          { "emoji": "🧠", "label": "Otak", "correct": true },
+          { "emoji": "❤️", "label": "Jantung", "correct": false },
+          { "emoji": "🫁", "label": "Paru-paru", "correct": false },
+          { "emoji": "🫃", "label": "Perut", "correct": false }
+        ]
+      },
+      {
+        "clues": [
+          "Organ ini mencerna makanan yang kita makan.",
+          "Ia menghasilkan asid untuk memecahkan makanan.",
+          "Terletak di bahagian atas rongga perut kita."
+        ],
+        "options": [
+          { "emoji": "🫃", "label": "Perut", "correct": true },
+          { "emoji": "❤️", "label": "Jantung", "correct": false },
+          { "emoji": "🧠", "label": "Otak", "correct": false },
+          { "emoji": "🫁", "label": "Paru-paru", "correct": false }
+        ]
+      },
+      {
+        "clues": [
+          "Organ ini melindungi bahagian dalam badan kita.",
+          "Ia organ terbesar pada badan manusia.",
+          "Ia membantu kita merasa sentuhan dan suhu."
+        ],
+        "options": [
+          { "emoji": "🖐️", "label": "Kulit", "correct": true },
+          { "emoji": "❤️", "label": "Jantung", "correct": false },
+          { "emoji": "🫁", "label": "Paru-paru", "correct": false },
+          { "emoji": "🧠", "label": "Otak", "correct": false }
+        ]
+      }
+    ]
+  },
+  "tahun5-teka-sumber-tenaga": {
+    "topikLabel": "Teka Sumber Tenaga Ini",
+    "tahun": 5,
+    "rounds": [
+      {
+        "clues": [
+          "Sumber tenaga ini datang daripada cahaya matahari.",
+          "Ia boleh diperbaharui dan tidak akan habis.",
+          "Panel solar digunakan untuk menangkap tenaga ini."
+        ],
+        "options": [
+          { "emoji": "☀️", "label": "Tenaga Suria", "correct": true },
+          { "emoji": "⛽", "label": "Petrol", "correct": false },
+          { "emoji": "⚫", "label": "Arang Batu", "correct": false },
+          { "emoji": "🔥", "label": "Gas Asli", "correct": false }
+        ]
+      },
+      {
+        "clues": [
+          "Sumber tenaga ini menggunakan pergerakan udara.",
+          "Turbin besar berputar untuk menghasilkannya.",
+          "Ia boleh diperbaharui dan bersih."
+        ],
+        "options": [
+          { "emoji": "💨", "label": "Tenaga Angin", "correct": true },
+          { "emoji": "⛽", "label": "Petrol", "correct": false },
+          { "emoji": "🛢️", "label": "Minyak Mentah", "correct": false },
+          { "emoji": "⚫", "label": "Arang Batu", "correct": false }
+        ]
+      },
+      {
+        "clues": [
+          "Sumber tenaga ini menggunakan aliran atau jatuhan air.",
+          "Empangan besar dibina untuk menghasilkannya.",
+          "Ia boleh diperbaharui secara semula jadi."
+        ],
+        "options": [
+          { "emoji": "💧", "label": "Tenaga Air", "correct": true },
+          { "emoji": "⛽", "label": "Petrol", "correct": false },
+          { "emoji": "🔥", "label": "Gas Asli", "correct": false },
+          { "emoji": "⚫", "label": "Arang Batu", "correct": false }
+        ]
+      },
+      {
+        "clues": [
+          "Sumber tenaga ini diperoleh daripada minyak mentah.",
+          "Ia digunakan untuk menggerakkan kenderaan.",
+          "Ia tidak boleh diperbaharui dan akan habis suatu hari nanti."
+        ],
+        "options": [
+          { "emoji": "⛽", "label": "Petrol", "correct": true },
+          { "emoji": "☀️", "label": "Tenaga Suria", "correct": false },
+          { "emoji": "💨", "label": "Tenaga Angin", "correct": false },
+          { "emoji": "💧", "label": "Tenaga Air", "correct": false }
+        ]
+      },
+      {
+        "clues": [
+          "Sumber tenaga ini digali daripada perlombongan.",
+          "Ia dibakar untuk menghasilkan tenaga elektrik di stesen janakuasa.",
+          "Ia tidak boleh diperbaharui dan mencemarkan udara."
+        ],
+        "options": [
+          { "emoji": "⚫", "label": "Arang Batu", "correct": true },
+          { "emoji": "☀️", "label": "Tenaga Suria", "correct": false },
+          { "emoji": "💨", "label": "Tenaga Angin", "correct": false },
+          { "emoji": "⛽", "label": "Petrol", "correct": false }
+        ]
+      }
+    ]
+  },
+  "tahun6-teka-sifat-asid-alkali": {
+    "topikLabel": "Teka Sifat Asid, Alkali atau Neutral Ini",
+    "tahun": 6,
+    "rounds": [
+      {
+        "clues": [
+          "Sifat ini terasa masam apabila dirasa.",
+          "Ia boleh mengubah kertas litmus biru kepada merah.",
+          "Cuka dan jus limau ialah contohnya."
+        ],
+        "options": [
+          { "emoji": "🍋", "label": "Asid", "correct": true },
+          { "emoji": "🧼", "label": "Alkali", "correct": false },
+          { "emoji": "⚪", "label": "Neutral", "correct": false },
+          { "emoji": "🧂", "label": "Garam", "correct": false }
+        ]
+      },
+      {
+        "clues": [
+          "Sifat ini terasa licin seperti sabun.",
+          "Ia boleh mengubah kertas litmus merah kepada biru.",
+          "Sabun dan ubat gigi ialah contohnya."
+        ],
+        "options": [
+          { "emoji": "🧼", "label": "Alkali", "correct": true },
+          { "emoji": "🍋", "label": "Asid", "correct": false },
+          { "emoji": "⚪", "label": "Neutral", "correct": false },
+          { "emoji": "🧂", "label": "Garam", "correct": false }
+        ]
+      },
+      {
+        "clues": [
+          "Sifat ini tidak masam dan tidak licin.",
+          "Ia tidak mengubah warna kertas litmus.",
+          "Air suling ialah contoh yang tepat."
+        ],
+        "options": [
+          { "emoji": "⚪", "label": "Neutral", "correct": true },
+          { "emoji": "🍋", "label": "Asid", "correct": false },
+          { "emoji": "🧼", "label": "Alkali", "correct": false },
+          { "emoji": "🧂", "label": "Garam", "correct": false }
+        ]
+      }
+    ]
   }
 }
