@@ -99,5 +99,60 @@
       { "id": "daun", "label": "DAUN", "shape": "daun-tumbuhan" },
       { "id": "bunga", "label": "BUNGA", "shape": "bunga-tumbuhan" }
     ]
+  },
+  "tahun2-bahagian-bunga": {
+    "topikLabel": "Label Bahagian Bunga",
+    "tahun": 2,
+    "decor": [],
+    "zones": [
+      { "id": "mahkota", "label": "MAHKOTA", "shape": "mahkota" },
+      { "id": "putik", "label": "PUTIK", "shape": "putik" },
+      { "id": "kelopak", "label": "KELOPAK", "shape": "kelopak-bunga" },
+      { "id": "tangkai", "label": "TANGKAI", "shape": "tangkai-bunga" }
+    ]
+  },
+  "tahun3-bahagian-ikan": {
+    "topikLabel": "Label Bahagian Ikan",
+    "tahun": 3,
+    "decor": [],
+    "zones": [
+      { "id": "kepala", "label": "KEPALA", "shape": "kepala-ikan" },
+      { "id": "badan", "label": "BADAN", "shape": "badan-ikan" },
+      { "id": "sirip", "label": "SIRIP", "shape": "sirip-ikan" },
+      { "id": "ekor", "label": "EKOR", "shape": "ekor-ikan" }
+    ]
+  },
+  "tahun4-litar-elektrik-ringkas": {
+    "topikLabel": "Label Litar Elektrik Ringkas",
+    "tahun": 4,
+    "decor": [],
+    "zones": [
+      { "id": "bateri", "label": "BATERI", "shape": "bateri" },
+      { "id": "wayar", "label": "WAYAR", "shape": "wayar" },
+      { "id": "mentol", "label": "MENTOL", "shape": "mentol" },
+      { "id": "suis", "label": "SUIS", "shape": "suis" }
+    ]
+  },
+  "tahun5-kitaran-rama-rama": {
+    "topikLabel": "Label Kitaran Hidup Rama-rama",
+    "tahun": 5,
+    "decor": [],
+    "zones": [
+      { "id": "telur", "label": "TELUR", "shape": "telur-kitaran" },
+      { "id": "ulat", "label": "ULAT", "shape": "ulat-kitaran" },
+      { "id": "kepompong", "label": "KEPOMPONG", "shape": "kepompong-kitaran" },
+      { "id": "ramarama", "label": "RAMA-RAMA", "shape": "ramarama-kitaran" }
+    ]
+  },
+  "tahun6-piramid-ekosistem": {
+    "topikLabel": "Label Piramid Tenaga Ekosistem",
+    "tahun": 6,
+    "decor": [],
+    "zones": [
+      { "id": "pengeluar", "label": "PENGELUAR", "shape": "pengeluar" },
+      { "id": "primer", "label": "PENGGUNA PRIMER", "shape": "pengguna-primer" },
+      { "id": "sekunder", "label": "PENGGUNA SEKUNDER", "shape": "pengguna-sekunder" },
+      { "id": "tertier", "label": "PENGGUNA TERTIER", "shape": "pengguna-tertier" }
+    ]
   }
 }
