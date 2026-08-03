@@ -131,5 +131,29 @@
       { "emoji": "🌓", "label": "Bulan Separa" },
       { "emoji": "🌕", "label": "Bulan Purnama" }
     ]
+  },
+  "tahun6-langkah-mengeksperimen": {
+    "topikLabel": "Langkah Mengeksperimen",
+    "tahun": 6,
+    "stages": [
+      { "emoji": "🎯", "label": "Tujuan" },
+      { "emoji": "💭", "label": "Hipotesis" },
+      { "emoji": "🧪", "label": "Alat dan Bahan" },
+      { "emoji": "📝", "label": "Langkah-langkah" },
+      { "emoji": "📊", "label": "Keputusan" },
+      { "emoji": "✅", "label": "Kesimpulan" }
+    ]
+  },
+  "tahun6-proses-persenyawaan-bayi": {
+    "topikLabel": "Proses Persenyawaan hingga Bayi Dilahirkan",
+    "tahun": 6,
+    "stages": [
+      { "emoji": "🧬", "label": "Sperma Bercantum dengan Ovum" },
+      { "emoji": "✨", "label": "Persenyawaan Berlaku" },
+      { "emoji": "🔵", "label": "Zigot Terbentuk" },
+      { "emoji": "🫃", "label": "Embrio Berkembang dalam Rahim" },
+      { "emoji": "🤰", "label": "Janin Membesar" },
+      { "emoji": "👶", "label": "Bayi Dilahirkan" }
+    ]
   }
 }

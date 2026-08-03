@@ -1961,6 +1961,296 @@
       ]
     ]
   },
+  "tahun6-pupus-terancam-kepupusan": {
+    "topikLabel": "Haiwan Pupus atau Diancam Kepupusan?",
+    "tahun": 6,
+    "binA": { "type": "pupus", "label": "SUDAH PUPUS", "emoji": "💀" },
+    "binB": { "type": "terancam", "label": "DIANCAM KEPUPUSAN", "emoji": "⚠️" },
+    "sets": [
+      [
+        { "emoji": "🦕", "label": "Dinosaur", "type": "pupus" },
+        { "emoji": "🦤", "label": "Burung Dodo", "type": "pupus" },
+        { "emoji": "🐯", "label": "Harimau Tasmania", "type": "pupus" },
+        { "emoji": "🦣", "label": "Mammoth", "type": "pupus" },
+        { "emoji": "🐅", "label": "Harimau Malaya", "type": "terancam" },
+        { "emoji": "🦧", "label": "Orang Utan", "type": "terancam" },
+        { "emoji": "🐢", "label": "Penyu", "type": "terancam" },
+        { "emoji": "🐘", "label": "Gajah Asia", "type": "terancam" }
+      ],
+      [
+        { "emoji": "🦤", "label": "Burung Dodo", "type": "pupus" },
+        { "emoji": "🐯", "label": "Harimau Tasmania", "type": "pupus" },
+        { "emoji": "🦣", "label": "Mammoth", "type": "pupus" },
+        { "emoji": "🦕", "label": "Dinosaur", "type": "pupus" },
+        { "emoji": "🦧", "label": "Orang Utan", "type": "terancam" },
+        { "emoji": "🐢", "label": "Penyu", "type": "terancam" },
+        { "emoji": "🐘", "label": "Gajah Asia", "type": "terancam" },
+        { "emoji": "🦏", "label": "Badak Sumbu", "type": "terancam" }
+      ],
+      [
+        { "emoji": "🐯", "label": "Harimau Tasmania", "type": "pupus" },
+        { "emoji": "🦣", "label": "Mammoth", "type": "pupus" },
+        { "emoji": "🦕", "label": "Dinosaur", "type": "pupus" },
+        { "emoji": "🦤", "label": "Burung Dodo", "type": "pupus" },
+        { "emoji": "🐢", "label": "Penyu", "type": "terancam" },
+        { "emoji": "🐘", "label": "Gajah Asia", "type": "terancam" },
+        { "emoji": "🦏", "label": "Badak Sumbu", "type": "terancam" },
+        { "emoji": "🐅", "label": "Harimau Malaya", "type": "terancam" }
+      ],
+      [
+        { "emoji": "🦣", "label": "Mammoth", "type": "pupus" },
+        { "emoji": "🦕", "label": "Dinosaur", "type": "pupus" },
+        { "emoji": "🦤", "label": "Burung Dodo", "type": "pupus" },
+        { "emoji": "🐯", "label": "Harimau Tasmania", "type": "pupus" },
+        { "emoji": "🐘", "label": "Gajah Asia", "type": "terancam" },
+        { "emoji": "🦏", "label": "Badak Sumbu", "type": "terancam" },
+        { "emoji": "🐅", "label": "Harimau Malaya", "type": "terancam" },
+        { "emoji": "🦧", "label": "Orang Utan", "type": "terancam" }
+      ],
+      [
+        { "emoji": "🦕", "label": "Dinosaur", "type": "pupus" },
+        { "emoji": "🐯", "label": "Harimau Tasmania", "type": "pupus" },
+        { "emoji": "🦣", "label": "Mammoth", "type": "pupus" },
+        { "emoji": "🦤", "label": "Burung Dodo", "type": "pupus" },
+        { "emoji": "🦏", "label": "Badak Sumbu", "type": "terancam" },
+        { "emoji": "🐅", "label": "Harimau Malaya", "type": "terancam" },
+        { "emoji": "🦧", "label": "Orang Utan", "type": "terancam" },
+        { "emoji": "🐢", "label": "Penyu", "type": "terancam" }
+      ]
+    ]
+  },
+  "tahun6-unit-kelajuan-kmj-ms": {
+    "topikLabel": "Guna Unit km/j atau m/s?",
+    "tahun": 6,
+    "binA": { "type": "kmj", "label": "KILOMETER PER JAM", "emoji": "🚗" },
+    "binB": { "type": "ms", "label": "METER PER SAAT", "emoji": "🏃" },
+    "sets": [
+      [
+        { "emoji": "🚗", "label": "Kereta", "type": "kmj" },
+        { "emoji": "🚌", "label": "Bas", "type": "kmj" },
+        { "emoji": "🏍️", "label": "Motosikal", "type": "kmj" },
+        { "emoji": "🚚", "label": "Lori", "type": "kmj" },
+        { "emoji": "🏃", "label": "Pelari", "type": "ms" },
+        { "emoji": "🐕", "label": "Anjing Berlari", "type": "ms" },
+        { "emoji": "⚽", "label": "Bola Bergerak", "type": "ms" },
+        { "emoji": "🧒", "label": "Kanak-kanak Berlari", "type": "ms" }
+      ],
+      [
+        { "emoji": "🚌", "label": "Bas", "type": "kmj" },
+        { "emoji": "🏍️", "label": "Motosikal", "type": "kmj" },
+        { "emoji": "🚚", "label": "Lori", "type": "kmj" },
+        { "emoji": "🚕", "label": "Teksi", "type": "kmj" },
+        { "emoji": "🐕", "label": "Anjing Berlari", "type": "ms" },
+        { "emoji": "⚽", "label": "Bola Bergerak", "type": "ms" },
+        { "emoji": "🧒", "label": "Kanak-kanak Berlari", "type": "ms" },
+        { "emoji": "🐈", "label": "Kucing Berlari", "type": "ms" }
+      ],
+      [
+        { "emoji": "🏍️", "label": "Motosikal", "type": "kmj" },
+        { "emoji": "🚚", "label": "Lori", "type": "kmj" },
+        { "emoji": "🚕", "label": "Teksi", "type": "kmj" },
+        { "emoji": "🚗", "label": "Kereta", "type": "kmj" },
+        { "emoji": "⚽", "label": "Bola Bergerak", "type": "ms" },
+        { "emoji": "🧒", "label": "Kanak-kanak Berlari", "type": "ms" },
+        { "emoji": "🐈", "label": "Kucing Berlari", "type": "ms" },
+        { "emoji": "🏃", "label": "Pelari", "type": "ms" }
+      ],
+      [
+        { "emoji": "🚚", "label": "Lori", "type": "kmj" },
+        { "emoji": "🚕", "label": "Teksi", "type": "kmj" },
+        { "emoji": "🚗", "label": "Kereta", "type": "kmj" },
+        { "emoji": "🚌", "label": "Bas", "type": "kmj" },
+        { "emoji": "🧒", "label": "Kanak-kanak Berlari", "type": "ms" },
+        { "emoji": "🐈", "label": "Kucing Berlari", "type": "ms" },
+        { "emoji": "🏃", "label": "Pelari", "type": "ms" },
+        { "emoji": "🐕", "label": "Anjing Berlari", "type": "ms" }
+      ],
+      [
+        { "emoji": "🚕", "label": "Teksi", "type": "kmj" },
+        { "emoji": "🚗", "label": "Kereta", "type": "kmj" },
+        { "emoji": "🚌", "label": "Bas", "type": "kmj" },
+        { "emoji": "🏍️", "label": "Motosikal", "type": "kmj" },
+        { "emoji": "🐈", "label": "Kucing Berlari", "type": "ms" },
+        { "emoji": "🏃", "label": "Pelari", "type": "ms" },
+        { "emoji": "🐕", "label": "Anjing Berlari", "type": "ms" },
+        { "emoji": "⚽", "label": "Bola Bergerak", "type": "ms" }
+      ]
+    ]
+  },
+  "tahun6-terbiodegradasi-tidak-terbiodegradasi": {
+    "topikLabel": "Terbiodegradasi atau Tidak Terbiodegradasi?",
+    "tahun": 6,
+    "binA": { "type": "terbio", "label": "TERBIODEGRADASI", "emoji": "🍂" },
+    "binB": { "type": "tidakterbio", "label": "TIDAK TERBIODEGRADASI", "emoji": "🛍️" },
+    "sets": [
+      [
+        { "emoji": "🍌", "label": "Kulit Buah", "type": "terbio" },
+        { "emoji": "🍂", "label": "Daun Kering", "type": "terbio" },
+        { "emoji": "🥬", "label": "Sisa Sayur", "type": "terbio" },
+        { "emoji": "📄", "label": "Kertas", "type": "terbio" },
+        { "emoji": "🧴", "label": "Plastik", "type": "tidakterbio" },
+        { "emoji": "🥫", "label": "Tin Aluminium", "type": "tidakterbio" },
+        { "emoji": "🥛", "label": "Kaca", "type": "tidakterbio" },
+        { "emoji": "🔋", "label": "Bateri", "type": "tidakterbio" }
+      ],
+      [
+        { "emoji": "🍂", "label": "Daun Kering", "type": "terbio" },
+        { "emoji": "🥬", "label": "Sisa Sayur", "type": "terbio" },
+        { "emoji": "📄", "label": "Kertas", "type": "terbio" },
+        { "emoji": "🍎", "label": "Sisa Makanan", "type": "terbio" },
+        { "emoji": "🥫", "label": "Tin Aluminium", "type": "tidakterbio" },
+        { "emoji": "🥛", "label": "Kaca", "type": "tidakterbio" },
+        { "emoji": "🔋", "label": "Bateri", "type": "tidakterbio" },
+        { "emoji": "🛍️", "label": "Beg Plastik", "type": "tidakterbio" }
+      ],
+      [
+        { "emoji": "🥬", "label": "Sisa Sayur", "type": "terbio" },
+        { "emoji": "📄", "label": "Kertas", "type": "terbio" },
+        { "emoji": "🍎", "label": "Sisa Makanan", "type": "terbio" },
+        { "emoji": "🍌", "label": "Kulit Buah", "type": "terbio" },
+        { "emoji": "🥛", "label": "Kaca", "type": "tidakterbio" },
+        { "emoji": "🔋", "label": "Bateri", "type": "tidakterbio" },
+        { "emoji": "🛍️", "label": "Beg Plastik", "type": "tidakterbio" },
+        { "emoji": "🧴", "label": "Plastik", "type": "tidakterbio" }
+      ],
+      [
+        { "emoji": "📄", "label": "Kertas", "type": "terbio" },
+        { "emoji": "🍎", "label": "Sisa Makanan", "type": "terbio" },
+        { "emoji": "🍌", "label": "Kulit Buah", "type": "terbio" },
+        { "emoji": "🍂", "label": "Daun Kering", "type": "terbio" },
+        { "emoji": "🔋", "label": "Bateri", "type": "tidakterbio" },
+        { "emoji": "🛍️", "label": "Beg Plastik", "type": "tidakterbio" },
+        { "emoji": "🧴", "label": "Plastik", "type": "tidakterbio" },
+        { "emoji": "🥫", "label": "Tin Aluminium", "type": "tidakterbio" }
+      ],
+      [
+        { "emoji": "🍎", "label": "Sisa Makanan", "type": "terbio" },
+        { "emoji": "🍌", "label": "Kulit Buah", "type": "terbio" },
+        { "emoji": "🍂", "label": "Daun Kering", "type": "terbio" },
+        { "emoji": "🥬", "label": "Sisa Sayur", "type": "terbio" },
+        { "emoji": "🛍️", "label": "Beg Plastik", "type": "tidakterbio" },
+        { "emoji": "🧴", "label": "Plastik", "type": "tidakterbio" },
+        { "emoji": "🥫", "label": "Tin Aluminium", "type": "tidakterbio" },
+        { "emoji": "🥛", "label": "Kaca", "type": "tidakterbio" }
+      ]
+    ]
+  },
+  "tahun6-gerhana-bulan-matahari": {
+    "topikLabel": "Gerhana Bulan atau Gerhana Matahari?",
+    "tahun": 6,
+    "binA": { "type": "bulan", "label": "GERHANA BULAN", "emoji": "🌙" },
+    "binB": { "type": "matahari", "label": "GERHANA MATAHARI", "emoji": "☀️" },
+    "sets": [
+      [
+        { "emoji": "🌍", "label": "Bumi di Antara Matahari dan Bulan", "type": "bulan" },
+        { "emoji": "🌑", "label": "Bulan Kelihatan Gelap atau Merah", "type": "bulan" },
+        { "emoji": "🌃", "label": "Berlaku pada Waktu Malam", "type": "bulan" },
+        { "emoji": "🌘", "label": "Bulan Memasuki Bayang Bumi", "type": "bulan" },
+        { "emoji": "🌑", "label": "Bulan di Antara Matahari dan Bumi", "type": "matahari" },
+        { "emoji": "🌆", "label": "Kawasan Menjadi Gelap Seketika", "type": "matahari" },
+        { "emoji": "☀️", "label": "Berlaku pada Waktu Siang", "type": "matahari" },
+        { "emoji": "🕶️", "label": "Jangan Pandang Terus ke Matahari", "type": "matahari" }
+      ],
+      [
+        { "emoji": "🌑", "label": "Bulan Kelihatan Gelap atau Merah", "type": "bulan" },
+        { "emoji": "🌃", "label": "Berlaku pada Waktu Malam", "type": "bulan" },
+        { "emoji": "🌘", "label": "Bulan Memasuki Bayang Bumi", "type": "bulan" },
+        { "emoji": "🌍", "label": "Bumi di Antara Matahari dan Bulan", "type": "bulan" },
+        { "emoji": "🌆", "label": "Kawasan Menjadi Gelap Seketika", "type": "matahari" },
+        { "emoji": "☀️", "label": "Berlaku pada Waktu Siang", "type": "matahari" },
+        { "emoji": "🕶️", "label": "Jangan Pandang Terus ke Matahari", "type": "matahari" },
+        { "emoji": "🌑", "label": "Bulan di Antara Matahari dan Bumi", "type": "matahari" }
+      ],
+      [
+        { "emoji": "🌃", "label": "Berlaku pada Waktu Malam", "type": "bulan" },
+        { "emoji": "🌘", "label": "Bulan Memasuki Bayang Bumi", "type": "bulan" },
+        { "emoji": "🌍", "label": "Bumi di Antara Matahari dan Bulan", "type": "bulan" },
+        { "emoji": "🌑", "label": "Bulan Kelihatan Gelap atau Merah", "type": "bulan" },
+        { "emoji": "☀️", "label": "Berlaku pada Waktu Siang", "type": "matahari" },
+        { "emoji": "🕶️", "label": "Jangan Pandang Terus ke Matahari", "type": "matahari" },
+        { "emoji": "🌑", "label": "Bulan di Antara Matahari dan Bumi", "type": "matahari" },
+        { "emoji": "🌆", "label": "Kawasan Menjadi Gelap Seketika", "type": "matahari" }
+      ],
+      [
+        { "emoji": "🌘", "label": "Bulan Memasuki Bayang Bumi", "type": "bulan" },
+        { "emoji": "🌍", "label": "Bumi di Antara Matahari dan Bulan", "type": "bulan" },
+        { "emoji": "🌑", "label": "Bulan Kelihatan Gelap atau Merah", "type": "bulan" },
+        { "emoji": "🌃", "label": "Berlaku pada Waktu Malam", "type": "bulan" },
+        { "emoji": "🕶️", "label": "Jangan Pandang Terus ke Matahari", "type": "matahari" },
+        { "emoji": "🌑", "label": "Bulan di Antara Matahari dan Bumi", "type": "matahari" },
+        { "emoji": "🌆", "label": "Kawasan Menjadi Gelap Seketika", "type": "matahari" },
+        { "emoji": "☀️", "label": "Berlaku pada Waktu Siang", "type": "matahari" }
+      ],
+      [
+        { "emoji": "🌍", "label": "Bumi di Antara Matahari dan Bulan", "type": "bulan" },
+        { "emoji": "🌃", "label": "Berlaku pada Waktu Malam", "type": "bulan" },
+        { "emoji": "🌘", "label": "Bulan Memasuki Bayang Bumi", "type": "bulan" },
+        { "emoji": "🌑", "label": "Bulan Kelihatan Gelap atau Merah", "type": "bulan" },
+        { "emoji": "🌑", "label": "Bulan di Antara Matahari dan Bumi", "type": "matahari" },
+        { "emoji": "🌆", "label": "Kawasan Menjadi Gelap Seketika", "type": "matahari" },
+        { "emoji": "☀️", "label": "Berlaku pada Waktu Siang", "type": "matahari" },
+        { "emoji": "🕶️", "label": "Jangan Pandang Terus ke Matahari", "type": "matahari" }
+      ]
+    ]
+  },
+  "tahun6-kebaikan-keburukan-teknologi": {
+    "topikLabel": "Kebaikan atau Keburukan Teknologi?",
+    "tahun": 6,
+    "binA": { "type": "kebaikan", "label": "KEBAIKAN TEKNOLOGI", "emoji": "👍" },
+    "binB": { "type": "keburukan", "label": "KEBURUKAN TEKNOLOGI", "emoji": "👎" },
+    "sets": [
+      [
+        { "emoji": "⏱️", "label": "Menjimatkan Masa dan Tenaga", "type": "kebaikan" },
+        { "emoji": "📱", "label": "Memudahkan Komunikasi", "type": "kebaikan" },
+        { "emoji": "💻", "label": "Memudahkan Pembelajaran", "type": "kebaikan" },
+        { "emoji": "🏥", "label": "Meningkatkan Kualiti Perubatan", "type": "kebaikan" },
+        { "emoji": "😵‍💫", "label": "Ketagihan Gajet", "type": "keburukan" },
+        { "emoji": "🛋️", "label": "Kurang Aktiviti Fizikal", "type": "keburukan" },
+        { "emoji": "🏭", "label": "Pencemaran Alam", "type": "keburukan" },
+        { "emoji": "👁️", "label": "Menjejaskan Kesihatan Mata", "type": "keburukan" }
+      ],
+      [
+        { "emoji": "📱", "label": "Memudahkan Komunikasi", "type": "kebaikan" },
+        { "emoji": "💻", "label": "Memudahkan Pembelajaran", "type": "kebaikan" },
+        { "emoji": "🏥", "label": "Meningkatkan Kualiti Perubatan", "type": "kebaikan" },
+        { "emoji": "✈️", "label": "Mempercepatkan Pengangkutan", "type": "kebaikan" },
+        { "emoji": "🛋️", "label": "Kurang Aktiviti Fizikal", "type": "keburukan" },
+        { "emoji": "🏭", "label": "Pencemaran Alam", "type": "keburukan" },
+        { "emoji": "👁️", "label": "Menjejaskan Kesihatan Mata", "type": "keburukan" },
+        { "emoji": "🕵️", "label": "Penyalahgunaan Teknologi", "type": "keburukan" }
+      ],
+      [
+        { "emoji": "💻", "label": "Memudahkan Pembelajaran", "type": "kebaikan" },
+        { "emoji": "🏥", "label": "Meningkatkan Kualiti Perubatan", "type": "kebaikan" },
+        { "emoji": "✈️", "label": "Mempercepatkan Pengangkutan", "type": "kebaikan" },
+        { "emoji": "⏱️", "label": "Menjimatkan Masa dan Tenaga", "type": "kebaikan" },
+        { "emoji": "🏭", "label": "Pencemaran Alam", "type": "keburukan" },
+        { "emoji": "👁️", "label": "Menjejaskan Kesihatan Mata", "type": "keburukan" },
+        { "emoji": "🕵️", "label": "Penyalahgunaan Teknologi", "type": "keburukan" },
+        { "emoji": "😵‍💫", "label": "Ketagihan Gajet", "type": "keburukan" }
+      ],
+      [
+        { "emoji": "🏥", "label": "Meningkatkan Kualiti Perubatan", "type": "kebaikan" },
+        { "emoji": "✈️", "label": "Mempercepatkan Pengangkutan", "type": "kebaikan" },
+        { "emoji": "⏱️", "label": "Menjimatkan Masa dan Tenaga", "type": "kebaikan" },
+        { "emoji": "📱", "label": "Memudahkan Komunikasi", "type": "kebaikan" },
+        { "emoji": "👁️", "label": "Menjejaskan Kesihatan Mata", "type": "keburukan" },
+        { "emoji": "🕵️", "label": "Penyalahgunaan Teknologi", "type": "keburukan" },
+        { "emoji": "😵‍💫", "label": "Ketagihan Gajet", "type": "keburukan" },
+        { "emoji": "🛋️", "label": "Kurang Aktiviti Fizikal", "type": "keburukan" }
+      ],
+      [
+        { "emoji": "✈️", "label": "Mempercepatkan Pengangkutan", "type": "kebaikan" },
+        { "emoji": "⏱️", "label": "Menjimatkan Masa dan Tenaga", "type": "kebaikan" },
+        { "emoji": "📱", "label": "Memudahkan Komunikasi", "type": "kebaikan" },
+        { "emoji": "💻", "label": "Memudahkan Pembelajaran", "type": "kebaikan" },
+        { "emoji": "🕵️", "label": "Penyalahgunaan Teknologi", "type": "keburukan" },
+        { "emoji": "😵‍💫", "label": "Ketagihan Gajet", "type": "keburukan" },
+        { "emoji": "🛋️", "label": "Kurang Aktiviti Fizikal", "type": "keburukan" },
+        { "emoji": "🏭", "label": "Pencemaran Alam", "type": "keburukan" }
+      ]
+    ]
+  },
   "tahun1-peraturan-bilik-sains": {
     "topikLabel": "Ikut Peraturan Bilik Sains atau Tidak?",
     "tahun": 1,
