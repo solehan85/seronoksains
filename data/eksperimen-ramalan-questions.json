@@ -257,5 +257,257 @@
         ]
       }
     ]
+  },
+  "tahun1-ramalan-serap-air": {
+    "topikLabel": "Ramalan: Menyerap Air atau Tidak?",
+    "tahun": 1,
+    "question": "Yang manakah akan MENYERAP AIR?",
+    "rounds": [
+      {
+        "options": [
+          { "emoji": "🧽", "label": "Span", "correct": true },
+          { "emoji": "🥛", "label": "Kaca", "correct": false },
+          { "emoji": "🧴", "label": "Plastik", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "🧻", "label": "Tisu", "correct": true },
+          { "emoji": "🔩", "label": "Logam", "correct": false },
+          { "emoji": "🧤", "label": "Getah", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "🧵", "label": "Kain", "correct": true },
+          { "emoji": "🪨", "label": "Batu", "correct": false },
+          { "emoji": "🥛", "label": "Kaca", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "☁️", "label": "Kapas", "correct": true },
+          { "emoji": "🧴", "label": "Plastik", "correct": false },
+          { "emoji": "🔩", "label": "Logam", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "👕", "label": "Baju", "correct": true },
+          { "emoji": "🧤", "label": "Getah", "correct": false },
+          { "emoji": "🪨", "label": "Batu", "correct": false }
+        ]
+      }
+    ]
+  },
+  "tahun2-ramalan-keras-lembut": {
+    "topikLabel": "Ramalan: Bahan Keras atau Lembut?",
+    "tahun": 2,
+    "question": "Yang manakah akan BERUBAH BENTUK apabila ditekan (lembut)?",
+    "rounds": [
+      {
+        "options": [
+          { "emoji": "🧽", "label": "Span", "correct": true },
+          { "emoji": "🪨", "label": "Batu", "correct": false },
+          { "emoji": "🔩", "label": "Besi", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "🎈", "label": "Belon", "correct": true },
+          { "emoji": "🪵", "label": "Kayu", "correct": false },
+          { "emoji": "🥛", "label": "Kaca", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "🧤", "label": "Getah", "correct": true },
+          { "emoji": "🪨", "label": "Batu", "correct": false },
+          { "emoji": "🔩", "label": "Logam", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "🧵", "label": "Kain", "correct": true },
+          { "emoji": "🔩", "label": "Besi", "correct": false },
+          { "emoji": "🪨", "label": "Batu", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "🧤", "label": "Getah", "correct": true },
+          { "emoji": "🪵", "label": "Kayu", "correct": false },
+          { "emoji": "🥛", "label": "Kaca", "correct": false }
+        ]
+      }
+    ]
+  },
+  "tahun3-ramalan-cecair-mengalir": {
+    "topikLabel": "Ramalan: Cecair Mengalir?",
+    "tahun": 3,
+    "question": "Yang manakah akan MENGALIR (cecair)?",
+    "rounds": [
+      {
+        "options": [
+          { "emoji": "💧", "label": "Air", "correct": true },
+          { "emoji": "🪨", "label": "Batu", "correct": false },
+          { "emoji": "🪵", "label": "Kayu", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "🛢️", "label": "Minyak Masak", "correct": true },
+          { "emoji": "🔩", "label": "Besi", "correct": false },
+          { "emoji": "🥛", "label": "Kaca", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "🥛", "label": "Susu", "correct": true },
+          { "emoji": "📕", "label": "Buku", "correct": false },
+          { "emoji": "✏️", "label": "Pensel", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "🧃", "label": "Jus", "correct": true },
+          { "emoji": "🧽", "label": "Span", "correct": false },
+          { "emoji": "🧴", "label": "Plastik Keras", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "🥤", "label": "Sirap", "correct": true },
+          { "emoji": "🪨", "label": "Batu", "correct": false },
+          { "emoji": "🔩", "label": "Besi", "correct": false }
+        ]
+      }
+    ]
+  },
+  "tahun4-ramalan-konduktor-elektrik": {
+    "topikLabel": "Ramalan: Konduktor Elektrik?",
+    "tahun": 4,
+    "question": "Yang manakah akan MENGALIRKAN ARUS ELEKTRIK (konduktor)?",
+    "rounds": [
+      {
+        "options": [
+          { "emoji": "🔩", "label": "Paku", "correct": true },
+          { "emoji": "🪵", "label": "Kayu", "correct": false },
+          { "emoji": "🧴", "label": "Plastik", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "🥄", "label": "Sudu Logam", "correct": true },
+          { "emoji": "🧤", "label": "Getah", "correct": false },
+          { "emoji": "🥛", "label": "Kaca", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "🔌", "label": "Wayar Tembaga", "correct": true },
+          { "emoji": "🧽", "label": "Span", "correct": false },
+          { "emoji": "📄", "label": "Kertas", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "🔑", "label": "Kunci", "correct": true },
+          { "emoji": "🧵", "label": "Kain", "correct": false },
+          { "emoji": "🪵", "label": "Kayu", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "📎", "label": "Klip Kertas Logam", "correct": true },
+          { "emoji": "🧴", "label": "Plastik", "correct": false },
+          { "emoji": "🧤", "label": "Getah", "correct": false }
+        ]
+      }
+    ]
+  },
+  "tahun5-ramalan-mencair": {
+    "topikLabel": "Ramalan: Akan Mencair?",
+    "tahun": 5,
+    "question": "Yang manakah akan MENCAIR apabila dipanaskan?",
+    "rounds": [
+      {
+        "options": [
+          { "emoji": "🧊", "label": "Ais", "correct": true },
+          { "emoji": "🪨", "label": "Batu", "correct": false },
+          { "emoji": "🔩", "label": "Besi", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "🍫", "label": "Coklat", "correct": true },
+          { "emoji": "🪵", "label": "Kayu", "correct": false },
+          { "emoji": "🥛", "label": "Kaca", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "🧈", "label": "Mentega", "correct": true },
+          { "emoji": "🧴", "label": "Plastik Tebal", "correct": false },
+          { "emoji": "🔩", "label": "Logam", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "🕯️", "label": "Lilin", "correct": true },
+          { "emoji": "🪨", "label": "Batu", "correct": false },
+          { "emoji": "🥛", "label": "Kaca", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "🍨", "label": "Aiskrim", "correct": true },
+          { "emoji": "🔩", "label": "Besi", "correct": false },
+          { "emoji": "🪵", "label": "Kayu", "correct": false }
+        ]
+      }
+    ]
+  },
+  "tahun6-ramalan-terbiodegradasi": {
+    "topikLabel": "Ramalan: Akan Terbiodegradasi?",
+    "tahun": 6,
+    "question": "Yang manakah akan TERBIODEGRADASI (reput) secara semula jadi?",
+    "rounds": [
+      {
+        "options": [
+          { "emoji": "🍌", "label": "Kulit Pisang", "correct": true },
+          { "emoji": "🧴", "label": "Botol Plastik", "correct": false },
+          { "emoji": "🥫", "label": "Tin Aluminium", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "🍂", "label": "Daun Kering", "correct": true },
+          { "emoji": "🛍️", "label": "Beg Plastik", "correct": false },
+          { "emoji": "🥛", "label": "Kaca", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "📄", "label": "Kertas", "correct": true },
+          { "emoji": "🧤", "label": "Getah", "correct": false },
+          { "emoji": "🔋", "label": "Bateri", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "🥬", "label": "Sisa Sayur", "correct": true },
+          { "emoji": "🧴", "label": "Botol Plastik", "correct": false },
+          { "emoji": "🧽", "label": "Span", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "🪵", "label": "Kayu", "correct": true },
+          { "emoji": "🧴", "label": "Plastik", "correct": false },
+          { "emoji": "🔩", "label": "Besi", "correct": false }
+        ]
+      }
+    ]
   }
 }
