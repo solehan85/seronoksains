@@ -341,7 +341,7 @@
     ],
     "items": [
       { "label": "Jus Limau", "emoji": "🍋", "branchId": "asid" },
-      { "label": "Cuka", "emoji": "🍾", "branchId": "asid" },
+      { "label": "Cuka", "emoji": "🍶", "branchId": "asid" },
       { "label": "Asam Jawa", "emoji": "🫘", "branchId": "asid" },
       { "label": "Sabun", "emoji": "🧼", "branchId": "alkali" },
       { "label": "Ubat Gigi", "emoji": "🪥", "branchId": "alkali" },
