@@ -173,5 +173,89 @@
         ]
       }
     ]
+  },
+  "tahun3-ramalan-cara-pembiakan-tumbuhan": {
+    "topikLabel": "Ramalan: Membiak Melalui Biji Benih?",
+    "tahun": 3,
+    "question": "Yang manakah membiak melalui BIJI BENIH?",
+    "rounds": [
+      {
+        "options": [
+          { "emoji": "🥭", "label": "Pokok Mangga", "correct": true },
+          { "emoji": "🥔", "label": "Ubi Kayu", "correct": false },
+          { "emoji": "🍄", "label": "Cendawan", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "🌳", "label": "Pokok Rambutan", "correct": true },
+          { "emoji": "🎋", "label": "Pokok Tebu", "correct": false },
+          { "emoji": "🌿", "label": "Paku Pakis", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "🌽", "label": "Pokok Jagung", "correct": true },
+          { "emoji": "🌺", "label": "Pokok Bunga Raya", "correct": false },
+          { "emoji": "🌿", "label": "Pokok Setawar", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "🥥", "label": "Pokok Kelapa", "correct": true },
+          { "emoji": "🥔", "label": "Ubi Kayu", "correct": false },
+          { "emoji": "🍄", "label": "Cendawan", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "🍈", "label": "Pokok Betik", "correct": true },
+          { "emoji": "🎋", "label": "Pokok Tebu", "correct": false },
+          { "emoji": "🌿", "label": "Paku Pakis", "correct": false }
+        ]
+      }
+    ]
+  },
+  "tahun5-ramalan-cara-lindung-diri": {
+    "topikLabel": "Ramalan: Haiwan Menyamar untuk Melindungi Diri?",
+    "tahun": 5,
+    "question": "Yang manakah MENYAMAR untuk melindungi diri?",
+    "rounds": [
+      {
+        "options": [
+          { "emoji": "🦎", "label": "Sesumpah", "correct": true },
+          { "emoji": "🦁", "label": "Singa", "correct": false },
+          { "emoji": "🐘", "label": "Gajah", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "🦗", "label": "Belalang Daun", "correct": true },
+          { "emoji": "🐯", "label": "Harimau", "correct": false },
+          { "emoji": "🐎", "label": "Kuda", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "🐸", "label": "Katak Pokok", "correct": true },
+          { "emoji": "🦔", "label": "Landak", "correct": false },
+          { "emoji": "🐍", "label": "Ular Berbisa", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "🦎", "label": "Sesumpah", "correct": true },
+          { "emoji": "🦂", "label": "Kala Jengking", "correct": false },
+          { "emoji": "🦌", "label": "Rusa", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "🦗", "label": "Belalang Daun", "correct": true },
+          { "emoji": "🦨", "label": "Sigung", "correct": false },
+          { "emoji": "🐡", "label": "Ikan Buntal", "correct": false }
+        ]
+      }
+    ]
   }
 }

@@ -87,6 +87,17 @@
       { "sebabEmoji": "🪁", "sebab": "Layang-layang Talinya Putus", "akibatEmoji": "🌍", "akibat": "Jatuh Semula ke Bumi" }
     ]
   },
+  "tahun1-deria-tindakan": {
+    "topikLabel": "Sebab-Akibat: Deria dan Tindakan",
+    "tahun": 1,
+    "pairs": [
+      { "sebabEmoji": "💡", "sebab": "Nampak Cahaya Terang", "akibatEmoji": "😑", "akibat": "Mata Ditutup Sekejap" },
+      { "sebabEmoji": "🍲", "sebab": "Bau Sedap dari Dapur", "akibatEmoji": "🤤", "akibat": "Rasa Lapar" },
+      { "sebabEmoji": "🧊", "sebab": "Sentuh Ais Sejuk", "akibatEmoji": "🥶", "akibat": "Rasa Sejuk" },
+      { "sebabEmoji": "📢", "sebab": "Dengar Bunyi Kuat", "akibatEmoji": "🙉", "akibat": "Tutup Telinga" },
+      { "sebabEmoji": "🌶️", "sebab": "Rasa Pedas dalam Mulut", "akibatEmoji": "🥤", "akibat": "Minum Air" }
+    ]
+  },
   "tahun5-kepentingan-sistem-badan": {
     "topikLabel": "Sebab-Akibat: Kepentingan Sistem Badan",
     "tahun": 5,

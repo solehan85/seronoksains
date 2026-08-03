@@ -211,5 +211,192 @@
         ]
       }
     ]
+  },
+  "tahun2-teka-cara-membiak": {
+    "topikLabel": "Teka Cara Haiwan Ini Membiak",
+    "tahun": 2,
+    "rounds": [
+      {
+        "clues": [
+          "Haiwan ini bertelur.",
+          "Ia mempunyai bulu dan boleh terbang.",
+          "Ia sering berkokok pada waktu pagi."
+        ],
+        "options": [
+          { "emoji": "🐔", "label": "Ayam", "correct": true },
+          { "emoji": "🐱", "label": "Kucing", "correct": false },
+          { "emoji": "🐘", "label": "Gajah", "correct": false },
+          { "emoji": "🐰", "label": "Arnab", "correct": false }
+        ]
+      },
+      {
+        "clues": [
+          "Haiwan ini melahirkan anak.",
+          "Ia berbulu tebal dan suka melompat.",
+          "Telinganya panjang."
+        ],
+        "options": [
+          { "emoji": "🐰", "label": "Arnab", "correct": true },
+          { "emoji": "🐸", "label": "Katak", "correct": false },
+          { "emoji": "🐢", "label": "Penyu", "correct": false },
+          { "emoji": "🐔", "label": "Ayam", "correct": false }
+        ]
+      },
+      {
+        "clues": [
+          "Haiwan ini bertelur.",
+          "Ia hidup di dalam air dan bernafas dengan insang.",
+          "Bersisik dan berenang pantas."
+        ],
+        "options": [
+          { "emoji": "🐟", "label": "Ikan", "correct": true },
+          { "emoji": "🐱", "label": "Kucing", "correct": false },
+          { "emoji": "🐘", "label": "Gajah", "correct": false },
+          { "emoji": "🐰", "label": "Arnab", "correct": false }
+        ]
+      },
+      {
+        "clues": [
+          "Haiwan ini melahirkan anak dan menyusukannya.",
+          "Ia haiwan paling besar di darat.",
+          "Mempunyai belalai panjang."
+        ],
+        "options": [
+          { "emoji": "🐘", "label": "Gajah", "correct": true },
+          { "emoji": "🐢", "label": "Penyu", "correct": false },
+          { "emoji": "🐔", "label": "Ayam", "correct": false },
+          { "emoji": "🐸", "label": "Katak", "correct": false }
+        ]
+      },
+      {
+        "clues": [
+          "Haiwan ini bertelur di dalam pasir.",
+          "Ia mempunyai cengkerang keras.",
+          "Boleh hidup di darat dan di laut."
+        ],
+        "options": [
+          { "emoji": "🐢", "label": "Penyu", "correct": true },
+          { "emoji": "🐱", "label": "Kucing", "correct": false },
+          { "emoji": "🐰", "label": "Arnab", "correct": false },
+          { "emoji": "🐟", "label": "Ikan", "correct": false }
+        ]
+      }
+    ]
+  },
+  "tahun5-teka-sistem-badan": {
+    "topikLabel": "Teka Sistem Badan Ini",
+    "tahun": 5,
+    "rounds": [
+      {
+        "clues": [
+          "Sistem ini terdiri daripada tulang-tulang dalam badan.",
+          "Ia menyokong dan memberi bentuk kepada badan.",
+          "Tengkorak melindungi otak."
+        ],
+        "options": [
+          { "emoji": "🦴", "label": "Sistem Rangka", "correct": true },
+          { "emoji": "❤️", "label": "Sistem Peredaran Darah", "correct": false },
+          { "emoji": "🫁", "label": "Sistem Pernafasan", "correct": false },
+          { "emoji": "🧠", "label": "Sistem Saraf", "correct": false }
+        ]
+      },
+      {
+        "clues": [
+          "Sistem ini mengalirkan darah ke seluruh badan.",
+          "Jantung ialah organ utamanya.",
+          "Ia mengangkut oksigen dan nutrien."
+        ],
+        "options": [
+          { "emoji": "❤️", "label": "Sistem Peredaran Darah", "correct": true },
+          { "emoji": "🦴", "label": "Sistem Rangka", "correct": false },
+          { "emoji": "🫁", "label": "Sistem Pernafasan", "correct": false },
+          { "emoji": "🧠", "label": "Sistem Saraf", "correct": false }
+        ]
+      },
+      {
+        "clues": [
+          "Sistem ini membantu kita bernafas.",
+          "Paru-paru ialah organ utamanya.",
+          "Ia membekalkan oksigen dan menyingkirkan karbon dioksida."
+        ],
+        "options": [
+          { "emoji": "🫁", "label": "Sistem Pernafasan", "correct": true },
+          { "emoji": "🦴", "label": "Sistem Rangka", "correct": false },
+          { "emoji": "❤️", "label": "Sistem Peredaran Darah", "correct": false },
+          { "emoji": "🧠", "label": "Sistem Saraf", "correct": false }
+        ]
+      }
+    ]
+  },
+  "tahun6-teka-jenis-mikroorganisma": {
+    "topikLabel": "Teka Jenis Mikroorganisma Ini",
+    "tahun": 6,
+    "rounds": [
+      {
+        "clues": [
+          "Mikroorganisma ini membiak melalui pembahagian dua.",
+          "Sesetengahnya berguna untuk membuat yogurt.",
+          "Sesetengahnya boleh menyebabkan penyakit seperti salmonella."
+        ],
+        "options": [
+          { "emoji": "🦠", "label": "Bakteria", "correct": true },
+          { "emoji": "🍄", "label": "Kulat", "correct": false },
+          { "emoji": "🧫", "label": "Virus", "correct": false },
+          { "emoji": "🌿", "label": "Alga", "correct": false }
+        ]
+      },
+      {
+        "clues": [
+          "Mikroorganisma ini hidup di tempat lembap.",
+          "Ia membiak melalui spora.",
+          "Yis ialah salah satu contohnya, digunakan untuk membuat roti."
+        ],
+        "options": [
+          { "emoji": "🍄", "label": "Kulat", "correct": true },
+          { "emoji": "🦠", "label": "Bakteria", "correct": false },
+          { "emoji": "🔵", "label": "Protozoa", "correct": false },
+          { "emoji": "🧫", "label": "Virus", "correct": false }
+        ]
+      },
+      {
+        "clues": [
+          "Mikroorganisma ini paling kecil berbanding yang lain.",
+          "Ia hanya boleh membiak di dalam sel hidup.",
+          "Virus selesema ialah salah satu contohnya."
+        ],
+        "options": [
+          { "emoji": "🧫", "label": "Virus", "correct": true },
+          { "emoji": "🍄", "label": "Kulat", "correct": false },
+          { "emoji": "🌿", "label": "Alga", "correct": false },
+          { "emoji": "🔵", "label": "Protozoa", "correct": false }
+        ]
+      },
+      {
+        "clues": [
+          "Mikroorganisma ini hidup di kawasan berair dan lembap.",
+          "Amoeba ialah contohnya.",
+          "Ia terdiri daripada satu sel sahaja."
+        ],
+        "options": [
+          { "emoji": "🔵", "label": "Protozoa", "correct": true },
+          { "emoji": "🦠", "label": "Bakteria", "correct": false },
+          { "emoji": "🍄", "label": "Kulat", "correct": false },
+          { "emoji": "🌿", "label": "Alga", "correct": false }
+        ]
+      },
+      {
+        "clues": [
+          "Mikroorganisma ini berwarna hijau seperti tumbuhan.",
+          "Ia membuat makanan sendiri melalui fotosintesis.",
+          "Ia hidup di dalam air."
+        ],
+        "options": [
+          { "emoji": "🌿", "label": "Alga", "correct": true },
+          { "emoji": "🧫", "label": "Virus", "correct": false },
+          { "emoji": "🔵", "label": "Protozoa", "correct": false },
+          { "emoji": "🦠", "label": "Bakteria", "correct": false }
+        ]
+      }
+    ]
   }
 }

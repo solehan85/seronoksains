@@ -46,5 +46,27 @@
       { "term": "Plastik", "emoji": "🧴" },
       { "term": "Kain", "emoji": "🧵" }
     ]
+  },
+  "tahun5-sumber-tenaga-elektrik": {
+    "topikLabel": "Padanan Sumber Tenaga Elektrik",
+    "tahun": 5,
+    "pairs": [
+      { "term": "Bateri", "emoji": "🔋" },
+      { "term": "Sel Kering", "emoji": "🪫" },
+      { "term": "Generator", "emoji": "⚙️" },
+      { "term": "Stesen Janakuasa", "emoji": "🏭" },
+      { "term": "Tenaga Solar", "emoji": "☀️" }
+    ]
+  },
+  "tahun6-bidang-teknologi": {
+    "topikLabel": "Padanan Bidang Teknologi",
+    "tahun": 6,
+    "pairs": [
+      { "term": "Perubatan", "emoji": "🏥" },
+      { "term": "Pertanian", "emoji": "🚜" },
+      { "term": "Pengangkutan", "emoji": "✈️" },
+      { "term": "Komunikasi", "emoji": "📱" },
+      { "term": "Perindustrian", "emoji": "🏭" }
+    ]
   }
 }

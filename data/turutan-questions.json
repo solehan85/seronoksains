@@ -132,6 +132,16 @@
       { "emoji": "🌕", "label": "Bulan Purnama" }
     ]
   },
+  "tahun1-susunan-saiz-kecil-besar": {
+    "topikLabel": "Susunan Saiz: Kecil ke Besar",
+    "tahun": 1,
+    "stages": [
+      { "emoji": "🐜", "label": "Semut" },
+      { "emoji": "🐱", "label": "Kucing" },
+      { "emoji": "🧍", "label": "Manusia" },
+      { "emoji": "🐘", "label": "Gajah" }
+    ]
+  },
   "tahun6-langkah-mengeksperimen": {
     "topikLabel": "Langkah Mengeksperimen",
     "tahun": 6,
