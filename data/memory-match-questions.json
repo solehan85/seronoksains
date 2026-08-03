@@ -68,5 +68,74 @@
       { "term": "Komunikasi", "emoji": "📱" },
       { "term": "Perindustrian", "emoji": "🏭" }
     ]
+  },
+  "tahun1-organ-deria": {
+    "topikLabel": "Padanan Organ Deria",
+    "tahun": 1,
+    "pairs": [
+      { "term": "Mata", "emoji": "👁️" },
+      { "term": "Telinga", "emoji": "👂" },
+      { "term": "Hidung", "emoji": "👃" },
+      { "term": "Lidah", "emoji": "👅" },
+      { "term": "Kulit", "emoji": "🖐️" }
+    ]
+  },
+  "tahun2-alat-kebersihan-diri": {
+    "topikLabel": "Padanan Alat Kebersihan Diri",
+    "tahun": 2,
+    "pairs": [
+      { "term": "Berus Gigi", "emoji": "🪥" },
+      { "term": "Sabun", "emoji": "🧼" },
+      { "term": "Sikat", "emoji": "🪮" },
+      { "term": "Tisu", "emoji": "🧻" },
+      { "term": "Air", "emoji": "💧" },
+      { "term": "Losyen Pencuci Tangan", "emoji": "🧴" }
+    ]
+  },
+  "tahun3-kumpulan-vertebrat": {
+    "topikLabel": "Padanan Kumpulan Vertebrat",
+    "tahun": 3,
+    "pairs": [
+      { "term": "Mamalia", "emoji": "🐄" },
+      { "term": "Burung", "emoji": "🦅" },
+      { "term": "Reptilia", "emoji": "🦎" },
+      { "term": "Amfibia", "emoji": "🐸" },
+      { "term": "Ikan", "emoji": "🐟" }
+    ]
+  },
+  "tahun4-organ-badan-manusia": {
+    "topikLabel": "Padanan Organ Badan Manusia",
+    "tahun": 4,
+    "pairs": [
+      { "term": "Jantung", "emoji": "❤️" },
+      { "term": "Paru-paru", "emoji": "🫁" },
+      { "term": "Otak", "emoji": "🧠" },
+      { "term": "Perut", "emoji": "🫃" },
+      { "term": "Tulang", "emoji": "🦴" },
+      { "term": "Gigi", "emoji": "🦷" }
+    ]
+  },
+  "tahun5-padanan-habitat": {
+    "topikLabel": "Padanan Habitat",
+    "tahun": 5,
+    "pairs": [
+      { "term": "Hutan", "emoji": "🌳" },
+      { "term": "Lautan", "emoji": "🌊" },
+      { "term": "Gurun", "emoji": "🏜️" },
+      { "term": "Kutub", "emoji": "❄️" },
+      { "term": "Gunung", "emoji": "⛰️" }
+    ]
+  },
+  "tahun6-peralatan-makmal": {
+    "topikLabel": "Padanan Peralatan Makmal",
+    "tahun": 6,
+    "pairs": [
+      { "term": "Mikroskop", "emoji": "🔬" },
+      { "term": "Tabung Uji", "emoji": "🧪" },
+      { "term": "Kanta Pembesar", "emoji": "🔍" },
+      { "term": "Neraca", "emoji": "⚖️" },
+      { "term": "Termometer", "emoji": "🌡️" },
+      { "term": "Cermin Mata Keselamatan", "emoji": "🥽" }
+    ]
   }
 }
