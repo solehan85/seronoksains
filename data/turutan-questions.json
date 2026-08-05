@@ -165,5 +165,27 @@
       { "emoji": "🤰", "label": "Janin Membesar" },
       { "emoji": "👶", "label": "Bayi Dilahirkan" }
     ]
+  },
+  "tahun1-turutan-aktiviti-harian": {
+    "topikLabel": "Turutan Aktiviti Harian",
+    "tahun": 1,
+    "stages": [
+      { "emoji": "🛏️", "label": "Bangun Tidur" },
+      { "emoji": "🪥", "label": "Gosok Gigi" },
+      { "emoji": "🍳", "label": "Sarapan" },
+      { "emoji": "🎒", "label": "Pergi ke Sekolah" },
+      { "emoji": "🌙", "label": "Tidur Malam" }
+    ]
+  },
+  "tahun4-turutan-fotosintesis": {
+    "topikLabel": "Turutan Proses Fotosintesis Ringkas",
+    "tahun": 4,
+    "stages": [
+      { "emoji": "🌞", "label": "Cahaya Matahari Kena Daun" },
+      { "emoji": "💨", "label": "Daun Serap Karbon Dioksida" },
+      { "emoji": "💧", "label": "Akar Serap Air" },
+      { "emoji": "🌿", "label": "Tumbuhan Hasilkan Makanan" },
+      { "emoji": "🫧", "label": "Oksigen Dibebaskan" }
+    ]
   }
 }

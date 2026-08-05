@@ -119,5 +119,49 @@
       { "sebabEmoji": "🕳️", "sebab": "Bermain dengan Soket Elektrik", "akibatEmoji": "😖", "akibat": "Renjatan Elektrik Berbahaya" },
       { "sebabEmoji": "💡", "sebab": "Tidak Tutup Suis Selepas Guna", "akibatEmoji": "💸", "akibat": "Pembaziran Tenaga Elektrik" }
     ]
+  },
+  "tahun1-keperluan-asas-hidupan": {
+    "topikLabel": "Sebab-Akibat: Keperluan Asas Hidupan",
+    "tahun": 1,
+    "pairs": [
+      { "sebabEmoji": "🚱", "sebab": "Tumbuhan Tidak Disiram Air", "akibatEmoji": "🥀", "akibat": "Tumbuhan Layu" },
+      { "sebabEmoji": "🍽️", "sebab": "Tidak Makan Seharian", "akibatEmoji": "😫", "akibat": "Rasa Sangat Lapar" },
+      { "sebabEmoji": "🌬️", "sebab": "Tiada Udara untuk Bernafas", "akibatEmoji": "😵", "akibat": "Sukar Bernafas" },
+      { "sebabEmoji": "🏠", "sebab": "Tiada Tempat Berlindung", "akibatEmoji": "🥶", "akibat": "Terdedah kepada Cuaca Buruk" },
+      { "sebabEmoji": "☀️", "sebab": "Tumbuhan Tidak Dapat Cahaya Matahari", "akibatEmoji": "🟡", "akibat": "Daun Menjadi Pucat" }
+    ]
+  },
+  "tahun2-cahaya-bayang": {
+    "topikLabel": "Sebab-Akibat: Cahaya & Bayang",
+    "tahun": 2,
+    "pairs": [
+      { "sebabEmoji": "💡", "sebab": "Lampu Dipadamkan dalam Bilik Gelap", "akibatEmoji": "🌑", "akibat": "Tiada Bayang Terbentuk" },
+      { "sebabEmoji": "🚧", "sebab": "Objek Legap Menghalang Cahaya", "akibatEmoji": "⬛", "akibat": "Bayang Terbentuk di Belakang Objek" },
+      { "sebabEmoji": "☀️", "sebab": "Berdiri di Bawah Matahari Terik", "akibatEmoji": "🚶", "akibat": "Bayang Sendiri Kelihatan di Tanah" },
+      { "sebabEmoji": "🪟", "sebab": "Cahaya Menembusi Tingkap Kaca", "akibatEmoji": "✨", "akibat": "Bilik Menjadi Terang" },
+      { "sebabEmoji": "🕶️", "sebab": "Objek Lutsinar Dilalui Cahaya", "akibatEmoji": "🌫️", "akibat": "Bayang yang Terbentuk Kabur" }
+    ]
+  },
+  "tahun3-tenaga-bunyi": {
+    "topikLabel": "Sebab-Akibat: Tenaga Bunyi",
+    "tahun": 3,
+    "pairs": [
+      { "sebabEmoji": "🥁", "sebab": "Gendang Dipukul Kuat", "akibatEmoji": "🔊", "akibat": "Bunyi Kuat Dihasilkan" },
+      { "sebabEmoji": "🎻", "sebab": "Tali Biola Digesek Perlahan", "akibatEmoji": "🔉", "akibat": "Bunyi Lembut Dihasilkan" },
+      { "sebabEmoji": "🚪", "sebab": "Pintu Diketuk", "akibatEmoji": "👂", "akibat": "Bunyi Ketukan Didengar" },
+      { "sebabEmoji": "📢", "sebab": "Berada Jauh dari Sumber Bunyi", "akibatEmoji": "🔈", "akibat": "Bunyi Kedengaran Perlahan" },
+      { "sebabEmoji": "🧱", "sebab": "Bunyi Terhalang oleh Dinding Tebal", "akibatEmoji": "🔇", "akibat": "Bunyi Kedengaran Kurang Jelas" }
+    ]
+  },
+  "tahun6-kestabilan-fizikal-kimia": {
+    "topikLabel": "Sebab-Akibat: Kestabilan Fizikal & Kimia",
+    "tahun": 6,
+    "pairs": [
+      { "sebabEmoji": "🍎", "sebab": "Epal Dipotong Terdedah kepada Udara", "akibatEmoji": "🟤", "akibat": "Epal Bertukar Warna Perang" },
+      { "sebabEmoji": "⚙️", "sebab": "Besi Terdedah kepada Air dan Udara", "akibatEmoji": "🟠", "akibat": "Besi Berkarat" },
+      { "sebabEmoji": "🧪", "sebab": "Asid Dicampur dengan Alkali", "akibatEmoji": "⚪", "akibat": "Bahan Neutral Terbentuk" },
+      { "sebabEmoji": "🔥", "sebab": "Kayu Dibakar", "akibatEmoji": "💨", "akibat": "Kayu Bertukar Menjadi Abu" },
+      { "sebabEmoji": "🧊", "sebab": "Ais Terdedah kepada Suhu Bilik", "akibatEmoji": "💧", "akibat": "Ais Cair Menjadi Air" }
+    ]
   }
 }
