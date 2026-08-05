@@ -187,5 +187,140 @@
         { "exposed": false }, { "exposed": false }, { "exposed": true }, { "exposed": false }
       ]
     ]
+  },
+  "tahun1-bayang-boleh-nampak": {
+    "topikLabel": "Bayang: Boleh Nampak Tak?",
+    "tahun": 1,
+    "diagramType": "cahaya-bayang",
+    "sets": [
+      [
+        { "blocked": true }, { "blocked": false }, { "blocked": true }, { "blocked": false },
+        { "blocked": true }, { "blocked": false }, { "blocked": true }, { "blocked": false }
+      ],
+      [
+        { "blocked": false }, { "blocked": true }, { "blocked": false }, { "blocked": true },
+        { "blocked": false }, { "blocked": true }, { "blocked": false }, { "blocked": true }
+      ],
+      [
+        { "blocked": true }, { "blocked": true }, { "blocked": false }, { "blocked": false },
+        { "blocked": true }, { "blocked": false }, { "blocked": true }, { "blocked": false }
+      ],
+      [
+        { "blocked": false }, { "blocked": false }, { "blocked": true }, { "blocked": true },
+        { "blocked": false }, { "blocked": true }, { "blocked": false }, { "blocked": true }
+      ],
+      [
+        { "blocked": true }, { "blocked": false }, { "blocked": true }, { "blocked": true },
+        { "blocked": false }, { "blocked": false }, { "blocked": true }, { "blocked": false }
+      ]
+    ]
+  },
+  "tahun3-kitaran-air-menyejat": {
+    "topikLabel": "Kitaran Air: Adakah Air Ini Menyejat?",
+    "tahun": 3,
+    "diagramType": "kitaran-air",
+    "sets": [
+      [
+        { "sunActive": true }, { "sunActive": false }, { "sunActive": true }, { "sunActive": false },
+        { "sunActive": true }, { "sunActive": false }, { "sunActive": true }, { "sunActive": false }
+      ],
+      [
+        { "sunActive": false }, { "sunActive": true }, { "sunActive": false }, { "sunActive": true },
+        { "sunActive": false }, { "sunActive": true }, { "sunActive": false }, { "sunActive": true }
+      ],
+      [
+        { "sunActive": true }, { "sunActive": true }, { "sunActive": false }, { "sunActive": false },
+        { "sunActive": true }, { "sunActive": false }, { "sunActive": true }, { "sunActive": false }
+      ],
+      [
+        { "sunActive": false }, { "sunActive": false }, { "sunActive": true }, { "sunActive": true },
+        { "sunActive": false }, { "sunActive": true }, { "sunActive": false }, { "sunActive": true }
+      ],
+      [
+        { "sunActive": true }, { "sunActive": false }, { "sunActive": true }, { "sunActive": true },
+        { "sunActive": false }, { "sunActive": false }, { "sunActive": true }, { "sunActive": false }
+      ]
+    ]
+  },
+  "tahun4-besi-berkarat": {
+    "topikLabel": "Besi Ini: Akan Berkarat Tak?",
+    "tahun": 4,
+    "diagramType": "besi-karat",
+    "sets": [
+      [
+        { "exposed": true }, { "exposed": false }, { "exposed": true }, { "exposed": false },
+        { "exposed": true }, { "exposed": false }, { "exposed": true }, { "exposed": false }
+      ],
+      [
+        { "exposed": false }, { "exposed": true }, { "exposed": false }, { "exposed": true },
+        { "exposed": false }, { "exposed": true }, { "exposed": false }, { "exposed": true }
+      ],
+      [
+        { "exposed": true }, { "exposed": true }, { "exposed": false }, { "exposed": false },
+        { "exposed": true }, { "exposed": false }, { "exposed": true }, { "exposed": false }
+      ],
+      [
+        { "exposed": false }, { "exposed": false }, { "exposed": true }, { "exposed": true },
+        { "exposed": false }, { "exposed": true }, { "exposed": false }, { "exposed": true }
+      ],
+      [
+        { "exposed": true }, { "exposed": false }, { "exposed": true }, { "exposed": true },
+        { "exposed": false }, { "exposed": false }, { "exposed": true }, { "exposed": false }
+      ]
+    ]
+  },
+  "tahun5-litar-ringkas": {
+    "topikLabel": "Litar Ringkas: Lengkap atau Terbuka?",
+    "tahun": 5,
+    "diagramType": "litar",
+    "sets": [
+      [
+        { "switchState": "closed" }, { "switchState": "open" }, { "switchState": "closed" }, { "switchState": "open" },
+        { "switchState": "closed" }, { "switchState": "open" }, { "switchState": "closed" }, { "switchState": "open" }
+      ],
+      [
+        { "switchState": "open" }, { "switchState": "closed" }, { "switchState": "open" }, { "switchState": "closed" },
+        { "switchState": "open" }, { "switchState": "closed" }, { "switchState": "open" }, { "switchState": "closed" }
+      ],
+      [
+        { "switchState": "closed" }, { "switchState": "closed" }, { "switchState": "open" }, { "switchState": "open" },
+        { "switchState": "closed" }, { "switchState": "open" }, { "switchState": "closed" }, { "switchState": "open" }
+      ],
+      [
+        { "switchState": "open" }, { "switchState": "open" }, { "switchState": "closed" }, { "switchState": "closed" },
+        { "switchState": "open" }, { "switchState": "closed" }, { "switchState": "open" }, { "switchState": "closed" }
+      ],
+      [
+        { "switchState": "closed" }, { "switchState": "open" }, { "switchState": "closed" }, { "switchState": "closed" },
+        { "switchState": "open" }, { "switchState": "open" }, { "switchState": "closed" }, { "switchState": "open" }
+      ]
+    ]
+  },
+  "tahun6-ais-perubahan-fizikal": {
+    "topikLabel": "Ais Dipanaskan: Perubahan Fizikal?",
+    "tahun": 6,
+    "diagramType": "ais-cair",
+    "sets": [
+      [
+        { "heated": true }, { "heated": false }, { "heated": true }, { "heated": false },
+        { "heated": true }, { "heated": false }, { "heated": true }, { "heated": false }
+      ],
+      [
+        { "heated": false }, { "heated": true }, { "heated": false }, { "heated": true },
+        { "heated": false }, { "heated": true }, { "heated": false }, { "heated": true }
+      ],
+      [
+        { "heated": true }, { "heated": true }, { "heated": false }, { "heated": false },
+        { "heated": true }, { "heated": false }, { "heated": true }, { "heated": false }
+      ],
+      [
+        { "heated": false }, { "heated": false }, { "heated": true }, { "heated": true },
+        { "heated": false }, { "heated": true }, { "heated": false }, { "heated": true }
+      ],
+      [
+        { "heated": true }, { "heated": false }, { "heated": true }, { "heated": true },
+        { "heated": false }, { "heated": false }, { "heated": true }, { "heated": false }
+      ]
+    ]
   }
 }
