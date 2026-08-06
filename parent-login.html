@@ -212,6 +212,10 @@
   }
   .child-name{ font-family:'Baloo 2', sans-serif; font-weight:700; font-size:14px; color:var(--navy); }
   .child-meta{ font-size:11px; font-weight:700; color:#5C7690; margin-top:2px; }
+  .child-stats{
+    font-size:11px; font-weight:800; color:var(--sky-deep); margin-top:6px;
+    padding-top:6px; border-top:1px dashed #DCEEF7; cursor:pointer;
+  }
   .child-lock{ position:absolute; top:8px; right:10px; font-size:14px; }
   .child-gear{
     position:absolute; top:6px; left:8px; font-size:14px;
@@ -402,6 +406,16 @@
   </div>
 </div>
 
+<!-- STATS MODAL (from dashboard child-stats line) -->
+<div class="overlay" id="overlay-stats">
+  <div class="modal">
+    <h3 id="stats-title"></h3>
+    <p class="sub" id="stats-sub"></p>
+    <div id="stats-body"></div>
+    <button class="modal-close" id="stats-close">Tutup</button>
+  </div>
+</div>
+
 <!-- ADD CHILD MODAL (from dashboard) -->
 <div class="overlay" id="overlay-addchild">
   <div class="modal">
@@ -522,6 +536,17 @@ async function dbCreateStudent(id, data){
   }
   const { doc, setDoc } = DB._mod;
   await setDoc(doc(DB._fs, 'students', id), data);
+}
+
+/* Read-only from here: aggregate play stats written by the game mechanics
+   (sains_progress/{studentId}) — total stars, streak, badges, per-mechanic
+   play counts. Powers the parent dashboard's progress summary. Offline demo
+   mode never has this data since the mechanics only write when online. */
+async function dbGetProgress(id){
+  if(DB.offline) return null;
+  const { doc, getDoc } = DB._mod;
+  const snap = await getDoc(doc(DB._fs, 'sains_progress', id));
+  return snap.exists() ? snap.data() : null;
 }
 
 /* Our own mutable per-student settings (Sains-specific dropdown PIN gate),
@@ -759,6 +784,7 @@ async function renderDashboard(){
       pinRequired: settings.pinRequired,
       pinHash: settings.pinHash
     };
+    const progress = await dbGetProgress(sid);
     const card = document.createElement('div');
     card.className = 'child-card';
     const initial = (student.name||'?').trim().charAt(0).toUpperCase();
@@ -768,12 +794,14 @@ async function renderDashboard(){
       <div class="child-avatar">${initial}</div>
       <div class="child-name">${student.name}</div>
       <div class="child-meta">Tahun ${student.tahun} · ${student.kelas}</div>
+      <div class="child-stats" data-sid="${sid}">⭐ ${progress?.totalStars || 0} &nbsp;·&nbsp; 🔥 ${progress?.currentStreak || 0}</div>
     `;
     card.addEventListener('click', (ev)=>{
-      if(ev.target.closest('.child-gear')) return;
+      if(ev.target.closest('.child-gear') || ev.target.closest('.child-stats')) return;
       selectChild(sid, student);
     });
     card.querySelector('.child-gear').addEventListener('click', ()=> openPinToggle(sid, student));
+    card.querySelector('.child-stats').addEventListener('click', ()=> openStatsModal(student, progress));
     childGrid.appendChild(card);
   }
   const addCard = document.createElement('div');
@@ -841,6 +869,50 @@ document.getElementById('btn-logout').addEventListener('click', ()=>{
   formLogin.reset(); formRegister.reset();
   showView(viewAuth);
 });
+
+/* ---------- stats modal (read-only view of sains_progress) ---------- */
+const overlayStats = document.getElementById('overlay-stats');
+const statsTitle = document.getElementById('stats-title');
+const statsSub = document.getElementById('stats-sub');
+const statsBody = document.getElementById('stats-body');
+document.getElementById('stats-close').addEventListener('click', ()=>{
+  overlayStats.classList.remove('show');
+});
+
+const MECHANIC_LABELS = {
+  klasifikasi: 'Klasifikasi', 'label-rajah': 'Label Rajah', 'quiz-pantas': 'Quiz Pantas',
+  'simulasi-mini': 'Simulasi Mini', turutan: 'Turutan', 'memory-match': 'Memory Match',
+  'sebab-akibat': 'Sebab-Akibat', 'peta-minda': 'Peta Minda', 'eksperimen-ramalan': 'Eksperimen Ramalan',
+  'teka-pemerhatian': 'Teka & Pemerhatian'
+};
+const BADGE_LABELS = {
+  'first-play': '🌟 Permulaan', '5-topics': '🎯 5 Topik', '20-topics': '🏆 20 Topik',
+  '3-day-streak': '🔥 3 Hari Berturut', '7-day-streak': '🔥🔥 7 Hari Berturut',
+  'all-mechanics': '🧩 Semua Mekanik', 'perfect-score': '💯 Skor Sempurna'
+};
+
+function openStatsModal(student, progress){
+  statsTitle.textContent = `Kemajuan ${student.name}`;
+  if(!progress){
+    statsSub.textContent = 'Belum ada rekod permainan lagi.';
+    statsBody.innerHTML = '';
+    overlayStats.classList.add('show');
+    return;
+  }
+  statsSub.textContent = `⭐ ${progress.totalStars || 0} bintang · 🔥 ${progress.currentStreak || 0} hari (terpanjang ${progress.longestStreak || 0})`;
+  const mechRows = Object.entries(progress.mechanicsPlayed || {})
+    .filter(([k]) => MECHANIC_LABELS[k])
+    .map(([k, v]) => `<div style="display:flex; justify-content:space-between; padding:4px 0; font-size:13px; font-weight:700; color:var(--navy);"><span>${MECHANIC_LABELS[k]}</span><span>${v}x</span></div>`)
+    .join('') || '<p style="font-size:12px; color:#5C7690; font-weight:700;">Belum main mana-mana mekanik.</p>';
+  const badgeText = (progress.badges || []).map(b => BADGE_LABELS[b] || b).join(', ') || 'Belum ada lencana lagi.';
+  statsBody.innerHTML = `
+    <p style="font-weight:800; font-size:13px; color:var(--navy); margin:12px 0 4px;">Mekanik Dimainkan</p>
+    ${mechRows}
+    <p style="font-weight:800; font-size:13px; color:var(--navy); margin:14px 0 4px;">Lencana</p>
+    <p style="font-size:13px; font-weight:700; color:var(--navy); line-height:1.6;">${badgeText}</p>
+  `;
+  overlayStats.classList.add('show');
+}
 
 /* ---------- select child / pin pad ---------- */
 const overlayPinpad = document.getElementById('overlay-pinpad');
