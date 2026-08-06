@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Seronok Sains — Kemajuan Saya</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --sky:#29ABE2;
+    --sky-deep:#1E8FC4;
+    --sun:#FFD23F;
+    --grass:#4ECB71;
+    --grass-deep:#33A857;
+    --coral:#FF6B6B;
+    --navy:#1B3358;
+    --cream:#FFFFFF;
+  }
+  *{box-sizing:border-box; -webkit-tap-highlight-color: transparent;}
+  body{
+    margin:0; min-height:100vh; font-family:'Nunito', sans-serif;
+    background: radial-gradient(ellipse at top, #6FC6F0 0%, var(--sky) 55%, var(--sky-deep) 100%);
+    display:flex; justify-content:center; padding:16px;
+  }
+  #shell{ width:100%; max-width:440px; }
+  header{ text-align:center; color:#fff; margin-bottom:10px; }
+  #mascot-mini{ width:60px; height:60px; filter: drop-shadow(0 4px 4px rgba(0,0,0,0.2)); }
+  header h1{ font-family:'Baloo 2', sans-serif; font-weight:800; font-size:20px; margin:6px 0 0; text-shadow:0 3px 0 rgba(27,51,88,0.35); }
+  header p{ margin:2px 0 0; font-weight:700; font-size:13px; opacity:0.9; }
+
+  .card{
+    background:var(--cream); border-radius:24px; padding:18px; margin-bottom:14px;
+    box-shadow:0 8px 0 rgba(27,51,88,0.2), 0 12px 24px rgba(0,0,0,0.18);
+  }
+  .card h2{
+    font-family:'Baloo 2', sans-serif; font-weight:800; font-size:15px; color:var(--navy);
+    margin:0 0 12px; display:flex; align-items:center; gap:6px;
+  }
+
+  #no-session p{ color:#5C7690; font-weight:700; font-size:14px; text-align:center; }
+
+  .stats-row{ display:grid; grid-template-columns:repeat(3,1fr); gap:10px; }
+  .stat-tile{
+    background:linear-gradient(160deg, #EAF6FC, #DCEEF7); border-radius:16px;
+    padding:12px 6px; text-align:center;
+  }
+  .stat-tile .val{ font-family:'Baloo 2', sans-serif; font-weight:800; font-size:22px; color:var(--sky-deep); }
+  .stat-tile .lbl{ font-size:10.5px; font-weight:700; color:#5C7690; margin-top:2px; }
+
+  .badge-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:10px; }
+  .badge-tile{
+    display:flex; flex-direction:column; align-items:center; gap:4px;
+    padding:8px 4px; border-radius:14px; background:linear-gradient(160deg, #FFF6DA, #FFEDB0);
+    transition: transform 0.2s cubic-bezier(.34,1.56,.64,1);
+  }
+  .badge-tile.locked{ background:#F0F3F6; opacity:0.55; }
+  .badge-tile .emoji{ font-size:24px; }
+  .badge-tile.locked .emoji{ filter: grayscale(1); }
+  .badge-tile .lbl{ font-size:9px; font-weight:700; color:var(--navy); text-align:center; line-height:1.2; }
+  .badge-tile.locked .lbl{ color:#8296AC; }
+
+  .leader-row{
+    display:flex; align-items:center; gap:10px; padding:9px 8px; border-radius:14px;
+  }
+  .leader-row.me{ background:linear-gradient(160deg, #FFF6DA, #FFEDB0); border:2px solid var(--sun); }
+  .leader-rank{
+    font-family:'Baloo 2', sans-serif; font-weight:800; font-size:14px; color:var(--sky-deep);
+    width:26px; text-align:center; flex-shrink:0;
+  }
+  .leader-avatar{
+    width:32px; height:32px; border-radius:50%; background:var(--sun);
+    display:flex; align-items:center; justify-content:center; flex-shrink:0;
+    font-family:'Baloo 2', sans-serif; font-weight:800; font-size:13px; color:var(--navy);
+  }
+  .leader-name{ flex:1; font-weight:700; font-size:13px; color:var(--navy); overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .leader-stars{ font-family:'Baloo 2', sans-serif; font-weight:800; font-size:13px; color:var(--sky-deep); flex-shrink:0; }
+  #leader-empty{ color:#5C7690; font-weight:700; font-size:13px; text-align:center; padding:10px 0; }
+
+  #back-btn{
+    display:block; width:100%; margin:4px 0 0; font-family:'Baloo 2', sans-serif; font-weight:700; font-size:15px;
+    color:#fff; background:var(--sky); border:none; padding:13px 0; border-radius:16px;
+    box-shadow:0 5px 0 var(--sky-deep); cursor:pointer;
+  }
+  #back-btn:active{ transform:translateY(4px); box-shadow:0 1px 0 var(--sky-deep); }
+</style>
+</head>
+<body>
+<div id="shell">
+  <header>
+    <svg id="mascot-mini" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <ellipse cx="50" cy="56" rx="28" ry="30" fill="#4FC3E0"/>
+      <ellipse cx="50" cy="64" rx="17" ry="19" fill="#FFF6EC"/>
+      <path d="M 47 22 Q 50 6 54 21" stroke="#3B9FC4" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+      <path d="M 22 50 Q 4 56 10 76 Q 24 74 28 58 Z" fill="#3B9FC4"/>
+      <path d="M 78 50 Q 96 56 90 76 Q 76 74 72 58 Z" fill="#3B9FC4"/>
+      <circle cx="38" cy="48" r="13" fill="#fff"/>
+      <circle cx="62" cy="48" r="13" fill="#fff"/>
+      <circle cx="40" cy="49" r="7" fill="#1B3358"/>
+      <circle cx="64" cy="49" r="7" fill="#1B3358"/>
+      <circle cx="43" cy="45" r="2.2" fill="#fff"/>
+      <circle cx="67" cy="45" r="2.2" fill="#fff"/>
+      <path d="M 45 60 Q 50 55 55 60 Q 50 68 45 60 Z" fill="#FF9F43"/>
+    </svg>
+    <h1>🏆 Kemajuan Saya</h1>
+    <p id="meta"></p>
+  </header>
+
+  <div id="content" style="display:none;">
+    <div class="card">
+      <h2>⭐ Statistik Saya</h2>
+      <div class="stats-row">
+        <div class="stat-tile"><div class="val" id="stat-stars">0</div><div class="lbl">Jumlah Bintang</div></div>
+        <div class="stat-tile"><div class="val" id="stat-streak">0</div><div class="lbl">Streak Semasa</div></div>
+        <div class="stat-tile"><div class="val" id="stat-longest">0</div><div class="lbl">Streak Terpanjang</div></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>🎖️ Lencana</h2>
+      <div class="badge-grid" id="badge-grid"></div>
+    </div>
+
+    <div class="card">
+      <h2 id="leader-title">🏅 Papan Pendahulu</h2>
+      <div id="leader-list"></div>
+      <div id="leader-empty" style="display:none;">Belum ada rekod lagi. Jadilah yang pertama!</div>
+    </div>
+  </div>
+
+  <div id="no-session" style="display:none;">
+    <p>Tiada sesi aktif. Sila log masuk dahulu.</p>
+  </div>
+
+  <button id="back-btn">⬅️ Kembali ke Menu</button>
+</div>
+
+<script>
+const FIREBASE_CONFIG = {
+  apiKey: "AIzaSyDlmo9-iUOR5aBjoWg5Rqk8TVhYY7mr7Ik",
+  authDomain: "seronoknyabahasa.firebaseapp.com",
+  projectId: "seronoknyabahasa",
+  storageBucket: "seronoknyabahasa.firebasestorage.app",
+  messagingSenderId: "512712221726",
+  appId: "1:512712221726:web:618e8e73ebe08315493a0f"
+};
+
+const BADGE_INFO = {
+  'first-play': { emoji: '🌟', label: 'Permulaan' },
+  '5-topics': { emoji: '🎯', label: '5 Topik' },
+  '20-topics': { emoji: '🏆', label: '20 Topik' },
+  '3-day-streak': { emoji: '🔥', label: '3 Hari Berturut' },
+  '7-day-streak': { emoji: '🔥🔥', label: '7 Hari Berturut' },
+  'all-mechanics': { emoji: '🧩', label: 'Semua Mekanik' },
+  'perfect-score': { emoji: '💯', label: 'Skor Sempurna' }
+};
+const BADGE_ORDER = ['first-play','5-topics','20-topics','3-day-streak','7-day-streak','all-mechanics','perfect-score'];
+
+document.getElementById('back-btn').addEventListener('click', ()=>{
+  window.location.href = 'game-hub.html';
+});
+
+(async function boot(){
+  const raw = sessionStorage.getItem('ss_activeStudent');
+  if(!raw){
+    document.getElementById('no-session').style.display = '';
+    return;
+  }
+  const student = JSON.parse(raw);
+  document.getElementById('meta').textContent = `${student.namaAnak} — Tahun ${student.tahun}`;
+  document.getElementById('leader-title').textContent = `🏅 Papan Pendahulu Tahun ${student.tahun}`;
+  document.getElementById('content').style.display = '';
+
+  let fs, mod;
+  try{
+    const appMod = await import('https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js');
+    const fsMod = await import('https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js');
+    const app = appMod.initializeApp(FIREBASE_CONFIG);
+    fs = fsMod.getFirestore(app);
+    mod = fsMod;
+  }catch(e){
+    console.warn('Tidak dapat sambung ke pangkalan data kemajuan:', e);
+    renderBadges([]);
+    return;
+  }
+
+  const { doc, getDoc, collection, query, where, orderBy, limit, getDocs } = mod;
+
+  // own stats
+  let own = null;
+  try{
+    const snap = await getDoc(doc(fs, 'sains_progress', student.id));
+    own = snap.exists() ? snap.data() : null;
+  }catch(e){ console.warn('Gagal memuatkan statistik:', e); }
+
+  document.getElementById('stat-stars').textContent = own?.totalStars || 0;
+  document.getElementById('stat-streak').textContent = own?.currentStreak || 0;
+  document.getElementById('stat-longest').textContent = own?.longestStreak || 0;
+  renderBadges(own?.badges || []);
+
+  // leaderboard
+  const leaderList = document.getElementById('leader-list');
+  const leaderEmpty = document.getElementById('leader-empty');
+  try{
+    const q = query(
+      collection(fs, 'sains_progress'),
+      where('tahun', '==', student.tahun),
+      orderBy('totalStars', 'desc'),
+      limit(20)
+    );
+    const snap = await getDocs(q);
+    if(snap.empty){
+      leaderEmpty.style.display = '';
+    } else {
+      let rank = 0;
+      snap.forEach(d => {
+        rank++;
+        const data = d.data();
+        const row = document.createElement('div');
+        row.className = 'leader-row' + (d.id === student.id ? ' me' : '');
+        const initial = (data.name || '?').trim().charAt(0).toUpperCase();
+        row.innerHTML = `
+          <span class="leader-rank">#${rank}</span>
+          <span class="leader-avatar">${initial}</span>
+          <span class="leader-name">${data.name || 'Pelajar'}</span>
+          <span class="leader-stars">⭐ ${data.totalStars || 0}</span>
+        `;
+        leaderList.appendChild(row);
+      });
+    }
+  }catch(e){
+    console.warn('Gagal memuatkan papan pendahulu:', e);
+    leaderEmpty.textContent = 'Papan pendahulu tidak dapat dimuatkan buat masa ini.';
+    leaderEmpty.style.display = '';
+  }
+})();
+
+function renderBadges(earned){
+  const earnedSet = new Set(earned);
+  const grid = document.getElementById('badge-grid');
+  grid.innerHTML = '';
+  BADGE_ORDER.forEach(id => {
+    const info = BADGE_INFO[id];
+    const has = earnedSet.has(id);
+    const tile = document.createElement('div');
+    tile.className = 'badge-tile' + (has ? '' : ' locked');
+    tile.innerHTML = `<span class="emoji">${has ? info.emoji : '🔒'}</span><span class="lbl">${info.label}</span>`;
+    grid.appendChild(tile);
+  });
+}
+</script>
+</body>
+</html>

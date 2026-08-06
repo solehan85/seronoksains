@@ -70,6 +70,15 @@
     display:block; margin:16px auto 0; background:none; border:none;
     color:#fff; font-weight:700; font-size:13px; text-decoration:underline; cursor:pointer;
   }
+
+  #link-kemajuan{
+    display:flex; align-items:center; justify-content:center; gap:8px;
+    text-decoration:none; margin-top:12px;
+    font-family:'Baloo 2', sans-serif; font-weight:700; font-size:15px;
+    color:var(--navy); background:var(--sun); border:none; padding:13px 0; border-radius:16px;
+    box-shadow:0 5px 0 #E0AC1F;
+  }
+  #link-kemajuan:active{ transform:translateY(4px); box-shadow:0 1px 0 #E0AC1F; }
 </style>
 </head>
 <body>
@@ -152,6 +161,8 @@
     <p>Tiada sesi aktif. Sila log masuk dahulu.</p>
   </div>
 
+  <a href="kemajuan.html" id="link-kemajuan" style="display:none;">🏆 Kemajuan Saya</a>
+
   <button id="btn-switch">Tukar Profil</button>
 </div>
 
@@ -171,6 +182,7 @@
     document.getElementById('greeting').textContent = `Hai, ${activeStudent.namaAnak}! 👋`;
     document.getElementById('meta').textContent = `Tahun ${activeStudent.tahun} · ${activeStudent.kelas}`;
     document.getElementById('menu-card').style.display = '';
+    document.getElementById('link-kemajuan').style.display = '';
   } else {
     document.getElementById('greeting').textContent = 'Tiada sesi aktif';
     document.getElementById('no-session').style.display = '';

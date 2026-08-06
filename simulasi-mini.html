@@ -670,7 +670,7 @@ async function writeProgress(mechanic, topikKey, topikLabel, score, total){
       kelas: student.kelas,
       totalStars: increment(score),
       totalPlays: increment(1),
-      [`mechanicsPlayed.${mechanic}`]: increment(1),
+      mechanicsPlayed: { [mechanic]: increment(1) },
       currentStreak, longestStreak,
       lastPlayedDate: today,
       badges: [...existingBadges],

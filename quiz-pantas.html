@@ -203,6 +203,7 @@ let questions = [];
 let idx = 0;
 let score = 0;
 let topicData = null;
+let resolvedTopik = null;
 let timerTimeout = null;
 let answered = false;
 
@@ -232,6 +233,7 @@ async function loadTopic(){
   const bank = await res.json();
   const keys = Object.keys(bank);
   const key = (topikKey && bank[topikKey]) ? topikKey : keys[0];
+  resolvedTopik = key;
   topicData = bank[key];
 
   document.title = `Seronok Sains — ${topicData.topikLabel}`;
@@ -397,6 +399,7 @@ function handleAnswer(btnEl, chosen, correctAnswer){
 }
 
 function showWin(){
+  writeProgress('quiz-pantas', resolvedTopik, topicData.topikLabel, score, questions.length);
   winScore.textContent = `Skor: ${score}/${questions.length}`;
   winScreen.classList.add('show');
   confettiBurst(window.innerWidth/2, window.innerHeight*0.35);
@@ -417,6 +420,95 @@ document.getElementById('back-btn').addEventListener('click', ()=>{
   clearTimeout(timerTimeout);
   window.location.href = 'game-hub.html';
 });
+
+/* ---------- progress tracking (Kemajuan: leaderboard/streak/badges) ----------
+   Best-effort side effect — never blocks or breaks gameplay if it fails. */
+const PROGRESS_FIREBASE_CONFIG = {
+  apiKey: "AIzaSyDlmo9-iUOR5aBjoWg5Rqk8TVhYY7mr7Ik",
+  authDomain: "seronoknyabahasa.firebaseapp.com",
+  projectId: "seronoknyabahasa",
+  storageBucket: "seronoknyabahasa.firebasestorage.app",
+  messagingSenderId: "512712221726",
+  appId: "1:512712221726:web:618e8e73ebe08315493a0f"
+};
+let _pdbFs = null, _pdbMod = null;
+async function initProgressDB(){
+  try{
+    const appMod = await import('https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js');
+    const fsMod = await import('https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js');
+    const app = appMod.initializeApp(PROGRESS_FIREBASE_CONFIG);
+    _pdbFs = fsMod.getFirestore(app);
+    _pdbMod = fsMod;
+  }catch(e){
+    console.warn('Progress tracking tidak dapat disambung:', e);
+  }
+}
+initProgressDB();
+
+function todayLocal(){
+  const d = new Date();
+  return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+}
+
+const BADGE_RULES = [
+  { id: 'first-play', check: p => p.totalPlays >= 1 },
+  { id: '5-topics', check: p => p.totalPlays >= 5 },
+  { id: '20-topics', check: p => p.totalPlays >= 20 },
+  { id: '3-day-streak', check: p => p.currentStreak >= 3 },
+  { id: '7-day-streak', check: p => p.currentStreak >= 7 },
+  { id: 'all-mechanics', check: p => Object.keys(p.mechanicsPlayed||{}).length >= 10 },
+  { id: 'perfect-score', check: (p, justPerfect) => justPerfect }
+];
+
+async function writeProgress(mechanic, topikKey, topikLabel, score, total){
+  try{
+    if(!_pdbFs) await initProgressDB();
+    if(!_pdbFs) return;
+    const raw = sessionStorage.getItem('ss_activeStudent');
+    if(!raw) return;
+    const student = JSON.parse(raw);
+    const { doc, getDoc, setDoc, increment } = _pdbMod;
+    const ref = doc(_pdbFs, 'sains_progress', student.id);
+    const snap = await getDoc(ref);
+    const prev = snap.exists() ? snap.data() : null;
+
+    const today = todayLocal();
+    let currentStreak = 1;
+    if(prev && prev.lastPlayedDate === today){
+      currentStreak = prev.currentStreak || 1;
+    } else if(prev){
+      const y = new Date(); y.setDate(y.getDate()-1);
+      const yesterday = `${y.getFullYear()}-${String(y.getMonth()+1).padStart(2,'0')}-${String(y.getDate()).padStart(2,'0')}`;
+      currentStreak = prev.lastPlayedDate === yesterday ? (prev.currentStreak||0)+1 : 1;
+    }
+    const longestStreak = Math.max(prev?.longestStreak || 0, currentStreak);
+
+    const mechanicsPlayed = { ...(prev?.mechanicsPlayed || {}) };
+    mechanicsPlayed[mechanic] = (mechanicsPlayed[mechanic] || 0) + 1;
+
+    const isPerfect = total > 0 && score === total;
+    const progressState = { totalPlays: (prev?.totalPlays || 0) + 1, currentStreak, mechanicsPlayed };
+    const existingBadges = new Set(prev?.badges || []);
+    BADGE_RULES.forEach(b => {
+      if(!existingBadges.has(b.id) && b.check(progressState, isPerfect)) existingBadges.add(b.id);
+    });
+
+    await setDoc(ref, {
+      name: student.namaAnak,
+      tahun: student.tahun,
+      kelas: student.kelas,
+      totalStars: increment(score),
+      totalPlays: increment(1),
+      mechanicsPlayed: { [mechanic]: increment(1) },
+      currentStreak, longestStreak,
+      lastPlayedDate: today,
+      badges: [...existingBadges],
+      updatedAt: today
+    }, { merge:true });
+  }catch(e){
+    console.warn('Gagal menyimpan kemajuan:', e);
+  }
+}
 
 loadTopic();
 </script>
