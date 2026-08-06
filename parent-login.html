@@ -158,6 +158,12 @@
   .pin-toggle input{ width:20px; height:20px; accent-color:var(--sky); }
   .pin-toggle span{ font-weight:700; font-size:13px; color:var(--navy); }
 
+  .pin-wrap{
+    overflow:hidden; max-height:140px; opacity:1;
+    transition: max-height 0.3s cubic-bezier(.34,1.56,.64,1), opacity 0.25s ease;
+  }
+  .pin-wrap.collapsed{ max-height:0; opacity:0; pointer-events:none; }
+
   .btn{
     width:100%;
     font-family:'Baloo 2', sans-serif; font-weight:700; font-size:16px;
@@ -226,6 +232,11 @@
     align-items:center; justify-content:center; z-index:200; padding:16px;
   }
   .overlay.show{ display:flex; }
+  .overlay.show .modal{ animation: modalPop 0.35s cubic-bezier(.34,1.56,.64,1); }
+  @keyframes modalPop{
+    0%{ transform:scale(0.85) translateY(10px); opacity:0; }
+    100%{ transform:scale(1) translateY(0); opacity:1; }
+  }
   .modal{
     width:100%; max-width:360px; background:var(--cream); border-radius:24px;
     padding:22px 20px; box-shadow:0 14px 28px rgba(0,0,0,0.3);
@@ -341,7 +352,7 @@
           <input type="checkbox" id="reg-child-pinreq" checked>
           <span>Perlukan PIN setiap kali anak pilih profil</span>
         </div>
-        <div id="reg-child-pin-wrap">
+        <div id="reg-child-pin-wrap" class="pin-wrap">
           <label for="reg-child-pin">PIN Anak (4 digit)</label>
           <input type="password" id="reg-child-pin" inputmode="numeric" maxlength="4" placeholder="••••">
         </div>
@@ -409,7 +420,7 @@
         <input type="checkbox" id="add-child-pinreq" checked>
         <span>Perlukan PIN setiap kali pilih profil</span>
       </div>
-      <div id="add-child-pin-wrap">
+      <div id="add-child-pin-wrap" class="pin-wrap">
         <label for="add-child-pin">PIN Anak (4 digit)</label>
         <input type="password" id="add-child-pin" inputmode="numeric" maxlength="4" placeholder="••••">
       </div>
@@ -536,6 +547,47 @@ async function dbSetSettings(id, data){
   await setDoc(doc(DB._fs, 'sains_student_settings', id), data, { merge:true });
 }
 
+/* Best-effort reconciliation with a child's existing Fun Math / Seronoknya
+   Bahasa /students record, so families using multiple Eduverse products get
+   one shared profile instead of a fresh duplicate per subject. Matches on
+   exact name+kelas — the only fields every product's /students doc has in
+   common — and only auto-links when that pair identifies exactly ONE
+   existing record; 0 or 2+ matches fall back to creating a new one, since
+   guessing wrong (merging two different children) is worse than a
+   duplicate. Not perfect (two different real children can share both a
+   common name and a class label like "3 Bestari"), but strictly better than
+   never attempting to link at all. */
+async function dbFindStudentIdByNameKelas(name, kelas){
+  if(DB.offline){
+    const store = loadOfflineStore();
+    const matches = Object.entries(store.students || {}).filter(([, s]) => s.name === name && s.kelas === kelas);
+    return matches.length === 1 ? matches[0][0] : null;
+  }
+  const { collection, query, where, getDocs } = DB._mod;
+  const q = query(collection(DB._fs, 'students'), where('name','==',name), where('kelas','==',kelas));
+  const snap = await getDocs(q);
+  return snap.size === 1 ? snap.docs[0].id : null;
+}
+
+/* Single entry point for "this parent now has this child" — used by both
+   registration's first child and the dashboard's Tambah Anak flow. If an
+   existing shared /students record matches, we link to it WITHOUT ever
+   writing to that doc again (the real rules forbid update/delete on
+   /students — see firestore.rules), storing our own tahun/parentId/PIN-gate
+   fields in sains_student_settings instead, which we do own. Only a
+   genuinely new child creates a new /students doc. */
+async function resolveOrCreateStudent({ name, tahun, kelas, pinRequired, pinHash, parentId }){
+  const existingId = await dbFindStudentIdByNameKelas(name, kelas);
+  if(existingId){
+    await dbSetSettings(existingId, { pinRequired, pinHash, tahun, parentId, linkedExisting: true });
+    return existingId;
+  }
+  const sid = newStudentId();
+  await dbCreateStudent(sid, { name, tahun, kelas, pinHash, parentId });
+  await dbSetSettings(sid, { pinRequired, pinHash });
+  return sid;
+}
+
 /* ---------- helpers ---------- */
 async function sha256Hex(str){
   const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(str));
@@ -593,12 +645,12 @@ tabRegister.addEventListener('click', ()=>{
 const regChildPinReq = document.getElementById('reg-child-pinreq');
 const regChildPinWrap = document.getElementById('reg-child-pin-wrap');
 regChildPinReq.addEventListener('change', ()=>{
-  regChildPinWrap.style.display = regChildPinReq.checked ? '' : 'none';
+  regChildPinWrap.classList.toggle('collapsed', !regChildPinReq.checked);
 });
 const addChildPinReq = document.getElementById('add-child-pinreq');
 const addChildPinWrap = document.getElementById('add-child-pin-wrap');
 addChildPinReq.addEventListener('change', ()=>{
-  addChildPinWrap.style.display = addChildPinReq.checked ? '' : 'none';
+  addChildPinWrap.classList.toggle('collapsed', !addChildPinReq.checked);
 });
 
 /* ---------- session ---------- */
@@ -671,14 +723,12 @@ formRegister.addEventListener('submit', async (e)=>{
   }
 
   const pinHash = await sha256Hex(pin);
-  const studentId = newStudentId();
   const childPinHash = childPinReq ? await sha256Hex(childPin) : '';
 
-  await dbCreateStudent(studentId, {
+  const studentId = await resolveOrCreateStudent({
     name: childNama, tahun: childTahun, kelas: childKelas,
-    pinHash: childPinHash, parentId: key
+    pinRequired: childPinReq, pinHash: childPinHash, parentId: key
   });
-  await dbSetSettings(studentId, { pinRequired: childPinReq, pinHash: childPinHash });
   await dbSetParent(key, {
     namaParent, emailOrPhone: rawKey.trim(), pinHash, children: [studentId]
   });
@@ -701,7 +751,14 @@ async function renderDashboard(){
     const studentDoc = await dbGetStudent(sid);
     if(!studentDoc) continue;
     const settings = (await dbGetSettings(sid)) || { pinRequired:false, pinHash:'' };
-    const student = { ...studentDoc, pinRequired: settings.pinRequired, pinHash: settings.pinHash };
+    // A linked (not self-created) student's tahun/parentId live in settings,
+    // never on the immutable shared /students doc — see resolveOrCreateStudent.
+    const student = {
+      ...studentDoc,
+      tahun: settings.tahun ?? studentDoc.tahun,
+      pinRequired: settings.pinRequired,
+      pinHash: settings.pinHash
+    };
     const card = document.createElement('div');
     card.className = 'child-card';
     const initial = (student.name||'?').trim().charAt(0).toUpperCase();
@@ -850,7 +907,7 @@ const addChildError = document.getElementById('addchild-error');
 
 function openAddChild(){
   formAddChild.reset();
-  addChildPinWrap.style.display = '';
+  addChildPinWrap.classList.remove('collapsed');
   addChildError.classList.remove('show');
   overlayAddChild.classList.add('show');
 }
@@ -876,12 +933,10 @@ formAddChild.addEventListener('submit', async (e)=>{
     addChildError.classList.add('show'); return;
   }
 
-  const sid = newStudentId();
   const pinHash = pinReq ? await sha256Hex(pin) : '';
-  await dbCreateStudent(sid, {
-    name: nama, tahun, kelas, pinHash, parentId: currentParent.id
+  const sid = await resolveOrCreateStudent({
+    name: nama, tahun, kelas, pinRequired: pinReq, pinHash, parentId: currentParent.id
   });
-  await dbSetSettings(sid, { pinRequired: pinReq, pinHash });
   currentParent.children = [...(currentParent.children||[]), sid];
   await dbSetParent(currentParent.id, { children: currentParent.children });
 
