@@ -67,5 +67,15 @@ service cloud.firestore {
       allow read: if true;
       allow write: if false;
     }
+
+    // Per-student aggregate play stats (total stars, streak, badges,
+    // per-mechanic play counts) — powers the leaderboard, the student's own
+    // "Kemajuan Saya" page, and the parent dashboard's progress summary.
+    // Same open no-auth tradeoff already accepted above; read is public
+    // (needed for the cross-student leaderboard query), write is public
+    // (each game mechanic updates its own student's doc after a play).
+    match /sains_progress/{studentId} {
+      allow read, write: if true;
+    }
   }
 }
