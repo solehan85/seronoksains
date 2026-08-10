@@ -322,5 +322,167 @@
         { "heated": false }, { "heated": false }, { "heated": true }, { "heated": false }
       ]
     ]
+  },
+  "tahun1-ais-rasa-sejuk": {
+    "topikLabel": "Ais Ini: Akan Cair Bila Panas?",
+    "tahun": 1,
+    "diagramType": "ais-cair",
+    "sets": [
+      [
+        { "heated": true }, { "heated": false }, { "heated": true }, { "heated": false },
+        { "heated": true }, { "heated": false }, { "heated": true }, { "heated": false }
+      ],
+      [
+        { "heated": false }, { "heated": true }, { "heated": false }, { "heated": true },
+        { "heated": false }, { "heated": true }, { "heated": false }, { "heated": true }
+      ],
+      [
+        { "heated": true }, { "heated": true }, { "heated": false }, { "heated": false },
+        { "heated": true }, { "heated": false }, { "heated": true }, { "heated": false }
+      ],
+      [
+        { "heated": false }, { "heated": false }, { "heated": true }, { "heated": true },
+        { "heated": false }, { "heated": true }, { "heated": false }, { "heated": true }
+      ],
+      [
+        { "heated": true }, { "heated": false }, { "heated": true }, { "heated": true },
+        { "heated": false }, { "heated": false }, { "heated": true }, { "heated": false }
+      ]
+    ]
+  },
+  "tahun2-tumbuhan-membesar": {
+    "topikLabel": "Pokok Ini: Perlukan Air untuk Membesar?",
+    "tahun": 2,
+    "diagramType": "tumbuhan-air",
+    "sets": [
+      [
+        { "watered": true }, { "watered": false }, { "watered": true }, { "watered": false },
+        { "watered": true }, { "watered": false }, { "watered": true }, { "watered": false }
+      ],
+      [
+        { "watered": false }, { "watered": true }, { "watered": false }, { "watered": true },
+        { "watered": false }, { "watered": true }, { "watered": false }, { "watered": true }
+      ],
+      [
+        { "watered": true }, { "watered": true }, { "watered": false }, { "watered": false },
+        { "watered": true }, { "watered": false }, { "watered": true }, { "watered": false }
+      ],
+      [
+        { "watered": false }, { "watered": false }, { "watered": true }, { "watered": true },
+        { "watered": false }, { "watered": true }, { "watered": false }, { "watered": true }
+      ],
+      [
+        { "watered": true }, { "watered": false }, { "watered": true }, { "watered": true },
+        { "watered": false }, { "watered": false }, { "watered": true }, { "watered": false }
+      ]
+    ]
+  },
+  "tahun3-litar-ringkas-semakan": {
+    "topikLabel": "Litar Ringkas Ini: Lengkap atau Terbuka?",
+    "tahun": 3,
+    "diagramType": "litar",
+    "sets": [
+      [
+        { "switchState": "closed" }, { "switchState": "open" }, { "switchState": "closed" }, { "switchState": "open" },
+        { "switchState": "closed" }, { "switchState": "open" }, { "switchState": "closed" }, { "switchState": "open" }
+      ],
+      [
+        { "switchState": "open" }, { "switchState": "closed" }, { "switchState": "open" }, { "switchState": "closed" },
+        { "switchState": "open" }, { "switchState": "closed" }, { "switchState": "open" }, { "switchState": "closed" }
+      ],
+      [
+        { "switchState": "closed" }, { "switchState": "closed" }, { "switchState": "open" }, { "switchState": "open" },
+        { "switchState": "closed" }, { "switchState": "open" }, { "switchState": "closed" }, { "switchState": "open" }
+      ],
+      [
+        { "switchState": "open" }, { "switchState": "open" }, { "switchState": "closed" }, { "switchState": "closed" },
+        { "switchState": "open" }, { "switchState": "closed" }, { "switchState": "open" }, { "switchState": "closed" }
+      ],
+      [
+        { "switchState": "closed" }, { "switchState": "open" }, { "switchState": "closed" }, { "switchState": "closed" },
+        { "switchState": "open" }, { "switchState": "open" }, { "switchState": "closed" }, { "switchState": "open" }
+      ]
+    ]
+  },
+  "tahun4-kitaran-air-menyejat": {
+    "topikLabel": "Kitaran Air: Akan Menyejat Tak?",
+    "tahun": 4,
+    "diagramType": "kitaran-air",
+    "sets": [
+      [
+        { "sunActive": true }, { "sunActive": false }, { "sunActive": true }, { "sunActive": false },
+        { "sunActive": true }, { "sunActive": false }, { "sunActive": true }, { "sunActive": false }
+      ],
+      [
+        { "sunActive": false }, { "sunActive": true }, { "sunActive": false }, { "sunActive": true },
+        { "sunActive": false }, { "sunActive": true }, { "sunActive": false }, { "sunActive": true }
+      ],
+      [
+        { "sunActive": true }, { "sunActive": true }, { "sunActive": false }, { "sunActive": false },
+        { "sunActive": true }, { "sunActive": false }, { "sunActive": true }, { "sunActive": false }
+      ],
+      [
+        { "sunActive": false }, { "sunActive": false }, { "sunActive": true }, { "sunActive": true },
+        { "sunActive": false }, { "sunActive": true }, { "sunActive": false }, { "sunActive": true }
+      ],
+      [
+        { "sunActive": true }, { "sunActive": false }, { "sunActive": true }, { "sunActive": true },
+        { "sunActive": false }, { "sunActive": false }, { "sunActive": true }, { "sunActive": false }
+      ]
+    ]
+  },
+  "tahun5-bayang-terbentuk": {
+    "topikLabel": "Bayang: Akan Terbentuk Tak?",
+    "tahun": 5,
+    "diagramType": "cahaya-bayang",
+    "sets": [
+      [
+        { "blocked": true }, { "blocked": false }, { "blocked": true }, { "blocked": false },
+        { "blocked": true }, { "blocked": false }, { "blocked": true }, { "blocked": false }
+      ],
+      [
+        { "blocked": false }, { "blocked": true }, { "blocked": false }, { "blocked": true },
+        { "blocked": false }, { "blocked": true }, { "blocked": false }, { "blocked": true }
+      ],
+      [
+        { "blocked": true }, { "blocked": true }, { "blocked": false }, { "blocked": false },
+        { "blocked": true }, { "blocked": false }, { "blocked": true }, { "blocked": false }
+      ],
+      [
+        { "blocked": false }, { "blocked": false }, { "blocked": true }, { "blocked": true },
+        { "blocked": false }, { "blocked": true }, { "blocked": false }, { "blocked": true }
+      ],
+      [
+        { "blocked": true }, { "blocked": false }, { "blocked": true }, { "blocked": true },
+        { "blocked": false }, { "blocked": false }, { "blocked": true }, { "blocked": false }
+      ]
+    ]
+  },
+  "tahun6-tumbuhan-akan-layu": {
+    "topikLabel": "Tumbuhan Ini: Akan Layu Tanpa Air?",
+    "tahun": 6,
+    "diagramType": "tumbuhan-air",
+    "sets": [
+      [
+        { "watered": true }, { "watered": false }, { "watered": true }, { "watered": false },
+        { "watered": true }, { "watered": false }, { "watered": true }, { "watered": false }
+      ],
+      [
+        { "watered": false }, { "watered": true }, { "watered": false }, { "watered": true },
+        { "watered": false }, { "watered": true }, { "watered": false }, { "watered": true }
+      ],
+      [
+        { "watered": true }, { "watered": true }, { "watered": false }, { "watered": false },
+        { "watered": true }, { "watered": false }, { "watered": true }, { "watered": false }
+      ],
+      [
+        { "watered": false }, { "watered": false }, { "watered": true }, { "watered": true },
+        { "watered": false }, { "watered": true }, { "watered": false }, { "watered": true }
+      ],
+      [
+        { "watered": true }, { "watered": false }, { "watered": true }, { "watered": true },
+        { "watered": false }, { "watered": false }, { "watered": true }, { "watered": false }
+      ]
+    ]
   }
 }

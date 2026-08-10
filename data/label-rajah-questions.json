@@ -154,5 +154,59 @@
       { "id": "sekunder", "label": "PENGGUNA SEKUNDER", "shape": "pengguna-sekunder" },
       { "id": "tertier", "label": "PENGGUNA TERTIER", "shape": "pengguna-tertier" }
     ]
+  },
+  "tahun2-bahagian-telur": {
+    "topikLabel": "Label Bahagian Telur",
+    "tahun": 2,
+    "decor": [],
+    "zones": [
+      { "id": "cangkerang", "label": "CANGKERANG", "shape": "cangkerang-telur" },
+      { "id": "putih", "label": "PUTIH TELUR", "shape": "putih-telur" },
+      { "id": "kuning", "label": "KUNING TELUR", "shape": "kuning-telur" }
+    ]
+  },
+  "tahun3-bahagian-katak": {
+    "topikLabel": "Label Bahagian Katak",
+    "tahun": 3,
+    "decor": [],
+    "zones": [
+      { "id": "kepala", "label": "KEPALA", "shape": "kepala-katak" },
+      { "id": "badan", "label": "BADAN", "shape": "badan-katak" },
+      { "id": "kakidepan", "label": "KAKI DEPAN", "shape": "kakidepan-katak" },
+      { "id": "kakibelakang", "label": "KAKI BELAKANG", "shape": "kakibelakang-katak" }
+    ]
+  },
+  "tahun4-rantai-makanan-mudah": {
+    "topikLabel": "Label Rantai Makanan Mudah",
+    "tahun": 4,
+    "decor": [],
+    "zones": [
+      { "id": "matahari", "label": "MATAHARI", "shape": "matahari-rantai" },
+      { "id": "tumbuhan", "label": "TUMBUHAN", "shape": "tumbuhan-rantai" },
+      { "id": "herbivor", "label": "HAIWAN HERBIVOR", "shape": "herbivor-rantai" },
+      { "id": "karnivor", "label": "HAIWAN KARNIVOR", "shape": "karnivor-rantai" }
+    ]
+  },
+  "tahun5-turbin-angin": {
+    "topikLabel": "Label Bahagian Turbin Angin",
+    "tahun": 5,
+    "decor": [],
+    "zones": [
+      { "id": "bilah", "label": "BILAH", "shape": "bilah-turbin" },
+      { "id": "hab", "label": "HAB", "shape": "hab-turbin" },
+      { "id": "tiang", "label": "TIANG", "shape": "tiang-turbin" },
+      { "id": "asas", "label": "ASAS", "shape": "asas-turbin" }
+    ]
+  },
+  "tahun6-panel-solar": {
+    "topikLabel": "Label Bahagian Panel Solar",
+    "tahun": 6,
+    "decor": [],
+    "zones": [
+      { "id": "panel", "label": "PANEL SURIA", "shape": "panel-solar" },
+      { "id": "tiang", "label": "TIANG PENYOKONG", "shape": "tiang-solar" },
+      { "id": "pendawaian", "label": "PENDAWAIAN", "shape": "pendawaian-solar" },
+      { "id": "inverter", "label": "INVERTER", "shape": "inverter-solar" }
+    ]
   }
 }

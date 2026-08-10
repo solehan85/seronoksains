@@ -509,5 +509,257 @@
         ]
       }
     ]
+  },
+  "tahun1-ramalan-bergolek": {
+    "topikLabel": "Ramalan: Boleh Bergolek?",
+    "tahun": 1,
+    "question": "Yang manakah BOLEH BERGOLEK?",
+    "rounds": [
+      {
+        "options": [
+          { "emoji": "⚽", "label": "Bola", "correct": true },
+          { "emoji": "📦", "label": "Kotak", "correct": false },
+          { "emoji": "📕", "label": "Buku", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "🥫", "label": "Tin Silinder", "correct": true },
+          { "emoji": "🎲", "label": "Dadu", "correct": false },
+          { "emoji": "🎁", "label": "Kotak Hadiah", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "🔵", "label": "Bola Guli", "correct": true },
+          { "emoji": "🧱", "label": "Blok Kayu", "correct": false },
+          { "emoji": "👞", "label": "Kotak Kasut", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "⚽", "label": "Bola Sepak", "correct": true },
+          { "emoji": "🗄️", "label": "Almari", "correct": false },
+          { "emoji": "📓", "label": "Buku Nota", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "🥫", "label": "Tin Makanan", "correct": true },
+          { "emoji": "🥛", "label": "Kotak Susu", "correct": false },
+          { "emoji": "🎲", "label": "Dadu", "correct": false }
+        ]
+      }
+    ]
+  },
+  "tahun2-ramalan-terapung": {
+    "topikLabel": "Ramalan: Akan Terapung?",
+    "tahun": 2,
+    "question": "Yang manakah akan TERAPUNG dalam air?",
+    "rounds": [
+      {
+        "options": [
+          { "emoji": "🧽", "label": "Span", "correct": true },
+          { "emoji": "🪨", "label": "Batu", "correct": false },
+          { "emoji": "🔩", "label": "Paku", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "🍃", "label": "Daun", "correct": true },
+          { "emoji": "🔩", "label": "Besi", "correct": false },
+          { "emoji": "🪙", "label": "Syiling", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "🪵", "label": "Kayu", "correct": true },
+          { "emoji": "🔵", "label": "Guli", "correct": false },
+          { "emoji": "🥄", "label": "Sudu Besi", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "🎈", "label": "Belon", "correct": true },
+          { "emoji": "🔑", "label": "Kunci", "correct": false },
+          { "emoji": "✂️", "label": "Gunting", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "🏐", "label": "Bola Plastik", "correct": true },
+          { "emoji": "🪨", "label": "Batu Kecil", "correct": false },
+          { "emoji": "🪙", "label": "Duit Syiling", "correct": false }
+        ]
+      }
+    ]
+  },
+  "tahun3-ramalan-menyejat": {
+    "topikLabel": "Ramalan: Akan Menyejat?",
+    "tahun": 3,
+    "question": "Yang manakah akan MENYEJAT (bertukar menjadi gas) apabila dipanaskan?",
+    "rounds": [
+      {
+        "options": [
+          { "emoji": "💧", "label": "Air dalam Bikar", "correct": true },
+          { "emoji": "🪨", "label": "Batu", "correct": false },
+          { "emoji": "🪵", "label": "Kayu", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "⛽", "label": "Petrol dalam Bekas Terbuka", "correct": true },
+          { "emoji": "🔩", "label": "Besi", "correct": false },
+          { "emoji": "🥛", "label": "Kaca", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "💦", "label": "Peluh di Kulit", "correct": true },
+          { "emoji": "🧴", "label": "Plastik", "correct": false },
+          { "emoji": "🔩", "label": "Logam", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "🏊", "label": "Air dalam Kolam", "correct": true },
+          { "emoji": "🪑", "label": "Meja", "correct": false },
+          { "emoji": "📕", "label": "Buku", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "👕", "label": "Baju Basah Dijemur", "correct": true },
+          { "emoji": "🔩", "label": "Besi", "correct": false },
+          { "emoji": "🪨", "label": "Batu", "correct": false }
+        ]
+      }
+    ]
+  },
+  "tahun4-ramalan-pantulan-cahaya": {
+    "topikLabel": "Ramalan: Akan Memantulkan Cahaya?",
+    "tahun": 4,
+    "question": "Yang manakah akan MEMANTULKAN CAHAYA dengan jelas?",
+    "rounds": [
+      {
+        "options": [
+          { "emoji": "🪞", "label": "Cermin", "correct": true },
+          { "emoji": "🧽", "label": "Span Hitam", "correct": false },
+          { "emoji": "🧶", "label": "Kain Wool", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "💧", "label": "Permukaan Air Tenang", "correct": true },
+          { "emoji": "📄", "label": "Kertas Lusuh", "correct": false },
+          { "emoji": "📦", "label": "Kadbod", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "🥄", "label": "Kepingan Logam Berkilat", "correct": true },
+          { "emoji": "🪵", "label": "Kayu Kasar", "correct": false },
+          { "emoji": "🧽", "label": "Span", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "🔍", "label": "Kanta Kaca", "correct": true },
+          { "emoji": "🧻", "label": "Tisu", "correct": false },
+          { "emoji": "🧶", "label": "Kain Wool", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "🚗", "label": "Krom Berkilat Kereta", "correct": true },
+          { "emoji": "👕", "label": "Baju", "correct": false },
+          { "emoji": "🌿", "label": "Rumput", "correct": false }
+        ]
+      }
+    ]
+  },
+  "tahun5-ramalan-berkarat": {
+    "topikLabel": "Ramalan: Akan Berkarat?",
+    "tahun": 5,
+    "question": "Yang manakah akan BERKARAT jika terdedah kepada air dan udara?",
+    "rounds": [
+      {
+        "options": [
+          { "emoji": "🔩", "label": "Paku Besi", "correct": true },
+          { "emoji": "💍", "label": "Gelang Emas", "correct": false },
+          { "emoji": "🥛", "label": "Bikar Kaca", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "🚧", "label": "Pagar Besi", "correct": true },
+          { "emoji": "🪑", "label": "Perabot Kayu", "correct": false },
+          { "emoji": "🧴", "label": "Bikar Plastik", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "🚲", "label": "Basikal Lama", "correct": true },
+          { "emoji": "🥛", "label": "Botol Kaca", "correct": false },
+          { "emoji": "🪑", "label": "Kerusi Plastik", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "🚂", "label": "Rel Keretapi", "correct": true },
+          { "emoji": "🛞", "label": "Tayar Getah", "correct": false },
+          { "emoji": "🧴", "label": "Bikar Plastik", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "🥫", "label": "Tin Kosong Terdedah Hujan", "correct": true },
+          { "emoji": "🥛", "label": "Bikar Kaca", "correct": false },
+          { "emoji": "🪑", "label": "Kerusi Plastik", "correct": false }
+        ]
+      }
+    ]
+  },
+  "tahun6-ramalan-berkulat": {
+    "topikLabel": "Ramalan: Akan Berkulat?",
+    "tahun": 6,
+    "question": "Yang manakah akan CEPAT DITUMBUHI KULAT jika disimpan di tempat lembap?",
+    "rounds": [
+      {
+        "options": [
+          { "emoji": "🍞", "label": "Roti", "correct": true },
+          { "emoji": "🥫", "label": "Tin Makanan Tertutup", "correct": false },
+          { "emoji": "🥛", "label": "Botol Kaca Kosong", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "🍎", "label": "Buah yang Dipotong", "correct": true },
+          { "emoji": "🥄", "label": "Sudu Logam", "correct": false },
+          { "emoji": "🍽️", "label": "Pinggan Kaca", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "🍚", "label": "Nasi yang Dimasak", "correct": true },
+          { "emoji": "🍴", "label": "Garpu Logam", "correct": false },
+          { "emoji": "🥤", "label": "Cawan Plastik", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "🧁", "label": "Kuih Lembap", "correct": true },
+          { "emoji": "🧴", "label": "Botol Plastik Kosong", "correct": false },
+          { "emoji": "🥛", "label": "Bikar Kaca", "correct": false }
+        ]
+      },
+      {
+        "options": [
+          { "emoji": "🥜", "label": "Kacang Simpanan Lama", "correct": true },
+          { "emoji": "🥫", "label": "Tin Kosong", "correct": false },
+          { "emoji": "🧴", "label": "Plastik Pembalut", "correct": false }
+        ]
+      }
+    ]
   }
 }

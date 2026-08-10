@@ -137,5 +137,73 @@
       { "term": "Termometer", "emoji": "🌡️" },
       { "term": "Cermin Mata Keselamatan", "emoji": "🥽" }
     ]
+  },
+  "tahun1-warna-asas": {
+    "topikLabel": "Padanan Warna Asas",
+    "tahun": 1,
+    "pairs": [
+      { "term": "Merah", "emoji": "🔴" },
+      { "term": "Biru", "emoji": "🔵" },
+      { "term": "Kuning", "emoji": "🟡" },
+      { "term": "Hijau", "emoji": "🟢" },
+      { "term": "Putih", "emoji": "⚪" },
+      { "term": "Hitam", "emoji": "⚫" }
+    ]
+  },
+  "tahun2-cuaca": {
+    "topikLabel": "Padanan Cuaca",
+    "tahun": 2,
+    "pairs": [
+      { "term": "Panas", "emoji": "☀️" },
+      { "term": "Hujan", "emoji": "🌧️" },
+      { "term": "Berangin", "emoji": "💨" },
+      { "term": "Berawan", "emoji": "☁️" },
+      { "term": "Sejuk", "emoji": "🥶" }
+    ]
+  },
+  "tahun3-sumber-cahaya": {
+    "topikLabel": "Padanan Sumber Cahaya",
+    "tahun": 3,
+    "pairs": [
+      { "term": "Matahari", "emoji": "☀️" },
+      { "term": "Lampu", "emoji": "💡" },
+      { "term": "Lilin", "emoji": "🕯️" },
+      { "term": "Kilat", "emoji": "⚡" },
+      { "term": "Api", "emoji": "🔥" }
+    ]
+  },
+  "tahun4-peringkat-rantai-makanan": {
+    "topikLabel": "Padanan Peringkat Rantai Makanan",
+    "tahun": 4,
+    "pairs": [
+      { "term": "Pengeluar", "emoji": "🌱" },
+      { "term": "Pengguna Primer", "emoji": "🐇" },
+      { "term": "Pengguna Sekunder", "emoji": "🦊" },
+      { "term": "Pengguna Tertier", "emoji": "🦁" },
+      { "term": "Pengurai", "emoji": "🍄" }
+    ]
+  },
+  "tahun5-fasa-bulan-padanan": {
+    "topikLabel": "Padanan Fasa Bulan",
+    "tahun": 5,
+    "pairs": [
+      { "term": "Anak Bulan", "emoji": "🌑" },
+      { "term": "Bulan Sabit", "emoji": "🌒" },
+      { "term": "Suku Pertama", "emoji": "🌓" },
+      { "term": "Bulan Purnama", "emoji": "🌕" },
+      { "term": "Suku Akhir", "emoji": "🌗" },
+      { "term": "Bulan Sabit Akhir", "emoji": "🌘" }
+    ]
+  },
+  "tahun6-kaedah-pengawetan": {
+    "topikLabel": "Padanan Kaedah Pengawetan Makanan",
+    "tahun": 6,
+    "pairs": [
+      { "term": "Penyejukan", "emoji": "🧊" },
+      { "term": "Pembekuan", "emoji": "❄️" },
+      { "term": "Pengeringan", "emoji": "☀️" },
+      { "term": "Penggaraman", "emoji": "🧂" },
+      { "term": "Pengetinan", "emoji": "🥫" }
+    ]
   }
 }

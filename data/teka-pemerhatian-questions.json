@@ -785,5 +785,353 @@
         ]
       }
     ]
+  },
+  "tahun1-teka-bentuk-bongkah": {
+    "topikLabel": "Teka Bentuk Bongkah Ini",
+    "tahun": 1,
+    "rounds": [
+      {
+        "clues": [
+          "Aku mempunyai 6 permukaan sama rata.",
+          "Semua sisiku sama panjang.",
+          "Aku kelihatan seperti kotak dadu."
+        ],
+        "options": [
+          { "emoji": "🎲", "label": "Kubus", "correct": true },
+          { "emoji": "⚽", "label": "Sfera", "correct": false },
+          { "emoji": "🥫", "label": "Silinder", "correct": false },
+          { "emoji": "🍦", "label": "Kon", "correct": false }
+        ]
+      },
+      {
+        "clues": [
+          "Aku bulat sepenuhnya seperti bola.",
+          "Aku boleh bergolek ke mana-mana arah.",
+          "Aku tiada penjuru atau sisi rata."
+        ],
+        "options": [
+          { "emoji": "⚽", "label": "Sfera", "correct": true },
+          { "emoji": "🎲", "label": "Kubus", "correct": false },
+          { "emoji": "🍦", "label": "Kon", "correct": false },
+          { "emoji": "📦", "label": "Kuboid", "correct": false }
+        ]
+      },
+      {
+        "clues": [
+          "Aku mempunyai bucu bulat di kedua-dua hujung.",
+          "Bahagian tengahku berbentuk tiub.",
+          "Tin makanan biasanya berbentuk sepertiku."
+        ],
+        "options": [
+          { "emoji": "🥫", "label": "Silinder", "correct": true },
+          { "emoji": "🎲", "label": "Kubus", "correct": false },
+          { "emoji": "⚽", "label": "Sfera", "correct": false },
+          { "emoji": "🍦", "label": "Kon", "correct": false }
+        ]
+      },
+      {
+        "clues": [
+          "Aku mempunyai satu bucu tirus di atas.",
+          "Tapak aku berbentuk bulat.",
+          "Aku kelihatan seperti topi parti atau aiskrim kon."
+        ],
+        "options": [
+          { "emoji": "🍦", "label": "Kon", "correct": true },
+          { "emoji": "🥫", "label": "Silinder", "correct": false },
+          { "emoji": "🎲", "label": "Kubus", "correct": false },
+          { "emoji": "📦", "label": "Kuboid", "correct": false }
+        ]
+      },
+      {
+        "clues": [
+          "Aku seperti kubus tetapi sisiku tidak semua sama panjang.",
+          "Aku mempunyai 6 permukaan segi empat tepat.",
+          "Kotak kasut biasanya berbentuk sepertiku."
+        ],
+        "options": [
+          { "emoji": "📦", "label": "Kuboid", "correct": true },
+          { "emoji": "🎲", "label": "Kubus", "correct": false },
+          { "emoji": "⚽", "label": "Sfera", "correct": false },
+          { "emoji": "🍦", "label": "Kon", "correct": false }
+        ]
+      }
+    ]
+  },
+  "tahun2-teka-bahagian-bunga": {
+    "topikLabel": "Teka Bahagian Bunga Ini",
+    "tahun": 2,
+    "rounds": [
+      {
+        "clues": [
+          "Bahagian ini paling berwarna-warni pada bunga.",
+          "Ia menarik perhatian serangga seperti kupu-kupu.",
+          "Ia mengelilingi bahagian tengah bunga."
+        ],
+        "options": [
+          { "emoji": "🌸", "label": "Mahkota", "correct": true },
+          { "emoji": "🌼", "label": "Putik", "correct": false },
+          { "emoji": "🍃", "label": "Kelopak", "correct": false },
+          { "emoji": "🌿", "label": "Tangkai", "correct": false }
+        ]
+      },
+      {
+        "clues": [
+          "Bahagian ini terletak di tengah-tengah bunga.",
+          "Ia penting untuk proses pembiakan tumbuhan.",
+          "Debunga akan hinggap padanya."
+        ],
+        "options": [
+          { "emoji": "🌼", "label": "Putik", "correct": true },
+          { "emoji": "🌸", "label": "Mahkota", "correct": false },
+          { "emoji": "🍃", "label": "Kelopak", "correct": false },
+          { "emoji": "🌿", "label": "Tangkai", "correct": false }
+        ]
+      },
+      {
+        "clues": [
+          "Bahagian ini biasanya berwarna hijau.",
+          "Ia melindungi bunga semasa masih kuncup.",
+          "Ia terletak di bawah mahkota bunga."
+        ],
+        "options": [
+          { "emoji": "🍃", "label": "Kelopak", "correct": true },
+          { "emoji": "🌸", "label": "Mahkota", "correct": false },
+          { "emoji": "🌼", "label": "Putik", "correct": false },
+          { "emoji": "🌿", "label": "Tangkai", "correct": false }
+        ]
+      },
+      {
+        "clues": [
+          "Bahagian ini menyokong bunga supaya tegak.",
+          "Ia menghubungkan bunga dengan batang pokok.",
+          "Air dan nutrien mengalir melaluinya ke bunga."
+        ],
+        "options": [
+          { "emoji": "🌿", "label": "Tangkai", "correct": true },
+          { "emoji": "🌸", "label": "Mahkota", "correct": false },
+          { "emoji": "🌼", "label": "Putik", "correct": false },
+          { "emoji": "🍃", "label": "Kelopak", "correct": false }
+        ]
+      }
+    ]
+  },
+  "tahun3-teka-alat-ukur": {
+    "topikLabel": "Teka Alat Ukur Ini",
+    "tahun": 3,
+    "rounds": [
+      {
+        "clues": [
+          "Alat ini digunakan untuk mengukur panjang.",
+          "Ia mempunyai skala bernombor dalam sentimeter.",
+          "Selalu diperbuat daripada plastik atau kayu lurus."
+        ],
+        "options": [
+          { "emoji": "📏", "label": "Pembaris", "correct": true },
+          { "emoji": "⚖️", "label": "Neraca", "correct": false },
+          { "emoji": "📐", "label": "Jangka Sudut", "correct": false },
+          { "emoji": "🌡️", "label": "Termometer", "correct": false }
+        ]
+      },
+      {
+        "clues": [
+          "Alat ini digunakan untuk mengukur jisim.",
+          "Kita meletakkan objek di atasnya untuk melihat beratnya.",
+          "Bacaan biasanya dalam gram atau kilogram."
+        ],
+        "options": [
+          { "emoji": "⚖️", "label": "Neraca", "correct": true },
+          { "emoji": "📏", "label": "Pembaris", "correct": false },
+          { "emoji": "🌡️", "label": "Termometer", "correct": false },
+          { "emoji": "🧪", "label": "Silinder Penyukat", "correct": false }
+        ]
+      },
+      {
+        "clues": [
+          "Alat ini digunakan untuk mengukur suhu.",
+          "Ia mempunyai skala dalam darjah Celsius.",
+          "Digunakan semasa kita demam untuk cek suhu badan."
+        ],
+        "options": [
+          { "emoji": "🌡️", "label": "Termometer", "correct": true },
+          { "emoji": "📏", "label": "Pembaris", "correct": false },
+          { "emoji": "⚖️", "label": "Neraca", "correct": false },
+          { "emoji": "📐", "label": "Jangka Sudut", "correct": false }
+        ]
+      },
+      {
+        "clues": [
+          "Alat ini digunakan untuk mengukur isi padu cecair.",
+          "Ia berbentuk tiub tinggi dengan skala berangka.",
+          "Kita tuang air ke dalamnya untuk membaca isi padu."
+        ],
+        "options": [
+          { "emoji": "🧪", "label": "Silinder Penyukat", "correct": true },
+          { "emoji": "📏", "label": "Pembaris", "correct": false },
+          { "emoji": "⚖️", "label": "Neraca", "correct": false },
+          { "emoji": "🌡️", "label": "Termometer", "correct": false }
+        ]
+      }
+    ]
+  },
+  "tahun4-teka-warna-pelangi": {
+    "topikLabel": "Teka Warna Pelangi Ini",
+    "tahun": 4,
+    "rounds": [
+      {
+        "clues": [
+          "Warna ini berada paling atas pada pelangi.",
+          "Ia warna buah strawberi dan epal.",
+          "Bendera banyak negara mengandungi warna ini."
+        ],
+        "options": [
+          { "emoji": "🔴", "label": "Merah", "correct": true },
+          { "emoji": "🟠", "label": "Jingga", "correct": false },
+          { "emoji": "🟡", "label": "Kuning", "correct": false },
+          { "emoji": "🔵", "label": "Biru", "correct": false }
+        ]
+      },
+      {
+        "clues": [
+          "Warna ini seperti warna matahari.",
+          "Ia warna pisang yang masak.",
+          "Ia berada di tengah-tengah jalur pelangi."
+        ],
+        "options": [
+          { "emoji": "🟡", "label": "Kuning", "correct": true },
+          { "emoji": "🔴", "label": "Merah", "correct": false },
+          { "emoji": "🟢", "label": "Hijau", "correct": false },
+          { "emoji": "🟠", "label": "Jingga", "correct": false }
+        ]
+      },
+      {
+        "clues": [
+          "Warna ini adalah warna daun dan rumput.",
+          "Ia terbentuk apabila warna biru dan kuning bercampur.",
+          "Ia berada selepas kuning pada susunan pelangi."
+        ],
+        "options": [
+          { "emoji": "🟢", "label": "Hijau", "correct": true },
+          { "emoji": "🟡", "label": "Kuning", "correct": false },
+          { "emoji": "🔵", "label": "Biru", "correct": false },
+          { "emoji": "🔴", "label": "Merah", "correct": false }
+        ]
+      },
+      {
+        "clues": [
+          "Warna ini berada paling bawah pada pelangi.",
+          "Ia warna terung dan anggur.",
+          "Ia terbentuk apabila warna merah dan biru bercampur."
+        ],
+        "options": [
+          { "emoji": "🟪", "label": "Ungu", "correct": true },
+          { "emoji": "🔵", "label": "Biru", "correct": false },
+          { "emoji": "🟣", "label": "Indigo", "correct": false },
+          { "emoji": "🟢", "label": "Hijau", "correct": false }
+        ]
+      }
+    ]
+  },
+  "tahun5-teka-kitaran-rama-rama": {
+    "topikLabel": "Teka Peringkat Kitaran Rama-rama Ini",
+    "tahun": 5,
+    "rounds": [
+      {
+        "clues": [
+          "Peringkat ini adalah permulaan kitaran hidup rama-rama.",
+          "Ia sangat kecil dan diletakkan pada daun.",
+          "Ia akan menetas menjadi ulat."
+        ],
+        "options": [
+          { "emoji": "🥚", "label": "Telur", "correct": true },
+          { "emoji": "🐛", "label": "Ulat", "correct": false },
+          { "emoji": "🥔", "label": "Kepompong", "correct": false },
+          { "emoji": "🦋", "label": "Rama-rama", "correct": false }
+        ]
+      },
+      {
+        "clues": [
+          "Peringkat ini suka makan daun dengan banyak.",
+          "Badannya panjang dan bergerak perlahan.",
+          "Ia akan membentuk kepompong selepas membesar."
+        ],
+        "options": [
+          { "emoji": "🐛", "label": "Ulat", "correct": true },
+          { "emoji": "🥚", "label": "Telur", "correct": false },
+          { "emoji": "🥔", "label": "Kepompong", "correct": false },
+          { "emoji": "🦋", "label": "Rama-rama", "correct": false }
+        ]
+      },
+      {
+        "clues": [
+          "Peringkat ini kelihatan diam dan tidak bergerak.",
+          "Perubahan besar berlaku di dalamnya secara senyap.",
+          "Ia akan pecah apabila rama-rama sedia keluar."
+        ],
+        "options": [
+          { "emoji": "🥔", "label": "Kepompong", "correct": true },
+          { "emoji": "🥚", "label": "Telur", "correct": false },
+          { "emoji": "🐛", "label": "Ulat", "correct": false },
+          { "emoji": "🦋", "label": "Rama-rama", "correct": false }
+        ]
+      },
+      {
+        "clues": [
+          "Peringkat ini mempunyai sayap yang cantik.",
+          "Ia boleh terbang dari bunga ke bunga.",
+          "Ia peringkat dewasa dalam kitaran hidup."
+        ],
+        "options": [
+          { "emoji": "🦋", "label": "Rama-rama", "correct": true },
+          { "emoji": "🥚", "label": "Telur", "correct": false },
+          { "emoji": "🐛", "label": "Ulat", "correct": false },
+          { "emoji": "🥔", "label": "Kepompong", "correct": false }
+        ]
+      }
+    ]
+  },
+  "tahun6-teka-simbiosis": {
+    "topikLabel": "Teka Jenis Simbiosis Ini",
+    "tahun": 6,
+    "rounds": [
+      {
+        "clues": [
+          "Dalam hubungan ini, KEDUA-DUA hidupan mendapat manfaat.",
+          "Lebah dan bunga adalah contohnya (lebah dapat nektar, bunga dibantu debunga).",
+          "Kedua-dua pihak untung dalam hubungan ini."
+        ],
+        "options": [
+          { "emoji": "🤝", "label": "Mutualisme", "correct": true },
+          { "emoji": "🐠", "label": "Komensalisme", "correct": false },
+          { "emoji": "🦟", "label": "Parasitisme", "correct": false },
+          { "emoji": "⚔️", "label": "Kompetisi", "correct": false }
+        ]
+      },
+      {
+        "clues": [
+          "Dalam hubungan ini, SATU hidupan mendapat manfaat, satu lagi tidak terjejas.",
+          "Ikan Remora yang menumpang di jerung adalah contohnya.",
+          "Hidupan kedua tidak untung atau rugi."
+        ],
+        "options": [
+          { "emoji": "🐠", "label": "Komensalisme", "correct": true },
+          { "emoji": "🤝", "label": "Mutualisme", "correct": false },
+          { "emoji": "🦟", "label": "Parasitisme", "correct": false },
+          { "emoji": "⚔️", "label": "Kompetisi", "correct": false }
+        ]
+      },
+      {
+        "clues": [
+          "Dalam hubungan ini, SATU hidupan mendapat manfaat tetapi merugikan yang lain.",
+          "Nyamuk yang menghisap darah manusia adalah contohnya.",
+          "Perumah (host) akan terjejas atau sakit."
+        ],
+        "options": [
+          { "emoji": "🦟", "label": "Parasitisme", "correct": true },
+          { "emoji": "🤝", "label": "Mutualisme", "correct": false },
+          { "emoji": "🐠", "label": "Komensalisme", "correct": false },
+          { "emoji": "⚔️", "label": "Kompetisi", "correct": false }
+        ]
+      }
+    ]
   }
 }

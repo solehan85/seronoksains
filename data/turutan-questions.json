@@ -187,5 +187,38 @@
       { "emoji": "🌿", "label": "Tumbuhan Hasilkan Makanan" },
       { "emoji": "🫧", "label": "Oksigen Dibebaskan" }
     ]
+  },
+  "tahun1-turutan-basuh-tangan": {
+    "topikLabel": "Turutan Basuh Tangan yang Betul",
+    "tahun": 1,
+    "stages": [
+      { "emoji": "💧", "label": "Basahkan Tangan dengan Air" },
+      { "emoji": "🧼", "label": "Sapukan Sabun" },
+      { "emoji": "🤲", "label": "Gosok Kedua-dua Tangan" },
+      { "emoji": "🚿", "label": "Bilas dengan Air" },
+      { "emoji": "🧻", "label": "Keringkan dengan Tuala" }
+    ]
+  },
+  "tahun4-turutan-pernafasan": {
+    "topikLabel": "Turutan Proses Pernafasan Manusia",
+    "tahun": 4,
+    "stages": [
+      { "emoji": "👃", "label": "Udara Masuk Melalui Hidung" },
+      { "emoji": "🫁", "label": "Udara Turun ke Trakea" },
+      { "emoji": "🎈", "label": "Udara Sampai ke Peparu" },
+      { "emoji": "🔴", "label": "Oksigen Diserap ke Dalam Darah" },
+      { "emoji": "💨", "label": "Karbon Dioksida Dihembus Keluar" }
+    ]
+  },
+  "tahun6-turutan-pengetinan-makanan": {
+    "topikLabel": "Turutan Proses Pengetinan Makanan",
+    "tahun": 6,
+    "stages": [
+      { "emoji": "🧼", "label": "Bahan Makanan Dibersihkan" },
+      { "emoji": "🔪", "label": "Dipotong dan Disediakan" },
+      { "emoji": "🥫", "label": "Dimasukkan ke dalam Tin" },
+      { "emoji": "🔥", "label": "Dipanaskan pada Suhu Tinggi" },
+      { "emoji": "🔒", "label": "Tin Ditutup Rapat" }
+    ]
   }
 }

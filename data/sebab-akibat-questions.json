@@ -163,5 +163,60 @@
       { "sebabEmoji": "🔥", "sebab": "Kayu Dibakar", "akibatEmoji": "💨", "akibat": "Kayu Bertukar Menjadi Abu" },
       { "sebabEmoji": "🧊", "sebab": "Ais Terdedah kepada Suhu Bilik", "akibatEmoji": "💧", "akibat": "Ais Cair Menjadi Air" }
     ]
+  },
+  "tahun1-magnet": {
+    "topikLabel": "Sebab-Akibat: Magnet",
+    "tahun": 1,
+    "pairs": [
+      { "sebabEmoji": "🧲", "sebab": "Magnet Didekatkan dengan Paku Besi", "akibatEmoji": "🔩", "akibat": "Paku Tertarik ke Magnet" },
+      { "sebabEmoji": "🧲", "sebab": "Kutub Sama Magnet Didekatkan", "akibatEmoji": "↔️", "akibat": "Magnet Saling Menolak" },
+      { "sebabEmoji": "🧲", "sebab": "Kutub Berlainan Magnet Didekatkan", "akibatEmoji": "🤝", "akibat": "Magnet Saling Tarik-menarik" },
+      { "sebabEmoji": "🧲", "sebab": "Magnet Didekatkan dengan Plastik", "akibatEmoji": "❌", "akibat": "Plastik Tidak Tertarik" },
+      { "sebabEmoji": "🔥", "sebab": "Magnet Terlalu Lama Terkena Haba", "akibatEmoji": "📉", "akibat": "Kekuatan Magnet Berkurangan" }
+    ]
+  },
+  "tahun2-angin": {
+    "topikLabel": "Sebab-Akibat: Angin",
+    "tahun": 2,
+    "pairs": [
+      { "sebabEmoji": "💨", "sebab": "Angin Bertiup Kuat", "akibatEmoji": "🌳", "akibat": "Dahan Pokok Bergoyang" },
+      { "sebabEmoji": "💨", "sebab": "Angin Bertiup Kuat di Laut", "akibatEmoji": "🌊", "akibat": "Ombak Menjadi Besar" },
+      { "sebabEmoji": "🌀", "sebab": "Angin Ribut Melanda", "akibatEmoji": "🏠", "akibat": "Bumbung Rumah Terbang" },
+      { "sebabEmoji": "🪁", "sebab": "Ada Angin Bertiup", "akibatEmoji": "🎏", "akibat": "Layang-layang Dapat Terbang" },
+      { "sebabEmoji": "💨", "sebab": "Tiada Angin Bertiup", "akibatEmoji": "⛵", "akibat": "Kapal Layar Tidak Bergerak" }
+    ]
+  },
+  "tahun3-keadaan-jirim": {
+    "topikLabel": "Sebab-Akibat: Perubahan Keadaan Jirim",
+    "tahun": 3,
+    "pairs": [
+      { "sebabEmoji": "🔥", "sebab": "Ais Dipanaskan", "akibatEmoji": "💧", "akibat": "Ais Cair Menjadi Air" },
+      { "sebabEmoji": "❄️", "sebab": "Air Disejukkan", "akibatEmoji": "🧊", "akibat": "Air Membeku Menjadi Ais" },
+      { "sebabEmoji": "🔥", "sebab": "Air Dipanaskan Hingga Mendidih", "akibatEmoji": "💨", "akibat": "Air Menjadi Wap" },
+      { "sebabEmoji": "❄️", "sebab": "Wap Air Disejukkan", "akibatEmoji": "💧", "akibat": "Wap Terkondensasi Menjadi Air" },
+      { "sebabEmoji": "🔥", "sebab": "Cecair Dipanaskan dalam Bekas Terbuka", "akibatEmoji": "📉", "akibat": "Cecair Berkurangan (Menyejat)" }
+    ]
+  },
+  "tahun5-gangguan-ekosistem": {
+    "topikLabel": "Sebab-Akibat: Gangguan Ekosistem",
+    "tahun": 5,
+    "pairs": [
+      { "sebabEmoji": "🎣", "sebab": "Nelayan Menangkap Ikan Berlebihan", "akibatEmoji": "📉", "akibat": "Populasi Ikan Berkurangan" },
+      { "sebabEmoji": "🐛", "sebab": "Racun Serangga Digunakan Berlebihan", "akibatEmoji": "🐝", "akibat": "Bilangan Lebah Berkurangan" },
+      { "sebabEmoji": "🌊", "sebab": "Sampah Plastik Dibuang ke Laut", "akibatEmoji": "🐢", "akibat": "Hidupan Laut Terancam" },
+      { "sebabEmoji": "🌳", "sebab": "Habitat Haiwan Dimusnahkan", "akibatEmoji": "🦁", "akibat": "Haiwan Kehilangan Tempat Tinggal" },
+      { "sebabEmoji": "🌱", "sebab": "Spesies Asing Diperkenalkan", "akibatEmoji": "⚖️", "akibat": "Keseimbangan Ekosistem Terganggu" }
+    ]
+  },
+  "tahun6-mikroorganisma": {
+    "topikLabel": "Sebab-Akibat: Mikroorganisma",
+    "tahun": 6,
+    "pairs": [
+      { "sebabEmoji": "🦠", "sebab": "Makanan Terdedah Lama pada Suhu Bilik", "akibatEmoji": "🍞", "akibat": "Makanan Menjadi Basi" },
+      { "sebabEmoji": "🍞", "sebab": "Roti Disimpan di Tempat Lembap", "akibatEmoji": "🍄", "akibat": "Kulat Tumbuh pada Roti" },
+      { "sebabEmoji": "🧫", "sebab": "Yis Dicampur dengan Adunan Roti", "akibatEmoji": "🍞", "akibat": "Roti Menjadi Kembang" },
+      { "sebabEmoji": "🤧", "sebab": "Bersin Tanpa Menutup Mulut", "akibatEmoji": "🦠", "akibat": "Kuman Merebak kepada Orang Lain" },
+      { "sebabEmoji": "🧼", "sebab": "Tangan Dibasuh dengan Sabun", "akibatEmoji": "✨", "akibat": "Kuman Terhapus dari Tangan" }
+    ]
   }
 }
