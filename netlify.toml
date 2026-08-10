@@ -4,5 +4,5 @@
 
 [[redirects]]
   from = "/"
-  to = "/salespage.html"
+  to = "/parent-login.html"
   status = 200

@@ -22,7 +22,7 @@
       "prototypes/**"
     ],
     "rewrites": [
-      { "source": "/", "destination": "/salespage.html" }
+      { "source": "/", "destination": "/parent-login.html" }
     ]
   }
 }
