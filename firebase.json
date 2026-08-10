@@ -4,6 +4,9 @@
     "ignore": [
       "firebase.json",
       ".firebaserc",
+      ".git/**",
+      ".git",
+      ".gitignore",
       "**/.*",
       "CLAUDE.md",
       "firestore.rules",
