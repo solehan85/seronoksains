@@ -1,0 +1,20 @@
+.git
+.git/**
+.gitignore
+.firebase/**
+firebase.json
+.firebaserc
+netlify.toml
+.netlifyignore
+CLAUDE.md
+firestore.rules
+panduan-reseller.md
+static-server.ps1
+Nota Tahun 1/**
+Nota Tahun 2/**
+Nota Tahun 3/**
+Nota Tahun 4/**
+Nota Tahun 5/**
+Nota Tahun 6/**
+promo/**
+prototypes/**

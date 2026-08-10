@@ -1,0 +1,8 @@
+[build]
+  publish = "dist"
+  command = "mkdir -p dist/data && cp *.html dist/ && cp data/*.json dist/data/"
+
+[[redirects]]
+  from = "/"
+  to = "/salespage.html"
+  status = 200
