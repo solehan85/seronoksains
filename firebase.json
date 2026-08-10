@@ -4,6 +4,8 @@
     "ignore": [
       "firebase.json",
       ".firebaserc",
+      "netlify.toml",
+      ".netlifyignore",
       ".git/**",
       ".git",
       ".gitignore",
