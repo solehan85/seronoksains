@@ -310,8 +310,8 @@
         { "soalan": "Kereta kuda adalah teknologi?", "pilihan": ["Tradisional", "Moden", "Angkasa", "Digital"], "jawapan": "Tradisional" },
         { "soalan": "Membakar sampah adalah amalan?", "pilihan": ["Tidak Mesra Alam", "Mesra Alam", "Selamat", "Baik"], "jawapan": "Tidak Mesra Alam" },
         { "soalan": "Air membeku adalah perubahan?", "pilihan": ["Fizikal", "Kimia", "Elektrik", "Magnet"], "jawapan": "Fizikal" },
-        { "soalan": "Buah pinggang berfungsi untuk?", "pilihan": ["Menyaring Darah", "Memompa Darah", "Mencerna Makanan", "Bernafas"], "jawapan": "Menyaring Darah" },
-        { "soalan": "Hati berfungsi untuk?", "pilihan": ["Menapis Toksin", "Memompa Darah", "Bernafas", "Berfikir"], "jawapan": "Menapis Toksin" }
+        { "soalan": "Buah pinggang berfungsi untuk?", "pilihan": ["Menyaring Darah", "Mengepam Darah", "Mencerna Makanan", "Bernafas"], "jawapan": "Menyaring Darah" },
+        { "soalan": "Hati berfungsi untuk?", "pilihan": ["Menapis Toksin", "Mengepam Darah", "Bernafas", "Berfikir"], "jawapan": "Menapis Toksin" }
       ],
       [
         { "soalan": "Berbasikal ke sekolah adalah amalan?", "pilihan": ["Mesra Alam", "Tidak Mesra Alam", "Berbahaya", "Mahal"], "jawapan": "Mesra Alam" },
@@ -320,7 +320,7 @@
         { "soalan": "Tanduk kerbau (alat muzik tradisional) adalah teknologi?", "pilihan": ["Tradisional", "Moden", "Angkasa", "Digital"], "jawapan": "Tradisional" },
         { "soalan": "Menebang pokok sesuka hati adalah amalan?", "pilihan": ["Tidak Mesra Alam", "Mesra Alam", "Selamat", "Baik"], "jawapan": "Tidak Mesra Alam" },
         { "soalan": "Kayu diukir adalah perubahan?", "pilihan": ["Fizikal", "Kimia", "Elektrik", "Magnet"], "jawapan": "Fizikal" },
-        { "soalan": "Usus berfungsi untuk?", "pilihan": ["Menyerap Nutrien", "Memompa Darah", "Bernafas", "Berfikir"], "jawapan": "Menyerap Nutrien" },
+        { "soalan": "Usus berfungsi untuk?", "pilihan": ["Menyerap Nutrien", "Mengepam Darah", "Bernafas", "Berfikir"], "jawapan": "Menyerap Nutrien" },
         { "soalan": "Pundi kencing berfungsi untuk?", "pilihan": ["Menyimpan Air Kencing", "Menapis Toksin", "Mencerna Makanan", "Bernafas"], "jawapan": "Menyimpan Air Kencing" }
       ],
       [
