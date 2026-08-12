@@ -29,14 +29,48 @@
     align-items:center;
     justify-content:center;
     padding:16px;
+    position:relative;
+    overflow-x:hidden;
   }
+
+  /* ambient floating background decor */
+  #bg-decor{ position:fixed; inset:0; overflow:hidden; z-index:0; pointer-events:none; }
+  .bg-blob{ position:absolute; border-radius:50%; animation: floatDrift ease-in-out infinite; }
+  .bg-blob.c-sun{ background:rgba(255,210,63,0.28); }
+  .bg-blob.c-grass{ background:rgba(78,203,113,0.24); }
+  .bg-blob.c-coral{ background:rgba(255,107,107,0.22); }
+  .bg-blob.c-white{ background:rgba(255,255,255,0.18); }
+  .bg-spark{ position:absolute; font-size:18px; opacity:0.5; animation: twinkle ease-in-out infinite; }
+  @keyframes floatDrift{
+    0%,100%{ transform:translate(0,0) rotate(0deg); }
+    50%{ transform:translate(16px,-26px) rotate(10deg); }
+  }
+  @keyframes twinkle{
+    0%,100%{ opacity:0.15; transform:scale(0.85) rotate(0deg); }
+    50%{ opacity:0.65; transform:scale(1.1) rotate(15deg); }
+  }
+  @media (prefers-reduced-motion: reduce){
+    .bg-blob, .bg-spark, header, #mascot-zone, .card, .child-card{ animation:none !important; opacity:1 !important; transform:none !important; }
+  }
+
   #app-shell{
     width:100%;
     max-width:440px;
     display:flex;
     flex-direction:column;
     align-items:center;
+    position:relative;
+    z-index:1;
   }
+
+  @keyframes slideFadeIn{
+    from{ opacity:0; transform:translateY(18px); }
+    to{ opacity:1; transform:translateY(0); }
+  }
+  header, #mascot-zone, .card{ animation: slideFadeIn 0.6s cubic-bezier(.2,.8,.3,1) both; }
+  #mascot-zone{ animation-delay:0.1s; }
+  .card{ animation-delay:0.2s; }
+
   header{ text-align:center; color:#fff; margin-bottom:4px; }
   header h1{
     font-family:'Baloo 2', sans-serif;
@@ -135,12 +169,16 @@
     flex:1; border:none; background:#EAF6FC; color:var(--sky-deep);
     font-family:'Baloo 2', sans-serif; font-weight:700; font-size:14px;
     padding:10px 0; border-radius:14px; cursor:pointer;
-    transition: all 0.2s;
+    transition: all 0.2s cubic-bezier(.34,1.56,.64,1);
   }
-  .tab-btn.active{ background:var(--sky); color:#fff; }
+  .tab-btn.active{ background:var(--sky); color:#fff; transform:scale(1.03); }
 
   .view{ display:none; }
   .view.show{ display:block; }
+
+  #form-login, #form-register{ transition: opacity 0.18s ease; }
+
+  .confetti{ position:fixed; top:-10px; width:10px; height:10px; border-radius:2px; z-index:300; pointer-events:none; }
 
   label{ display:block; font-weight:700; font-size:13px; color:var(--navy); margin:12px 0 4px; }
   label:first-of-type{ margin-top:0; }
@@ -193,6 +231,11 @@
   #child-grid{
     display:grid; grid-template-columns:1fr 1fr; gap:12px;
   }
+  @keyframes cardPopIn{
+    0%{ opacity:0; transform:scale(0.7) translateY(14px); }
+    60%{ opacity:1; transform:scale(1.05) translateY(-2px); }
+    100%{ opacity:1; transform:scale(1) translateY(0); }
+  }
   .child-card{
     position:relative;
     background:linear-gradient(160deg, #EAF6FC, #DCEEF7);
@@ -200,8 +243,10 @@
     text-align:center; cursor:pointer;
     border:3px solid transparent;
     transition: all 0.2s cubic-bezier(.34,1.56,.64,1);
+    animation: cardPopIn 0.45s cubic-bezier(.34,1.56,.64,1) both;
   }
   .child-card:active{ transform:scale(0.96); }
+  .child-card:hover .child-avatar{ transform:translateY(-3px) rotate(-4deg); }
   .child-avatar{
     width:56px; height:56px; border-radius:50%;
     background:var(--sun);
@@ -209,6 +254,7 @@
     font-family:'Baloo 2', sans-serif; font-weight:800; font-size:20px; color:var(--navy);
     margin:0 auto 8px;
     box-shadow:0 4px 0 rgba(0,0,0,0.12);
+    transition: transform 0.25s cubic-bezier(.34,1.56,.64,1);
   }
   .child-name{ font-family:'Baloo 2', sans-serif; font-weight:700; font-size:14px; color:var(--navy); }
   .child-meta{ font-size:11px; font-weight:700; color:#5C7690; margin-top:2px; }
@@ -275,6 +321,15 @@
 </style>
 </head>
 <body>
+<div id="bg-decor">
+  <div class="bg-blob c-sun" style="width:120px; height:120px; top:8%; left:-30px; animation-duration:9s;"></div>
+  <div class="bg-blob c-coral" style="width:70px; height:70px; top:22%; right:-10px; animation-duration:7.5s; animation-delay:-2s;"></div>
+  <div class="bg-blob c-grass" style="width:90px; height:90px; bottom:12%; left:8%; animation-duration:10.5s; animation-delay:-4s;"></div>
+  <div class="bg-blob c-white" style="width:50px; height:50px; bottom:26%; right:12%; animation-duration:8s; animation-delay:-1s;"></div>
+  <div class="bg-spark" style="top:14%; left:20%; animation-duration:3.2s;">✨</div>
+  <div class="bg-spark" style="top:64%; right:18%; animation-duration:3.8s; animation-delay:-1.4s;">⭐</div>
+  <div class="bg-spark" style="top:38%; right:8%; animation-duration:2.9s; animation-delay:-0.6s;">✨</div>
+</div>
 <div id="app-shell">
   <header>
     <h1>🔬 Seronok Sains</h1>
@@ -645,6 +700,43 @@ function mascotOops(){
   setTimeout(()=>{ mascot.classList.remove('oops'); mascot.classList.add('idle'); }, 600);
 }
 
+function confettiBurst(x, y){
+  const colors = ['#FFD23F','#4ECB71','#29ABE2','#FF6B6B','#fff'];
+  for(let i=0;i<24;i++){
+    const c = document.createElement('div');
+    c.className = 'confetti';
+    c.style.background = colors[Math.floor(Math.random()*colors.length)];
+    c.style.left = x+'px';
+    c.style.top = y+'px';
+    const angle = Math.random()*Math.PI*2;
+    const dist = 60 + Math.random()*120;
+    const dx = Math.cos(angle)*dist;
+    const dy = Math.sin(angle)*dist - 80;
+    const rot = Math.random()*720-360;
+    document.body.appendChild(c);
+    c.animate([
+      {transform:'translate(0,0) rotate(0deg)', opacity:1},
+      {transform:`translate(${dx}px, ${dy+220}px) rotate(${rot}deg)`, opacity:0}
+    ], {duration: 900+Math.random()*400, easing:'cubic-bezier(.2,.8,.3,1)'}).onfinish = ()=> c.remove();
+  }
+}
+function celebrateAtMascot(){
+  const r = mascot.getBoundingClientRect();
+  confettiBurst(r.left + r.width/2, r.top + r.height/2);
+}
+function countUp(el, target, duration=700){
+  target = Number(target) || 0;
+  if(!target){ el.textContent = '0'; return; }
+  const start = performance.now();
+  function tick(now){
+    const p = Math.min(1, (now-start)/duration);
+    const eased = 1 - Math.pow(1-p, 3);
+    el.textContent = Math.round(eased * target);
+    if(p < 1) requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
+}
+
 /* ---------- view switching ---------- */
 const viewAuth = document.getElementById('view-auth');
 const viewDash = document.getElementById('view-dashboard');
@@ -658,13 +750,24 @@ const tabLogin = document.getElementById('tab-login');
 const tabRegister = document.getElementById('tab-register');
 const formLogin = document.getElementById('form-login');
 const formRegister = document.getElementById('form-register');
+function swapForm(hideEl, showEl){
+  hideEl.style.opacity = '0';
+  setTimeout(()=>{
+    hideEl.style.display = 'none';
+    showEl.style.display = '';
+    showEl.style.opacity = '0';
+    requestAnimationFrame(()=>{ showEl.style.opacity = '1'; });
+  }, 160);
+}
 tabLogin.addEventListener('click', ()=>{
+  if(tabLogin.classList.contains('active')) return;
   tabLogin.classList.add('active'); tabRegister.classList.remove('active');
-  formLogin.style.display=''; formRegister.style.display='none';
+  swapForm(formRegister, formLogin);
 });
 tabRegister.addEventListener('click', ()=>{
+  if(tabRegister.classList.contains('active')) return;
   tabRegister.classList.add('active'); tabLogin.classList.remove('active');
-  formRegister.style.display=''; formLogin.style.display='none';
+  swapForm(formLogin, formRegister);
 });
 
 const regChildPinReq = document.getElementById('reg-child-pinreq');
@@ -707,7 +810,7 @@ formLogin.addEventListener('submit', async (e)=>{
     loginError.classList.add('show');
     return;
   }
-  mascotHappy(); say('Selamat kembali!');
+  mascotHappy(); say('Selamat kembali!'); celebrateAtMascot();
   currentParent = { id:key, ...parent };
   await renderDashboard();
 });
@@ -758,7 +861,7 @@ formRegister.addEventListener('submit', async (e)=>{
     namaParent, emailOrPhone: rawKey.trim(), pinHash, children: [studentId]
   });
 
-  mascotHappy(); say('Akaun dicipta!');
+  mascotHappy(); say('Akaun dicipta!'); celebrateAtMascot();
   currentParent = { id:key, namaParent, emailOrPhone: rawKey.trim(), pinHash, children:[studentId] };
   await renderDashboard();
 });
@@ -772,6 +875,7 @@ async function renderDashboard(){
   dashGreeting.textContent = `Hai, ${currentParent.namaParent}! 👋`;
   childGrid.innerHTML = '';
   const childIds = currentParent.children || [];
+  let cardIndex = 0;
   for(const sid of childIds){
     const studentDoc = await dbGetStudent(sid);
     if(!studentDoc) continue;
@@ -794,7 +898,7 @@ async function renderDashboard(){
       <div class="child-avatar">${initial}</div>
       <div class="child-name">${student.name}</div>
       <div class="child-meta">Tahun ${student.tahun} · ${student.kelas}</div>
-      <div class="child-stats" data-sid="${sid}">⭐ ${progress?.totalStars || 0} &nbsp;·&nbsp; 🔥 ${progress?.currentStreak || 0}</div>
+      <div class="child-stats" data-sid="${sid}">⭐ <span class="stat-num" data-target="${progress?.totalStars || 0}">0</span> &nbsp;·&nbsp; 🔥 <span class="stat-num" data-target="${progress?.currentStreak || 0}">0</span></div>
     `;
     card.addEventListener('click', (ev)=>{
       if(ev.target.closest('.child-gear') || ev.target.closest('.child-stats')) return;
@@ -802,11 +906,15 @@ async function renderDashboard(){
     });
     card.querySelector('.child-gear').addEventListener('click', ()=> openPinToggle(sid, student));
     card.querySelector('.child-stats').addEventListener('click', ()=> openStatsModal(student, progress));
+    card.style.animationDelay = (cardIndex * 70) + 'ms';
+    cardIndex++;
     childGrid.appendChild(card);
+    card.querySelectorAll('.stat-num').forEach(el => countUp(el, el.dataset.target, 700));
   }
   const addCard = document.createElement('div');
   addCard.className = 'child-card add';
   addCard.innerHTML = '<span>+ Tambah Anak</span>';
+  addCard.style.animationDelay = (cardIndex * 70) + 'ms';
   addCard.addEventListener('click', ()=> openAddChild());
   childGrid.appendChild(addCard);
 }
@@ -1013,7 +1121,7 @@ formAddChild.addEventListener('submit', async (e)=>{
   await dbSetParent(currentParent.id, { children: currentParent.children });
 
   overlayAddChild.classList.remove('show');
-  mascotHappy(); say(`${nama} ditambah!`);
+  mascotHappy(); say(`${nama} ditambah!`); celebrateAtMascot();
   await renderDashboard();
 });
 
